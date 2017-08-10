@@ -1,19 +1,17 @@
 ## Introduction
 
-Add project description here. What will learners be making?
+In this project you will be making a game using Scratch 2.0. The game will involve finding a cloned sprite on the stage, hidden in amongst a huge group of other clones.
 
 ### What you will make
 
-Add something here to showcase here, for example:
+Here's an example of the game you will make:
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
+<iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/170916029/?autostart=false" frameborder="0" allowfullscreen></iframe>
 
-Add instructions here. These should explain either how the finished project will work, or explain how to interact with the content above.
+Hit the green flag and then try and find the clone, once the curtain has been raised, before your time runs out.
 
 ### What you will learn
 
 This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
-+ [Add curriculum strand/level description.](https://www.raspberrypi.org/curriculum/strand/level)
++ [Apply basic programming constructs to solve a problem](https://www.raspberrypi.org/curriculum/programming/builder)

@@ -1,15 +1,15 @@
-title: find-the-clone
+title: Find the clone
 hero_image: images/banner.png
-description: find-the-clone description
-original_url: https://codeclubprojects.org/en-GB/scratch/rock-band
+description: Create a game to find a character amongst a sea of other characters.
+original_url:
 theme: red # possible values: blue, green, navy, orange, red, turquoise, violet, yellow
-duration: 1 # possible values: 1, 2 or 3
+duration: 2
 listed: false
 ingredient: false
 copyedit: false
-curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
-interests: "games, jokes/pranks, music/sound, photography, physical computing, robots, space"
-technologies: "electronics, sense-hat, physical computing, html/css, scratch, python"
+curriculum: builder, design-0, programming-2, phys-comp-0, manufacture-0, community-0
+interests: "games"
+technologies: "scratch"
 site_areas:
 steps:
   - title: Introduction
