@@ -9,7 +9,7 @@
 [[[generic-scratch-coordinates]]]
 
 - To begin with you'll need to create a new **block** called `generate positions` for you spite. The block will need to have **two** `number inputs`.
-  ![generate positions block](images/generate_positions.png)
+  ![generate positions block](images/generate_positions.svg)
 
 [[[generic-scratch-make-block]]]
 
