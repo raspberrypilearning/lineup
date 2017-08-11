@@ -59,11 +59,11 @@
 	
 --- hints --- --- hint ---
 - Start by adding the variable values into the lists
-    ![add vars](images/script_6.png)
+    ![add vars](images/script_6.svg)
 --- /hint --- --- hint ---
 - Now use the columns parameter to calculate the number of repeats
-	![add columns](images/script_7.png)
+	![add columns](images/script_7.svg)
 --- /hint --- --- hint ---
 - Lastly you can add in `400` to the calculation. So it calculates the increase in `x_pos` each time
-	![calc distance](images/script_8.png)
+	![calc distance](images/script_8.svg)
 --- /hint --- --- /hints ---
