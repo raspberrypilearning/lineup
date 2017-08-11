@@ -16,7 +16,7 @@
   3. Delete the `index` position from the `y_positions` list
   4. Delete the `index` position from the `x_positions` list
   
-- Have a go at doing this part your self and have a look at the hints if you need some help.
+- Have a go at doing this part yourself and have a look at the hints if you need some help.
 
 --- hints --- --- hint ---
 - Here's how you can pick a random number from within the list
