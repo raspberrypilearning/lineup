@@ -1,7 +1,7 @@
 ## Stamping a row
 - So far you have ten values in the two lists. Let's stamp some costumes to the positions in the list.
 
-- Create a new block and call it `stamp sprites`. It needs two parameters as well, both number inputs and set to `rows` and `columns` just like the last one.
+- Create a new block and call it `stamp sprites`. It needs two parameters as well, both number inputs and set to `row` and `columns` just like the last one.
 
 	![new block](images/script_10.svg)
 

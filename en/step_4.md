@@ -18,7 +18,7 @@
 
 [[[generic-scratch-make-list]]]
 
-- Underneath your `generate_positions` block, add blocks to delete **all** from both lists.
+- Underneath your `generate positions` block, add blocks to delete **all** from both lists.
 
 	![empty the lists](images/script_2.svg)
 
