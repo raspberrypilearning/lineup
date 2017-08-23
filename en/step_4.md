@@ -8,7 +8,7 @@
 
 [[[generic-scratch-coordinates]]]
 
-- To begin with you'll need to create a new block called `generate positions` for your sprite. The block will need to have two 'number input' parameters. Call the two parameters `rows` and `columns`.
+- To begin with you'll need to create a new block called `generate positions` for your sprite. The block will need to have two 'number input' parameters. Call the two parameters `rows` and `columns`. The values of these parameters will define how many rows and columns your grid will have.
 
 	![generate positions block](images/script_1.svg)
 
