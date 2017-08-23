@@ -10,11 +10,11 @@
 
 	![repeat for rows](images/script_20.svg)
 
-- Next you need to increase the value of `y_pos`. This will increase up to a maximum of `150`, which is `300` away from it's starting value of `-150`. This needs to happen for each row your create.
+- Next you need to increase the value of `y_pos`. This will increase up to a maximum of `150`, which is `300` away from its starting value of `-150`. This needs to happen for each row your create.
 
 	![increase y](images/script_21.svg)
 	
-- Then you need to make sure you're passing in the number of `rows` as a parameter to your blocks.
+- Then you need to make sure you're passing the number of `rows` as a parameter to your blocks.
 
 	![parameters](images/script_22.svg)
 	
