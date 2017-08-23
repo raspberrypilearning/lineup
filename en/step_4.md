@@ -47,7 +47,7 @@
 
 	![variables set](images/script_3.svg)
 	
-- Now you need a loop to add the first 10 coordinates to the lists. So how many times should the loop repeat? In this case it is ten - one for each column in the grid. As you've set up the block to take `columns` as a parameter, you can use this value.
+- Now you need a loop to add the first ten coordinates to the lists. So how many times should the loop repeat? In this case it is ten - one time for each column in the grid. As you've set up the block to take `columns` as a parameter, you can use this value.
 
 	![repeat loop](images/script_4.svg)
 	
