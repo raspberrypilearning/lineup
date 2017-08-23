@@ -22,7 +22,7 @@
 
 	![mess of stamps](images/mess_stamps.png)
 	
-- This is because your `stamp sprite` block is only repeating for the total number of columns. It needs to repeat for the product of the number of columns and the number of rows (`columns * rows`)
+- This is because your `stamp sprite` block is only repeating for the total number of columns. It needs to repeat for the product of the number of columns and the number of rows (`columns * rows`).
 
 	![ordered grid](images/script_23.svg)
 	![ordered grid](images/nice_grid.png)
