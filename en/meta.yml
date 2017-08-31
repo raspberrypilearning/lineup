@@ -1,4 +1,4 @@
-title: Find the clone
+title: Lineup
 hero_image: images/banner.png
 description: Create a game to find a character amongst a sea of other characters
 original_url:
@@ -22,4 +22,4 @@ steps:
   - title: Adding rows
   - title: Placing your sprite
   - title: Finishing the game
-  - title: Challenge: taking it further
+  - title: "Challenge: taking it further"

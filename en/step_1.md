@@ -1,6 +1,6 @@
 ## Introduction
 
-In this project you will be making a game using Scratch 2.0. The game will involve finding a cloned sprite on the stage, hidden amongst a huge group of other clones.
+In this project you will be making a game using Scratch 2.0. The game will involve finding a stamped sprite on the stage, hidden amongst a huge group of other stamps.
 
 ### What you will make
 
