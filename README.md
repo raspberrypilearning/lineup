@@ -1,3 +1,3 @@
 # Lineup
 
-Don't forget to update the project name in LICENSE.md
+This project can be found at https://projects.raspberrypi.org/en/projects/Lineup
