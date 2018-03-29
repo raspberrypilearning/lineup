@@ -1,8 +1,7 @@
 title: Lineup
 hero_image: images/banner.png
 description: Create a game to find a character amongst a sea of other characters
-original_url: 
-theme: navy # blue, green, navy, orange, red, turquoise, violet, yellow
+theme: navy
 duration: 2
 listed: true
 ingredient: false
