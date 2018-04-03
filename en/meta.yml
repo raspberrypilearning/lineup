@@ -6,18 +6,23 @@ duration: 2
 listed: true
 ingredient: false
 copyedit: true
-curriculum: builder, design-0, programming-2, phys-comp-0, manufacture-0, community-0
-interests: "games"
-technologies: "scratch"
-steps:
-  - title: Introduction
-  - title: What you will need
-  - title: Import your costumes
-  - title: Making a grid
-  - title: Testing the script
-  - title: Stamping a row
-  - title: Changing the costumes
-  - title: Adding rows
-  - title: Placing your sprite
-  - title: Finishing the game
-  - title: "Challenge: taking it further"
+curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
+interests: games
+technologies: scratch
+site_areas: projects
+hardware: ''
+software: scratch
+version: 4
+last_tested: 2017-11-01
+steps: 
+- title: Introduction
+- title: What you will need
+- title: Import your costumes
+- title: Making a grid
+- title: Testing the script
+- title: Stamping a row
+- title: Changing the costumes
+- title: Adding rows
+- title: Placing your sprite
+- title: Finishing the game
+- title: "Challenge: taking it further"
