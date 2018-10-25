@@ -1,26 +1,30 @@
-## Stamping a row
-- So far you have ten values in the two lists. Let's stamp some costumes at the stage positions given in the list.
+## Changing the costumes
 
-- Create a new block and call it `stamp sprites`. It needs two parameters as well, both of which should be number inputs and named `row` and `columns` just like the last ones.
+- Let's change the stamp each time and make it a more appropriate size.
 
-	![new block](images/script_10.svg)
-
-- Create a new variable called `index`. You can use this to track which position in the list you are reading. Set it to `1`.
-
-	![index](images/script_11.svg)
-
-- Now you're going to stamp a sprite for each set of coordinates in the list. This will require a loop that will repeat once for each column.
-
-	![repeat it](images/script_12.svg)
+	![change stamp](images/script_15.svg)
 	
-- Within the loop, move your sprite to the first position in the list, stamp it, then increase the `index` by 1.
+- When you run the script, you should see something like this:
 
-	![stamp loop](images/script_13.svg)
-
-- Next you need to call this block as well. You should also add a `clear` block to you starting script so that it clears the stage each time.
-
-	![stamp it](images/script_14.svg)
+	![changed_sprites](images/changed_sprites.png)
 	
-- When you click the green flag, you should see something like this:
+- At the moment, your program cycles through all the costumes in order. This isn't a problem, so long as you place the sprite in a random location each time.
 
-	![stamped sprites](images/stamped_sprites.png)
+- To do this, you'll need to follow the following **algorithm**:
+  1. Set `index` to a random number between `1` and the length of a list
+  2. Move the sprite as you did before
+  3. Delete the `index` position from the `y_positions` list
+  4. Delete the `index` position from the `x_positions` list
+  
+- Have a go at doing this part yourself, and take a look at the hints if you need some help.
+
+--- hints --- --- hint ---
+- Here's how you can pick a random number from within the list:
+  ![random](images/script_16.svg)
+--- /hint --- --- hint ---
+- Here's how to pick a random item from the list:
+  ![random item](images/script_17.svg)
+--- /hint --- --- hint ---
+- Here is your completed script showing how to delete the items from the list:
+  ![completed](images/script_18.svg)
+--- /hint --- --- /hints ---

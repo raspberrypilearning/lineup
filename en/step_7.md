@@ -1,30 +1,28 @@
-## Changing the costumes
+## Adding rows
 
-- Let's change the stamp each time and make it a more appropriate size.
+- Now that you've written the code to generate a single row, you need to add in more rows.
 
-	![change stamp](images/script_15.svg)
+- Go back to your `generate positions` block.
+
+	![gen positions](images/script_19.svg)
+
+- Now you need another loop that will repeat the same number of times as the number of rows you need. Place it into your script as shown below.
+
+	![repeat for rows](images/script_20.svg)
+
+- Next you need to increase the value of `y_pos`. This will increase up to a maximum of `150`, which is `300` away from its starting value of `-150`. This needs to happen for each row your create.
+
+	![increase y](images/script_21.svg)
 	
-- When you run the script, you should see something like this:
+- Then you need to make sure you're passing the number of `rows` as a parameter to your blocks.
 
-	![changed_sprites](images/changed_sprites.png)
+	![parameters](images/script_22.svg)
 	
-- At the moment, your program cycles through all the costumes in order. This isn't a problem, so long as you place the sprite in a random location each time.
+- If you run your code now, you won't get a neat grid of stamps.
 
-- To do this, you'll need to follow the following **algorithm**:
-  1. Set `index` to a random number between `1` and the length of a list
-  2. Move the sprite as you did before
-  3. Delete the `index` position from the `y_positions` list
-  4. Delete the `index` position from the `x_positions` list
-  
-- Have a go at doing this part yourself, and take a look at the hints if you need some help.
+	![mess of stamps](images/mess_stamps.png)
+	
+- This is because your `stamp sprite` block is only repeating for the total number of columns. It needs to repeat for the product of the number of columns and the number of rows (`columns * rows`).
 
---- hints --- --- hint ---
-- Here's how you can pick a random number from within the list:
-  ![random](images/script_16.svg)
---- /hint --- --- hint ---
-- Here's how to pick a random item from the list:
-  ![random item](images/script_17.svg)
---- /hint --- --- hint ---
-- Here is your completed script showing how to delete the items from the list:
-  ![completed](images/script_18.svg)
---- /hint --- --- /hints ---
+	![ordered grid](images/script_23.svg)
+	![ordered grid](images/nice_grid.png)
