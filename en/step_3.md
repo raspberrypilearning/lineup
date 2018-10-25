@@ -7,7 +7,9 @@ You are going to produce a grid of stamped costumes, just like this one:
 To do this you will need to know the `x` and `y` coordinates of where each stamp is going to be placed.
 
 --- task ---
-To begin with you'll need to create a new block called `generate positions`{:class="blockmoreblocks"} for your sprite. The block will need to have two 'number input' parameters. Call the two parameters `rows`{:class="blockmoreblocks"} and `columns`{:class="blockmoreblocks"}. The values of these parameters will set how many rows and columns your grid will have.
+To begin with you'll need to create a new block called `generate positions`{:class="blockmoreblocks"} for your sprite. The block will need to have two 'number input' parameters. Call the two parameters `rows`{:class="blockmoreblocks"} and `columns`{:class="blockmoreblocks"}.
+
+The values of these parameters will set how many rows and columns your grid of sprites will have.
 
 [[[generic-scratch-make-block]]]
 
@@ -23,7 +25,7 @@ Create two lists. One will be called `x_positions`{:class="blockdata"}, and the 
 --- /task ---
 
 --- task ---
-Underneath your `generate positions` block, add blocks to delete all the items from both lists.
+Underneath your `generate positions`{:class="blockmoreblocks"} block, add blocks to delete all the items from both lists, so taht each time the game is played, the lists are empty and new.
 
 ```blocks
 define generate positions (rows)(columns)
@@ -67,9 +69,11 @@ set [x_pos v] to [-200]
 --- /task ---
 
 --- task ---
-Now you need a loop to add the first ten coordinates to the lists. So how many times should the loop repeat?
+Now you need a loop to add some coordinates to the lists.
 
-In this case it is ten - one time for each column in the grid. As you've set up the custom block to take `columns` as a parameter, you can use this value.
+How many times should the loop repeat?
+
+In this case it is ten - one time for each column in the grid. As you've set up the custom block to take `columns`{:class="blockmoreblocks"} as a parameter, you can use this value.
 
 ```blocks
 define generate positions (rows)(columns)
@@ -83,11 +87,13 @@ repeat (columns)
 	
 Within the loop, you'll need to add the values of `x_pos`{:class="blockdata"} and `y_pos`{:class="blockdata"} into the lists. Then you'll need to increase the value of `x_pos`{:class="blockdata"} by a little.
 
-The first value you add is `-200`{:class="blockdata"} and the next is approximately `-155`{:class="blockdata"}, up until you reach `200`{:class="blockdata"}. So how can you calculate these increments? 
+The first value you add is `-200`{:class="blockdata"} and the next is approximately `-155`{:class="blockdata"}. The value keeps on getting larger, up until you reach `200`{:class="blockdata"}.
 
-Well, as you want a total of ten values in the list, and the first is already set to `200`, you need an additional nine values. This is the value of `columns`{:class="blockmoreblocks"} minus one, so `columns - 1`{:class="blockoperators"}. 
+So how can you do you know how much to add? 
 
-You want to go from `-200`{:class="blockdata"} to `200`{:class="blockdata"}, so that is an additional `400`{:class="blockdata"} to `x_pos`{:class="blockdata"}.
+As you want a total of ten values in the list, and the first is already set to `200`, you need an additional nine values. This is the value of `columns`{:class="blockmoreblocks"} minus one, so `columns - 1`{:class="blockoperators"}. 
+
+You want to go from `-200`{:class="blockdata"} yp to to `200`{:class="blockdata"}, so that is an increase of `400`{:class="blockdata"} to the `x_pos`{:class="blockdata"}.
 
 This means you want to add `400 / (columns - 1)`{:class="blockoperators"} each time the loop comes around.
 
