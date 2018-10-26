@@ -16,7 +16,7 @@ add (y_pos) to [y_positions v]
 change [x_pos v] by (((400) / (columns)) - (1))
 ```
 --- task ---
-Now you need another loop that will repeat the same number of times as the number of rows you need. Place it into your script as shown below.
+Now you need another loop that will repeat the same number of times as the number of rows of stamped costumes you need. Place it into your script as shown below.
 
 ```blocks
 define generate positions (rows)(columns)
@@ -33,8 +33,9 @@ end
 end
 ```
 --- /task ---
+
 --- task ---
-- Next you need to increase the value of `y_pos`. This will increase up to a maximum of `150`, which is `300` away from its starting value of `-150`. This needs to happen for each row your create.
+- Next you need to increase the value of `y_pos`{:class="blockdata"}. This will increase up to a maximum of `150`{:class="blockdata"}, which is `300`{:class="blockdata"} away from its starting value of `-150`{:class="blockdata"}. This needs to happen for each row your create.
 
 ```blocks
 define generate positions (rows)(columns)
@@ -54,7 +55,7 @@ end
 --- /task ---
 
 --- task ---
-- Then you need to make sure you're passing the number of `rows` as a parameter to your blocks.
+- Then you need to make sure you're passing the number of `rows`{:class="blockmoreblocks"} as a parameter to your blocks.
 
 ```blocks
 when flag clicked
@@ -64,15 +65,28 @@ stamp sprite (4) (10) ::custom
 ```
 --- /task ---
 	
-
-If you run your code now, you won't get a neat grid of stamps.
+--- task ---
+Run your code now.
 
 ![mess of stamps](images/mess_stamps.png)
 	
-This is because your `stamp sprite` block is only repeating for the total number of columns.
+You won't get a neat grid of stamps.
 
-It needs to repeat for the number of columns multiplied by the number of rows.
+This is because your `stamp sprite`{:class="blockmoreblocks"} block is only repeating for the total number of columns.
+--- /task ---
 
+--- task ---
+Alter your `stamp sprites`{:class="blockmoreblocks"} script. It needs to repeat enough times to stamp all the sprites.
+
+--- hints --- --- hint ---
+The total number of stamps you need will be the `columns`{:class="blockmoreblocks"} multiplied by the `rows`{:class="blockmoreblocks"}
+--- /hint --- --- hint ---
+Try using this additional block
+```blocks
+((rows ::custom) * (columns ::custom))
+```
+--- /hint --- --- hint ---
+Here's the completed script:
 ```blocks
 define stamp sprites (rows) (columns)
 set size to (40) %
@@ -84,4 +98,6 @@ delete (index) of [y_positions v]
 stamp
 next costume
 ```
+--- /hint --- --- /hints ---
+
 ![ordered grid](images/nice_grid.png)
