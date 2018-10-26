@@ -1,7 +1,7 @@
 ## Finishing the game
 
 --- task ---
-To finish off, you'll need to find and download an image of [a curtain or a screen](https://www.google.co.uk/search?q=stage+curtain&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjKg9O1k8_VAhXSL1AKHe1HDMIQ_AUICigB&biw=1362&bih=584).
+To finish off, you'll need to find and download an image of [a curtain or a screen](https://www.google.co.uk/search?q=stage+curtain&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjKg9O1k8_VAhXSL1AKHe1HDMIQ_AUICigB&biw=1362&bih=584){:target="_blank"}.
 
 This image needs to be imported as a second sprite.
 
@@ -9,7 +9,7 @@ This image needs to be imported as a second sprite.
 --- /task ---
 
 --- task ---
-To begin with, position the curtain sprite at `x:0 y:0` and then change its size so that it fills the screen. You also want to make sure it is visible.
+To begin with, position the curtain sprite at `x:0 y:0`{:class="blockmotion"} and then change its size so that it fills the screen. You also want to make sure it is visible.
 
 ```blocks
 when flag clicked
@@ -36,15 +36,12 @@ set size to (40) %
 go to x: (item (1 v) of [x_positions v]) y: (item (1 v) of [y_positions v])
 +broadcast [curtain up v]
 ```
-On the curtain sprite, you need a script that will do the following:
-  1. Bring the curtain to the front
-  1. Wait a little bit while the sprites all get drawn
-  1. Glide the curtain upwards so it's near the top of the screen
-  1. Hide the curtain
-  1. Start a loop that counts for 10 seconds
-  1. When the time is over, show the curtain
-  1. Glide the curtain back to its original position
-  
+--- /task ---
+
+--- task ---
+
+When the `broadcast`{:class="blockevents"} is received by the curtain, it needs to be raised for 10 seconds, to reveal the stamps and then dropped again afterwards,
+
 --- no-print ---
 Here's what it should look like:
 
@@ -54,31 +51,44 @@ Here's what it should look like:
 Have a go at doing this yourself, and use the hints if you need help.
 
 --- hints --- --- hint ---
-Here's how you would start your script:
-```blocks
-when I receive [curtain up v]
-go to front
-wait (1) secs
-glide (1) secs to x: (0) y: (300)
-hide
-```
+On the curtain sprite, you need a script that will do the following:
+  1. When the curtain receives the `broadcast`{:class="blockevents"}
+  1. Bring the curtain to the `front`{:class="blocklooks"}
+  1. `Wait`{:class="blockcontrol"} a little bit while the sprites all get drawn
+  1. `Glide`{:class="blockmotion"} the curtain upwards so it's near the top of the screen
+  1. `Hide`{:class="blocklooks"} the curtain
+  1. Start a loop that counts for 10 seconds
+  1. When the time is over, `show`{:class="blocklooks"} the curtain
+  1. `Glide`{:class="blockmotion"} the curtain back to its original position
 --- /hint --- --- hint ---
-Here's a simple script to create a delay of ten seconds. If the variable can be seen, it will let the player know how much time they have.
+Here are the blocks you will need:
 ```blocks
-when I receive [curtain up v]
 go to front
-wait (1) secs
-glide (1) secs to x: (0) y: (300)
+
+show
+
 hide
-+ set [timer v] to [10]
-+repeat (10)
-wait (1) secs
-change [timer v] by (-1)
+
+glide (1) secs to x: (0) y: (0)
+
+glide (1) secs to x: (0) y: (0)
+
+set [timer v] to []
+
+change [timer v] by ()
+
+wait () secs
+
+wait () secs
+
+repeat ()
+end
+when I receive [curtain up v]
 ```
 --- /hint --- --- hint ---
  Here's the full script:
  ```blocks
- when I receive [curtain up v]
+when I receive [curtain up v]
 go to front
 wait (1) secs
 glide (1) secs to x: (0) y: (300)
@@ -88,8 +98,8 @@ repeat (10)
 wait (1) secs
 change [timer v] by (-1)
 end
-+ show
-+ glide (1) secs to x: (0) y: (0)
+show
+glide (1) secs to x: (0) y: (0)
 ```
 --- /hint --- --- /hints ---
 --- /task ---
