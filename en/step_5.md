@@ -65,7 +65,7 @@ change [index v] by (1)
 --- /task ---
 
 --- task ---
-Next you need to call this block as well. You should also add a `clear` block to your starting script so that it clears the stage each time.
+Next you need to call this block as well. You should also add a `clear`{:class="blockpen"} block to your starting script so that it clears the stage each time.
 
 ```blocks
 when flag clicked
@@ -76,7 +76,7 @@ stamp sprite (1) (10) ::custom
 --- /task ---	
 
 --- task ---
-When you click the green flag, you should see something like this:
+When you click the green flag, you should see something like this, depending on the costumes you have used:
 
 ![stamped sprites](images/stamped_sprites.png)
 --- /task ---

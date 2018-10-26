@@ -28,13 +28,16 @@ At the moment, your program cycles through all the costumes in order. This isn't
   4. Delete the `index`{:class="blockdata"} position from the `x_positions`{:class="blockdata"} list
   
 --- task ---
+
 Now add code to make the sprite's costume randomly placed in the grid.
+
 --- hints --- --- hint ---
 - Here's how you can pick a random number from within the list:
 ```blocks
 pick random (1) to (length of [x_positions v])
 ```
 --- /hint --- --- hint ---
+
 - Here's how to pick a random item from the list:
 ```blocks
 define stamp sprites (rows) (columns)
@@ -47,7 +50,9 @@ stamp
 next costume
 - change [index v] by (1)
 ```
+
 --- /hint --- --- hint ---
+
 - Here is your completed script showing how to delete the items from the list:
 ```blocks
 define stamp sprites (rows) (columns)
