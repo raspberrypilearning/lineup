@@ -21,7 +21,7 @@ When you run the script, you should see something like this:
 	
 At the moment, your program cycles through all the costumes in order. This isn't a problem, so long as you place the sprite in a random location each time.
 
-- To do this, you'll need to follow the following **algorithm**:
+To do this, you'll need to follow the following **algorithm**:
   1. Set `index`{:class="blockdata"} to a random number between `1` and the length of a list
   2. Move the sprite as you did before
   3. Delete the `index`{:class="blockdata"} position from the `y_positions`{:class="blockdata"} list
@@ -39,6 +39,7 @@ pick random (1) to (length of [x_positions v])
 --- /hint --- --- hint ---
 
 - Here's how to pick a random item from the list:
+
 ```blocks
 define stamp sprites (rows) (columns)
 set size to (40) %
@@ -54,6 +55,7 @@ next costume
 --- /hint --- --- hint ---
 
 - Here is your completed script showing how to delete the items from the list:
+
 ```blocks
 define stamp sprites (rows) (columns)
 set size to (40) %
