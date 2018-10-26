@@ -76,35 +76,15 @@ So how much should `x_pos`{:class="blockdata"} be increased by each time? As you
 So the increase on `x_pos`{:class="blockdata"}, each time around the loop should be `400 / (columns - 1)`{:class="blockoperators"}
 
 --- task ---
-Here's some code to get you started, and you can use the hints below if you need more help.
+Add in the code that will add the `x_pos`{:class="blockdata"} and `y_pos`{:class="blockdata"} values into the `x_positions`{:class="blockdata"} and `y_positions`{:class="blockdata"} lists.
 
-```blocks
-define generate positions (rows)(columns)
-delete [all v] of [y_positions v]
-delete [all v] of [x_positions v]
-set [y_pos v] to [-150]
-set [x_pos v] to [-200]
-repeat (columns)
-add () to [x_positions v]
-add () to [y_positions v]
-change [x_pos v] by ((() / ()) - ())
-```
 	
 --- hints --- --- hint ---
-- Start by adding the variable values into the lists.
-```blocks
-define generate positions (rows)(columns)
-delete [all v] of [y_positions v]
-delete [all v] of [x_positions v]
-set [y_pos v] to [-150]
-set [x_pos v] to [-200]
-repeat (columns)
-add (x_pos) to [x_positions v]
-add (y_pos) to [y_positions v]
-change [x_pos v] by ((() / ()) - ())
-```
+Within the loop, you need to add `x_pos`{:class="blockdata"} to the `x_positions`{:class="blockdata"} list, and add the `y_pos`{:class="blockdata"} to the `y_positions`{:class="blockdata"} list.
+Then `x_pos`{:class="blockdata"} needs to be increased by `400 / (columns -1)`{:class="blockoperators"}
 --- /hint --- --- hint ---
-- Now use the `columns` parameter to calculate the number of repeats.
+This shows the additional blocks you need to add into your script.
+
 ```blocks
 define generate positions (rows)(columns)
 delete [all v] of [y_positions v]
@@ -112,13 +92,23 @@ delete [all v] of [x_positions v]
 set [y_pos v] to [-150]
 set [x_pos v] to [-200]
 repeat (columns)
-add (x_pos) to [x_positions v]
-add (y_pos) to [y_positions v]
-change [x_pos v] by ((() / (columns)) - ())
+end
+
+(x_pos)
+(y_pos)
+
+add () to [x_positions v]
+
+add () to [y_positions v]
+
+change [x_pos v] by ()
+(columns ::custom
+() / () 
+() - ()
 ```
 --- /hint --- --- hint ---
 
-- Lastly you can add in `400` to the calculation, so it calculates the increase in `x_pos` each time.
+- Here is the completed script
 ```blocks
 define generate positions (rows)(columns)
 delete [all v] of [y_positions v]
