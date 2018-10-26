@@ -35,7 +35,7 @@ end
 --- /task ---
 
 --- task ---
-- Next you need to increase the value of `y_pos`{:class="blockdata"}. This will increase up to a maximum of `150`{:class="blockdata"}, which is `300`{:class="blockdata"} away from its starting value of `-150`{:class="blockdata"}. This needs to happen for each row your create.
+Next you need to increase the value of `y_pos`{:class="blockdata"}. This will increase up to a maximum of `150`{:class="blockdata"}, which is `300`{:class="blockdata"} away from its starting value of `-150`{:class="blockdata"}. This needs to happen for each row your create.
 
 ```blocks
 define generate positions (rows)(columns)
@@ -55,7 +55,7 @@ end
 --- /task ---
 
 --- task ---
-- Then you need to make sure you're passing the number of `rows`{:class="blockmoreblocks"} as a parameter to your blocks.
+Then you need to make sure you're passing the number of `rows`{:class="blockmoreblocks"} as a parameter to your blocks.
 
 ```blocks
 when flag clicked
