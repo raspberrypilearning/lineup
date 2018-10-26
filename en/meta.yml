@@ -16,3 +16,4 @@ steps:
 - title: Placing your sprite
 - title: Finishing the game
 - title: "Challenge: taking it further"
+  challenge: true

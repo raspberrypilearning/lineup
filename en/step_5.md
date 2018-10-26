@@ -1,26 +1,62 @@
-## Stamping a row
+s## Stamping a row
 - So far you have ten values in the two lists. Let's stamp some costumes at the stage positions given in the list.
 
-- Create a new block and call it `stamp sprites`. It needs two parameters as well, both of which should be number inputs and named `row` and `columns` just like the last ones.
+--- task ---
+Create a new block and call it `stamp sprites`. It needs two parameters as well, both of which should be number inputs and named `row` and `columns` just like the last ones.
 
-	![new block](images/script_10.svg)
+```blocks
+define stamp sprites (rows) (columns)
+```
+--- /task ---
 
-- Create a new variable called `index`. You can use this to track which position in the list you are reading. Set it to `1`.
+--- task ---
+Create a new variable called `index`. You can use this to track which position in the list you are reading. Set it to `1`.
 
-	![index](images/script_11.svg)
+```blocks
+define stamp sprites (rows) (columns)
+set [index v] to [1]
+```
+--- /task ---
 
-- Now you're going to stamp a sprite for each set of coordinates in the list. This will require a loop that will repeat once for each column.
+--- task ---
 
-	![repeat it](images/script_12.svg)
-	
-- Within the loop, move your sprite to the first position in the list, stamp it, then increase the `index` by 1.
+Now you're going to stamp a sprite for each set of coordinates in the list. This will require a loop that will repeat once for each column.
 
-	![stamp loop](images/script_13.svg)
+```blocks
+define stamp sprites (rows) (columns)
+set [index v] to [1]
+repeat (columns)
+```
+--- /task ---	
 
-- Next you need to call this block as well. You should also add a `clear` block to you starting script so that it clears the stage each time.
+--- task ---
+Within the loop, move your sprite to the first position in the list, stamp it, then increase the `index` by 1.
 
-	![stamp it](images/script_14.svg)
-	
-- When you click the green flag, you should see something like this:
+```blocks
+define stamp sprites (rows) (columns)
+set [index v] to [1]
+repeat (columns)
+go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
+stamp
+change [index v] by (1)
+```
 
-	![stamped sprites](images/stamped_sprites.png)
+--- /task ---
+
+--- task ---
+Next you need to call this block as well. You should also add a `clear` block to your starting script so that it clears the stage each time.
+
+```blocks
+when flag clicked
+clear
+generate positions (1) (10) ::custom
+stamp sprite (1) (10) ::custom
+```
+--- /task ---	
+
+--- task ---
+When you click the green flag, you should see something like this:
+
+![stamped sprites](images/stamped_sprites.png)
+--- /task ---
+

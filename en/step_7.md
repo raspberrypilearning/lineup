@@ -1,28 +1,87 @@
 ## Adding rows
 
-- Now that you've written the code to generate a single row, you need to add in more rows.
+Now that you've written the code to generate a single row, you need to add in more rows.
 
-- Go back to your `generate positions` block.
+Go back to your `generate positions`{:class="blockmoreblocks"} block.
 
-	![gen positions](images/script_19.svg)
+```blocks
+define generate positions (rows)(columns)
+delete [all v] of [y_positions v]
+delete [all v] of [x_positions v]
+set [y_pos v] to [-150]
+set [x_pos v] to [-200]
+repeat (columns)
+add (x_pos) to [x_positions v]
+add (y_pos) to [y_positions v]
+change [x_pos v] by (((400) / (columns)) - (1))
+```
+--- task ---
+Now you need another loop that will repeat the same number of times as the number of rows you need. Place it into your script as shown below.
 
-- Now you need another loop that will repeat the same number of times as the number of rows you need. Place it into your script as shown below.
-
-	![repeat for rows](images/script_20.svg)
-
+```blocks
+define generate positions (rows)(columns)
+delete [all v] of [y_positions v]
+delete [all v] of [x_positions v]
+set [y_pos v] to [-150]
++repeat (rows)
+set [x_pos v] to [-200]
+repeat (columns)
+add (x_pos) to [x_positions v]
+add (y_pos) to [y_positions v]
+change [x_pos v] by (((400) / (columns)) - (1))
+end
+end
+```
+--- /task ---
+--- task ---
 - Next you need to increase the value of `y_pos`. This will increase up to a maximum of `150`, which is `300` away from its starting value of `-150`. This needs to happen for each row your create.
 
-	![increase y](images/script_21.svg)
-	
+```blocks
+define generate positions (rows)(columns)
+delete [all v] of [y_positions v]
+delete [all v] of [x_positions v]
+set [y_pos v] to [-150]
+repeat (rows)
+set [x_pos v] to [-200]
+repeat (columns)
+add (x_pos) to [x_positions v]
+add (y_pos) to [y_positions v]
+change [x_pos v] by (((400) / (columns)) - (1))
+end
++change [y_pos v] by (((300) / (rows)) - (1))
+end
+```
+--- /task ---
+
+--- task ---
 - Then you need to make sure you're passing the number of `rows` as a parameter to your blocks.
 
-	![parameters](images/script_22.svg)
+```blocks
+when flag clicked
+clear
+generate positions (4) (10) ::custom
+stamp sprite (4) (10) ::custom
+```
+--- /task ---
 	
-- If you run your code now, you won't get a neat grid of stamps.
 
-	![mess of stamps](images/mess_stamps.png)
+If you run your code now, you won't get a neat grid of stamps.
+
+![mess of stamps](images/mess_stamps.png)
 	
-- This is because your `stamp sprite` block is only repeating for the total number of columns. It needs to repeat for the product of the number of columns and the number of rows (`columns * rows`).
+This is because your `stamp sprite` block is only repeating for the total number of columns.
 
-	![ordered grid](images/script_23.svg)
-	![ordered grid](images/nice_grid.png)
+It needs to repeat for the number of columns multiplied by the number of rows.
+
+```blocks
+define stamp sprites (rows) (columns)
+set size to (40) %
++ repeat ((rows) * (columns))
+set [index v] to (pick random (1) to (length of [x_positions v]))
+go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
+delete (index) of [x_positions v]
+delete (index) of [y_positions v]
+stamp
+next costume
+```
+![ordered grid](images/nice_grid.png)
