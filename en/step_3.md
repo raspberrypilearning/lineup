@@ -9,7 +9,7 @@ To do this you will need to know the `x` and `y` coordinates of where each stamp
 --- task ---
 To begin with you'll need to create a new block called `generate positions`{:class="blockmoreblocks"} for your sprite. The block will need to have two 'number input' parameters. Call the two parameters `rows`{:class="blockmoreblocks"} and `columns`{:class="blockmoreblocks"}.
 
-The values of these parameters will set how many rows and columns your grid of sprites will have.
+The values of these parameters will set how many rows and columns your grid of stamps will have.
 
 [[[generic-scratch-make-block]]]
 
@@ -38,7 +38,7 @@ Next you will need to create two new variables. Call these `x_pos`{:class="block
 
 The idea to begin with is to add positions into the `x_positions`{:class="blockdata"} list. There will be ten positions in total, starting at `-200`{:class="blockdata"} and going up to `200`{:class="blockdata"}.
 
-The `y_positions`{:class="blockdata"} list can just contain 10 values, all at `-150`{:class="blockdata"}, as we're only doing one row for no.
+The `y_positions`{:class="blockdata"} list can just contain 10 values, all at `-150`{:class="blockdata"}, as we're only doing one row for now.
 
 --- task ---
 Start by setting the `y_pos`{:class="blockdata"} and `x_pos`{:class="blockdata"} variables to `-150`{:class="blockdata"} and `-200`{:class="blockdata"}. This will be the location of the first image.
@@ -73,7 +73,7 @@ Within the loop, you'll need to add the values of `x_pos`{:class="blockdata"} an
 
 So how much should `x_pos`{:class="blockdata"} be increased by each time? As you know you want `x_pos`{:class="blockdata"} to reach `200`{:class="blockdata"}, that's a total increase of `400`{:class="blockdata"}. This needs to be done nine times, after the initial value has been added, which is `columns - 1`{:class="blockoperators"}
 
-So the increase on `x_pos`{:class="blockdata"}, each time around the loop should be `400 / (columns - 1)`{:class="blockoperators"}
+So the increase of `x_pos`{:class="blockdata"}, each time around the loop should be `400 / (columns - 1)`{:class="blockoperators"}
 
 --- task ---
 Add in the code that will add the `x_pos`{:class="blockdata"} and `y_pos`{:class="blockdata"} values into the `x_positions`{:class="blockdata"} and `y_positions`{:class="blockdata"} lists.
