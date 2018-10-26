@@ -36,7 +36,7 @@ Remove the `set index to 1`{:class="blockdata"} from before the loop. Then withi
 Then `delete`{:class="blockdata"} the `index`{:class="blockdata"} from both the `x_positions`{:class="blockdata"} and `y_positions`{:class="blockdata"} lists.
 --- /hint --- --- hint ---
 
-- Here's the additional blocks you need.
+Here's the additional blocks you need.
 ```blocks
 define stamp sprites (rows) (columns)
 set size to (40) %
@@ -58,7 +58,7 @@ delete () of [y_positions v]
 ```
 --- /hint --- --- hint ---
 
-- Here is your completed script showing how to delete the items from the list:
+Here is your completed script showing how to delete the items from the list:
 
 ```blocks
 define stamp sprites (rows) (columns)
