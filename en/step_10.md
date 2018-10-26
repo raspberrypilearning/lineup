@@ -4,3 +4,4 @@ Here are some ideas for further additions to your game that could make it more i
 - How about choosing a background and then making the sprites nearer the top of the screen appear smaller, so they seem further away?
 - Can you make the game repeat, and provide you with a score based on your time to complete five attempts?
 
+

@@ -20,7 +20,7 @@ show
 --- /task ---
 
 --- task ---
-Then, back on your character sprite, add a broadcast of `curtain up` to the end of the starting script.
+Then, back on your character sprite, add a broadcast of `curtain up`{:class="blockevents"} to the end of the starting script.
 
 ```blocks
 when flag clicked
@@ -107,5 +107,11 @@ glide (1) secs to x: (0) y: (0)
 
 --- task ---
 	The very last part is to let the player know if they've won. On the character sprite, if the sprite is clicked, it should say `You've found me`{:class="blocklooks"}, all the scripts in the game should be stopped.
+	
+```blocks
+when this sprite clicked
+say [You found me]
+stop [all v]
+```
 --- /task ---
 
