@@ -32,26 +32,30 @@ To do this, you'll need to follow the following **algorithm**:
 Now add code to make the sprite's costume randomly placed in the grid.
 
 --- hints --- --- hint ---
-- Here's how you can pick a random number from within the list:
-```blocks
-pick random (1) to (length of [x_positions v])
-```
+Remove the `set index to 1`{:class="blockdata"} from before the loop. Then within the loop, `set index to `{:class="blockdata"} a `random`{:class="blockoperators"} number between 1 and the `length of x_positions`{:class="blockdata"}.
+Then `delete`{:class="blockdata"} the `index`{:class="blockdata"} from both the `x_positions`{:class="blockdata"} and `y_positions`{:class="blockdata"} lists.
 --- /hint --- --- hint ---
 
-- Here's how to pick a random item from the list:
-
+- Here's the additional blocks you need.
 ```blocks
 define stamp sprites (rows) (columns)
 set size to (40) %
 - set [index v] to [1]
 repeat (columns)
-+ set [index v] to (pick random (1) to (length of [x_positions v]))
 go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
 stamp
 next costume
-- change [index v] by (1)
-```
+end
 
+set [index v] to ()
+(pick random () to ()
+length of [x_positions v]
+delete () of [x_positions v]
+
+delete () of [y_positions v]
+(index)
+(index)
+```
 --- /hint --- --- hint ---
 
 - Here is your completed script showing how to delete the items from the list:
@@ -59,8 +63,9 @@ next costume
 ```blocks
 define stamp sprites (rows) (columns)
 set size to (40) %
+- set [index v] to [1]
 repeat (columns)
-set [index v] to (pick random (1) to (length of [x_positions v]))
++ set [index v] to (pick random (1) to (length of [x_positions v]))
 go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
 + delete (index) of [x_positions v]
 + delete (index) of [y_positions v]
