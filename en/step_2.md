@@ -1,7 +1,7 @@
 ## Import your costumes
 
 --- task ---
-Using the default cat sprite, start by adding some more costumes. You'll need to import at least forty different costumes into your sprite.
+Using the default cat sprite, start by adding some more costumes to the sprite. You'll need to import at least forty different costumes into your sprite.
 
 It's best to select costumes from the **People** section, but the choice is yours.
 
