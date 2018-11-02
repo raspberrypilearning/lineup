@@ -76,7 +76,7 @@ stamp sprite (1) (10) ::custom
 --- /task ---	
 
 --- task ---
-When you click the green flag, you should see something like this, depending on the costumes you have used:
+Click the green flag. You should see something like this, depending on the costumes you have used:
 
 ![stamped sprites](images/stamped_sprites.png)
 --- /task ---

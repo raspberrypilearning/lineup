@@ -36,9 +36,9 @@ delete [all v] of [x_positions v]
 Next you will need to create two new variables. Call these `x_pos`{:class="blockdata"} and `y_pos`{:class="blockdata"}.
 --- /task ---
 
-The idea to begin with is to add positions into the `x_positions`{:class="blockdata"} list. There will be ten positions in total, starting at `-200`{:class="blockdata"} and going up to `200`{:class="blockdata"}.
+The idea to begin with is to add numbers into the `x_positions`{:class="blockdata"} list. There will be ten numbers in total, starting at `-200`{:class="blockdata"} and going up to `200`{:class="blockdata"}.
 
-The `y_positions`{:class="blockdata"} list can just contain 10 values, all at `-150`{:class="blockdata"}, as we're only doing one row for now.
+The `y_positions`{:class="blockdata"} list can just contain 10 values, all at `-150`{:class="blockdata"}, as we're only creating one row for now.
 
 --- task ---
 Start by setting the `y_pos`{:class="blockdata"} and `x_pos`{:class="blockdata"} variables to `-150`{:class="blockdata"} and `-200`{:class="blockdata"}. This will be the location of the first image.
@@ -57,7 +57,7 @@ Next, add a `repeat`{:class="blockcontrol"} loop to add some coordinates to the 
 
 How many times should the loop repeat?
 
-In this case it is ten times. This is one time for each column in the grid. As you've set up the custom block to take `columns`{:class="blockmoreblocks"} as a parameter, you can use this value.
+In this case it is ten times. This is one time for each column in the grid. As you've set up the custom block to take `columns`{:class="blockmoreblocks"} as an input, you can use this value.
 
 ```blocks
 define generate positions (rows)(columns)
@@ -118,7 +118,7 @@ set [x_pos v] to [-200]
 repeat (columns)
 add (x_pos) to [x_positions v]
 add (y_pos) to [y_positions v]
-change [x_pos v] by (((400) / (columns)) - (1))
+change [x_pos v] by ((400) / ((columns) - (1)
 ```
 --- /hint --- --- /hints ---
 --- /task ---
