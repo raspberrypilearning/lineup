@@ -1,10 +1,18 @@
-## What you will need
+## Import your costumes
 
-### Hardware
+---task ---
+**Online:** Open a new Scratch project at [rpf.io/scratch-on](http://rpf.io/scratchon){:target="_blank"}.
 
-- An internet-connected computer
+**Offline:** Open the new project in the [offline editor](http://rpf.io/scratchoff){:target="_blank"}.
+--- /task ---
+--- task ---
+Using the default cat sprite, start by adding some more costumes to the sprite. You'll need to import at least forty different costumes into your sprite.
 
-### Software
+It's best to select costumes from the **People** section, but the choice is yours.
 
-- Scratch 2.0 (online or offline)
+[[[generic-scratch-add-costume]]]
 
+Once you have your costumes, you can delete the default cat costumes if you like.
+
+![costumes](images/costumes.png)
+--- /task ---

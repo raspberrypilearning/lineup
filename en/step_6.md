@@ -1,26 +1,79 @@
-## Stamping a row
-- So far you have ten values in the two lists. Let's stamp some costumes at the stage positions given in the list.
+## Changing the costumes
 
-- Create a new block and call it `stamp sprites`. It needs two parameters as well, both of which should be number inputs and named `row` and `columns` just like the last ones.
+--- task ---
+Change the costume each time and make it a more appropriate size when it is placed on the stage.
 
-	![new block](images/script_10.png)
+```blocks
+define stamp sprites (rows) (columns)
+set size to (40) %
+set [index v] to [1]
+repeat (columns)
+go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
+stamp
+next costume
+change [index v] by (1)
+```
+--- /task ---
 
-- Create a new variable called `index`. You can use this to track which position in the list you are reading. Set it to `1`.
+When you run the script, you should see something like this:
 
-	![index](images/script_11.png)
-
-- Now you're going to stamp a sprite for each set of coordinates in the list. This will require a loop that will repeat once for each column.
-
-	![repeat it](images/script_12.png)
+![changed_sprites](images/changed_sprites.png)
 	
-- Within the loop, move your sprite to the first position in the list, stamp it, then increase the `index` by 1.
+At the moment, your program cycles through all the costumes in order. This isn't a problem, so long as you place the sprite in a random location each time.
 
-	![stamp loop](images/script_13.png)
+To do this, you'll need to follow the following **algorithm**:
+  1. Repeat until the list is empty
+  1. Set `index`{:class="blockdata"} to a random number between `1` and the length of a list
+  2. Move the sprite as you did before
+  3. Delete the `index`{:class="blockdata"} position from the `y_positions`{:class="blockdata"} list
+  4. Delete the `index`{:class="blockdata"} position from the `x_positions`{:class="blockdata"} list
+  
+--- task ---
 
-- Next you need to call this block as well. You should also add a `clear` block to you starting script so that it clears the stage each time.
+Now add code to make the sprite's costume randomly placed in the grid.
 
-	![stamp it](images/script_14.png)
-	
-- When you click the green flag, you should see something like this:
+--- hints --- --- hint ---
+Remove the `set index to 1`{:class="blockdata"} from before the loop. Then within the loop, `set index to `{:class="blockdata"} a `random`{:class="blockoperators"} number between 1 and the `length of x_positions`{:class="blockdata"}.
+Then `delete`{:class="blockdata"} the `index`{:class="blockdata"} from both the `x_positions`{:class="blockdata"} and `y_positions`{:class="blockdata"} lists.
+--- /hint --- --- hint ---
 
-	![stamped sprites](images/stamped_sprites.png)
+Here's the additional blocks you need.
+```blocks
+define stamp sprites (rows) (columns)
+set size to (40) %
+- set [index v] to [1]
+repeat (columns)
+go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
+stamp
+next costume
+- change [index v] by (1)
+end
+
+set [index v] to ()
+(pick random () to ()
+length of [x_positions v]
+delete () of [x_positions v]
+
+delete () of [y_positions v]
+(index)
+(index)
+```
+--- /hint --- --- hint ---
+
+Here is your completed script showing how to delete the items from the list:
+
+```blocks
+define stamp sprites (rows) (columns)
+set size to (40) %
+- set [index v] to [1]
+repeat (columns)
++ set [index v] to (pick random (1) to (length of [x_positions v]))
+go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
++ delete (index) of [x_positions v]
++ delete (index) of [y_positions v]
+stamp
+next costume
+- change [index v] by (1)
+```
+--- /hint --- --- /hints ---
+--- /task ---

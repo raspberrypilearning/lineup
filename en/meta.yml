@@ -1,22 +1,12 @@
 title: Lineup
 hero_image: images/banner.png
 description: Create a game to find a character amongst a sea of other characters
-theme: navy
-duration: 2
 listed: true
-ingredient: false
 copyedit: true
-curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
-interests: games
-technologies: scratch
-site_areas: projects
-hardware: ''
-software: scratch
-version: 4
-last_tested: 2017-11-01
+version: 4.1.0
+last_tested: 2018-11-05
 steps: 
 - title: Introduction
-- title: What you will need
 - title: Import your costumes
 - title: Making a grid
 - title: Testing the script
@@ -26,3 +16,5 @@ steps:
 - title: Placing your sprite
 - title: Finishing the game
 - title: "Challenge: taking it further"
+  challenge: true
+- title: "What next?"
