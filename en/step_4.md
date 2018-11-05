@@ -10,7 +10,7 @@
 
 - To begin with you'll need to create a new block called `generate positions` for your sprite. The block will need to have two 'number input' parameters. Call the two parameters `rows` and `columns`. The values of these parameters will define how many rows and columns your grid will have.
 
-	![generate positions block](images/script_1.svg)
+	![generate positions block](images/script_1.png)
 
 [[[generic-scratch-make-block]]]
 
@@ -20,7 +20,7 @@
 
 - Underneath your `generate positions` block, add blocks to delete all the items from both lists.
 
-	![empty the lists](images/script_2.svg)
+	![empty the lists](images/script_2.png)
 
 - Next you will need to create two new variables. Call these `x_pos` and `y_pos`.
 
@@ -45,25 +45,25 @@
 
 - Start by setting the `y_pos` and `x_pos` variables to `-150` and `-200`. This will be the location of the first image.
 
-	![variables set](images/script_3.svg)
+	![variables set](images/script_3.png)
 	
 - Now you need a loop to add the first ten coordinates to the lists. So how many times should the loop repeat? In this case it is ten - one time for each column in the grid. As you've set up the block to take `columns` as a parameter, you can use this value.
 
-	![repeat loop](images/script_4.svg)
+	![repeat loop](images/script_4.png)
 	
 - Within the loop, you'll need to add the values of `x_pos` and `y_pos` into the lists. Then you'll need to increase the value of `x_pos` by a little. The first value you added is `-200` and the next is approximately `-155`, up until you reach `200`. So how can you calculate these increments? Well, as you want a total of ten values in the list, and the first is already set to `200`, you need an additional nine values. This is the value of `columns` minus one, so `columns - 1`. You want to go up to `200`, so you'll need to add an additional `400` to `x_pos`. This means you want to add `400 / (columns - 1)` each time the loop comes around.
 
 - Here's some code to get you started, and you can use the hints below if you need more help.
 
-	![scaffold code](images/script_5.svg)
+	![scaffold code](images/script_5.png)
 	
 --- hints --- --- hint ---
 - Start by adding the variable values into the lists.
-    ![add vars](images/script_6.svg)
+    ![add vars](images/script_6.png)
 --- /hint --- --- hint ---
 - Now use the `columns` parameter to calculate the number of repeats.
-	![add columns](images/script_7.svg)
+	![add columns](images/script_7.png)
 --- /hint --- --- hint ---
 - Lastly you can add in `400` to the calculation, so it calculates the increase in `x_pos` each time.
-	![calc distance](images/script_8.svg)
+	![calc distance](images/script_8.png)
 --- /hint --- --- /hints ---

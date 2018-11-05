@@ -2,7 +2,7 @@
 
 - To test the script you'll need to **call** the block you have made. You also need to provide it with the number of `columns` you want in your grid.
 
-	![test it](images/script_9.svg)
+	![test it](images/script_9.png)
 	
 - Now click on the green flag to run your code. You should see your two lists fill with values.
 

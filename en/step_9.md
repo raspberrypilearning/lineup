@@ -6,13 +6,13 @@
 
 - So this doesn't happen, you can just make your stamp loop run one time less: `(rows * columns) - 1`
 
-	![stop overlap](images/script_24.svg)
+	![stop overlap](images/script_24.png)
 	
 - If you run the script now, then your sprite still overlaps with a stamp, but there should be a hole in your grid of stamps. If you look have your `x_positions` and `y_positions` list, then you'll also see that there is one coordinate position left.
 
 - To finish off this part the game, you'll need to continue the **green flag** section of the scripts.
 
-	![green flag](images/script_25.svg)
+	![green flag](images/script_25.png)
 	
 - Here's what it needs to do:
   1. Send your sprite to `x:0 y:0`
@@ -29,8 +29,8 @@
 
 --- hints --- --- hint ---
 - The first part is fairly simple:
-  ![first section](images/script_26.svg)
+  ![first section](images/script_26.png)
 --- /hint --- --- hint ---
 - To move your sprite to the correct location, you can use this code:
-  ![second part](images/script_27.svg)
+  ![second part](images/script_27.png)
 --- /hint --- --- /hints ---

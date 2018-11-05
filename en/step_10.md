@@ -8,11 +8,11 @@
 
 - To begin with, position the curtain sprite at `x:0 y:0` and then change its size so that it fills the screen. You also want to make sure it is visible.
 
-	![curtain](images/script_28.svg)
+	![curtain](images/script_28.png)
 	
 - Then, back on your character sprite, add a broadcast of `curtain up` to the end of the starting script.
 
-	![broadcast](images/script_29.svg)
+	![broadcast](images/script_29.png)
 
 - On the curtain sprite, you need a script that will do the following:
   1. Bring the curtain to the front
@@ -31,13 +31,13 @@
 
 --- hints --- --- hint ---
 - Here's how you would start your script:
-  ![start](images/script_30.svg)
+  ![start](images/script_30.png)
 --- /hint --- --- hint ---
 - Here's a simple script to create a delay of ten seconds. If the variable can be seen, it will let the player know how much time they have.
-  ![timer](images/script_31.svg)
+  ![timer](images/script_31.png)
 --- /hint --- --- hint ---
 - Here's the full script:
-  ![complete](images/script_32.svg)
+  ![complete](images/script_32.png)
 --- /hint --- --- /hints ---
 
 - The very last part is to let the player know if they've won. On the character sprite, if the sprite is clicked, it should say `You've found me`, all the scripts in the game should be stopped.

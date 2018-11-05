@@ -2,7 +2,7 @@
 
 - Let's change the stamp each time and make it a more appropriate size.
 
-	![change stamp](images/script_15.svg)
+	![change stamp](images/script_15.png)
 	
 - When you run the script, you should see something like this:
 
@@ -20,11 +20,11 @@
 
 --- hints --- --- hint ---
 - Here's how you can pick a random number from within the list:
-  ![random](images/script_16.svg)
+  ![random](images/script_16.png)
 --- /hint --- --- hint ---
 - Here's how to pick a random item from the list:
-  ![random item](images/script_17.svg)
+  ![random item](images/script_17.png)
 --- /hint --- --- hint ---
 - Here is your completed script showing how to delete the items from the list:
-  ![completed](images/script_18.svg)
+  ![completed](images/script_18.png)
 --- /hint --- --- /hints ---
