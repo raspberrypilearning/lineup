@@ -46,6 +46,7 @@ repeat (columns)
 go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
 stamp
 next costume
+- change [index v] by (1)
 end
 
 set [index v] to ()
@@ -72,6 +73,7 @@ go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
 + delete (index) of [y_positions v]
 stamp
 next costume
+- change [index v] by (1)
 ```
 --- /hint --- --- /hints ---
 --- /task ---
