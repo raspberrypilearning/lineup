@@ -1,7 +1,7 @@
 ## Testing the script
 
 --- task ---
-To test the script you'll need to **call** the block you have made. You also need to provide it with the number of `columns`{:class="blockmoreblocks"} you want in your grid.
+To test the script you'll need to **call** the block you have made. You also need to provide it with the number of `columns`{:class="blockmoreblocks"} you want in your grid. Add this code to your sprite.
 
 ```blocks
 when flag clicked
