@@ -71,7 +71,11 @@ repeat (columns)
 	
 Within the loop, you'll need to add the values of `x_pos`{:class="blockdata"} and `y_pos`{:class="blockdata"} into the lists. Then you'll need to increase the value of `x_pos`{:class="blockdata"} by a little.
 
-So how much should `x_pos`{:class="blockdata"} be increased by each time? As you know you want `x_pos`{:class="blockdata"} to reach `200`{:class="blockdata"}, that's a total increase of `400`{:class="blockdata"}. This needs to be done nine times, after the initial value has been added, which is `columns - 1`{:class="blockoperators"}
+So how much should `x_pos`{:class="blockdata"} be increased by each time?
+  - You want `x_pos`{:class="blockdata"} to reach `200`{:class="blockdata"}
+  - That's a total increase of `400`{:class="blockdata"}.
+  - This needs to be done nine times, after the initial value has been added
+  - This is `columns - 1`{:class="blockoperators"}
 
 So the increase of `x_pos`{:class="blockdata"}, each time around the loop should be `400 / (columns - 1)`{:class="blockoperators"}
 
