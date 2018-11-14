@@ -2,7 +2,7 @@
 
 Now it's time to position your sprite amongst the stamps. You'll notice at the moment that your sprite will overlap one of the stamps.
 
-![overlap](images/sprites.png)
+![overlap](images/overlap.png)
 
 --- task ---
 So this doesn't happen, you can just make your stamp loop run one time less: `(rows * columns) - 1`{:class="blockoperators"}
