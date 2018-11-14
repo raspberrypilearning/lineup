@@ -31,7 +31,10 @@ repeat (columns)
 --- /task ---	
 
 --- task ---
-Within the loop, move your sprite to the `index`{:class="blockdata"} position in `x_positions`{:class="blockdata"} and `y_positions`{:class="blockdata"}, stamp it, then increase the `index`{:class="blockdata"} by 1.
+Within the loop:
+ - move your sprite to the `index`{:class="blockdata"} position in `x_positions`{:class="blockdata"} and `y_positions`{:class="blockdata"}.
+ - `stamp`{:class="blockpen"} the sprite
+ - then change the `index`{:class="blockdata"} by `1`{:class="blockdata"}
 
 --- hints --- --- hint ---
 Within the loop you'll need to place a, `go to x: y:`{:class="blockmotion"} block. The `x`{:class="blockmotion"} position should be set to the `index`{:class="blockdata"} of `x_positions`{:class="blockdata"} and the `y`{:class="blockmotion"} position should be set to the `index`{:class="blockdata"} of `y_positions`{:class="blockdata"}. You can then `stamp`{:class="blockpen"} the sprite and increase `index`{:class="blockdata"} by 1.
