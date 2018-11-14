@@ -44,5 +44,5 @@ title: Additional notes for educators
 If you need to print this project, please use the [printer friendly version](https://projects.raspberrypi.org/en/projects/lineup/print).
 --- /no-print ---
 
-[Here is a link to the solution for this project](http://rpf.io/p/lineup-get){:target="_blank"}.
+[Here is a link to the solution for this project](http://rpf.io/p/en/lineup-get){:target="_blank"}.
 --- /collapse ---
