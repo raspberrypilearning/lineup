@@ -7,7 +7,7 @@ You are going to produce a grid of stamped costumes, just like this one:
 To do this you will need to know the `x`{:class="blockmotion"} and `y`{:class="blockmotion"} coordinates of where each stamp is going to be placed.
 
 --- task ---
-To begin with you'll need to create a new block called `generate positions`{:class="blockmoreblocks"} for your sprite. The block will need to have two 'number input' parameters. Call the two parameters `rows`{:class="blockmoreblocks"} and `columns`{:class="blockmoreblocks"}.
+To begin with you'll need to create a new block called `generate positions`{:class="blockmoreblocks"} on your sprite. The block will need to have two 'number input' parameters. Call the two parameters `rows`{:class="blockmoreblocks"} and `columns`{:class="blockmoreblocks"}.
 
 The values of these parameters will set how many rows and columns your grid of stamps will have.
 
