@@ -1,6 +1,6 @@
 ## Introduction
 
-In this project you will be making a Scratch game in which you need to find a stamped sprite clone that is hidden among a huge group of other stamps.
+In this project you will make a Scratch game in which you need to find a stamped sprite clone that is hidden among a huge group of other stamps.
 
 ### What you will make
 
