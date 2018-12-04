@@ -23,7 +23,7 @@ Create two lists, and call one of them `x_positions`{:class="blockdata"} and the
 --- /task ---
 
 --- task ---
-Inside your `generate positions`{:class="blockmoreblocks"} block, add blocks to delete all the items from both lists, so that each time the game is played, the lists are empty and new.
+Inside your `generate positions`{:class="blockmoreblocks"} block, add blocks to delete all the items from both lists, so that each time the game starts, the lists are empty.
 
 ```blocks
 define generate positions (rows)(columns)
