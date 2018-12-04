@@ -1,9 +1,9 @@
-## Stamping a row
+## Stamp a row
 
-So far you have ten values in the two lists. Let's stamp some costumes at the stage positions given in the list.
+So far you have ten values in each of the two lists. Now stamp some costumes at the Stage coordinates stored in the lists.
 
 --- task ---
-Create a new block and call it `stamp sprites`{:class="blockmoreblocks"}. It needs two parameters as well, both of which should be number inputs and named `row`{:class="blockmoreblocks"} and `columns`{:class="blockmoreblocks"} just like the last ones.
+Create a new block and call it `stamp sprites`{:class="blockmoreblocks"}. This block needs two number inputs named `row`{:class="blockmoreblocks"} and `columns`{:class="blockmoreblocks"} just like the other custom block.
 
 ```blocks
 define stamp sprites (rows) (columns)
@@ -11,7 +11,7 @@ define stamp sprites (rows) (columns)
 --- /task ---
 
 --- task ---
-Create a new variable called `index`{:class="blockdata"}. You can use this to track which position in the lists you are reading. Set it to `1`{:class="blockdata"} to begin with, to fetch the first item of each lists.
+Create a new variable called `index`{:class="blockdata"} with which to track the position in the lists that your program is reading. To begin with, set `index`{:class="blockdata"} to `1`{:class="blockdata"} to fetch the first item of each list.
 
 ```blocks
 define stamp sprites (rows) (columns)
@@ -21,7 +21,7 @@ set [index v] to [1]
 
 --- task ---
 
-Now you're going to stamp a sprite for each set of coordinates in the list. This will require a loop that will repeat once for each column.
+The `stamp sprites`{:class="blockmoreblocks"} block should stamp a sprite for each pair of coordinates in the list. To do this, the block needs a `repeat`{:class="blockdata"} loop that runs once for each column.
 
 ```blocks
 define stamp sprites (rows) (columns)
@@ -31,15 +31,17 @@ repeat (columns)
 --- /task ---	
 
 --- task ---
-Within the loop:
- - move your sprite to the `index`{:class="blockdata"} position in `x_positions`{:class="blockdata"} and `y_positions`{:class="blockdata"}.
- - `stamp`{:class="blockpen"} the sprite
- - then change the `index`{:class="blockdata"} by `1`{:class="blockdata"}
+Within the `repeat`{:class="blockdata"} loop:
+ - Move the sprite to the `index`{:class="blockdata"} position in the `x_positions`{:class="blockdata"} and `y_positions`{:class="blockdata"} lists
+ - `Stamp`{:class="blockpen"} the sprite
+ - Change the `index`{:class="blockdata"} by `1`{:class="blockdata"}
 
 --- hints --- --- hint ---
-Within the loop you'll need to place a, `go to x: y:`{:class="blockmotion"} block. The `x`{:class="blockmotion"} position should be set to the `index`{:class="blockdata"} of `x_positions`{:class="blockdata"} and the `y`{:class="blockmotion"} position should be set to the `index`{:class="blockdata"} of `y_positions`{:class="blockdata"}. You can then `stamp`{:class="blockpen"} the sprite and increase `index`{:class="blockdata"} by 1.
+
+Within the `repeat`{:class="blockdata"} loop, add a `go to x: y:`{:class="blockmotion"} block. The `x`{:class="blockmotion"} position in this block should be set to the `index`{:class="blockdata"} of `x_positions`{:class="blockdata"} and the `y`{:class="blockmotion"} position should be set to the `index`{:class="blockdata"} of `y_positions`{:class="blockdata"}. Then add code to `stamp`{:class="blockpen"} the sprite. Finally, add code to increase `index`{:class="blockdata"} by 1.
+
 --- /hint --- --- hint ---
-Here's the blocks you will need
+Here are the blocks you need:
 ```blocks
 define stamp sprites (rows) (columns)
 set [index v] to [1]
@@ -55,7 +57,7 @@ go to x: () y: ()
 stamp
 ```
 --- /hint --- --- hint ---
-Here's the completed script
+Here is the completed script for the `stamp sprites`{:class="blockmoreblocks"} block:
 ```blocks
 define stamp sprites (rows) (columns)
 set [index v] to [1]
@@ -68,7 +70,7 @@ change [index v] by (1)
 --- /task ---
 
 --- task ---
-Next you need to call this block as well. You should also add a `clear`{:class="blockpen"} block to your starting script so that it clears the stage each time.
+Add a `clear`{:class="blockpen"} block below the `when flag clicked`{:class="blockcontrol"} block to clear the Stage each time the game starts. Then add the `stamp sprites`{:class="blockmoreblocks"} block at the bottom of the `when flag clicked`{:class="blockcontrol"} script so you can test your new code.
 
 ```blocks
 when flag clicked
@@ -79,7 +81,7 @@ stamp sprite (1) (10) ::custom
 --- /task ---	
 
 --- task ---
-Click the green flag. You should see something like this, depending on the costumes you have used:
+Click the green flag. You should see something like this, depending on the costumes your sprite has:
 
 ![stamped sprites](images/stamped_sprites.png)
 --- /task ---
