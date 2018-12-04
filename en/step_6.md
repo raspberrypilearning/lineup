@@ -1,4 +1,4 @@
-## Changing the costumes
+## Change the costumes
 
 At the moment, your program stamps the same sprite costume over and over, and the size of the costume is too large.
 
