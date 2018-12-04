@@ -1,17 +1,17 @@
 ## Introduction
 
-In this project you will make a Scratch game in which you need to find a stamped sprite clone that is hidden among a huge group of other stamps.
+In this project you will make a Scratch game in which you need to find a sprite that is hidden among a huge crowd of other characters.
 
 ### What you will make
 
 --- no-print ---
-Hit the green flag and, once the curtain is up, try and find the sprite clone before your time runs out.
+Click on the green flag and, once the curtain is up, try and find the sprite before your time runs out.
 
 <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/259020474/?autostart=false" frameborder="0" allowfullscreen></iframe>
 --- /no-print ---
 
 --- print-only ---
-You'll have to find the clone amongst all these characters before your time runs out.
+You have to find the right sprite amongst all these characters before your time runs out.
 
 ![showcase](images/showcase.png)
 --- /print-only ---
