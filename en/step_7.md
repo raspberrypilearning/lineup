@@ -1,8 +1,8 @@
-## Adding rows
+## Add rows
 
-Now that you've written the code to generate a single row, you need to add in more rows.
+Now that you have the code to create a single row of stamped costumes, you should add code to create more rows.
 
-Go back to your `generate positions`{:class="blockmoreblocks"} block.
+Go to your `generate positions`{:class="blockmoreblocks"} block.
 
 ```blocks
 define generate positions (rows)(columns)
@@ -16,7 +16,7 @@ add (y_pos) to [y_positions v]
 change [x_pos v] by (((400) / (columns)) - (1))
 ```
 --- task ---
-Now you need another loop that will repeat the same number of times as the number of rows of stamped costumes you need. Place it into your script as shown below.
+Add another `repeat`{:class="blockcontrol"} loop that runs the number of times you give to the `generate positions`{:class="blockmoreblocks"} block as the `rows`{:class="blockmoreblocks"} input. Place the `repeat`{:class="blockcontrol"} loop into your script as shown here:
 
 ```blocks
 define generate positions (rows)(columns)
@@ -34,8 +34,12 @@ end
 ```
 --- /task ---
 
+Next you need to increase the value of `y_pos`{:class="blockdata"} each time the `repeat (rows)`{:class="blockcontrol"} loop runs.
+
+You do this in a similar manner to how you increase the value of `x_pos`{:class="blockdata"} in the `repeat (columns)`{:class="blockcontrol"} loop.
+
 --- task ---
-Next you need to increase the value of `y_pos`{:class="blockdata"}. This will increase up to a maximum of `150`{:class="blockdata"}, which is `300`{:class="blockdata"} away from its starting value of `-150`{:class="blockdata"}. This needs to happen for each row your create.
+At the end of the code inside the `repeat (rows)`{:class="blockcontrol"} loop, `y_pos`{:class="blockdata"} should increase up to `150`{:class="blockdata"}, which is `300`{:class="blockdata"} away from its starting value of `-150`{:class="blockdata"}. This needs to happen for each row of stamps.
 
 ```blocks
 define generate positions (rows)(columns)
@@ -55,7 +59,7 @@ end
 --- /task ---
 
 --- task ---
-Then you need to make sure you're passing the number of `rows`{:class="blockmoreblocks"} as a parameter to your blocks.
+Make sure you give the number of `rows`{:class="blockmoreblocks"} as an input to your blocks.
 
 ```blocks
 when flag clicked
@@ -72,21 +76,22 @@ Run your code now.
 	
 You won't get a neat grid of stamps.
 
-This is because your `stamp sprite`{:class="blockmoreblocks"} block is only repeating for the total number of columns.
+This is because, right now, the `stamp sprite`{:class="blockmoreblocks"} block only runs for the total number of columns.
 --- /task ---
 
 --- task ---
-Alter your `stamp sprites`{:class="blockmoreblocks"} script. It needs to repeat enough times to stamp all the sprites.
+
+Change your `stamp sprites`{:class="blockmoreblocks"} script so that it `repeats`{:class="blockcontrol"} enough times to stamp the complete grid of sprites.
 
 --- hints --- --- hint ---
-The total number of stamps you need will be the `columns`{:class="blockmoreblocks"} multiplied by the `rows`{:class="blockmoreblocks"}
+The total number of stamps you need is the number you give as `columns`{:class="blockmoreblocks"} multiplied by the number you give as `rows`{:class="blockmoreblocks"}
 --- /hint --- --- hint ---
-Try using this additional block
+Use this additional block:
 ```blocks
 ((rows ::custom) * (columns ::custom))
 ```
 --- /hint --- --- hint ---
-Here's the completed script:
+Here's the completed `stamp sprites`{:class="blockmoreblocks"} script:
 ```blocks
 define stamp sprites (rows) (columns)
 set size to (40) %
