@@ -1,5 +1,5 @@
 ## What next?
 
-- Why not have a go at [Flappy Parrot](https://projects.raspberrypi.org/en/projects/flappy-parrot) and make another game
+- Try the [Flappy parrot](https://projects.raspberrypi.org/en/projects/flappy-parrot) project, in which you create another game.
 
-- You could try out some games using the SenseHAT emulator, like [Tightrope](https://projects.raspberrypi.org/en/projects/tightrope)
+- If you want, you can also use a project in which you make a game with the Sense HAT emulator, for example [Tightrope](https://projects.raspberrypi.org/en/projects/tightrope).
