@@ -41,7 +41,7 @@ The `x_positions`{:class="blockdata"} list should contain ten numbers in total, 
 For now, the `y_positions`{:class="blockdata"} list can just contain the number `-150`{:class="blockdata"} ten times, so that the grid only has one row.
 
 --- task ---
-Start by adding code to the `generate positions`{:class="blockmoreblocks"} block to set the `y_pos`{:class="blockdata"} variable to `-150`{:class="blockdata"} and the `x_pos`{:class="blockdata"} varibale to `-200`{:class="blockdata"}. This is the location of the first stamped sprite clone.
+Start by adding code to the `generate positions`{:class="blockmoreblocks"} block to set the `y_pos`{:class="blockdata"} variable to `-150`{:class="blockdata"} and the `x_pos`{:class="blockdata"} variable to `-200`{:class="blockdata"}. This is the location of the first stamped sprite.
 
 ```blocks
 define generate positions (rows)(columns)
@@ -69,9 +69,7 @@ repeat (columns)
 ```
 --- /task ---
 	
-Within the `repeat`{:class="blockcontrol"} loop, add the values of `x_pos`{:class="blockdata"} and `y_pos`{:class="blockdata"} into the lists.
-
-Then increase the value of `x_pos`{:class="blockdata"} by a little. How much should the value of `x_pos`{:class="blockdata"} increase by?
+Within the `repeat`{:class="blockcontrol"} loop, add the values of `x_pos`{:class="blockdata"} and `y_pos`{:class="blockdata"} into the lists. Then you need to increase the value of `x_pos`{:class="blockdata"} by a little. How much should the value of `x_pos`{:class="blockdata"} increase by?
 
 This is how to figure it out:
   - `x_pos`{:class="blockdata"} starts out with the value `-200`{:class="blockdata"}
