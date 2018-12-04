@@ -1,15 +1,15 @@
-## Finishing the game
+## Finish the game
 
 --- task ---
-To finish off, you'll need to find and download an image of [a curtain or a screen](https://www.google.co.uk/search?q=stage+curtain&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjKg9O1k8_VAhXSL1AKHe1HDMIQ_AUICigB&biw=1362&bih=584){:target="_blank"}.
+To finish the game, [find and download an image of a stage curtain](https://www.google.co.uk/search?q=stage+curtain&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjKg9O1k8_VAhXSL1AKHe1HDMIQ_AUICigB&biw=1362&bih=584){:target="_blank"}.
 
-This image needs to be imported as a second sprite.
+Import this image as a sprite.
 
 [[[generic-scratch-add-sprite-from-file]]]
 --- /task ---
 
 --- task ---
-To begin with, position the curtain sprite at `x:0 y:0`{:class="blockmotion"} and then change its size so that it fills the screen. You also want to make sure it is visible.
+Position the new curtain sprite at `x:0 y:0`{:class="blockmotion"}, and then change its size so that it fills the screen. Make sure it is visible.
 
 ```blocks
 when flag clicked
@@ -20,7 +20,7 @@ show
 --- /task ---
 
 --- task ---
-Then, back on your character sprite, add a broadcast of `curtain up`{:class="blockevents"} to the end of the starting script.
+Then, in the scripts for your character sprite, add a `broadcast`{:class="blockevents"} with the message 'curtain up' to the end of the `when flag clicked`{:class="blockevents"} script.
 
 ```blocks
 when flag clicked
@@ -40,28 +40,28 @@ go to x: (item (1 v) of [x_positions v]) y: (item (1 v) of [y_positions v])
 
 --- task ---
 
-When the `broadcast`{:class="blockevents"} is received by the curtain, it needs to be raised for 10 seconds, to reveal the stamps and then dropped again afterwards,
+When the curtain sprite receives the `broadcast`{:class="blockevents"}, the sprite needs to move upwards for 10 seconds so that it looks like the curtain is raised to reveal the stamps. Then the curtain should drop again, so the curtain sprite needs to move downwards.
 
 --- no-print ---
-Here's what it should look like:
+It should look like this:
 
 ![demo 2](images/demo_2.gif)
 --- /no-print ---
 
-Have a go at doing this yourself, and use the hints if you need help.
+Try to do this by yourself, and use the hints if you need help.
 
 --- hints --- --- hint ---
-On the curtain sprite, you need a script that will do the following:
-  1. When the curtain receives the `broadcast`{:class="blockevents"}
-  1. Bring the curtain to the `front`{:class="blocklooks"}
-  1. `Wait`{:class="blockcontrol"} a little bit while the sprites all get drawn
-  1. `Glide`{:class="blockmotion"} the curtain upwards so it's near the top of the screen
+For the curtain sprite, you need a script that does the following things:
+  1. When the curtain sprite receives the `broadcast`{:class="blockevents"}
+  1. Bring the curtain sprite to the `front`{:class="blocklooks"}
+  1. `Wait`{:class="blockcontrol"} a little bit while the character sprite costumes get stamped
+  1. `Glide`{:class="blockmotion"} the curtain sprite upwards so it ends up near the top of the Stage
   1. `Hide`{:class="blocklooks"} the curtain
-  1. Start a loop that counts for 10 seconds
-  1. When the time is over, `show`{:class="blocklooks"} the curtain
-  1. `Glide`{:class="blockmotion"} the curtain back to its original position
+  1. Start a loop that counts down for 10 seconds
+  1. When the time is over, `show`{:class="blocklooks"} the curtain sprite
+  1. `Glide`{:class="blockmotion"} the curtain sprite back to its original position
 --- /hint --- --- hint ---
-Here are the blocks you will need:
+Here are the blocks you need:
 ```blocks
 go to front
 
@@ -86,7 +86,7 @@ end
 when I receive [curtain up v]
 ```
 --- /hint --- --- hint ---
- Here's the full script:
+ This is the completed script:
  ```blocks
 when I receive [curtain up v]
 go to front
@@ -104,9 +104,10 @@ glide (1) secs to x: (0) y: (0)
 --- /hint --- --- /hints ---
 --- /task ---
 
+The very last part is to let the player know if they've won.
 
 --- task ---
-	The very last part is to let the player know if they've won. On the character sprite, if the sprite is clicked, it should say `You've found me`{:class="blocklooks"}, all the scripts in the game should be stopped.
+In the scripts for the the character sprite, add code so that, when the sprite is clicked, it says `You've found me`{:class="blocklooks"}, and all the scripts in the game stop.
 	
 ```blocks
 when this sprite clicked
