@@ -107,7 +107,7 @@ glide (1) secs to x: (0) y: (0)
 The very last part is to let the player know if they've won.
 
 --- task ---
-In the scripts for the the character sprite, add code so that, when the sprite is clicked, it says `You've found me`{:class="blocklooks"}, and all the scripts in the game stop.
+In the scripts for the the character sprite, add code so that, when the sprite is clicked, the sprite says `You've found me`{:class="blocklooks"}, and all the scripts in the game stop.
 	
 ```blocks
 when this sprite clicked
