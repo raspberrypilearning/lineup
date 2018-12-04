@@ -1,7 +1,9 @@
-## Testing the script
+## Test the script
 
 --- task ---
-To test the script you'll need to **call** the block you have made. You also need to provide it with the number of `columns`{:class="blockmoreblocks"} you want in your grid. Add this code to your sprite.
+To test the script, you need to **call** the custom block and provide it with the number of `columns`{:class="blockmoreblocks"} you want in your grid.
+
+Add this code to your sprite:
 
 ```blocks
 when flag clicked
@@ -14,5 +16,5 @@ Now click on the green flag to run your code. You should see your two lists fill
 
 ![lists](images/filled_lists.png)
 	
-If your results don't look like this, then go back to the previous step and have a look at the hints again.
+If your results don't look like this, then go back to the previous step, have a look at the hints, and try to fix your script.
 --- /task ---
