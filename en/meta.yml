@@ -1,20 +1,20 @@
-title: Lineup
+title: Line-up
 hero_image: images/banner.png
-description: Create a game to find a character amongst a sea of other characters
+description: Create a game where you look for a character hidden in a crowd of other characters
 listed: true
 copyedit: true
 version: 4.1.0
 last_tested: 2018-11-05
 steps: 
 - title: Introduction
-- title: Import your costumes
-- title: Making a grid
-- title: Testing the script
-- title: Stamping a row
-- title: Changing the costumes
-- title: Adding rows
-- title: Placing your sprite
-- title: Finishing the game
-- title: "Challenge: taking it further"
+- title: Add costumes
+- title: Create a grid
+- title: Test the script
+- title: Stamp a row
+- title: Change the costumes
+- title: Add rows
+- title: Hide your sprite
+- title: Finish the game
+- title: "Challenge: improve your game"
   challenge: true
 - title: "What next?"
