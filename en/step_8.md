@@ -1,6 +1,6 @@
-## Place your sprite
+## Hide your sprite
 
-Now it's time to position your sprite amongst the stamps. At the moment the sprite overlaps one of the stamps.
+Now it's time to hide your sprite among the crowd of stamps. At the moment the sprite overlaps one of the stamps.
 
 ![overlap](images/overplap.png)
 
