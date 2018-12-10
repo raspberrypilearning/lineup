@@ -11,7 +11,7 @@ Add some more costumes to the cat sprite. You need to add at least forty differe
 
 It's best to select costumes from the **People** section, but if you want to, you can choose costumes from other sections as well.
 
-[[[generic-scratch-add-costume]]]
+[[[generic-scratch3-add-costume]]]
 
 Once you have your costumes, you can delete the default cat costumes if you want to.
 

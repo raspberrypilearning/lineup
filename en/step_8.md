@@ -5,9 +5,9 @@ Now it's time to hide your sprite among the crowd of stamps. At the moment the s
 ![overlap](images/overplap.png)
 
 --- task ---
-So this doesn't happen, make your stamp loop run one time less: `(rows * columns) - 1`{:class="blockoperators"}
+So this doesn't happen, make your stamp loop run one time less: `(rows * columns) - 1`{:class="block3operators"}
 
-```blocks
+```blocks3
 define stamp sprites (rows) (columns)
 set size to (40) %
 +repeat (((rows) * (columns)) - (1))
@@ -20,12 +20,12 @@ next costume
 ```
 --- /task ---
 
-If you run the script now, you can see that your sprite still overlaps with a stamp and there is a hole in your grid. And in the `x_positions`{:class="blockdata"} and `y_positions`{:class="blockdata"} lists, there is one coordinate position left.
+If you run the script now, you can see that your sprite still overlaps with a stamp and there is a hole in your grid. And in the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists, there is one coordinate position left.
 
 --- task ---
-To finish this part your game, go to the `when flag clicked`{:class="blockevents"} section of the scripts.
+To finish this part your game, go to the `when flag clicked`{:class="block3events"} section of the scripts.
 
-```blocks
+```blocks3
 when flag clicked
 clear
 generate positions (4) (10) ::custom
@@ -42,15 +42,15 @@ See if you can figure out how to do this, and use the hints below if you need he
 
 --- hints --- --- hint ---
 This is what it needs to do:
-  1. Send your sprite to `x:0 y:0`{:class="blockmotion"}
-  2. Bring the sprite to the `front`{:class="blocklooks"} and set its `size to 100%`{:class="blocklooks"}
-  3. `Say 'Find me' for two seconds`{:class="blocklooks"}
-  4. `Go back one layer`{:class="blocklooks"}
-  5. Set the sprite's `size to 40%`{:class="blocklooks"}
+  1. Send your sprite to `x:0 y:0`{:class="block3motion"}
+  2. Bring the sprite to the `front`{:class="block3looks"} and set its `size to 100%`{:class="block3looks"}
+  3. `Say 'Find me' for two seconds`{:class="block3looks"}
+  4. `Go back one layer`{:class="block3looks"}
+  5. Set the sprite's `size to 40%`{:class="block3looks"}
   6. Move to the last remaining position in the lists
 --- /hint --- --- hint ---
 These are the additional blocks you need:
-```blocks
+```blocks3
 when flag clicked
 clear
 generate positions (4) (10) ::custom
@@ -72,9 +72,9 @@ item (1 v) of [y_positions v]
 go to x: () y: ()
 ```
 --- /hint --- --- hint ---
-Here is the completed `when flag clicked`{:class="blockevents"} script:
+Here is the completed `when flag clicked`{:class="block3events"} script:
 
-```blocks
+```blocks3
 when flag clicked
 clear
 generate positions (4) (10) ::custom

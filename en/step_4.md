@@ -1,11 +1,11 @@
 ## Test the script
 
 --- task ---
-To test the script, you need to **call** the custom block and provide it with the number of `columns`{:class="blockmoreblocks"} you want in your grid.
+To test the script, you need to **call** the custom block and provide it with the number of `columns`{:class="block3myblocks"} you want in your grid.
 
 Add this code to your sprite:
 
-```blocks
+```blocks3
 when flag clicked
 generate positions (1) (10) ::custom
 ```

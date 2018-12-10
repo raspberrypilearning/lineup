@@ -5,13 +5,13 @@ To finish the game, [find and download an image of a stage curtain](https://www.
 
 Import this image as a sprite.
 
-[[[generic-scratch-add-sprite-from-file]]]
+[[[generic-scratch3-add-sprite-from-file]]]
 --- /task ---
 
 --- task ---
-Position the new curtain sprite at `x:0 y:0`{:class="blockmotion"}, and then change its size so that it fills the screen. Make sure it is visible.
+Position the new curtain sprite at `x:0 y:0`{:class="block3motion"}, and then change its size so that it fills the screen. Make sure it is visible.
 
-```blocks
+```blocks3
 when flag clicked
 go to x: (0) y: (0)
 set size to (110) %
@@ -20,9 +20,9 @@ show
 --- /task ---
 
 --- task ---
-Then, in the scripts for your character sprite, add a `broadcast`{:class="blockevents"} with the message 'curtain up' to the end of the `when flag clicked`{:class="blockevents"} script.
+Then, in the scripts for your character sprite, add a `broadcast`{:class="block3events"} with the message 'curtain up' to the end of the `when flag clicked`{:class="block3events"} script.
 
-```blocks
+```blocks3
 when flag clicked
 clear
 generate positions (4) (10) ::custom
@@ -40,7 +40,7 @@ go to x: (item (1 v) of [x_positions v]) y: (item (1 v) of [y_positions v])
 
 --- task ---
 
-When the curtain sprite receives the `broadcast`{:class="blockevents"}, the sprite needs to move upwards for 10 seconds so that it looks like the curtain is raised to reveal the stamps. Then the curtain should drop again, so the curtain sprite needs to move downwards.
+When the curtain sprite receives the `broadcast`{:class="block3events"}, the sprite needs to move upwards for 10 seconds so that it looks like the curtain is raised to reveal the stamps. Then the curtain should drop again, so the curtain sprite needs to move downwards.
 
 --- no-print ---
 It should look like this:
@@ -52,17 +52,17 @@ Try to do this by yourself, and use the hints if you need help.
 
 --- hints --- --- hint ---
 For the curtain sprite, you need a script that does the following things:
-  1. When the curtain sprite receives the `broadcast`{:class="blockevents"}
-  1. Bring the curtain sprite to the `front`{:class="blocklooks"}
-  1. `Wait`{:class="blockcontrol"} a little bit while the character sprite costumes get stamped
-  1. `Glide`{:class="blockmotion"} the curtain sprite upwards so it ends up near the top of the Stage
-  1. `Hide`{:class="blocklooks"} the curtain
+  1. When the curtain sprite receives the `broadcast`{:class="block3events"}
+  1. Bring the curtain sprite to the `front`{:class="block3looks"}
+  1. `Wait`{:class="block3control"} a little bit while the character sprite costumes get stamped
+  1. `Glide`{:class="block3motion"} the curtain sprite upwards so it ends up near the top of the Stage
+  1. `Hide`{:class="block3looks"} the curtain
   1. Start a loop that counts down for 10 seconds
-  1. When the time is over, `show`{:class="blocklooks"} the curtain sprite
-  1. `Glide`{:class="blockmotion"} the curtain sprite back to its original position
+  1. When the time is over, `show`{:class="block3looks"} the curtain sprite
+  1. `Glide`{:class="block3motion"} the curtain sprite back to its original position
 --- /hint --- --- hint ---
 Here are the blocks you need:
-```blocks
+```blocks3
 go to front
 
 show
@@ -87,7 +87,7 @@ when I receive [curtain up v]
 ```
 --- /hint --- --- hint ---
  This is the completed script:
- ```blocks
+ ```blocks3
 when I receive [curtain up v]
 go to front
 wait (1) secs
@@ -107,9 +107,9 @@ glide (1) secs to x: (0) y: (0)
 The very last part is to let the player know if they've won.
 
 --- task ---
-In the scripts for the the character sprite, add code so that, when the sprite is clicked, the sprite says `You've found me`{:class="blocklooks"}, and all the scripts in the game stop.
+In the scripts for the the character sprite, add code so that, when the sprite is clicked, the sprite says `You've found me`{:class="block3looks"}, and all the scripts in the game stop.
 	
-```blocks
+```blocks3
 when this sprite clicked
 say [You found me]
 stop [all v]

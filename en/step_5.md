@@ -3,17 +3,17 @@
 So far you have ten values in each of the two lists. Now stamp some costumes at the Stage coordinates stored in the lists.
 
 --- task ---
-Create a new block and call it `stamp sprites`{:class="blockmoreblocks"}. This block needs two number inputs named `row`{:class="blockmoreblocks"} and `columns`{:class="blockmoreblocks"} just like the other custom block.
+Create a new block and call it `stamp sprites`{:class="block3myblocks"}. This block needs two number inputs named `row`{:class="block3myblocks"} and `columns`{:class="block3myblocks"} just like the other custom block.
 
-```blocks
+```blocks3
 define stamp sprites (rows) (columns)
 ```
 --- /task ---
 
 --- task ---
-Create a new variable called `index`{:class="blockdata"} with which to track the position in the lists that your program is reading. To begin with, set `index`{:class="blockdata"} to `1`{:class="blockdata"} to fetch the first item of each list.
+Create a new variable called `index`{:class="block3variables"} with which to track the position in the lists that your program is reading. To begin with, set `index`{:class="block3variables"} to `1`{:class="block3variables"} to fetch the first item of each list.
 
-```blocks
+```blocks3
 define stamp sprites (rows) (columns)
 set [index v] to [1]
 ```
@@ -21,9 +21,9 @@ set [index v] to [1]
 
 --- task ---
 
-The `stamp sprites`{:class="blockmoreblocks"} block should stamp a sprite for each pair of coordinates in the list. To do this, the block needs a `repeat`{:class="blockdata"} loop that runs once for each column.
+The `stamp sprites`{:class="block3myblocks"} block should stamp a sprite for each pair of coordinates in the list. To do this, the block needs a `repeat`{:class="block3variables"} loop that runs once for each column.
 
-```blocks
+```blocks3
 define stamp sprites (rows) (columns)
 set [index v] to [1]
 repeat (columns)
@@ -31,18 +31,18 @@ repeat (columns)
 --- /task ---	
 
 --- task ---
-Within the `repeat`{:class="blockdata"} loop:
- - Move the sprite to the `index`{:class="blockdata"} position in the `x_positions`{:class="blockdata"} and `y_positions`{:class="blockdata"} lists
- - `Stamp`{:class="blockpen"} the sprite
- - Change the `index`{:class="blockdata"} by `1`{:class="blockdata"}
+Within the `repeat`{:class="block3variables"} loop:
+ - Move the sprite to the `index`{:class="block3variables"} position in the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists
+ - `Stamp`{:class="block3extensions"} the sprite
+ - Change the `index`{:class="block3variables"} by `1`{:class="block3variables"}
 
 --- hints --- --- hint ---
 
-Within the `repeat`{:class="blockdata"} loop, add a `go to x: y:`{:class="blockmotion"} block. The `x`{:class="blockmotion"} position in this block should be set to the `index`{:class="blockdata"} of `x_positions`{:class="blockdata"} and the `y`{:class="blockmotion"} position should be set to the `index`{:class="blockdata"} of `y_positions`{:class="blockdata"}. Then add code to `stamp`{:class="blockpen"} the sprite. Finally, add code to increase `index`{:class="blockdata"} by 1.
+Within the `repeat`{:class="block3variables"} loop, add a `go to x: y:`{:class="block3motion"} block. The `x`{:class="block3motion"} position in this block should be set to the `index`{:class="block3variables"} of `x_positions`{:class="block3variables"} and the `y`{:class="block3motion"} position should be set to the `index`{:class="block3variables"} of `y_positions`{:class="block3variables"}. Then add code to `stamp`{:class="block3extensions"} the sprite. Finally, add code to increase `index`{:class="block3variables"} by 1.
 
 --- /hint --- --- hint ---
 Here are the blocks you need:
-```blocks
+```blocks3
 define stamp sprites (rows) (columns)
 set [index v] to [1]
 repeat (columns)
@@ -57,8 +57,8 @@ go to x: () y: ()
 stamp
 ```
 --- /hint --- --- hint ---
-Here is the completed script for the `stamp sprites`{:class="blockmoreblocks"} block:
-```blocks
+Here is the completed script for the `stamp sprites`{:class="block3myblocks"} block:
+```blocks3
 define stamp sprites (rows) (columns)
 set [index v] to [1]
 repeat (columns)
@@ -70,9 +70,9 @@ change [index v] by (1)
 --- /task ---
 
 --- task ---
-Add a `clear`{:class="blockpen"} block below the `when flag clicked`{:class="blockcontrol"} block to clear the Stage each time the game starts. Then add the `stamp sprites`{:class="blockmoreblocks"} block at the bottom of the `when flag clicked`{:class="blockcontrol"} script so you can test your new code.
+Add a `clear`{:class="block3extensions"} block below the `when flag clicked`{:class="block3control"} block to clear the Stage each time the game starts. Then add the `stamp sprites`{:class="block3myblocks"} block at the bottom of the `when flag clicked`{:class="block3control"} script so you can test your new code.
 
-```blocks
+```blocks3
 when flag clicked
 clear
 generate positions (1) (10) ::custom
