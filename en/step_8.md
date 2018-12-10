@@ -2,7 +2,7 @@
 
 Now it's time to hide your sprite among the crowd of stamps. At the moment the sprite overlaps one of the stamps.
 
-![overlap](images/overplap.png)
+![overlap](images/overplap-annotated.png)
 
 --- task ---
 So this doesn't happen, make your stamp loop run one time less: `(rows * columns) - 1`{:class="block3operators"}
@@ -27,7 +27,7 @@ To finish this part your game, go to the `when flag clicked`{:class="block3event
 
 ```blocks3
 when flag clicked
-clear
+erase all
 generate positions (4) (10) ::custom
 stamp sprites (4) (10) ::custom
 ```
@@ -52,7 +52,7 @@ This is what it needs to do:
 These are the additional blocks you need:
 ```blocks3
 when flag clicked
-clear
+erase all
 generate positions (4) (10) ::custom
 stamp sprites (4) (10) ::custom
 
@@ -76,7 +76,7 @@ Here is the completed `when flag clicked`{:class="block3events"} script:
 
 ```blocks3
 when flag clicked
-clear
+erase all
 generate positions (4) (10) ::custom
 stamp sprites (4) (10) ::custom
 +go to x: (0) y: (0)

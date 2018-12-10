@@ -3,6 +3,16 @@
 So far you have ten values in each of the two lists. Now stamp some costumes at the Stage coordinates stored in the lists.
 
 --- task ---
+
+Add the **Pen** extension to your project.
+
+[[[generic-scratch3-add-pen-extension]]]
+
+--- /task ---
+
+--- /task ---
+
+--- task ---
 Create a new block and call it `stamp sprites`{:class="block3myblocks"}. This block needs two number inputs named `row`{:class="block3myblocks"} and `columns`{:class="block3myblocks"} just like the other custom block.
 
 ```blocks3
@@ -70,11 +80,11 @@ change [index v] by (1)
 --- /task ---
 
 --- task ---
-Add a `clear`{:class="block3extensions"} block below the `when flag clicked`{:class="block3control"} block to clear the Stage each time the game starts. Then add the `stamp sprites`{:class="block3myblocks"} block at the bottom of the `when flag clicked`{:class="block3control"} script so you can test your new code.
+Add a `erase all`{:class="block3extensions"} block below the `when flag clicked`{:class="block3control"} block to clear the Stage each time the game starts. Then add the `stamp sprites`{:class="block3myblocks"} block at the bottom of the `when flag clicked`{:class="block3control"} script so you can test your new code.
 
 ```blocks3
 when flag clicked
-clear
+erase all
 generate positions (1) (10) ::custom
 stamp sprite (1) (10) ::custom
 ```

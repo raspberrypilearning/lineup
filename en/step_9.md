@@ -24,7 +24,7 @@ Then, in the scripts for your character sprite, add a `broadcast`{:class="block3
 
 ```blocks3
 when flag clicked
-clear
+erase all
 generate positions (4) (10) ::custom
 stamp sprites (4) (10) ::custom
 go to x: (0) y: (0)

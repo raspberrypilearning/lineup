@@ -63,7 +63,7 @@ Make sure you give the number of `rows`{:class="block3myblocks"} as an input to 
 
 ```blocks3
 when flag clicked
-clear
+erase all
 generate positions (4) (10) ::custom
 stamp sprite (4) (10) ::custom
 ```
