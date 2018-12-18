@@ -34,7 +34,7 @@ say [Find me] for (2) secs
 go back (1) layers
 set size to (40) %
 go to x: (item (1 v) of [x_positions v]) y: (item (1 v) of [y_positions v])
-+broadcast [curtain up v]
++broadcast (curtain up v)
 ```
 --- /task ---
 

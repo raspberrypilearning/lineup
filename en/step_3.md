@@ -65,7 +65,7 @@ delete [all v] of [y_positions v]
 delete [all v] of [x_positions v]
 set [y_pos v] to [-150]
 set [x_pos v] to [-200]
-repeat (columns)
+repeat (columns :: custom-arg)
 ```
 --- /task ---
 	
@@ -94,7 +94,7 @@ delete [all v] of [y_positions v]
 delete [all v] of [x_positions v]
 set [y_pos v] to [-150]
 set [x_pos v] to [-200]
-repeat (columns)
+repeat (columns :: custom-arg)
 end
 
 (x_pos)
@@ -118,10 +118,10 @@ delete [all v] of [y_positions v]
 delete [all v] of [x_positions v]
 set [y_pos v] to [-150]
 set [x_pos v] to [-200]
-repeat (columns)
+repeat (columns :: custom-arg)
 add (x_pos) to [x_positions v]
 add (y_pos) to [y_positions v]
-change [x_pos v] by ((400) / ((columns) - (1)
+change [x_pos v] by ((400) / ((columns :: custom-arg) - (1)
 ```
 --- /hint --- --- /hints ---
 --- /task ---

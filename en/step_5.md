@@ -34,7 +34,7 @@ The `stamp sprites`{:class="block3myblocks"} block should stamp a sprite for eac
 ```blocks3
 define stamp sprites (rows) (columns)
 set [index v] to [1]
-repeat (columns)
+repeat (columns :: custom-arg)
 ```
 --- /task ---	
 
@@ -53,7 +53,7 @@ Here are the blocks you need:
 ```blocks3
 define stamp sprites (rows) (columns)
 set [index v] to [1]
-repeat (columns)
+repeat (columns :: custom-arg)
 end
 
 change [index v] by (1)
@@ -69,7 +69,7 @@ Here is the completed script for the `stamp sprites`{:class="block3myblocks"} bl
 ```blocks3
 define stamp sprites (rows) (columns)
 set [index v] to [1]
-repeat (columns)
+repeat (columns :: custom-arg)
 go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
 stamp
 change [index v] by (1)

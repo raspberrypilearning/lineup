@@ -10,7 +10,7 @@ delete [all v] of [y_positions v]
 delete [all v] of [x_positions v]
 set [y_pos v] to [-150]
 set [x_pos v] to [-200]
-repeat (columns)
+repeat (columns :: custom-arg)
 add (x_pos) to [x_positions v]
 add (y_pos) to [y_positions v]
 change [x_pos v] by (((400) / (columns)) - (1))
@@ -23,12 +23,12 @@ define generate positions (rows)(columns)
 delete [all v] of [y_positions v]
 delete [all v] of [x_positions v]
 set [y_pos v] to [-150]
-+repeat (rows)
++repeat (row :: custom-arg)
 set [x_pos v] to [-200]
-repeat (columns)
+repeat (columns :: custom-arg)
 add (x_pos) to [x_positions v]
 add (y_pos) to [y_positions v]
-change [x_pos v] by (((400) / (columns)) - (1))
+change [x_pos v] by (((400) / (columns :: custom-arg)) - (1))
 end
 end
 ```
@@ -46,14 +46,14 @@ define generate positions (rows)(columns)
 delete [all v] of [y_positions v]
 delete [all v] of [x_positions v]
 set [y_pos v] to [-150]
-repeat (rows)
+repeat (rows :: custom-arg)
 set [x_pos v] to [-200]
-repeat (columns)
+repeat (columns :: custom-arg)
 add (x_pos) to [x_positions v]
 add (y_pos) to [y_positions v]
-change [x_pos v] by (((400) / (columns)) - (1))
+change [x_pos v] by (((400) / (columns :: custom-arg)) - (1))
 end
-+change [y_pos v] by (((300) / (rows)) - (1))
++change [y_pos v] by (((300) / (rows :: custom-arg)) - (1))
 end
 ```
 --- /task ---
@@ -95,7 +95,7 @@ Here's the completed `stamp sprites`{:class="block3myblocks"} script:
 ```blocks3
 define stamp sprites (rows) (columns)
 set size to (40) %
-+ repeat ((rows) * (columns))
++ repeat ((rows :: custom-arg) * (columns :: custom-arg))
 set [index v] to (pick random (1) to (length of [x_positions v]))
 go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
 delete (index) of [x_positions v]

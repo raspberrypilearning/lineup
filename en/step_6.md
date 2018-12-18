@@ -9,7 +9,7 @@ Add code to the `stamp sprites`{:class="block3myblocks"} block to make the sprit
 define stamp sprites (rows) (columns)
 set size to (40) %
 set [index v] to [1]
-repeat (columns)
+repeat (columns :: custom-arg)
 go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
 stamp
 next costume
@@ -47,7 +47,7 @@ Here are the additional blocks you need:
 define stamp sprites (rows) (columns)
 set size to (40) %
 - set [index v] to [1]
-repeat (columns)
+repeat (columns :: custom-arg)
 go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
 stamp
 next costume
@@ -71,7 +71,7 @@ This is what your code should look like:
 define stamp sprites (rows) (columns)
 set size to (40) %
 - set [index v] to [1]
-repeat (columns)
+repeat (columns :: custom-arg)
 + set [index v] to (pick random (1) to (length of [x_positions v]))
 go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
 + delete (index) of [x_positions v]

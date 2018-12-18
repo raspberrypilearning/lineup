@@ -10,7 +10,7 @@ So this doesn't happen, make your stamp loop run one time less: `(rows * columns
 ```blocks3
 define stamp sprites (rows) (columns)
 set size to (40) %
-+repeat (((rows) * (columns)) - (1))
++repeat (((rows :: custom-arg) * (columns :: custom-arg)) - (1))
 set [index v] to (pick random (1) to (length of [x_positions v]))
 go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
 delete (index) of [x_positions v]
