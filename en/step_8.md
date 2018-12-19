@@ -31,6 +31,7 @@ erase all
 generate positions (4) (10) ::custom
 stamp sprites (4) (10) ::custom
 ```
+
 --- no-print ---
 Here's an animation showing what should happen:
 ![animation](images/demo_1.gif)
