@@ -15,6 +15,7 @@ add (x_pos) to [x_positions v]
 add (y_pos) to [y_positions v]
 change [x_pos v] by (((400) / (columns)) - (1))
 ```
+
 --- task ---
 Add another `repeat`{:class="block3control"} loop that runs the number of times you give to the `generate positions`{:class="block3myblocks"} block as the `rows`{:class="block3myblocks"} input. Place the `repeat`{:class="block3control"} loop into your script as shown here:
 
