@@ -5,10 +5,7 @@ To test the script, you need to **call** the custom block and provide it with th
 
 Add this code to your sprite:
 
-```blocks3
-when flag clicked
-generate positions (1) (10) ::custom
-```
+![blocks_1545309753_1418915](images/blocks_1545309753_1418915.png)
 --- /task ---
 
 --- task ---
