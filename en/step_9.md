@@ -30,7 +30,7 @@ stamp sprites (4) (10) ::custom
 go to x: (0) y: (0)
 go to front
 set size to (100) %
-say [Find me] for (2) secs
+say [Find me] for (2) seconds
 go back (1) layers
 set size to (40) %
 go to x: (item (1 v) of [x_positions v]) y: (item (1 v) of [y_positions v])
@@ -90,12 +90,12 @@ when I receive [curtain up v]
  ```blocks3
 when I receive [curtain up v]
 go to front
-wait (1) secs
+wait (1) seconds
 glide (1) secs to x: (0) y: (300)
 hide
 set [timer v] to [10]
 repeat (10)
-wait (1) secs
+wait (1) seconds
 change [timer v] by (-1)
 end
 show

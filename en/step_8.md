@@ -67,7 +67,7 @@ set size to (100) %
 
 set size to (40) %
 
-say [] for (2) secs
+say [] for (2) seconds
 item (1 v) of [x_positions v]
 item (1 v) of [y_positions v]
 go to x: () y: ()
@@ -83,7 +83,7 @@ stamp sprites (4) (10) ::custom
 +go to x: (0) y: (0)
 +go to front
 +set size to (100) %
-+say [Find me] for (2) secs
++say [Find me] for (2) seconds
 +go back (1) layers
 +set size to (40) %
 + go to x: (item (1 v) of [x_positions v]) y: (item (1 v) of [y_positions v])
