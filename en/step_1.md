@@ -1,15 +1,54 @@
+--- no-print ---
+
+This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/lineup-scratch2).
+
+--- /no-print ---
+
 ## Introduction
 
-In this project you will be making a game using Scratch 2.0. The game will involve finding a stamped sprite on the stage, hidden amongst a huge group of other stamps.
+In this project you will make a Scratch game in which you need to find a sprite that is hidden among a huge crowd of other characters.
 
 ### What you will make
 
-Hit the green flag and, once the curtain has been raised, try and find the clone before your time runs out.
+--- no-print ---
+Click on the green flag and, once the curtain is up, try and find the sprite before your time runs out.
 
-<iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/170916029/?autostart=false" frameborder="0" allowfullscreen></iframe>
+<iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/259020474/?autostart=false" frameborder="0" allowfullscreen></iframe>
+--- /no-print ---
 
-### What you will learn
+--- print-only ---
+You have to find the right sprite amongst all these characters before your time runs out.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+![showcase](images/showcase.png)
+--- /print-only ---
 
-+ [Apply basic programming constructs to solve a problem](https://www.raspberrypi.org/curriculum/programming/builder)
+--- collapse ---
+---
+title: What you will learn
+---
+- How to create custom blocks that have inputs
+- How to use lists to store grid coordinates
+- How to use loops to cycle over items in a list
+--- /collapse ---
+
+--- collapse ---
+---
+title: What you will need
+---
+### Hardware
++ A computer capable of running Scratch 3
+
+### Software
++ Scratch 3 (either [online](http://rpf.io/scratchon){:target="_blank"} or [offline](http://rpf.io/scratchoff){:target="_blank"})
+--- /collapse ---
+
+--- collapse ---
+---
+title: Additional notes for educators
+---
+--- no-print ---
+If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/lineup/print).
+--- /no-print ---
+
+You can [find the solution for this project here](http://rpf.io/p/en/lineup-get){:target="_blank"}.
+--- /collapse ---

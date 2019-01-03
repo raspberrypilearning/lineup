@@ -1,36 +1,61 @@
-## Placing your sprite
+## Finish the game
 
-- Now it's time to position your sprite amongst the stamps. You'll notice at the moment that your sprite will overlap one of the stamps.
+--- task ---
+To finish the game, [find and download an image of a stage curtain](https://www.google.co.uk/search?q=stage+curtain&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjKg9O1k8_VAhXSL1AKHe1HDMIQ_AUICigB&biw=1362&bih=584){:target="_blank"}.
 
-	![overlap](images/overlap.png)
+Import this image as a sprite.
 
-- So this doesn't happen, you can just make your stamp loop run one time less: `(rows * columns) - 1`
+[[[generic-scratch3-add-sprite-from-file]]]
+--- /task ---
 
-	![stop overlap](images/script_24.png)
-	
-- If you run the script now, then your sprite still overlaps with a stamp, but there should be a hole in your grid of stamps. If you look have your `x_positions` and `y_positions` list, then you'll also see that there is one coordinate position left.
+--- task ---
+Position the new curtain sprite at `x:0 y:0`{:class="block3motion"}, and then change its size so that it fills the screen. Make sure it is visible.
 
-- To finish off this part the game, you'll need to continue the **green flag** section of the scripts.
+![blocks_1545309776_4141266](images/blocks_1545309776_4141266.png)
+--- /task ---
 
-	![green flag](images/script_25.png)
-	
-- Here's what it needs to do:
-  1. Send your sprite to `x:0 y:0`
-  2. Bring the sprite to the front and set its size to 100%
-  3. Say `Find me` for two seconds
-  4. Move back one layer
-  5. Set the sprite's size to 40%
-  6. Move to the last remaining position in the lists
-  
-- Here's an animation showing what should happen
-  ![animation](images/demo_1.gif)
-  
-- See if you can do this independently, and use the hints below if you need more help.
+--- task ---
+Then, in the scripts for your character sprite, add a `broadcast`{:class="block3events"} with the message 'curtain up' to the end of the `when flag clicked`{:class="block3events"} script.
+
+![blocks_1545309777_498342](images/blocks_1545309777_498342.png)
+--- /task ---
+
+--- task ---
+
+When the curtain sprite receives the `broadcast`{:class="block3events"}, the sprite needs to move upwards for 10 seconds so that it looks like the curtain is raised to reveal the stamps. Then the curtain should drop again, so the curtain sprite needs to move downwards.
+
+--- no-print ---
+It should look like this:
+
+![demo 2](images/demo_2.gif)
+--- /no-print ---
+
+Try to do this by yourself, and use the hints if you need help.
 
 --- hints --- --- hint ---
-- The first part is fairly simple:
-  ![first section](images/script_26.png)
+For the curtain sprite, you need a script that does the following things:
+  1. When the curtain sprite receives the `broadcast`{:class="block3events"}
+  1. Bring the curtain sprite to the `front`{:class="block3looks"}
+  1. `Wait`{:class="block3control"} a little bit while the character sprite costumes get stamped
+  1. `Glide`{:class="block3motion"} the curtain sprite upwards so it ends up near the top of the Stage
+  1. `Hide`{:class="block3looks"} the curtain
+  1. Start a loop that counts down for 10 seconds
+  1. When the time is over, `show`{:class="block3looks"} the curtain sprite
+  1. `Glide`{:class="block3motion"} the curtain sprite back to its original position
 --- /hint --- --- hint ---
-- To move your sprite to the correct location, you can use this code:
-  ![second part](images/script_27.png)
+Here are the blocks you need:
+![blocks_1545309778_709975](images/blocks_1545309778_709975.png)
+--- /hint --- --- hint ---
+ This is the completed script:
+![blocks_1545309779_9074426](images/blocks_1545309779_9074426.png)
 --- /hint --- --- /hints ---
+--- /task ---
+
+The very last part is to let the player know if they've won.
+
+--- task ---
+In the scripts for the the character sprite, add code so that, when the sprite is clicked, the sprite says `You've found me`{:class="block3looks"}, and all the scripts in the game stop.
+	
+![blocks_1545309781_0704465](images/blocks_1545309781_0704465.png)
+--- /task ---
+

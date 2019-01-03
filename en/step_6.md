@@ -1,26 +1,44 @@
-## Stamping a row
-- So far you have ten values in the two lists. Let's stamp some costumes at the stage positions given in the list.
+## Change the costumes
 
-- Create a new block and call it `stamp sprites`. It needs two parameters as well, both of which should be number inputs and named `row` and `columns` just like the last ones.
+At the moment, your program stamps the same sprite costume over and over, and the size of the costume is too large.
 
-	![new block](images/script_10.png)
+--- task ---
+Add code to the `stamp sprites`{:class="block3myblocks"} block to make the sprite a suitable size before the `repeat`{:class="block3control"} loop starts. Add a block inside the loop to switch the `next costume`{:class="block3looks"} after the `stamp`{:class="block3extensions"} block.
 
-- Create a new variable called `index`. You can use this to track which position in the list you are reading. Set it to `1`.
+![blocks_1545309760_9727025](images/blocks_1545309760_9727025.png)
+--- /task ---
 
-	![index](images/script_11.png)
+When you run the script now, you should see something like this:
 
-- Now you're going to stamp a sprite for each set of coordinates in the list. This will require a loop that will repeat once for each column.
-
-	![repeat it](images/script_12.png)
+![changed_sprites](images/changed_sprites.png)
 	
-- Within the loop, move your sprite to the first position in the list, stamp it, then increase the `index` by 1.
+Your program cycles through all the costumes in order. So that each costume does not show up in the same place every time the program runs, you should stamp the sprite in random places on the grid.
 
-	![stamp loop](images/script_13.png)
+To do this, you need to follow this **algorithm**:
+  1. `Repeat`{:class="block3control"} until the list is empty
+  1. Set `index`{:class="block3variables"} to a `random`{:class="block3operators"} number between `1` and the length of a list
+  2. Move the sprite as you did before
+  3. Delete the item at the `index`{:class="block3variables"} position from the `y_positions`{:class="block3variables"} list
+  4. Delete the item at the `index`{:class="block3variables"} position from the `x_positions`{:class="block3variables"} list
+  
+--- task ---
 
-- Next you need to call this block as well. You should also add a `clear` block to you starting script so that it clears the stage each time.
+Add code to stamp the sprite in random places on the grid.
 
-	![stamp it](images/script_14.png)
-	
-- When you click the green flag, you should see something like this:
+--- hints --- --- hint ---
+Remove the `set index to 1`{:class="block3variables"} from before the `repeat`{:class="block3control"} loop.
 
-	![stamped sprites](images/stamped_sprites.png)
+Then within the loop, `set index to `{:class="block3variables"} a `random`{:class="block3operators"} number between `1` and the `length of x_positions`{:class="block3variables"}.
+
+Then `delete`{:class="block3variables"} the item at the `index`{:class="block3variables"} from both the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists.
+--- /hint --- --- hint ---
+
+Here are the additional blocks you need:
+![blocks_1545309762_1951864](images/blocks_1545309762_1951864.png)
+--- /hint --- --- hint ---
+
+This is what your code should look like:
+
+![blocks_1545309763_4913654](images/blocks_1545309763_4913654.png)
+--- /hint --- --- /hints ---
+--- /task ---

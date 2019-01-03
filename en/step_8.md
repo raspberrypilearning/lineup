@@ -1,28 +1,45 @@
-## Adding rows
+## Hide your sprite
 
-- Now that you've written the code to generate a single row, you need to add in more rows.
+Now it's time to hide your sprite among the crowd of stamps. At the moment the sprite overlaps one of the stamps.
 
-- Go back to your `generate positions` block.
+![overlap](images/overplap-annotated.png)
 
-	![gen positions](images/script_19.png)
+--- task ---
+So this doesn't happen, make your stamp loop run one time less: `(rows * columns) - 1`{:class="block3operators"}
 
-- Now you need another loop that will repeat the same number of times as the number of rows you need. Place it into your script as shown below.
+![blocks_1545309771_7296658](images/blocks_1545309771_7296658.png)
+--- /task ---
 
-	![repeat for rows](images/script_20.png)
+If you run the script now, you can see that your sprite still overlaps with a stamp and there is a hole in your grid. And in the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists, there is one coordinate position left.
 
-- Next you need to increase the value of `y_pos`. This will increase up to a maximum of `150`, which is `300` away from its starting value of `-150`. This needs to happen for each row your create.
+--- task ---
+To finish this part your game, go to the `when flag clicked`{:class="block3events"} section of the scripts.
 
-	![increase y](images/script_21.png)
-	
-- Then you need to make sure you're passing the number of `rows` as a parameter to your blocks.
+![blocks_1545309772_9165726](images/blocks_1545309772_9165726.png)
 
-	![parameters](images/script_22.png)
-	
-- If you run your code now, you won't get a neat grid of stamps.
+--- no-print ---
+Here's an animation showing what should happen:
+![animation](images/demo_1.gif)
+--- /no-print ---
 
-	![mess of stamps](images/mess_stamps.png)
-	
-- This is because your `stamp sprite` block is only repeating for the total number of columns. It needs to repeat for the product of the number of columns and the number of rows (`columns * rows`).
+At the start of the game, the sprite should appear at a large size and say "Find me". Then the sprite should hide itself among the stamps in the empty space you have left for it.
 
-	![ordered grid](images/script_23.png)
-	![ordered grid](images/nice_grid.png)
+See if you can figure out how to do this, and use the hints below if you need help.
+
+--- hints --- --- hint ---
+This is what it needs to do:
+  1. Send your sprite to `x:0 y:0`{:class="block3motion"}
+  2. Bring the sprite to the `front`{:class="block3looks"} and set its `size to 100%`{:class="block3looks"}
+  3. `Say 'Find me' for two seconds`{:class="block3looks"}
+  4. `Go back one layer`{:class="block3looks"}
+  5. Set the sprite's `size to 40%`{:class="block3looks"}
+  6. Move to the last remaining position in the lists
+--- /hint --- --- hint ---
+These are the additional blocks you need:
+![blocks_1545309774_0708652](images/blocks_1545309774_0708652.png)
+--- /hint --- --- hint ---
+Here is the completed `when flag clicked`{:class="block3events"} script:
+
+![blocks_1545309775_2503867](images/blocks_1545309775_2503867.png)
+--- /hint --- --- /hints ---
+--- /task ---
