@@ -4,12 +4,12 @@ Now that you have the code to create a single row of stamped costumes, you shoul
 
 Go to your `generate positions`{:class="block3myblocks"} block.
 
-![blocks_1545309764_704934](images/blocks_1545309764_704934.png)
+![blocks_1546524467_2153914](images/blocks_1546524467_2153914.png)
 
 --- task ---
 Add another `repeat`{:class="block3control"} loop that runs the number of times you give to the `generate positions`{:class="block3myblocks"} block as the `rows`{:class="block3myblocks"} input. Place the `repeat`{:class="block3control"} loop into your script as shown here:
 
-![blocks_1545309765_8974705](images/blocks_1545309765_8974705.png)
+![blocks_1546524468_8936057](images/blocks_1546524468_8936057.png)
 --- /task ---
 
 Next you need to increase the value of `y_pos`{:class="block3variables"} each time the `repeat (rows)`{:class="block3control"} loop runs.
@@ -19,13 +19,13 @@ You do this in a similar manner to how you increase the value of `x_pos`{:class=
 --- task ---
 At the end of the code inside the `repeat (rows)`{:class="block3control"} loop, `y_pos`{:class="block3variables"} should increase up to `150`{:class="block3variables"}, which is `300`{:class="block3variables"} away from its starting value of `-150`{:class="block3variables"}. This needs to happen for each row of stamps.
 
-![blocks_1545309767_1153772](images/blocks_1545309767_1153772.png)
+![blocks_1546524470_6240706](images/blocks_1546524470_6240706.png)
 --- /task ---
 
 --- task ---
 Make sure you give the number of `rows`{:class="block3myblocks"} as an input to your blocks.
 
-![blocks_1545309768_3110137](images/blocks_1545309768_3110137.png)
+![blocks_1546524472_358555](images/blocks_1546524472_358555.png)
 --- /task ---
 	
 --- task ---
@@ -46,10 +46,10 @@ Change your `stamp sprites`{:class="block3myblocks"} script so that it `repeats`
 The total number of stamps you need is the number you give as `columns`{:class="block3myblocks"} multiplied by the number you give as `rows`{:class="block3myblocks"}
 --- /hint --- --- hint ---
 Use this additional block:
-![blocks_1545309769_3920956](images/blocks_1545309769_3920956.png)
+![blocks_1546524474_0107403](images/blocks_1546524474_0107403.png)
 --- /hint --- --- hint ---
 Here's the completed `stamp sprites`{:class="block3myblocks"} script:
-![blocks_1545309770_515168](images/blocks_1545309770_515168.png)
+![blocks_1546524475_624294](images/blocks_1546524475_624294.png)
 --- /hint --- --- /hints ---
 
 ![ordered grid](images/nice_grid.png)

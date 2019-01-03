@@ -5,7 +5,7 @@ At the moment, your program stamps the same sprite costume over and over, and th
 --- task ---
 Add code to the `stamp sprites`{:class="block3myblocks"} block to make the sprite a suitable size before the `repeat`{:class="block3control"} loop starts. Add a block inside the loop to switch the `next costume`{:class="block3looks"} after the `stamp`{:class="block3extensions"} block.
 
-![blocks_1545309760_9727025](images/blocks_1545309760_9727025.png)
+![blocks_1546524462_0039573](images/blocks_1546524462_0039573.png)
 --- /task ---
 
 When you run the script now, you should see something like this:
@@ -34,11 +34,11 @@ Then `delete`{:class="block3variables"} the item at the `index`{:class="block3va
 --- /hint --- --- hint ---
 
 Here are the additional blocks you need:
-![blocks_1545309762_1951864](images/blocks_1545309762_1951864.png)
+![blocks_1546524463_7121735](images/blocks_1546524463_7121735.png)
 --- /hint --- --- hint ---
 
 This is what your code should look like:
 
-![blocks_1545309763_4913654](images/blocks_1545309763_4913654.png)
+![blocks_1546524465_5353954](images/blocks_1546524465_5353954.png)
 --- /hint --- --- /hints ---
 --- /task ---

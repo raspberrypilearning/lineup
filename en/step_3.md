@@ -13,7 +13,7 @@ The values of these parameters will decide how many rows and columns your grid h
 
 [[[generic-scratch3-make-block]]]
 
-![blocks_1545309745_352534](images/blocks_1545309745_352534.png)
+![blocks_1546524439_6875753](images/blocks_1546524439_6875753.png)
 --- /task ---
 
 --- task ---
@@ -23,7 +23,7 @@ Create two lists, and call one of them `x_positions`{:class="block3variables"} a
 --- task ---
 Inside your `generate positions`{:class="block3myblocks"} block, add blocks to delete all the items from both lists, so that each time the game starts, the lists are empty.
 
-![blocks_1545309747_3178313](images/blocks_1545309747_3178313.png)
+![blocks_1546524442_2066295](images/blocks_1546524442_2066295.png)
 --- /task ---
 
 --- task ---
@@ -37,7 +37,7 @@ For now, the `y_positions`{:class="block3variables"} list can just contain the n
 --- task ---
 Start by adding code to the `generate positions`{:class="block3myblocks"} block to set the `y_pos`{:class="block3variables"} variable to `-150`{:class="block3variables"} and the `x_pos`{:class="block3variables"} variable to `-200`{:class="block3variables"}. This is the location of the first stamped sprite.
 
-![blocks_1545309748_4476635](images/blocks_1545309748_4476635.png)
+![blocks_1546524443_802803](images/blocks_1546524443_802803.png)
 --- /task ---
 
 --- task ---
@@ -47,7 +47,7 @@ The `repeat`{:class="block3control"} loop should run once for every column you w
 
 The `generate positions`{:class="block3myblocks"} block takes `columns`{:class="block3myblocks"} as an input, so you can use `columns`{:class="block3myblocks"} for the `repeat`{:class="block3control"} loop.
 
-![blocks_1545309749_585056](images/blocks_1545309749_585056.png)
+![blocks_1546524445_4030993](images/blocks_1546524445_4030993.png)
 --- /task ---
 	
 Within the `repeat`{:class="block3control"} loop, add the values of `x_pos`{:class="block3variables"} and `y_pos`{:class="block3variables"} into the lists. Then you need to increase the value of `x_pos`{:class="block3variables"} by a little. How much should the value of `x_pos`{:class="block3variables"} increase by?
@@ -69,10 +69,10 @@ Then `x_pos`{:class="block3variables"} variable needs to increase by `400 / (col
 --- /hint --- --- hint ---
 This shows the additional blocks you need to add into your script.
 
-![blocks_1545309750_735553](images/blocks_1545309750_735553.png)
+![blocks_1546524447_0383441](images/blocks_1546524447_0383441.png)
 --- /hint --- --- hint ---
 
 - Here is the completed script for the `generate positions`{:class="block3myblocks"} block:
-![blocks_1545309751_9591546](images/blocks_1545309751_9591546.png)
+![blocks_1546524448_7985866](images/blocks_1546524448_7985866.png)
 --- /hint --- --- /hints ---
 --- /task ---
