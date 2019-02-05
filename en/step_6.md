@@ -5,7 +5,16 @@ At the moment, your program stamps the same sprite costume over and over, and th
 --- task ---
 Add code to the `stamp sprites`{:class="block3myblocks"} block to make the sprite a suitable size before the `repeat`{:class="block3control"} loop starts. Add a block inside the loop to switch the `next costume`{:class="block3looks"} after the `stamp`{:class="block3extensions"} block.
 
-![blocks_1546524462_0039573](images/blocks_1546524462_0039573.png)
+```blocks3
+define stamp sprites (rows) (columns)
+set size to (40) %
+set [index v] to [1]
+repeat (columns :: custom-arg)
+go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
+stamp
+next costume
+change [index v] by (1)
+```
 --- /task ---
 
 When you run the script now, you should see something like this:
@@ -34,11 +43,42 @@ Then `delete`{:class="block3variables"} the item at the `index`{:class="block3va
 --- /hint --- --- hint ---
 
 Here are the additional blocks you need:
-![blocks_1546524463_7121735](images/blocks_1546524463_7121735.png)
+```blocks3
+define stamp sprites (rows) (columns)
+set size to (40) %
+- set [index v] to [1]
+repeat (columns :: custom-arg)
+go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
+stamp
+next costume
+- change [index v] by (1)
+end
+
+set [index v] to ()
+(pick random () to ()
+length of [x_positions v]
+delete () of [x_positions v]
+
+delete () of [y_positions v]
+(index)
+(index)
+```
 --- /hint --- --- hint ---
 
 This is what your code should look like:
 
-![blocks_1546524465_5353954](images/blocks_1546524465_5353954.png)
+```blocks3
+define stamp sprites (rows) (columns)
+set size to (40) %
+- set [index v] to [1]
+repeat (columns :: custom-arg)
++ set [index v] to (pick random (1) to (length of [x_positions v]))
+go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
++ delete (index) of [x_positions v]
++ delete (index) of [y_positions v]
+stamp
+next costume
+- change [index v] by (1)
+```
 --- /hint --- --- /hints ---
 --- /task ---
