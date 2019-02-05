@@ -13,7 +13,9 @@ The values of these parameters will decide how many rows and columns your grid h
 
 [[[generic-scratch3-make-block]]]
 
-![blocks_1546524439_6875753](images/blocks_1546524439_6875753.png)
+```blocks3
+define generate positions (rows)(columns)
+```
 --- /task ---
 
 --- task ---
@@ -23,7 +25,11 @@ Create two lists, and call one of them `x_positions`{:class="block3variables"} a
 --- task ---
 Inside your `generate positions`{:class="block3myblocks"} block, add blocks to delete all the items from both lists, so that each time the game starts, the lists are empty.
 
-![blocks_1546524442_2066295](images/blocks_1546524442_2066295.png)
+```blocks3
+define generate positions (rows)(columns)
++ delete [all v] of [y_positions v]
++ delete [all v] of [x_positions v]
+```
 --- /task ---
 
 --- task ---
@@ -37,7 +43,13 @@ For now, the `y_positions`{:class="block3variables"} list can just contain the n
 --- task ---
 Start by adding code to the `generate positions`{:class="block3myblocks"} block to set the `y_pos`{:class="block3variables"} variable to `-150`{:class="block3variables"} and the `x_pos`{:class="block3variables"} variable to `-200`{:class="block3variables"}. This is the location of the first stamped sprite.
 
-![blocks_1546524443_802803](images/blocks_1546524443_802803.png)
+```blocks3
+define generate positions (rows)(columns)
+delete [all v] of [y_positions v]
+delete [all v] of [x_positions v]
++ set [y_pos v] to [-150]
++ set [x_pos v] to [-200]
+```
 --- /task ---
 
 --- task ---
@@ -47,7 +59,14 @@ The `repeat`{:class="block3control"} loop should run once for every column you w
 
 The `generate positions`{:class="block3myblocks"} block takes `columns`{:class="block3myblocks"} as an input, so you can use `columns`{:class="block3myblocks"} for the `repeat`{:class="block3control"} loop.
 
-![blocks_1546524445_4030993](images/blocks_1546524445_4030993.png)
+```blocks3
+define generate positions (rows)(columns)
+delete [all v] of [y_positions v]
+delete [all v] of [x_positions v]
+set [y_pos v] to [-150]
+set [x_pos v] to [-200]
++ repeat (columns :: custom-arg)
+```
 --- /task ---
 	
 Within the `repeat`{:class="block3control"} loop, add the values of `x_pos`{:class="block3variables"} and `y_pos`{:class="block3variables"} into the lists. Then you need to increase the value of `x_pos`{:class="block3variables"} by a little. How much should the value of `x_pos`{:class="block3variables"} increase by?
@@ -69,10 +88,40 @@ Then `x_pos`{:class="block3variables"} variable needs to increase by `400 / (col
 --- /hint --- --- hint ---
 This shows the additional blocks you need to add into your script.
 
-![blocks_1546524447_0383441](images/blocks_1546524447_0383441.png)
+```blocks3
+define generate positions (rows)(columns)
+delete [all v] of [y_positions v]
+delete [all v] of [x_positions v]
+set [y_pos v] to [-150]
+set [x_pos v] to [-200]
+repeat (columns :: custom-arg)
+end
+
+(x_pos)
+(y_pos)
+
+add () to [x_positions v]
+
+add () to [y_positions v]
+
+change [x_pos v] by ()
+(columns ::custom
+() / () 
+() - ()
+```
 --- /hint --- --- hint ---
 
 - Here is the completed script for the `generate positions`{:class="block3myblocks"} block:
-![blocks_1546524448_7985866](images/blocks_1546524448_7985866.png)
+```blocks3
+define generate positions (rows)(columns)
+delete [all v] of [y_positions v]
+delete [all v] of [x_positions v]
+set [y_pos v] to [-150]
+set [x_pos v] to [-200]
+repeat (columns :: custom-arg)
++ add (x_pos) to [x_positions v]
++ add (y_pos) to [y_positions v]
++ change [x_pos v] by ((400) / ((columns :: custom-arg) - (1)
+```
 --- /hint --- --- /hints ---
 --- /task ---
