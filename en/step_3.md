@@ -111,7 +111,8 @@ change [x_pos v] by ()
 ```
 --- /hint --- --- hint ---
 
-- Here is the completed script for the `generate positions`{:class="block3myblocks"} block:
+Here is the completed script for the `generate positions`{:class="block3myblocks"} block:
+
 ```blocks3
 define generate positions (rows)(columns)
 delete [all v] of [y_positions v]
@@ -123,5 +124,6 @@ repeat (columns :: custom-arg)
 + add (y_pos) to [y_positions v]
 + change [x_pos v] by ((400) / ((columns :: custom-arg) - (1)
 ```
+
 --- /hint --- --- /hints ---
 --- /task ---
