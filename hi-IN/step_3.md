@@ -104,7 +104,7 @@ change [x_pos v] by ()
 
 \--- /hint \--- \--- hint \---
 
-- Here is the completed script for the `generate positions`{:class="block3myblocks"} block:
+Here is the completed script for the `generate positions`{:class="block3myblocks"} block:
 
 ```blocks3
 define generate positions (rows)(columns)
