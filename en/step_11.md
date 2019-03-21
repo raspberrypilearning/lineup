@@ -8,7 +8,7 @@ Click the green flag to start the game. Press the <kbd>space</kbd> bar to make t
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/258349724/?autostart=false" frameborder="0" scrolling="no"></iframe>
-  <img src="images/flappy_screenshot.png">
+  <img src="images/flappy-parrot-showcase.png">
 </div>
 
 --- /no-print ---
