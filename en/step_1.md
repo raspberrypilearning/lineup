@@ -14,8 +14,9 @@ In this project you will make a Scratch game in which you need to find a sprite 
 Click on the green flag and, once the curtain is up, try and find the sprite before your time runs out.
 
 <div class="scratch-preview">
-    <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/259020474/?autostart=false" frameborder="0" allowfullscreen scrolling="no"></iframe>
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/259020474/?autostart=false" frameborder="0" scrolling="no"></iframe>
 </div>
+
 --- /no-print ---
 
 --- print-only ---
