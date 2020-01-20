@@ -14,6 +14,7 @@ Click the green flag to start the game. Press the <kbd>space</kbd> bar to make t
 --- /no-print ---
 
 --- print-only ---
+
 You will press the <kbd>space</kbd> bar to make the parrot flap its wings, and score one point for every pipe that you manage to get the parrot past.
 
 ![flappy parrot game being played](images/flappy-parrot-showcase.png)
