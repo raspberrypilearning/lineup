@@ -1,8 +1,10 @@
-## Change the costumes
+## परिधान बदलें
 
-At the moment, your program stamps the same sprite costume over and over, and the size of the costume is too large.
+फिलहाल, आपका प्रोग्राम स्प्राइट के उसी परिधान पर बार बार मोहर लगाता है, और परिधान का आकार बहुत बड़ा है।
 
-\--- task \--- Add code to the `stamp sprites`{:class="block3myblocks"} block to make the sprite a suitable size before the `repeat`{:class="block3control"} loop starts. Add a block inside the loop to switch the `next costume`{:class="block3looks"} after the `stamp`{:class="block3extensions"} block.
+\--- task \---
+
+Add code to the `stamp sprites`{:class="block3myblocks"} block to make the sprite a suitable size before the `repeat`{:class="block3control"} loop starts. Add a block inside the loop to switch the `next costume`{:class="block3looks"} after the `stamp`{:class="block3extensions"} block.
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -25,28 +27,31 @@ Your program cycles through all the costumes in order. So that each costume does
 
 To do this, you need to follow this **algorithm**:
 
-1. `Repeat`{:class="block3control"} until the list is empty
-2. Set `index`{:class="block3variables"} to a `random`{:class="block3operators"} number between `1` and the length of a list
-3. Move the sprite as you did before
-4. Delete the item at the `index`{:class="block3variables"} position from the `y_positions`{:class="block3variables"} list
-5. Delete the item at the `index`{:class="block3variables"} position from the `x_positions`{:class="block3variables"} list
+1. `Repeat`{:class="block3control"} जब तक सूची खाली न हो जाए
+2. `index`{:class="block3variables"} को `1` और सूची की लंबाई के बीच किसी `random`{:class="block3operators"} संख्या पर पर सेट करें
+3. स्प्राइट को आगे ले जाएँ जैसा आपने पहले किया था
+4. `index`{:class="block3variables"} स्थिति की आइटम को `y_positions`{:class="block3variables"} सूची में से हटाएँ
+5. `x_positions`{:class="block3variables"} सूची में से `index`{:class="block3variables"} स्थिति की मद को हटाएँ
 
 \--- task \---
 
 Add code to stamp the sprite in random places on the grid.
 
-\--- hints \--- \--- hint \--- Remove the `set index to 1`{:class="block3variables"} from before the `repeat`{:class="block3control"} loop.
+\--- hints \--- \--- hint \---
+
+Remove the `set index to 1`{:class="block3variables"} from before the `repeat`{:class="block3control"} loop.
 
 Then within the loop, `set index to`{:class="block3variables"} a `random`{:class="block3operators"} number between `1` and the `length of x_positions`{:class="block3variables"}.
 
-Then `delete`{:class="block3variables"} the item at the `index`{:class="block3variables"} from both the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists. \--- /hint \--- \--- hint \---
+Then `delete`{:class="block3variables"} the item at the `index`{:class="block3variables"} from both the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists.
+
+\--- /hint \--- \--- hint \---
 
 Here are the additional blocks you need:
 
 ```blocks3
 define stamp sprites (rows) (columns)
 set size to (40) %
-
 - set [index v] to [1]
 repeat (columns :: custom-arg)
 go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
