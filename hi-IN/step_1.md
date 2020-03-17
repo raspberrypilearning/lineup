@@ -1,14 +1,14 @@
 \--- no-print \---
 
-यह इस प्रोजेक्ट का **Scratch 3** संस्करण है। [इस प्रोजेक्ट का Scratch 2 संस्करण](https://projects.raspberrypi.org/en/projects/lineup-scratch2) भी है।
+This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/lineup-scratch2).
 
 \--- /no-print \---
 
-## परिचय
+## Introduction
 
-इस प्रोजेक्ट में आप एक Scratch गेम बनाएँगे जिसमें आपको एक sprite को खोजना होगा जो अन्य पात्रों की भारी भीड़ के बीच छिपा हुआ है।
+In this project you will make a Scratch game in which you need to find a sprite that is hidden among a huge crowd of other characters.
 
-### आप क्या बनाएँगे
+### What you will make
 
 \--- no-print \---
 
@@ -30,23 +30,23 @@ You have to find the right sprite amongst all these characters before your time 
 
 ## \--- collapse \---
 
-## title: आप क्या सीखेंगे
+## title: What you will learn
 
-+ इनपुट वाले कस्टम ब्लॉक कैसे बनाएँ
-+ ग्रिड निर्देशांकों को संगृहीत करने के लिए सूचियों का उपयोग कैसे करें
++ How to create custom blocks that have inputs
++ How to use lists to store grid coordinates
 + How to use loops to cycle over items in a list
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: आपको किन चीज़ों की आवश्यकता होगी
+## title: What you will need
 
-### हार्डवेयर
+### Hardware
 
-+ Scratch 3 चलाने में सक्षम कंप्यूटर
++ A computer capable of running Scratch 3
 
-### सॉफ्टवेयर
+### Software
 
 + Scratch 3 (either [online](http://rpf.io/scratchon){:target="_blank"} or [offline](http://rpf.io/scratchoff){:target="_blank"})
 
@@ -54,7 +54,7 @@ You have to find the right sprite amongst all these characters before your time 
 
 ## \--- collapse \---
 
-## title: शिक्षकों के लिए अतिरिक्त टिप्पणियाँ
+## title: Additional notes for educators
 
 \--- no-print \---
 
