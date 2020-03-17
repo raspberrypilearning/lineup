@@ -1,6 +1,6 @@
 ---
 title: Line up
-hero_image: imagens/banner.png
+hero_image: images/banner.png
 description: Create a game where you look for a character hidden in a crowd of other characters
 listed: true
 copyedit: true
@@ -8,7 +8,7 @@ version: 4.1.0
 last_tested: 2018-11-05
 steps:
   - 
-    title: Introdução
+    title: Introduction
   - 
     title: Add costumes
   - 
@@ -26,7 +26,7 @@ steps:
   - 
     title: Finish the game
   - 
-    title: "Desafio: melhore seu jogo"
+    title: "Challenge: improve your game"
     challenge: true
   - 
-    title: "E agora?"
+    title: "What next?"
