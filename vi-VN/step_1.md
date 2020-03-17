@@ -1,14 +1,14 @@
-\--- không in \---
+\--- no-print \---
 
 This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/lineup-scratch2).
 
-\--- / không in \---
+\--- /no-print \---
 
-## Giới thiệu
+## Introduction
 
 In this project you will make a Scratch game in which you need to find a sprite that is hidden among a huge crowd of other characters.
 
-### Những gì bạn sẽ làm
+### What you will make
 
 \--- no-print \---
 
@@ -28,9 +28,9 @@ You have to find the right sprite amongst all these characters before your time 
 
 \--- /print-only \---
 
-## \--- sụp đổ \---
+## \--- collapse \---
 
-## tiêu đề: bạn sẽ học được gì
+## title: What you will learn
 
 + How to create custom blocks that have inputs
 + How to use lists to store grid coordinates
@@ -40,21 +40,21 @@ You have to find the right sprite amongst all these characters before your time 
 
 ## \--- collapse \---
 
-## tiêu đề: Những gì bạn sẽ cần
+## title: What you will need
 
-### Phần cứng
+### Hardware
 
-+ Một máy tính có khả năng chạy Scratch 3
++ A computer capable of running Scratch 3
 
-### Phần mềm
+### Software
 
 + Scratch 3 (either [online](http://rpf.io/scratchon){:target="_blank"} or [offline](http://rpf.io/scratchoff){:target="_blank"})
 
 \--- /collapse \---
 
-## \--- sụp đổ \---
+## \--- collapse \---
 
-## tiêu đề: Ghi chú bổ sung cho các nhà giáo dục
+## title: Additional notes for educators
 
 \--- no-print \---
 
