@@ -1,4 +1,4 @@
-## Co następne?
+## What next?
 
 Try the [Flappy parrot](https://projects.raspberrypi.org/en/projects/flappy-parrot?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects) project, in which you create another game.
 
