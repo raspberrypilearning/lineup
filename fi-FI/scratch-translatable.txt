@@ -1,0 +1,23 @@
+generate positions
+
+rows
+
+columns
+
+x_positions
+
+y_positions
+
+x_pos
+
+y_pos
+
+stamp sprites
+
+index
+
+Find me
+
+curtain up
+
+You found me
