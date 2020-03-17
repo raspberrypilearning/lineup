@@ -1,91 +1,91 @@
-## Change the costumes
+## Verander de uiterlijken
 
-At the moment, your program stamps the same sprite costume over and over, and the size of the costume is too large.
+Op dit moment stempelt je programma steeds hetzelfde sprite uiterlijk en is het uiterlijk te groot.
 
 \--- task \---
 
-Add code to the `stamp sprites`{:class="block3myblocks"} block to make the sprite a suitable size before the `repeat`{:class="block3control"} loop starts. Add a block inside the loop to switch the `next costume`{:class="block3looks"} after the `stamp`{:class="block3extensions"} block.
+Voeg code toe aan het `stempel sprites`{:class="block3myblocks"} blok om de sprite een geschikte grootte te geven voordat de `herhaal`{:class="block3control"} lus start. Voeg een blok in de lus toe om naar het volgende `uiterlijk`{:class="block3looks"} te schakelen na het `stempel`{:class="block3extensions"} blok.
 
 ```blocks3
-define stamp sprites (rows) (columns)
-set size to (40) %
-set [index v] to [1]
-repeat (columns :: custom-arg)
-go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
-stamp
-next costume
-change [index v] by (1)
+definiëer stempels (rijen) (kolommen)
+maak grootte (40) %
+maak [index v] [1]
+herhaal (kolommen :: custom-arg)
+ga naar x: (item (index) van [x_posities v] ) y: (item (index) van [y_posities v]
+stempel
+volgend uiterlijk
+verander [index v] met (1)
 ```
 
 \--- /task \---
 
-When you run the script now, you should see something like this:
+Wanneer je het script nu uitvoert, zou je zoiets moeten zien:
 
-![changed_sprites](images/changed_sprites.png)
+![veranderde sprites](images/changed_sprites.png)
 
-Your program cycles through all the costumes in order. So that each costume does not show up in the same place every time the program runs, you should stamp the sprite in random places on the grid.
+Je programma doorloopt alle uiterlijken op volgorde. Om ervoor te zorgen dat elk uiterlijk niet op dezelfde plaats verschijnt telkens wanneer het programma wordt uitgevoerd, moet je de sprite op willekeurige plaatsen in het raster stempelen.
 
-To do this, you need to follow this **algorithm**:
+Om dit te doen, moet je dit **algoritme** volgen:
 
-1. `Repeat`{:class="block3control"} until the list is empty
-2. Set `index`{:class="block3variables"} to a `random`{:class="block3operators"} number between `1` and the length of a list
-3. Move the sprite as you did before
-4. Delete the item at the `index`{:class="block3variables"} position from the `y_positions`{:class="block3variables"} list
-5. Delete the item at the `index`{:class="block3variables"} position from the `x_positions`{:class="block3variables"} list
+1. `Herhaal`{:class="block3control"} totdat de lijst leeg is
+2. Stel `index`{:class="block3variables"} in op een `willekeurig`{:class="block3operators"} getal tussen `1` en de lengte van een lijst
+3. Verplaats de sprite zoals eerder
+4. Verwijder het item op positie `index`{:class="block3variables"} uit de lijst `y_posities`{:class="block3variables"}
+5. Verwijder het item op positie `index`{:class="block3variables"} uit de lijst `x_posities`{:class="block3variables"}
 
 \--- task \---
 
-Add code to stamp the sprite in random places on the grid.
+Voeg code toe om de sprite op willekeurige plaatsen in het raster te stempelen.
 
 \--- hints \--- \--- hint \---
 
-Remove the `set index to 1`{:class="block3variables"} from before the `repeat`{:class="block3control"} loop.
+Verwijder de `maak index 1`{:class="block3variables"} van vóór de `herhaal`{:class="block3control"} lus.
 
-Then within the loop, `set index to`{:class="block3variables"} a `random`{:class="block3operators"} number between `1` and the `length of x_positions`{:class="block3variables"}.
+Stel vervolgens binnen de lus `de index in op`{:class="block3variables"} een `willekeurig`{:class="block3operators"} getal tussen `1` en de `lengte van x_posities`{:class="block3variables"}.
 
-Then `delete`{:class="block3variables"} the item at the `index`{:class="block3variables"} from both the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists.
+`Verwijder`{:class="block3variables"} vervolgens het item op de `index`{:class="block3variables"} uit zowel de `x_posities`{:class="block3variables"} als `y_posities`{:class=" block3variables"} lijsten.
 
 \--- /hint \--- \--- hint \---
 
-Here are the additional blocks you need:
+Dit zijn de extra blokken die je nodig hebt:
 
 ```blocks3
-define stamp sprites (rows) (columns)
-set size to (40) %
-- set [index v] to [1]
-repeat (columns :: custom-arg)
-go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
-stamp
-next costume
-- change [index v] by (1)
-end
+definieer stempel sprites (rijen) (kolommen)
+maak grootte (40) %
+- maak [index v] [1]
+herhaal (kolommen :: custom-arg)
+ga naar x: (item (index) van [x_posities v ]) y: (item (index) van [y_posities v]
+stempel
+volgend uiterlijk
+- verander [index v] met (1)
+einde
 
-set [index v] to ()
-(pick random () to ()
-length of [x_positions v]
-delete () of [x_positions v]
+maak [index v] ()
+(willekeurig getal tussen () en ()
+lengte van [x_posities v]
+verwijder () van [x_posities v]
 
-delete () of [y_positions v]
+verwijder () van [y_posities v]
 (index)
 (index)
 ```
 
 \--- /hint \--- \--- hint \---
 
-This is what your code should look like:
+Dit is hoe je code eruit zou moeten zien:
 
 ```blocks3
-define stamp sprites (rows) (columns)
-set size to (40) %
-- set [index v] to [1]
-repeat (columns :: custom-arg)
-+ set [index v] to (pick random (1) to (length of [x_positions v]))
-go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
-+ delete (index) of [x_positions v]
-+ delete (index) of [y_positions v]
-stamp
-next costume
-- change [index v] by (1)
+definieer stempel sprites (rijen) (kolommen)
+maak grootte (40) %
+- maak [index v] [1]
+herhaal (kolommen :: custom-arg)
++ maak [index v] (willekeurig getal tussen (1) en (lengte van [x_posities v]))
+ga naar x: (item (index) van [x_posities v]) y: (item (index) van [y_posities v]
++ verwijder (index) van [x_posities v]
++ verwijder (index) van [y_posities v]
+stempel
+volgend uiterlijk
+- verander [index v] met (1)
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
