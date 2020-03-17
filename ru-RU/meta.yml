@@ -8,7 +8,7 @@ version: 4.1.0
 last_tested: 2018-11-05
 steps:
   - 
-    title: Введение
+    title: Introduction
   - 
     title: Add costumes
   - 
@@ -26,7 +26,7 @@ steps:
   - 
     title: Finish the game
   - 
-    title: "Задание: улучши свою игру"
+    title: "Challenge: improve your game"
     challenge: true
   - 
-    title: "Что дальше?"
+    title: "What next?"
