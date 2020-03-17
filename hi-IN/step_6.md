@@ -1,6 +1,6 @@
-## परिधान बदलें
+## Change the costumes
 
-फिलहाल, आपका प्रोग्राम स्प्राइट के उसी परिधान पर बार बार मोहर लगाता है, और परिधान का आकार बहुत बड़ा है।
+At the moment, your program stamps the same sprite costume over and over, and the size of the costume is too large.
 
 \--- task \---
 
@@ -27,11 +27,11 @@ Your program cycles through all the costumes in order. So that each costume does
 
 To do this, you need to follow this **algorithm**:
 
-1. `Repeat`{:class="block3control"} जब तक सूची खाली न हो जाए
-2. `index`{:class="block3variables"} को `1` और सूची की लंबाई के बीच किसी `random`{:class="block3operators"} संख्या पर पर सेट करें
-3. स्प्राइट को आगे ले जाएँ जैसा आपने पहले किया था
-4. `index`{:class="block3variables"} स्थिति की आइटम को `y_positions`{:class="block3variables"} सूची में से हटाएँ
-5. `x_positions`{:class="block3variables"} सूची में से `index`{:class="block3variables"} स्थिति की मद को हटाएँ
+1. `Repeat`{:class="block3control"} until the list is empty
+2. Set `index`{:class="block3variables"} to a `random`{:class="block3operators"} number between `1` and the length of a list
+3. Move the sprite as you did before
+4. Delete the item at the `index`{:class="block3variables"} position from the `y_positions`{:class="block3variables"} list
+5. Delete the item at the `index`{:class="block3variables"} position from the `x_positions`{:class="block3variables"} list
 
 \--- task \---
 
