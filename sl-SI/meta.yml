@@ -8,7 +8,7 @@ version: 4.1.0
 last_tested: 2018-11-05
 steps:
   - 
-    title: Uvod
+    title: Introduction
   - 
     title: Add costumes
   - 
@@ -26,7 +26,7 @@ steps:
   - 
     title: Finish the game
   - 
-    title: "Izziv: izboljšaj igro"
+    title: "Challenge: improve your game"
     challenge: true
   - 
-    title: "Kaj sledi?"
+    title: "What next?"
