@@ -1,8 +1,8 @@
-## पंक्तियाँ जोड़ें
+## Add rows
 
-अब जब आपके पास मोहर वाले परिधानों की एक पंक्ति बनाने के लिए कोड है, तो आपको अधिक पंक्तियाँ बनाने के लिए कोड जोड़ना चाहिए।
+Now that you have the code to create a single row of stamped costumes, you should add code to create more rows.
 
-अपने `generate positions`{:class="block3myblocks"} ब्लॉक पर जाएँ।
+Go to your `generate positions`{:class="block3myblocks"} block.
 
 ```blocks3
 define generate positions (rows)(columns)
