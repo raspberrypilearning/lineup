@@ -5,10 +5,10 @@ description: Create a game where you look for a character hidden in a crowd of o
 listed: true
 copyedit: true
 version: 4.1.0
-last_tested: 2018-05-01
+last_tested: 2018-11-05
 steps:
   - 
-    title: Introducción
+    title: Introduction
   - 
     title: Add costumes
   - 
@@ -26,7 +26,7 @@ steps:
   - 
     title: Finish the game
   - 
-    title: "Desafío: mejora tu juego"
+    title: "Challenge: improve your game"
     challenge: true
   - 
-    title: "Desafío: Pantalla de instrucciones"
+    title: "What next?"
