@@ -1,145 +1,145 @@
-## Create a grid
+## Maak een raster
 
-You are going to create a grid of stamped costumes:
+Je gaat een raster met gestempelde uiterlijken maken:
 
-![stamps in grid](images/stamp_grid.png)
+![stempels in raster](images/stamp_grid.png)
 
-To do this you need to know the `x`{:class="block3motion"} and `y`{:class="block3motion"} coordinates of where each stamp should be placed.
+Om dit te doen, moet je de coördinaten `x`{:class="block3motion"} en `y`{:class="block3motion"} kennen van waar elk stempel moet worden geplaatst.
 
 \--- task \---
 
-First, create a new block called `generate positions`{:class="block3myblocks"}. The block needs to have two 'number input' parameters. Call the two parameters `rows`{:class="block3myblocks"} and `columns`{:class="block3myblocks"}.
+Maak eerst een nieuw blok met de naam `genereer posities`{:class="block3myblocks"}. Het blok moet twee parameters voor 'getalinvoer' hebben. Noem de twee parameters `rijen`{:class="block3myblocks"} en `kolommen`{:class="block3myblocks"}.
 
-The values of these parameters will decide how many rows and columns your grid has.
+De waarden van deze parameters bepalen hoeveel rijen en kolommen je raster heeft.
 
 [[[generic-scratch3-make-block]]]
 
 ```blocks3
-define generate positions (rows)(columns)
+definiëren genereer posities (rijen)(kolommen)
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Create two lists, and call one of them `x_positions`{:class="block3variables"} and the other `y_positions`{:class="block3variables"}. These lists are for storing the `x`{:class="block3motion"} and `y`{:class="block3motion"} coordinates for the stamps.
+Maak twee lijsten en noem er één `x_posities`{:class="block3variables"} en de andere `y_posities`{:class="block3variables"}. In deze lijsten worden de coördinaten `x`{:class="block3motion"} en `y`{:class="block3motion"} voor de stempels opgeslagen.
 
 \--- /task \---
 
 \--- task \---
 
-Inside your `generate positions`{:class="block3myblocks"} block, add blocks to delete all the items from both lists, so that each time the game starts, the lists are empty.
+Binnen jouw `genereer posities`{:class="block3myblocks"} blok, voeg blokken toe om alle items van beide lijsten te verwijderen, zodat elke keer dat het spel start, de lijsten leeg zijn.
 
 ```blocks3
-define generate positions (rows)(columns)
-+ delete [all v] of [y_positions v]
-+ delete [all v] of [x_positions v]
+definiëer genereer posities (rijen)(kolommen)
++ verwijder [alle v] van [y_posities v]
++ verwijder [alle v] van [x_posities v]
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Next, create two variables, and call one of them `x_pos`{:class="block3variables"} and the other `y_pos`{:class="block3variables"}.
+Maak vervolgens twee variabelen en noem er één `x_pos`{:class="block3variables"} en de andere `y_pos`{:class="block3variables"}.
 
 \--- /task \---
 
-The `x_positions`{:class="block3variables"} list should contain ten numbers in total, and these should start at `-200`{:class="block3variables"} and go up to `200`{:class="block3variables"}.
+De lijst `x_posities`{:class="block3variables"} moet in totaal tien getallen bevatten, en deze moeten beginnen bij `-200`{:class="block3variables"} en gaan tot `200`{:class="block3variables"}.
 
-For now, the `y_positions`{:class="block3variables"} list can just contain the number `-150`{:class="block3variables"} ten times, so that the grid only has one row.
+Voorlopig kan de lijst `y_posities`{:class="block3variables"} gewoon tien keer het getal `-150`{:class="block3variables"} bevatten, zodat het raster slechts één rij heeft.
 
 \--- task \---
 
-Start by adding code to the `generate positions`{:class="block3myblocks"} block to set the `y_pos`{:class="block3variables"} variable to `-150`{:class="block3variables"} and the `x_pos`{:class="block3variables"} variable to `-200`{:class="block3variables"}. This is the location of the first stamped sprite.
+Begin door code toe te voegen aan het `genereer posities`{:class="block3myblocks"} blok om de variabele `y_pos`{:class="block3variables"} in te stellen op `-150`{:class="block3variables"} en de `x_pos`{:class="block3variables"} in te stellen op `-200`{:class="block3variables"}. Dit is de locatie van de eerste gestempelde sprite.
 
 ```blocks3
-define generate positions (rows)(columns)
-delete [all v] of [y_positions v]
-delete [all v] of [x_positions v]
-+ set [y_pos v] to [-150]
-+ set [x_pos v] to [-200]
+definiëeren genereer posities (rijen)(kolommen)
+verwijder [alle v] van [y_posities v]
+verwijder [alle v] van [x_posities v]
++ maak [y_pos v] [-150]
++ maak [x_pos v] [-200]
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Next, add a `repeat`{:class="block3control"} loop to put coordinates into the lists.
+Voeg vervolgens een lus `herhaal`{:class="block3control"} toe om coördinaten in de lijsten te plaatsen.
 
-The `repeat`{:class="block3control"} loop should run once for every column you want the grid to have.
+De lus `herhaal`{:class="block3control"} moet éénmaal worden uitgevoerd voor elke kolom die het raster moet hebben.
 
-The `generate positions`{:class="block3myblocks"} block takes `columns`{:class="block3myblocks"} as an input, so you can use `columns`{:class="block3myblocks"} for the `repeat`{:class="block3control"} loop.
+Het `genereer posities`{:class="block3myblocks"} blok neemt `kolommen`{:class="block3myblocks"} als invoer, dus je kunt `kolommen`{:class="block3myblocks"} gebruiken voor de `herhaal`{:class="block3control"} lus.
 
 ```blocks3
-define generate positions (rows)(columns)
-delete [all v] of [y_positions v]
-delete [all v] of [x_positions v]
-set [y_pos v] to [-150]
-set [x_pos v] to [-200]
-+ repeat (columns :: custom-arg)
+definiëer genereer posities (rijen)(kolommen)
+verwijder [alle v] van [y_posities v]
+verwijder [alle v] van [x_posities v]
+maak [y_pos v] [-150]
+maak [x_pos v] [-200]
++ herhaal (kolommen :: custom-arg)
 ```
 
 \--- /task \---
 
-Within the `repeat`{:class="block3control"} loop, add the values of `x_pos`{:class="block3variables"} and `y_pos`{:class="block3variables"} into the lists. Then you need to increase the value of `x_pos`{:class="block3variables"} by a little. How much should the value of `x_pos`{:class="block3variables"} increase by?
+Voeg in de `herhaal`{:class="block3control"} lus de waarden van `x_pos`{:class="block3variables"} en `y_pos`{:class="block3variables"} toe aan de lijsten. Dan moet je de waarde van `x_pos`{:class="block3variables"} een beetje verhogen. Met hoeveel moet de waarde van `x_pos`{:class="block3variables"} toenemen?
 
-This is how to figure it out:
+Zo kom je erachter:
 
-- `x_pos`{:class="block3variables"} starts out with the value `-200`{:class="block3variables"}
-- The final time the loop `repeat`{:class="block3control"} runs, `x_pos`{:class="block3variables"} should reach the value `200`{:class="block3variables"}
-- That's a total increase of `400`{:class="block3variables"}
-- The first `x_pos`{:class="block3variables"} value is for the first column on the grid, and how many columns there are is determined by the `columns`{:class="block3myblocks"} input
+- `x_pos`{:class="block3variables"} begint met de waarde `-200`{:class="block3variables"}
+- De laatste keer dat de `herhaal`{:class="block3control"} lus wordt uitgevoerd, `x_pos`{:class="block3variables"} moet de waarde `200`{:class="block3variables"} bereiken
+- Dat is een totale toename van `400`{:class="block3variables"}
+- De eerste waarde `x_pos`{:class="block3variables"} is voor de eerste kolom op het raster en hoeveel kolommen er zijn, wordt bepaald door de invoer van `kolommen`{:class="block3myblocks"}
 
-So after the first `x_pos`{:class="block3variables"} value is added, each time around the loop, the value of `x_pos`{:class="block3variables"} should increase by `400 / (columns - 1)`{:class="block3operators"}
+Dus nadat de eerste `x_pos`{:class="block3variables"} waarde is toegevoegd, moet elke keer rond de lus de waarde van `x_pos`{:class="block3variables"} toenemen met `400 / (kolommen - 1)`{:class="block3operators"}
 
 \--- task \---
 
-Add in the code that will add all the `x_pos`{:class="block3variables"} and `y_pos`{:class="block3variables"} values into the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists.
+Voeg de code toe die alle `x_pos`{:class="block3variables"} en `y_pos`{:class="block3variables"} toevoegt aan de `x_posities`{:class="block3variables"} en `y_posities`{:class="block3variables"} lijsten.
 
 \--- hints \--- \--- hint \---
 
-Within the loop, you need to add `x_pos`{:class="block3variables"} to the `x_positions`{:class="block3variables"} list, and add the `y_pos`{:class="block3variables"} to the `y_positions`{:class="block3variables"} list. Then `x_pos`{:class="block3variables"} variable needs to increase by `400 / (columns -1)`{:class="block3operators"} each time the loop repeats.
+Binnen de lus moet je `x_pos`{:class="block3variables"} toevoegen aan de lijst `x_posities`{:class="block3variables"} en de `y_pos`{:class="block3variables"} toevoegen aan de `y_posities`{:class="block3variables"} lijst. Vervolgens moet de variabele `x_pos`{:class="block3variables"} telkens met `400 / (kolommen -1)`verhoogd {:class="block3operators"} worden, telkens wanneer de lus wordt herhaald.
 
 \--- /hint \--- \--- hint \---
 
-This shows the additional blocks you need to add into your script.
+Dit toont de extra blokken die je aan het script moet toevoegen.
 
 ```blocks3
-define generate positions (rows)(columns)
-delete [all v] of [y_positions v]
-delete [all v] of [x_positions v]
-set [y_pos v] to [-150]
-set [x_pos v] to [-200]
-repeat (columns :: custom-arg)
-end
+definiëer genereer posities (rijen)(kolommen)
+verwijder [alle v] van [y_posities v]
+verwijder [alle v] van [x_posities v]
+maak [y_pos v] [-150]
+maak [x_pos v] [-200]
+herhaal ( kolommen :: custom-arg)
+einde
 
 (x_pos)
 (y_pos)
 
-add () to [x_positions v]
+voeg () toe aan [x_posities v]
 
-add () to [y_positions v]
+voeg () toe aan [y_posities v]
 
-change [x_pos v] by ()
-(columns ::custom
+verander [x_pos v] met ()
+(kolommen :: custom
 () / () 
 () - ()
 ```
 
 \--- /hint \--- \--- hint \---
 
-Here is the completed script for the `generate positions`{:class="block3myblocks"} block:
+Hier is het voltooide script voor het `genereer posities`{:class="block3myblocks"} blok:
 
 ```blocks3
-define generate positions (rows)(columns)
-delete [all v] of [y_positions v]
-delete [all v] of [x_positions v]
-set [y_pos v] to [-150]
-set [x_pos v] to [-200]
-repeat (columns :: custom-arg)
-+ add (x_pos) to [x_positions v]
-+ add (y_pos) to [y_positions v]
-+ change [x_pos v] by ((400) / ((columns :: custom-arg) - (1)
+definiëer genereer posities (rijen)(kolommen)
+verwijder [alle v] van [y_posities v]
+verwijder [alle v] van [x_posities v]
+maak [y_pos v] [-150]
+maak [x_pos v] [-200]
+herhaal ( kolommen :: custom-arg)
++ voeg (x_pos) toe aan [x_posities v]
++ voeg (y_pos) toe aan [y_posities v]
++ verander [x_pos v] met ((400) / ((kolommen :: custom-arg) - (1)
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
