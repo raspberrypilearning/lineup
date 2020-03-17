@@ -1,105 +1,105 @@
-## Hide your sprite
+## Verberg je sprite
 
-Now it's time to hide your sprite among the crowd of stamps. At the moment the sprite overlaps one of the stamps.
+Nu is het tijd om je sprite te verbergen tussen de menigte stempels. Op dit moment overlapt de sprite een van de stempels.
 
-![overlap](images/overplap-annotated.png)
+![overlappen](images/overplap-annotated.png)
 
 \--- task \---
 
-So this doesn't happen, make your stamp loop run one time less: `(rows * columns) - 1`{:class="block3operators"}
+Zodat dit niet gebeurt, laat je stempellus één keer minder lopen: `(rijen * kolommen) - 1`{:class="block3operators"}
 
 ```blocks3
-define stamp sprites (rows) (columns)
-set size to (40) %
-+repeat (((rows :: custom-arg) * (columns :: custom-arg)) - (1))
-set [index v] to (pick random (1) to (length of [x_positions v]))
-go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
-delete (index) of [x_positions v]
-delete (index) of [y_positions v]
-stamp
-next costume
+stempel sprites (rijen) (kolommen)
+maak grootte (40) %
++ herhaal (((rijen :: custom-arg) * (kolommen :: custom-arg)) - (1))
+maak [index v ] (willekeurig getal tussen (1) en (lengte van [x_posities v]))
+ga naar x: (item (index) van [x_posities v]) y: (item (index) van [y_posities v]
+verwijder (index ) van [x_posities v]
+verwijder (index) van [y_posities v]
+stempel
+volgend uiterlijk
 ```
 
 \--- /task \---
 
-If you run the script now, you can see that your sprite still overlaps with a stamp and there is a hole in your grid. And in the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists, there is one coordinate position left.
+Als je het script nu uitvoert, kun je zien dat je sprite nog steeds overlapt met een stempel en dat er een gat in je raster zit. En in de lijsten `x_posities`{:class="block3variables"} en `y_posities`{:class="block3variables"} is er nog een coördinaatpositie over.
 
 \--- task \---
 
-To finish this part your game, go to the `when flag clicked`{:class="block3events"} section of the scripts.
+Om dit deel van je spel te voltooien, ga je naar het `wanneer op de groene vlag wordt geklikt`{:class="block3events"} gedeelte.
 
 ```blocks3
-when flag clicked
-erase all
-generate positions (4) (10) ::custom
-stamp sprites (4) (10) ::custom
+wanneer op de groene vlag wordt geklikt
+wis alles
+genereer posities (4) (10) ::custom
+stempel sprites (4) (10) ::custom
 ```
 
 \--- no-print \---
 
-Here's an animation showing what should happen:
+Hier is een animatie die laat zien wat er moet gebeuren:
 
-![animation](images/demo_1.gif)
+![animatie](images/demo_1.gif)
 
 \--- /no-print \---
 
-At the start of the game, the sprite should appear at a large size and say "Find me". Then the sprite should hide itself among the stamps in the empty space you have left for it.
+Aan het begin van het spel moet de sprite groot verschijnen en zeggen "Zoek me". Dan zou de sprite zich tussen de stempels moeten verbergen in de lege ruimte die je daarvoor over hebt.
 
-See if you can figure out how to do this, and use the hints below if you need help.
+Kijk of je erachter kunt komen hoe je dit kunt doen en gebruik de onderstaande tips als je hulp nodig hebt.
 
 \--- hints \--- \--- hint \---
 
-This is what it needs to do:
+Dit is wat het moet doen:
 
-1. Send your sprite to `x:0 y:0`{:class="block3motion"}
-2. Bring the sprite to the `front`{:class="block3looks"} and set its `size to 100%`{:class="block3looks"}
-3. `Say 'Find me' for two seconds`{:class="block3looks"}
-4. `Go back one layer`{:class="block3looks"}
-5. Set the sprite's `size to 40%`{:class="block3looks"}
-6. Move to the last remaining position in the lists
+1. Stuur je sprite naar `x:0 y:0`{:class="block3motion"}
+2. Breng de sprite naar `voren`{:class="block3looks"} en stel de `grootte in op 100%`{:class="block3looks"}
+3. `Zeg 'Zoek me' 2 sec.`{:class="block3looks"}
+4. `Ga naar achteren 1 lagen`{:class="block3looks"}
+5. Stel de sprite's `grootte in op 40%`{:class="block3looks"}
+6. Ga naar de laatst overgebleven positie in de lijsten
 
 \--- /hint \--- \--- hint \---
 
-These are the additional blocks you need:
+Dit zijn de extra blokken die je nodig hebt:
 
 ```blocks3
-when flag clicked
-erase all
-generate positions (4) (10) ::custom
-stamp sprites (4) (10) ::custom
+wanneer op de groene vlag wordt geklikt
+wis alles
+genereer posities (4) (10) ::custom
+stempel sprites (4) (10) ::custom
 
-go to x: (0) y: (0)
+ga naar x: (0) y: (0)
 
-go back (1) layers
+ga naar achteren (1) lagen
 
-go to front
+ga naar laag voorgrond
 
-set size to (100) %
+maak grootte (100)%
 
-set size to (40) %
+maak grootte (40)%
 
-say [] for (2) seconds
-item (1 v) of [x_positions v]
-item (1 v) of [y_positions v]
-go to x: () y: ()
+zeg [] (2) sec.
+item (1 v) van [x_posities v]
+item (1 v) van [y_posities v ]
+ga naar x: () y: ()
 ```
 
 \--- /hint \--- \--- hint \---
 
-Here is the completed `when flag clicked`{:class="block3events"} script:
+Hier is het voltooide `wanneer op de groene vlag wordt geklikt`{:class="block3events"} script:
 
 ```blocks3
-when flag clicked
-erase all
-generate positions (4) (10) ::custom
-stamp sprites (4) (10) ::custom
-+go to x: (0) y: (0)
-+go to front
-+set size to (100) %
-+say [Find me] for (2) seconds
-+go back (1) layers
-+set size to (40) %
-+ go to x: (item (1 v) of [x_positions v]) y: (item (1 v) of [y_positions v])
+wanneer op de groene vlag wordt geklikt
+wis alles
+genereer posities (4) (10) ::custom
+stempel sprites (4) (10) ::custom
++ ga naar x: (0) y: (0)
++ ga naar laag voorgrond
++ maak grootte (100) %
++ zeg [Zoek me] (2) sec.
++ ga naar achteren (1) lagen
++ maak grootte (40) %
++ ga naar x: (item (1 v) van [x_posities v]) y: (item (1 v) van [y_posities v])
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
