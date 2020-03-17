@@ -1,4 +1,4 @@
-## Завдання: вдоскональте свою гру
+## Challenge: improve your game
 
 Here are some ideas for how to make your game more interesting:
 
