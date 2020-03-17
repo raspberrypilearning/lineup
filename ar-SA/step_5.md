@@ -8,7 +8,7 @@ Add the **Pen** extension to your project.
 
 [[[generic-scratch3-add-pen-extension]]]
 
-\---/task--
+\--- /task \---
 
 \--- task \---
 
