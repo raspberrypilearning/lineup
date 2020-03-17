@@ -4,8 +4,8 @@ hero_image: images/banner.png
 description: Create a game where you look for a character hidden in a crowd of other characters
 listed: true
 copyedit: true
-version: 4
-last_tested: 05.11.2018
+version: 4.1.0
+last_tested: 2018-11-05
 steps:
   - 
     title: Introduction
@@ -26,7 +26,7 @@ steps:
   - 
     title: Finish the game
   - 
-    title: "Défi : Améliorez votre jeu"
+    title: "Challenge: improve your game"
     challenge: true
   - 
-    title: "Défi: Écran d'instruction"
+    title: "What next?"
