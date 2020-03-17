@@ -1,10 +1,10 @@
-## Stamp a row
+## Stempel een rij
 
-So far you have ten values in each of the two lists. Now stamp some costumes at the Stage coordinates stored in the lists.
+Tot nu toe heb je tien waarden in elk van de twee lijsten. Stempel nu enkele uiterlijken bij de speelveld coördinaten die in de lijsten zijn opgeslagen.
 
 \--- task \---
 
-Add the **Pen** extension to your project.
+Voeg de **Pen** extensie toe aan je project.
 
 [[[generic-scratch3-add-pen-extension]]]
 
@@ -12,100 +12,100 @@ Add the **Pen** extension to your project.
 
 \--- task \---
 
-Create a new block and call it `stamp sprites`{:class="block3myblocks"}. This block needs two number inputs named `row`{:class="block3myblocks"} and `columns`{:class="block3myblocks"} just like the other custom block.
+Maak een nieuw blok en noem het `stempel sprites`{:class="block3myblocks"}. Dit blok heeft twee invoeren nodig met de naam `rijen`{:class="block3myblocks"} en `kolommen`{:class="block3myblocks"} net als het andere aangepaste blok.
 
 ```blocks3
-define stamp sprites (rows) (columns)
+defineer stempel sprites (rijen) (kolommen)
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Create a new variable called `index`{:class="block3variables"} with which to track the position in the lists that your program is reading. To begin with, set `index`{:class="block3variables"} to `1`{:class="block3variables"} to fetch the first item of each list.
+Maak een nieuwe variabele met de naam `index`{:class="block3variables"} waarmee je de positie kunt volgen in de lijsten die je programma aan het lezen is. Stel om te beginnen `index`{:class="block3variables"} in op `1`{:class="block3variables"} om het eerste item van elke lijst op te halen.
 
 ```blocks3
-define stamp sprites (rows) (columns)
-+ set [index v] to [1]
+definieer stempel sprites (rijen) (kolommen)
++ maak [index v] [1]
 ```
 
 \--- /task \---
 
 \--- task \---
 
-The `stamp sprites`{:class="block3myblocks"} block should stamp a sprite for each pair of coordinates in the list. To do this, the block needs a `repeat`{:class="block3variables"} loop that runs once for each column.
+Het blok `stempel sprites`{:class="block3myblocks"} moet een sprite stempelen voor elk paar coördinaten in de lijst. Om dit te doen, heeft het blok een `herhaal`{:class="block3variables"} lus nodig die éénmaal voor elke kolom wordt uitgevoerd.
 
 ```blocks3
-define stamp sprites (rows) (columns)
-set [index v] to [1]
-+ repeat (columns :: custom-arg)
+definieer stempel sprites (rijen) (kolommen)
+maak [index v] [1]
++ herhaal (kolommen :: custom-arg)
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Within the `repeat`{:class="block3variables"} loop:
+Binnen de lus `herhaal`{:class="block3variables"}:
 
-- Move the sprite to the `index`{:class="block3variables"} position in the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists
-- `Stamp`{:class="block3extensions"} the sprite
-- Change the `index`{:class="block3variables"} by `1`{:class="block3variables"}
+- Verplaats de sprite naar de `index`{:class="block3variables"} positie in de `x_posities`{:class="block3variables"} en `y_posities`{:class="block3variables"}
+- `Stempel`{:class="block3extensions"} de sprite
+- Verander `index`{:class="block3variables"} met `1`{:class="block3variables"}
 
 \--- hints \--- \--- hint \---
 
-Within the `repeat`{:class="block3variables"} loop, add a `go to x: y:`{:class="block3motion"} block. The `x`{:class="block3motion"} position in this block should be set to the `index`{:class="block3variables"} of `x_positions`{:class="block3variables"} and the `y`{:class="block3motion"} position should be set to the `index`{:class="block3variables"} of `y_positions`{:class="block3variables"}. Then add code to `stamp`{:class="block3extensions"} the sprite. Finally, add code to increase `index`{:class="block3variables"} by 1.
+Voeg in de lus `herhaal`{:class="block3variables"} een `ga naar x: y:`{:class="block3motion"} blok toe. De positie `x`{:class="block3motion"} in dit blok moet worden ingesteld op de `index`{:class="block3variables"} van `x_posities`{:class="block3variables"} en de `y`{:class="block3motion"} positie moet worden ingesteld op `index`{:class="block3variables"} van `y_posities`{:class="block3variables"}. Voeg vervolgens code toe aan `stempel sprites`{:class="block3extensions"}. Voeg ten slotte code toe om `index`{:class="block3variables"} met 1 te verhogen.
 
 \--- /hint \--- \--- hint \---
 
-Here are the blocks you need:
+Dit zijn de blokken die je nodig hebt:
 
 ```blocks3
-define stamp sprites (rows) (columns)
-set [index v] to [1]
-repeat (columns :: custom-arg)
-end
+definieer stempel sprites (rijen) (kolommen)
+maak [index v] [1]
+herhaal (kolommen :: custom-arg)
+einde
 
-change [index v] by (1)
+verander [index v] met (1)
 (index) 
 (index) 
-go to x: () y: ()
-(item ()of [y_positions v])
-(item ()of [x_positions v])
-stamp
+ga naar x: () y: ()
+(item () van [y_posities v])
+(item () van [x_posities v])
+stempel
 ```
 
 \--- /hint \--- \--- hint \---
 
-Here is the completed script for the `stamp sprites`{:class="block3myblocks"} block:
+Hier is het voltooide script voor het `stempel sprites`{:class="block3myblocks"} blok:
 
 ```blocks3
-define stamp sprites (rows) (columns)
-set [index v] to [1]
-repeat (columns :: custom-arg)
-+ go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
-+ stamp
-+ change [index v] by (1)
+definieer stempel sprites (rijen) (kolommen)
+maak [index v] [1]
+herhaal (kolommen :: custom-arg)
++ ga naar x: (item (index) van [x_posities v]) y: (item (index ) van [y_posities v]
++ stempel
++ verander [index v] met (1)
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
 \--- task \---
 
-Add a `erase all`{:class="block3extensions"} block below the `when flag clicked`{:class="block3control"} block to clear the Stage each time the game starts. Then add the `stamp sprites`{:class="block3myblocks"} block at the bottom of the `when flag clicked`{:class="block3control"} script so you can test your new code.
+Voeg een `wis alles`{:class="block3extensions"} blok onder het `wanneer op de groene vlag wordt geklikt`{:class="block3control"} blok om het speelveld te wissen telkens wanneer het spel start. Voeg vervolgens het `stempel sprites`{:class="block3myblocks"} blok onder aan het `wanneer op de groene vlag wordt geklikt`{:class="block3control"} script toe, zodat je je nieuwe code kunt testen.
 
 ```blocks3
-when flag clicked
-erase all
-generate positions (1) (10) ::custom
-stamp sprite (1) (10) ::custom
+wanneer op de groene vlag wordt geklikt
+wis alles
+genereer posities (1) (10) ::custom
+stempel sprites (1) (10) ::custom
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Click the green flag. You should see something like this, depending on the costumes your sprite has:
+Klik op de groene vlag. Je zou zoiets moeten zien, afhankelijk van de uiterlijken die je sprite heeft:
 
-![stamped sprites](images/stamped_sprites.png)
+![gestempelde sprites](images/stamped_sprites.png)
 
 \--- /task \---
