@@ -2,13 +2,13 @@
 
 This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/lineup-scratch2).
 
-\--- / no-print \---
+\--- /no-print \---
 
-## Introducció
+## Introduction
 
 In this project you will make a Scratch game in which you need to find a sprite that is hidden among a huge crowd of other characters.
 
-### Què faràs
+### What you will make
 
 \--- no-print \---
 
@@ -30,7 +30,7 @@ You have to find the right sprite amongst all these characters before your time 
 
 ## \--- collapse \---
 
-## títol: Què aprendràs
+## title: What you will learn
 
 + How to create custom blocks that have inputs
 + How to use lists to store grid coordinates
@@ -40,13 +40,13 @@ You have to find the right sprite amongst all these characters before your time 
 
 ## \--- collapse \---
 
-## títol: què necessitaràs
+## title: What you will need
 
-### Maquinari
+### Hardware
 
-+ Un ordinador capaç d'executar Scratch 3
++ A computer capable of running Scratch 3
 
-### Programari
+### Software
 
 + Scratch 3 (either [online](http://rpf.io/scratchon){:target="_blank"} or [offline](http://rpf.io/scratchoff){:target="_blank"})
 
@@ -54,7 +54,7 @@ You have to find the right sprite amongst all these characters before your time 
 
 ## \--- collapse \---
 
-## títol: notes addicionals per a educadors
+## title: Additional notes for educators
 
 \--- no-print \---
 
