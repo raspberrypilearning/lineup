@@ -1,7 +1,7 @@
 ---
-title: Line up
-hero_image: afbeeldingen / banner.png
-description: Create a game where you look for a character hidden in a crowd of other characters
+title: Op een rij
+hero_image: images/banner.png
+description: Maak een spel waarbij je op zoek bent naar een personage dat verborgen is in een menigte andere personages
 listed: true
 copyedit: true
 version: 4.1.0
@@ -12,21 +12,21 @@ steps:
   - 
     title: Uiterlijken toevoegen
   - 
-    title: Create a grid
+    title: Maak een raster
   - 
-    title: Test the script
+    title: Test het script
   - 
-    title: Stamp a row
+    title: Stempel een rij
   - 
-    title: Change the costumes
+    title: Verander de uiterlijken
   - 
-    title: Add rows
+    title: Rijen toevoegen
   - 
-    title: Hide your sprite
+    title: Verberg je sprite
   - 
-    title: Finish the game
+    title: Voltooi het spel
   - 
-    title: "Challenge: verbeter je spel"
+    title: "Uitdaging: verbeter je spel"
     challenge: true
   - 
-    title: "Uitdaging: Instructie scherm"
+    title: "Wat kun je verder nog doen?"
