@@ -1,10 +1,10 @@
-## एक ग्रिड बनाएँ
+## Create a grid
 
-आप मोहर वाले परिधानों का एक ग्रिड बनाने जा रहे हैं:
+You are going to create a grid of stamped costumes:
 
-![ग्रिड में मोहरें](images/stamp_grid.png)
+![stamps in grid](images/stamp_grid.png)
 
-ऐसा करने के लिए आपको `x`{:class="block3motion"} और `y`{:class="block3motion"} निर्देशांकों को जानने की ज़रूरत होगी जहाँ प्रत्येक मोहर लगाई जानी चाहिए।
+To do this you need to know the `x`{:class="block3motion"} and `y`{:class="block3motion"} coordinates of where each stamp should be placed.
 
 \--- task \---
 
@@ -85,10 +85,10 @@ Within the `repeat`{:class="block3control"} loop, add the values of `x_pos`{:cla
 
 This is how to figure it out:
 
-- `x_pos`{:class="block3variables"} `-200`{:class="block3variables"} के मान से प्रारंभ होता है
-- लूप `repeat`{:class="block3control"} जब अंतिम बार चलता है तो, `x_pos`{:class="block3variables"} को `200`{:class="block3variables"} के मान पर पहुँचना चाहिए
-- यह कुल `400`{:class="block3variables"} की वृद्धि है
-- पहला `x_pos`{:class="block3variables"} मान ग्रिड पर पहले कॉलम के लिए है, और कुल कितने कॉलम हैं यह `columns`{:class="block3myblocks"} की इनपुट से निर्धारित होता है।
+- `x_pos`{:class="block3variables"} starts out with the value `-200`{:class="block3variables"}
+- The final time the loop `repeat`{:class="block3control"} runs, `x_pos`{:class="block3variables"} should reach the value `200`{:class="block3variables"}
+- That's a total increase of `400`{:class="block3variables"}
+- The first `x_pos`{:class="block3variables"} value is for the first column on the grid, and how many columns there are is determined by the `columns`{:class="block3myblocks"} input
 
 So after the first `x_pos`{:class="block3variables"} value is added, each time around the loop, the value of `x_pos`{:class="block3variables"} should increase by `400 / (columns - 1)`{:class="block3operators"}
 
