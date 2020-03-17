@@ -8,7 +8,7 @@ Import this image as a sprite.
 
 [[[generic-scratch3-add-sprite-from-file]]]
 
-\--- /görev \---
+\--- /task \---
 
 \--- task \---
 
