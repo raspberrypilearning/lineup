@@ -4,11 +4,11 @@ This is the **Scratch 3** version of the project. There is also a [Scratch 2 ver
 
 \--- /no-print \---
 
-## Introduksjon
+## Introduction
 
 In this project you will make a Scratch game in which you need to find a sprite that is hidden among a huge crowd of other characters.
 
-### Hva du vil lage
+### What you will make
 
 \--- no-print \---
 
@@ -28,9 +28,9 @@ You have to find the right sprite amongst all these characters before your time 
 
 \--- /print-only \---
 
-## \--- kollaps \---
+## \--- collapse \---
 
-## title: Hva dere vil lære
+## title: What you will learn
 
 + How to create custom blocks that have inputs
 + How to use lists to store grid coordinates
@@ -38,21 +38,21 @@ You have to find the right sprite amongst all these characters before your time 
 
 \--- /collapse \---
 
-## \--- kollaps \---
+## \--- collapse \---
 
-## title: Hva dere trenger
+## title: What you will need
 
-### Maskinvare
+### Hardware
 
 + A computer capable of running Scratch 3
 
-### Programvare
+### Software
 
 + Scratch 3 (either [online](http://rpf.io/scratchon){:target="_blank"} or [offline](http://rpf.io/scratchoff){:target="_blank"})
 
 \--- /collapse \---
 
-## \--- kollaps \---
+## \--- collapse \---
 
 ## title: Additional notes for educators
 
