@@ -8,7 +8,7 @@ version: 4.1.0
 last_tested: 2018-11-05
 steps:
   - 
-    title: المقدمة
+    title: Introduction
   - 
     title: Add costumes
   - 
@@ -26,7 +26,7 @@ steps:
   - 
     title: Finish the game
   - 
-    title: "التحدي: تحسين لعبتك"
+    title: "Challenge: improve your game"
     challenge: true
   - 
-    title: "التحدي: شاشة التعليمات"
+    title: "What next?"
