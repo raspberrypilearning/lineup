@@ -1,7 +1,7 @@
-## चुनौती: अपने गेम में सुधार करें
+## Challenge: improve your game
 
-अपने गेम को और अधिक रोचक बनाने के लिए यहाँ कुछ विचार दिए गए हैं:
+Here are some ideas for how to make your game more interesting:
 
-- क्या आप अपनी स्क्रिप्ट को बदल सकते हैं ताकि आप और भी अधिक परिधानों का उपयोग कर सकें?
-- कोई पृष्ठभूमि चुनना और फिर स्क्रीन के शीर्ष के नज़दीक स्थित स्प्राइट को छोटे आकार में दिखाना कैसा रहेगा, ताकि वे और भी दूर दिखाई दें?
-- क्या आप गेम को कई राउंड तक चला सकते हैं और इसके आधार पर आपको स्कोर प्रदान किया जा सकता है कि पांच राउंड को पूरा करने में आपको कितना समय लगता है?
+- Can you alter your scripts so that you can use even more costumes?
+- How about choosing a background and then making the sprites nearer the top of the screen appear smaller, so they seem further away?
+- Can you make the game run for several rounds and provide you with a score based on how long it takes you to complete five rounds?
