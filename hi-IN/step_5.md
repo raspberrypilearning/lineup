@@ -1,10 +1,10 @@
-## पंक्ति पर मोहर लगाएँ
+## Stamp a row
 
-अब तक आपके पास दोनों सूचियों में दस-दस मान हैं। अब सूचियों में संगृहीत स्टेज निर्देशांकों में कुछ परिधानों पर मोहर लगाएँ।
+So far you have ten values in each of the two lists. Now stamp some costumes at the Stage coordinates stored in the lists.
 
 \--- task \---
 
-अपने प्रोजेक्ट में **Pen** एक्सटेंशन जोड़ें।
+Add the **Pen** extension to your project.
 
 [[[generic-scratch3-add-pen-extension]]]
 
@@ -47,9 +47,9 @@ set [index v] to [1]
 
 Within the `repeat`{:class="block3variables"} loop:
 
-- स्प्राइट को `x_positions`{:class="block3variables"} और `y_positions`{:class="block3variables"} सूचियों में `index`{:class="block3variables"} स्थिति में ले जाएँ
-- स्प्राइट पर `Stamp`{:class="block3extensions"} का उपयोग करें
-- `index`{:class="block3variables"} को `1`{:class="block3variables"} से बदलें
+- Move the sprite to the `index`{:class="block3variables"} position in the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists
+- `Stamp`{:class="block3extensions"} the sprite
+- Change the `index`{:class="block3variables"} by `1`{:class="block3variables"}
 
 \--- hints \--- \--- hint \---
 
