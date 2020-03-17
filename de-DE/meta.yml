@@ -8,9 +8,9 @@ version: 4.1.0
 last_tested: 2018-11-05
 steps:
   - 
-    title: Einleitung
+    title: Introduction
   - 
-    title: Kostüme hinzufügen
+    title: Add costumes
   - 
     title: Create a grid
   - 
@@ -26,7 +26,7 @@ steps:
   - 
     title: Finish the game
   - 
-    title: "Herausforderung: Erstelle mehr Blöcke"
+    title: "Challenge: improve your game"
     challenge: true
   - 
-    title: "Aufgabe: Anweisungsbildschirm"
+    title: "What next?"
