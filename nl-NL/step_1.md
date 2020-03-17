@@ -6,13 +6,13 @@ Dit is de **Scratch 3** versie van het project. Er is ook een [Scratch 2 versie 
 
 ## Inleiding
 
-In this project you will make a Scratch game in which you need to find a sprite that is hidden among a huge crowd of other characters.
+In dit project maak je een Scratch spel waarin je een sprite moet vinden die verborgen is tussen een enorme menigte andere personages.
 
 ### Wat ga je maken
 
 \--- no-print \---
 
-Click on the green flag and, once the curtain is up, try and find the sprite before your time runs out.
+Klik op de groene vlag en, zodra het gordijn omhoog is, probeer de sprite te vinden voordat de tijd verlopen is.
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/259020474/?autostart=false" frameborder="0" scrolling="no"></iframe>
@@ -22,9 +22,9 @@ Click on the green flag and, once the curtain is up, try and find the sprite bef
 
 \--- print-only \---
 
-You have to find the right sprite amongst all these characters before your time runs out.
+Je moet tussen al deze personages de juiste sprite vinden voordat de tijd verlopen is.
 
-![showcase](images/showcase.png)
+![etalage](images/showcase.png)
 
 \--- /print-only \---
 
@@ -32,9 +32,9 @@ You have to find the right sprite amongst all these characters before your time 
 
 ## title: Wat ga je leren
 
-+ How to create custom blocks that have inputs
-+ How to use lists to store grid coordinates
-+ How to use loops to cycle over items in a list
++ Hoe aangepaste blokken met invoer te maken
++ Lijsten gebruiken om rastercoördinaten op te slaan
++ Lussen gebruiken om door items in een lijst te bladeren
 
 \--- /collapse \---
 
@@ -48,20 +48,20 @@ You have to find the right sprite amongst all these characters before your time 
 
 ### Software
 
-+ Scratch 3 (either [online](http://rpf.io/scratchon){:target="_blank"} or [offline](http://rpf.io/scratchoff){:target="_blank"})
++ Scratch 3 ([online](http://rpf.io/scratchon){:target="_blank"} of [offline](http://rpf.io/scratchoff){:target="_blank"})
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Additional notes for educators
+## title: Aanvullende informatie voor docenten
 
 \--- no-print \---
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/lineup/print).
+Als je dit project wilt afdrukken, gebruik dan de [printervriendelijke versie](https://projects.raspberrypi.org/en/projects/lineup/print).
 
 \--- /no-print \---
 
-You can find the [completed project here](http://rpf.io/p/en/lineup-get){:target="_blank"}.
+Je kunt het [voltooide project hier](http://rpf.io/p/en/lineup-get)"{:target="_blank"} vinden.
 
 \--- /collapse \---
