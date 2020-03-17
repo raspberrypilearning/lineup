@@ -1,4 +1,4 @@
-## गेम समाप्त करें
+## Finish the game
 
 \--- task \---
 
@@ -62,13 +62,13 @@ Try to do this by yourself, and use the hints if you need help.
 
 For the curtain sprite, you need a script that does the following things:
 
-1. जब पर्दा स्प्राइट को `broadcast`{:class="block3events"} प्राप्त हो जाए
-2. पर्दा स्प्राइट को `front`{:class="block3looks"} पर लाएँ
-3. पात्र स्प्राइट के परिधानों पर मोहर लगाए जाते समय थोड़ी प्रतीक्षा करने के लिए `Wait`{:class="block3control"} का उपयोग करें
-4. पर्दा स्प्राइट को ऊपर की ओर `Glide`{:class="block3motion"} करें ताकि यह स्टेज के ऊपर की ओर जाकर समाप्त हो
-5. पर्दे को छिपाने के लिए `Hide`{:class="block3looks"} का उपयोग करें
-6. एक लूप शुरू करें जो 10 सेकंड के लिए उलटी गिनती करे
-7. जब समय समाप्त हो जाए, तो पर्दा स्प्राइट को दिखाने के लिए `show`{:class="block3looks"} का उपयोग करें
+1. When the curtain sprite receives the `broadcast`{:class="block3events"}
+2. Bring the curtain sprite to the `front`{:class="block3looks"}
+3. `Wait`{:class="block3control"} a little bit while the character sprite costumes get stamped
+4. `Glide`{:class="block3motion"} the curtain sprite upwards so it ends up near the top of the Stage
+5. `Hide`{:class="block3looks"} the curtain
+6. Start a loop that counts down for 10 seconds
+7. When the time is over, `show`{:class="block3looks"} the curtain sprite
 8. `Glide`{:class="block3motion"} the curtain sprite back to its original position
 
 \--- /hint \--- \--- hint \---
