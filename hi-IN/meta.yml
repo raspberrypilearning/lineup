@@ -1,32 +1,32 @@
 ---
-title: लाइन अप
+title: Line up
 hero_image: images/banner.png
-description: एक ऐसी गेम बनाएँ जिसमें आप अन्य पात्रों की भीड़ में छिपे पात्र की तलाश करते हैं
+description: Create a game where you look for a character hidden in a crowd of other characters
 listed: true
 copyedit: true
 version: 4.1.0
 last_tested: 2018-11-05
 steps:
   - 
-    title: भूमिका
+    title: Introduction
   - 
-    title: परिधान जोड़ें
+    title: Add costumes
   - 
-    title: एक ग्रिड बनाएँ
+    title: Create a grid
   - 
-    title: स्क्रिप्ट का परीक्षण करें
+    title: Test the script
   - 
-    title: पंक्ति पर मोहर लगाएँ
+    title: Stamp a row
   - 
-    title: परिधान बदलें
+    title: Change the costumes
   - 
-    title: पंक्तियाँ जोड़ें
+    title: Add rows
   - 
-    title: अपने स्प्राइट को छिपाएँ
+    title: Hide your sprite
   - 
-    title: गेम समाप्त करें
+    title: Finish the game
   - 
-    title: "चुनौती: अपने गेम में सुधार करें"
+    title: "Challenge: improve your game"
     challenge: true
   - 
-    title: "आगे क्या?"
+    title: "What next?"
