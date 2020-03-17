@@ -4,11 +4,11 @@ This is the **Scratch 3** version of the project. There is also a [Scratch 2 ver
 
 \--- /no-print \---
 
-## מבוא
+## Introduction
 
 In this project you will make a Scratch game in which you need to find a sprite that is hidden among a huge crowd of other characters.
 
-### מה תעשה
+### What you will make
 
 \--- no-print \---
 
@@ -42,11 +42,11 @@ You have to find the right sprite amongst all these characters before your time 
 
 ## title: What you will need
 
-### חומרה
+### Hardware
 
-+ מחשב המסוגל להריץ Scratch 3
++ A computer capable of running Scratch 3
 
-### תוכנה
+### Software
 
 + Scratch 3 (either [online](http://rpf.io/scratchon){:target="_blank"} or [offline](http://rpf.io/scratchoff){:target="_blank"})
 
