@@ -4,11 +4,11 @@ This is the **Scratch 3** version of the project. There is also a [Scratch 2 ver
 
 \--- /no-print \---
 
-## Einleitung
+## Introduction
 
 In this project you will make a Scratch game in which you need to find a sprite that is hidden among a huge crowd of other characters.
 
-### Was du machen wirst
+### What you will make
 
 \--- no-print \---
 
@@ -30,7 +30,7 @@ You have to find the right sprite amongst all these characters before your time 
 
 ## \--- collapse \---
 
-## title: Was du lernen wirst
+## title: What you will learn
 
 + How to create custom blocks that have inputs
 + How to use lists to store grid coordinates
@@ -40,11 +40,11 @@ You have to find the right sprite amongst all these characters before your time 
 
 ## \--- collapse \---
 
-## title: Was du brauchen wirst
+## title: What you will need
 
 ### Hardware
 
-+ Ein Computer, auf dem Scratch 3 ausgeführt werden kann
++ A computer capable of running Scratch 3
 
 ### Software
 
@@ -54,7 +54,7 @@ You have to find the right sprite amongst all these characters before your time 
 
 ## \--- collapse \---
 
-## title: Zusätzliche Hinweise für Pädagogen
+## title: Additional notes for educators
 
 \--- no-print \---
 
