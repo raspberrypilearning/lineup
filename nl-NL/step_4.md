@@ -1,24 +1,24 @@
-## Test the script
+## Test het script
 
 \--- task \---
 
-To test the script, you need to **call** the custom block and provide it with the number of `columns`{:class="block3myblocks"} you want in your grid.
+Om het script te testen, heb je een **aanroep** van je blok nodig en dit voorzien van het aantal `kolommen`{:class="block3myblocks"} dat je in je raster wilt.
 
-Add this code to your sprite:
+Voeg deze code toe aan je sprite:
 
 ```blocks3
-when flag clicked
-generate positions (1) (10) ::custom
+wanneer op de groene vlag wordt geklikt
+genereer posities (1) (10) ::custom
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Now click on the green flag to run your code. You should see your two lists fill with values.
+Klik nu op de groene vlag om je code uit te voeren. Je zou je twee lijsten met waarden gevuld moeten zien.
 
-![lists](images/filled_lists.png)
+![lijsten](images/filled_lists.png)
 
-If your results don't look like this, then go back to the previous step, have a look at the hints, and try to fix your script.
+Als je resultaten er niet zo uitzien, ga dan terug naar de vorige stap, bekijk de hints en probeer je script te verbeteren.
 
 \--- /task \---
