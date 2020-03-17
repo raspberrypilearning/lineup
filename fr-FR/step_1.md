@@ -8,7 +8,7 @@ This is the **Scratch 3** version of the project. There is also a [Scratch 2 ver
 
 In this project you will make a Scratch game in which you need to find a sprite that is hidden among a huge crowd of other characters.
 
-### Ce que tu feras
+### What you will make
 
 \--- no-print \---
 
@@ -30,7 +30,7 @@ You have to find the right sprite amongst all these characters before your time 
 
 ## \--- collapse \---
 
-## title: Ce que tu vas apprendre
+## title: What you will learn
 
 + How to create custom blocks that have inputs
 + How to use lists to store grid coordinates
@@ -40,13 +40,13 @@ You have to find the right sprite amongst all these characters before your time 
 
 ## \--- collapse \---
 
-## title: Ce qu'il faut avoir
+## title: What you will need
 
-### Matériel informatique
+### Hardware
 
-+ Un ordinateur capable d'exécuter Scratch 3
++ A computer capable of running Scratch 3
 
-### Logiciels
+### Software
 
 + Scratch 3 (either [online](http://rpf.io/scratchon){:target="_blank"} or [offline](http://rpf.io/scratchoff){:target="_blank"})
 
@@ -54,7 +54,7 @@ You have to find the right sprite amongst all these characters before your time 
 
 ## \--- collapse \---
 
-## titre: Notes supplémentaires pour les éducateurs
+## title: Additional notes for educators
 
 \--- no-print \---
 
