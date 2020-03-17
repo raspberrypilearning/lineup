@@ -2,7 +2,7 @@
 
 So far you have ten values in each of the two lists. Now stamp some costumes at the Stage coordinates stored in the lists.
 
-\--- proba\---
+\--- task \---
 
 Add the **Pen** extension to your project.
 
