@@ -1,14 +1,14 @@
 \--- no-print \---
 
-Ово је **Scratch 3** верзија пројекта. Постоји, такође, и [Scratch 2 верзија пројекта](https://projects.raspberrypi.org/en/projects/lineup-scratch2).
+This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/lineup-scratch2).
 
 \--- /no-print \---
 
-## Увод
+## Introduction
 
 In this project you will make a Scratch game in which you need to find a sprite that is hidden among a huge crowd of other characters.
 
-### Шта ћеш направити
+### What you will make
 
 \--- no-print \---
 
@@ -30,7 +30,7 @@ You have to find the right sprite amongst all these characters before your time 
 
 ## \--- collapse \---
 
-## title: Шта ћеш научити
+## title: What you will learn
 
 + How to create custom blocks that have inputs
 + How to use lists to store grid coordinates
@@ -40,13 +40,13 @@ You have to find the right sprite amongst all these characters before your time 
 
 ## \--- collapse \---
 
-## title: Шта ће ти бити потребно
+## title: What you will need
 
-### Хардвер
+### Hardware
 
-+ Рачунар који може да покрене Scratch 3
++ A computer capable of running Scratch 3
 
-### Софтвер
+### Software
 
 + Scratch 3 (either [online](http://rpf.io/scratchon){:target="_blank"} or [offline](http://rpf.io/scratchoff){:target="_blank"})
 
@@ -54,7 +54,7 @@ You have to find the right sprite amongst all these characters before your time 
 
 ## \--- collapse \---
 
-## title: Додатне напомене за наставнике
+## title: Additional notes for educators
 
 \--- no-print \---
 
