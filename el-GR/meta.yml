@@ -8,7 +8,7 @@ version: 4.1.0
 last_tested: 2018-11-05
 steps:
   - 
-    title: Εισαγωγή
+    title: Introduction
   - 
     title: Add costumes
   - 
@@ -26,7 +26,7 @@ steps:
   - 
     title: Finish the game
   - 
-    title: "Πρόκληση: βελτίωσε το παιχνίδι σου"
+    title: "Challenge: improve your game"
     challenge: true
   - 
-    title: "Πρόκληση: περισσότερα μολύβια"
+    title: "What next?"
