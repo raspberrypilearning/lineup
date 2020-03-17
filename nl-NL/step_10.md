@@ -1,7 +1,7 @@
 ## Challenge: verbeter je spel
 
-Here are some ideas for how to make your game more interesting:
+Hier zijn enkele ideeën om je spel interessanter te maken:
 
-- Can you alter your scripts so that you can use even more costumes?
-- How about choosing a background and then making the sprites nearer the top of the screen appear smaller, so they seem further away?
-- Can you make the game run for several rounds and provide you with a score based on how long it takes you to complete five rounds?
+- Kun je je scripts wijzigen zodat je nog meer uiterlijken kunt gebruiken?
+- Hoe zit het met het kiezen van een achtergrond en de sprites aan de bovenkant van het speelveld kleiner te laten lijken, zodat ze verder weg lijken?
+- Kun je het spel meerdere ronden laten lopen en je een score geven op basis van hoe lang het duurt om vijf ronden te voltooien?
