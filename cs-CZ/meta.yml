@@ -4,11 +4,11 @@ hero_image: images/banner.png
 description: Create a game where you look for a character hidden in a crowd of other characters
 listed: true
 copyedit: true
-version: 3
-last_tested: 2018-05-01
+version: 4.1.0
+last_tested: 2018-11-05
 steps:
   - 
-    title: Úvod
+    title: Introduction
   - 
     title: Add costumes
   - 
@@ -29,4 +29,4 @@ steps:
     title: "Challenge: improve your game"
     challenge: true
   - 
-    title: "Co dál?"
+    title: "What next?"
