@@ -1,10 +1,10 @@
-## Finish the game
+## Maak het spel af
 
 \--- task \---
 
-To finish the game, [find and download an image of a stage curtain](https://www.google.co.uk/search?q=stage+curtain&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjKg9O1k8_VAhXSL1AKHe1HDMIQ_AUICigB&biw=1362&bih=584){:target="_blank"}.
+Om het spel te beëindigen, [zoek en download een afbeelding van een podiumgordijn](https://www.google.co.uk/search?q=stage+curtain&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjKg9O1k8_VAhXSL1AKHe1HDMIQ_AUICigB&biw=1362&bih=584){:target="_blank"}.
 
-Import this image as a sprite.
+Importeer deze afbeelding als sprite.
 
 [[[generic-scratch3-add-sprite-from-file]]]
 
@@ -12,124 +12,124 @@ Import this image as a sprite.
 
 \--- task \---
 
-Position the new curtain sprite at `x:0 y:0`{:class="block3motion"}, and then change its size so that it fills the screen. Make sure it is visible.
+Plaats de nieuwe gordijn sprite op `x:0 y:0`{:class="block3motion"} en wijzig vervolgens de grootte zodat deze het speelveld vult. Zorg ervoor dat het zichtbaar is.
 
 ```blocks3
-when flag clicked
-go to x: (0) y: (0)
-set size to (110) %
-show
+wanneer op de groene vlag wordt geklikt
+ga naar x: (0) y: (0)
+maak grootte (110) %
+verschijn
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Then, in the scripts for your character sprite, add a `broadcast`{:class="block3events"} with the message 'curtain up' to the end of the `when flag clicked`{:class="block3events"} script.
+Voeg vervolgens in de scripts voor je personage sprite een `zend signaal`{:class="block3events"} toe met het bericht 'gordijn omhoog' aan het einde van het `wanneer op de groene vlag wordt geklikt`{:class="block3events"} script.
 
 ```blocks3
-when flag clicked
-erase all
-generate positions (4) (10) ::custom
-stamp sprites (4) (10) ::custom
-go to x: (0) y: (0)
-go to front
-set size to (100) %
-say [Find me] for (2) seconds
-go back (1) layers
-set size to (40) %
-go to x: (item (1 v) of [x_positions v]) y: (item (1 v) of [y_positions v])
-+broadcast (curtain up v)
+wanneer op de groene vlag wordt geklikt
+wis alles
+genereer posities (4) (10) ::custom
+stempel sprites (4) (10) ::custom
+ga naar x: (0) y: (0)
+ga naar laag voorgrond
+maak grootte (100) %
+zeg [Zoek me] (2) sec.
+ga naar achteren (1) lagen
+maak grootte (40) %
+ga naar x: (item (1 v) van [x_posities v]) y: (item (1 v) van [y_posities v])
++ zend signaal (gordijn omhoog v)
 ```
 
 \--- /task \---
 
 \--- task \---
 
-When the curtain sprite receives the `broadcast`{:class="block3events"}, the sprite needs to move upwards for 10 seconds so that it looks like the curtain is raised to reveal the stamps. Then the curtain should drop again, so the curtain sprite needs to move downwards.
+Wanneer de gordijn sprite het `signaal`ontvangt {:class="block3events"}, moet de sprite 10 seconden omhoog gaan zodat het lijkt alsof het gordijn omhoog wordt gehesen om de stempels te onthullen. Dan zou het gordijn weer moeten vallen, dus de gordijn sprite moet naar beneden bewegen.
 
 \--- no-print \---
 
-It should look like this:
+Het zou er zo uit moeten zien:
 
 ![demo 2](images/demo_2.gif)
 
 \--- /no-print \---
 
-Try to do this by yourself, and use the hints if you need help.
+Probeer dit zelf te doen en gebruik de hints als je hulp nodig hebt.
 
 \--- hints \--- \--- hint \---
 
-For the curtain sprite, you need a script that does the following things:
+Voor de gordijn sprite heb je een script nodig dat de volgende dingen doet:
 
-1. When the curtain sprite receives the `broadcast`{:class="block3events"}
-2. Bring the curtain sprite to the `front`{:class="block3looks"}
-3. `Wait`{:class="block3control"} a little bit while the character sprite costumes get stamped
-4. `Glide`{:class="block3motion"} the curtain sprite upwards so it ends up near the top of the Stage
-5. `Hide`{:class="block3looks"} the curtain
-6. Start a loop that counts down for 10 seconds
-7. When the time is over, `show`{:class="block3looks"} the curtain sprite
-8. `Glide`{:class="block3motion"} the curtain sprite back to its original position
+1. Wanneer de gordijn sprite het `signaal`{:class="block3events"} ontvangt
+2. Breng de gordijn sprite naar de `voorgrond`{:class="block3looks"}
+3. `Wacht`{:class="block3control"} even terwijl de sprite uiterlijken worden gestempeld
+4. `Hijs`{:class="block3motion"} de gordijn sprite omhoog zodat het in de buurt van de bovenkant van het speelveld belandt
+5. `Verberg`{:class="block3looks"} het gordijn
+6. Start een lus die 10 seconden aftelt
+7. Wanneer de tijd voorbij is, `verschijnt`{:class="block3looks"} de sprite van het gordijn
+8. `Zet`{:class="block3motion"} de gordijn sprite terug naar de oorspronkelijke positie
 
 \--- /hint \--- \--- hint \---
 
-Here are the blocks you need:
+Dit zijn de blokken die je nodig hebt:
 
 ```blocks3
-go to front
+ga naar laag voorgrond
 
-show
+verschijn
 
-hide
+verdwijn
 
-glide (1) secs to x: (0) y: (0)
+schuif in (1) sec. naar x: (0) y: (0)
 
-glide (1) secs to x: (0) y: (0)
+schuif in (1) sec. naar x: (0) y: (0)
 
-set [timer v] to []
+maak [timer v] []
 
-change [timer v] by ()
+verander [timer v] met ()
 
-wait () secs
+wacht () sec.
 
-wait () secs
+wacht () sec.
 
-repeat ()
-end
-when I receive [curtain up v]
+herhaal ()
+einde
+wanneer ik signaal [gordijn omhoog v] ontvang
 ```
 
 \--- /hint \--- \--- hint \---
 
-This is the completed script:
+Dit is het voltooide script:
 
 ```blocks3
-when I receive [curtain up v]
-go to front
-wait (1) seconds
-glide (1) secs to x: (0) y: (300)
-hide
-set [timer v] to [10]
-repeat (10)
-wait (1) seconds
-change [timer v] by (-1)
-end
-show
-glide (1) secs to x: (0) y: (0)
+wanneer ik signaal [gordijn omhoog v] ontvang
+ga naar laag voorgrond
+wacht (1) sec.
+schuif in (1) sec. naar x: (0) y: (300)
+verdwijn
+maak [timer v] [10]
+herhaal (10)
+wacht (1) sec.
+verander [timer v] met (-1)
+einde
+verschijn
+schuif in (1) sec. naar x: (0) y: (0)
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-The very last part is to let the player know if they've won.
+Het allerlaatste onderdeel is om de speler te laten weten of hij heeft gewonnen.
 
 \--- task \---
 
-In the scripts for the the character sprite, add code so that, when the sprite is clicked, the sprite says `You've found me`{:class="block3looks"}, and all the scripts in the game stop.
+Voeg in de scripts voor het karakter sprite code toe zodat, wanneer op de sprite wordt geklikt, de sprite zegt `Je hebt me gevonden`{:class="block3looks"} en alle scripts in het spel stoppen.
 
 ```blocks3
-when this sprite clicked
-say [You found me]
-stop [all v]
+wanneer op deze sprite wordt geklikt
+zeg [Je hebt me gevonden]
+stop [alle v]
 ```
 
 \--- /task \---
