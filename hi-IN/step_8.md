@@ -1,8 +1,8 @@
-## अपने स्प्राइट को छिपाएँ
+## Hide your sprite
 
-अब मोहरों की भीड़ के बीच अपने स्प्राइट को छिपाने का समय है। फिलहाल स्प्राइट किसी एक मोहर को ओवरलैप करता है।
+Now it's time to hide your sprite among the crowd of stamps. At the moment the sprite overlaps one of the stamps.
 
-![ओवरलैप](images/overplap-annotated.png)
+![overlap](images/overplap-annotated.png)
 
 \--- task \---
 
@@ -51,11 +51,11 @@ See if you can figure out how to do this, and use the hints below if you need he
 
 This is what it needs to do:
 
-1. अपने स्प्राइट को `x:0 y:0`{:class="block3motion"} पर भेजें
-2. स्प्राइट को `front`{:class="block3looks"} पर लाएँ और इसके आकार को `size to 100%`{:class="block3looks"} पर सेट करें
+1. Send your sprite to `x:0 y:0`{:class="block3motion"}
+2. Bring the sprite to the `front`{:class="block3looks"} and set its `size to 100%`{:class="block3looks"}
 3. `Say 'Find me' for two seconds`{:class="block3looks"}
 4. `Go back one layer`{:class="block3looks"}
-5. स्प्राइट के आकार को `size to 40%`{:class="block3looks"} पर सेट करें
+5. Set the sprite's `size to 40%`{:class="block3looks"}
 6. Move to the last remaining position in the lists
 
 \--- /hint \--- \--- hint \---
