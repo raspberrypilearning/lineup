@@ -12,7 +12,7 @@ Add the **Pen** extension to your project.
 
 --- task ---
 
-Create a new block and call it `stamp sprites`{:class="block3myblocks"}. This block needs two number inputs named `row`{:class="block3myblocks"} and `columns`{:class="block3myblocks"} just like the other custom block.
+Create a new block and call it `stamp sprites`{:class="block3myblocks"}. This block needs two number inputs named `rows`{:class="block3myblocks"} and `columns`{:class="block3myblocks"} just like the other custom block.
 
 ```blocks3
 define stamp sprites (rows) (columns)
