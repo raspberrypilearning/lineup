@@ -25,7 +25,7 @@ define generate positions (rows)(columns)
 delete [all v] of [y_positions v]
 delete [all v] of [x_positions v]
 set [y_pos v] to [-150]
-+repeat (row :: custom-arg)
++repeat (rows :: custom-arg)
 set [x_pos v] to [-200]
 repeat (columns :: custom-arg)
 add (x_pos) to [x_positions v]
