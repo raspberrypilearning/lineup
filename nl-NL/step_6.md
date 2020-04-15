@@ -7,7 +7,7 @@ Op dit moment stempelt je programma steeds hetzelfde sprite uiterlijk en is het 
 Voeg code toe aan het `stempel sprites`{:class="block3myblocks"} blok om de sprite een geschikte grootte te geven voordat de `herhaal`{:class="block3control"} lus start. Voeg een blok in de lus toe om naar het volgende `uiterlijk`{:class="block3looks"} te schakelen na het `stempel`{:class="block3extensions"} blok.
 
 ```blocks3
-define stempels (rijen) (kolommen)
+define stempel sprites (rijen) (kolommen)
 maak grootte (40) %
 maak [index v] [1]
 herhaal (kolommen :: custom-arg)

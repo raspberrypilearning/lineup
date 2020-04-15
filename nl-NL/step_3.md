@@ -15,7 +15,7 @@ De waarden van deze parameters bepalen hoeveel rijen en kolommen je raster heeft
 [[[generic-scratch3-make-block]]]
 
 ```blocks3
-define generate positions (rijen)(kolommen)
+define genereer posities (rijen)(kolommen)
 ```
 
 --- /task ---
@@ -31,7 +31,7 @@ Maak twee lijsten en noem er één `x_posities`{:class="block3variables"} en de 
 Binnen jouw `genereer posities`{:class="block3myblocks"} blok, voeg blokken toe om alle items van beide lijsten te verwijderen, zodat elke keer dat het spel start, de lijsten leeg zijn.
 
 ```blocks3
-define generate positions (rijen)(kolommen)
+define genereer posities (rijen)(kolommen)
 + verwijder [alle v] van [y_posities v]
 + verwijder [alle v] van [x_posities v]
 ```
@@ -53,7 +53,7 @@ Voorlopig kan de lijst `y_posities`{:class="block3variables"} gewoon tien keer h
 Begin door code toe te voegen aan het `genereer posities`{:class="block3myblocks"} blok om de variabele `y_pos`{:class="block3variables"} in te stellen op `-150`{:class="block3variables"} en de `x_pos`{:class="block3variables"} in te stellen op `-200`{:class="block3variables"}. Dit is de locatie van de eerste gestempelde sprite.
 
 ```blocks3
-define generate positions (rijen)(kolommen)
+define genereer posities (rijen)(kolommen)
 verwijder [alle v] van [y_posities v]
 verwijder [alle v] van [x_posities v]
 + maak [y_pos v] [-150]
@@ -71,7 +71,7 @@ De lus `herhaal`{:class="block3control"} moet éénmaal worden uitgevoerd voor e
 Het `genereer posities`{:class="block3myblocks"} blok neemt `kolommen`{:class="block3myblocks"} als invoer, dus je kunt `kolommen`{:class="block3myblocks"} gebruiken voor de `herhaal`{:class="block3control"} lus.
 
 ```blocks3
-define generate positions (rijen)(kolommen)
+define genereer posities (rijen)(kolommen)
 verwijder [alle v] van [y_posities v]
 verwijder [alle v] van [x_posities v]
 maak [y_pos v] [-150]
@@ -106,7 +106,7 @@ Binnen de lus moet je `x_pos`{:class="block3variables"} toevoegen aan de lijst `
 Dit toont de extra blokken die je aan het script moet toevoegen.
 
 ```blocks3
-define generate positions (rijen)(kolommen)
+define genereer posities (rijen)(kolommen)
 verwijder [alle v] van [y_posities v]
 verwijder [alle v] van [x_posities v]
 maak [y_pos v] [-150]
@@ -132,7 +132,7 @@ verander [x_pos v] met ()
 Hier is het voltooide script voor het `genereer posities`{:class="block3myblocks"} blok:
 
 ```blocks3
-define generate positions (rijen)(kolommen)
+define genereer posities (rijen)(kolommen)
 verwijder [alle v] van [y_posities v]
 verwijder [alle v] van [x_posities v]
 maak [y_pos v] [-150]
