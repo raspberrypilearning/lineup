@@ -1,0 +1,25 @@
+genereer posities
+
+rijen
+
+kolommen
+
+x_posities
+
+y_posities
+
+x_pos
+
+y_pos
+
+stempel sprites
+
+index
+
+Zoek me
+
+gordijn omhoog
+
+timer
+
+Je hebt me gevonden
