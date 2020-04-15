@@ -1,25 +1,25 @@
-generate positions
+genereer posities
 
-rows
+rijen
 
-columns
+kolommen
 
-x_positions
+x_posities
 
-y_positions
+y_posities
 
 x_pos
 
 y_pos
 
-stamp sprites
+stempel sprites
 
 index
 
-Find me
+Zoek me
 
-curtain up
+gordijn omhoog
 
 timer
 
-You found me
+Je hebt me gevonden
