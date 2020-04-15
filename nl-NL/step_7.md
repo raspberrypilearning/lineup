@@ -21,18 +21,18 @@ verander [x_pos v] met (((400) / (kolommen)) - (1))
 Voeg nog een `herhaal`{:class="block3control"} lus toe, die het aantal keren uitvoert dat je geeft aan de `genereer posities`{:class="block3myblocks"} blok als de `rijen`{:class="block3myblocks"} invoer. Plaats de `herhaal`{:class="block3control"} lus in je script zoals hier wordt weergegeven:
 
 ```blocks3
-definiëer genereer posities (rijen) (kolommen)
-verwijder [alle v] van [y_posities v]
-verwijder [alle v] van [x_posities v]
-maak [y_pos v] [-150]
-+ herhaal (rijen: custom-arg)
-maak [x_pos v] [-200]
-herhaal (kolommen :: custom-arg)
-voeg (x_pos) toe aan [x_posities v]
-voeg (y_pos) toe aan [y_posities v]
-verander [x_pos v] met (((400) / (kolommen :: custom-arg)) - (1))
-einde
-einde
+define generate positions (rows)(columns)
+delete [all v] of [y_positions v]
+delete [all v] of [x_positions v]
+set [y_pos v] to [-150]
++repeat (rows :: custom-arg)
+set [x_pos v] to [-200]
+repeat (columns :: custom-arg)
+add (x_pos) to [x_positions v]
+add (y_pos) to [y_positions v]
+change [x_pos v] by (((400) / (columns :: custom-arg)) - (1))
+end
+end
 ```
 
 \--- /task \---
