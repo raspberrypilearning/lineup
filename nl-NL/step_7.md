@@ -90,7 +90,7 @@ Dit komt omdat het blok `stempel sprite`{:class="block3myblocks"} op dit moment 
 
 \--- task \---
 
-Verander de `stempel sprites`{:class="block3myblocks"} code zodat het ``{:class="block3control"} vaak genoeg herhaalt om het volledige raster van sprites te stempelen.
+Verander de `stempel sprites`{:class="block3myblocks"} code zodat het vaak genoeg `herhaalt`{:class="block3control"} om het volledige raster van sprites te stempelen.
 
 \--- hints \--- \--- hint \---
 
