@@ -12,7 +12,7 @@ Voeg de **Pen** extensie toe aan je project.
 
 \--- task \---
 
-Maak een nieuw blok en noem het `stempel sprites`{:class="block3myblocks"}. Dit blok heeft twee invoeren nodig met de naam `rijen`{:class="block3myblocks"} en `kolommen`{:class="block3myblocks"} net als het andere aangepaste blok.
+Maak een nieuw blok en noem het `stempel sprites`{:class="block3myblocks"}. This block needs two number inputs named `rows`{:class="block3myblocks"} and `columns`{:class="block3myblocks"} just like the other custom block.
 
 ```blocks3
 defineer stempel sprites (rijen) (kolommen)
