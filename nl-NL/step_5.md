@@ -15,7 +15,7 @@ Voeg de **Pen** extensie toe aan je project.
 Maak een nieuw blok en noem het `stempel sprites`{:class="block3myblocks"}. Dit blok heeft twee invoeren nodig met de naam `rijen`{:class="block3myblocks"} en `kolommen`{:class="block3myblocks"} net als het andere aangepaste blok.
 
 ```blocks3
-defineer stempel sprites (rijen) (kolommen)
+define stempel sprites (rijen) (kolommen) 
 ```
 
 --- /task ---
@@ -95,7 +95,7 @@ herhaal (kolommen :: custom-arg)
 Voeg een `wis alles`{:class="block3extensions"} blok onder het `wanneer op de groene vlag wordt geklikt`{:class="block3control"} blok om het speelveld te wissen telkens wanneer het spel start. Voeg vervolgens het `stempel sprites`{:class="block3myblocks"} blok onder aan het `wanneer op de groene vlag wordt geklikt`{:class="block3control"} script toe, zodat je je nieuwe code kunt testen.
 
 ```blocks3
-wanneer op de groene vlag wordt geklikt
+when flag clicked
 wis alles
 genereer posities (1) (10) ::custom
 stempel sprites (1) (10) ::custom

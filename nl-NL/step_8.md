@@ -9,10 +9,10 @@ Nu is het tijd om je sprite te verbergen tussen de menigte stempels. Op dit mome
 Zodat dit niet gebeurt, laat je stempellus één keer minder lopen: `(rijen * kolommen) - 1`{:class="block3operators"}
 
 ```blocks3
-stempel sprites (rijen) (kolommen)
+define stempel sprites (rijen) (kolommen)
 maak grootte (40) %
 + herhaal (((rijen :: custom-arg) * (kolommen :: custom-arg)) - (1))
-maak [index v ] (willekeurig getal tussen (1) en (lengte van [x_posities v]))
+maak [index v] (willekeurig getal tussen (1) en (lengte van [x_posities v]))
 ga naar x: (item (index) van [x_posities v]) y: (item (index) van [y_posities v]
 verwijder (index ) van [x_posities v]
 verwijder (index) van [y_posities v]
@@ -29,7 +29,7 @@ Als je het script nu uitvoert, kun je zien dat je sprite nog steeds overlapt met
 Om dit deel van je spel te voltooien, ga je naar het `wanneer op de groene vlag wordt geklikt`{:class="block3events"} gedeelte.
 
 ```blocks3
-wanneer op de groene vlag wordt geklikt
+when flag clicked
 wis alles
 genereer posities (4) (10) ::custom
 stempel sprites (4) (10) ::custom
@@ -64,24 +64,27 @@ Dit is wat het moet doen:
 Dit zijn de extra blokken die je nodig hebt:
 
 ```blocks3
-wanneer op de groene vlag wordt geklikt
+when flag clicked
 wis alles
 genereer posities (4) (10) ::custom
 stempel sprites (4) (10) ::custom
 
 ga naar x: (0) y: (0)
 
-ga naar achteren (1) lagen
+go back (1) layers
 
-ga naar laag voorgrond
+go to front
 
 maak grootte (100)%
 
 maak grootte (40)%
 
 zeg [] (2) sec.
+
 item (1 v) van [x_posities v]
-item (1 v) van [y_posities v ]
+
+item (1 v) van [y_posities v]
+
 ga naar x: () y: ()
 ```
 
@@ -90,15 +93,15 @@ ga naar x: () y: ()
 Hier is het voltooide `wanneer op de groene vlag wordt geklikt`{:class="block3events"} script:
 
 ```blocks3
-wanneer op de groene vlag wordt geklikt
+when flag clicked
 wis alles
 genereer posities (4) (10) ::custom
 stempel sprites (4) (10) ::custom
 + ga naar x: (0) y: (0)
-+ ga naar laag voorgrond
++ go to front
 + maak grootte (100) %
 + zeg [Zoek me] (2) sec.
-+ ga naar achteren (1) lagen
++ go back (1) layers
 + maak grootte (40) %
 + ga naar x: (item (1 v) van [x_posities v]) y: (item (1 v) van [y_posities v])
 ```

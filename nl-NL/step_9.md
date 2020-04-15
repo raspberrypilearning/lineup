@@ -15,7 +15,7 @@ Importeer deze afbeelding als sprite.
 Plaats de nieuwe gordijn sprite op `x:0 y:0`{:class="block3motion"} en wijzig vervolgens de grootte zodat deze het speelveld vult. Zorg ervoor dat het zichtbaar is.
 
 ```blocks3
-wanneer op de groene vlag wordt geklikt
+when flag clicked
 ga naar x: (0) y: (0)
 maak grootte (110) %
 verschijn
@@ -28,15 +28,15 @@ verschijn
 Voeg vervolgens in de scripts voor je personage sprite een `zend signaal`{:class="block3events"} toe met het bericht 'gordijn omhoog' aan het einde van het `wanneer op de groene vlag wordt geklikt`{:class="block3events"} script.
 
 ```blocks3
-wanneer op de groene vlag wordt geklikt
+when flag clicked
 wis alles
 genereer posities (4) (10) ::custom
 stempel sprites (4) (10) ::custom
 ga naar x: (0) y: (0)
-ga naar laag voorgrond
+go to front
 maak grootte (100) %
 zeg [Zoek me] (2) sec.
-ga naar achteren (1) lagen
+go back (1) layers
 maak grootte (40) %
 ga naar x: (item (1 v) van [x_posities v]) y: (item (1 v) van [y_posities v])
 + zend signaal (gordijn omhoog v)
@@ -46,7 +46,7 @@ ga naar x: (item (1 v) van [x_posities v]) y: (item (1 v) van [y_posities v])
 
 --- task ---
 
-Wanneer de gordijn sprite het `signaal` ontvangt {:class="block3events"}, moet de sprite 10 seconden omhoog gaan zodat het lijkt alsof het gordijn omhoog wordt gehesen om de stempels te onthullen. Dan zou het gordijn weer moeten vallen, dus de gordijn sprite moet naar beneden bewegen.
+Wanneer de gordijn sprite het `signaal`{:class="block3events"} ontvangt, moet de sprite 10 seconden omhoog gaan zodat het lijkt alsof het gordijn omhoog wordt gehesen om de stempels te onthullen. Dan zou het gordijn weer moeten vallen, dus de gordijn sprite moet naar beneden bewegen.
 
 --- no-print ---
 
@@ -77,7 +77,7 @@ Voor de gordijn sprite heb je een script nodig dat de volgende dingen doet:
 Dit zijn de blokken die je nodig hebt:
 
 ```blocks3
-ga naar laag voorgrond
+go to front
 
 verschijn
 
@@ -106,7 +106,7 @@ Dit is het voltooide script:
 
 ```blocks3
 wanneer ik signaal [gordijn omhoog v] ontvang
-ga naar laag voorgrond
+go to front
 wacht (1) sec.
 schuif in (1) sec. naar x: (0) y: (300)
 verdwijn

@@ -7,7 +7,7 @@ Om het script te testen, heb je een **aanroep** van je blok nodig en dit voorzie
 Voeg deze code toe aan je sprite:
 
 ```blocks3
-wanneer op de groene vlag wordt geklikt
+when flag clicked
 genereer posities (1) (10) ::custom
 ```
 
