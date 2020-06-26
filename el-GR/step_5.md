@@ -1,10 +1,10 @@
-## Stamp a row
+## Κάνε μια σειρά από σφραγίδες
 
-So far you have ten values in each of the two lists. Now stamp some costumes at the Stage coordinates stored in the lists.
+Μέχρι στιγμής έχεις από δέκα τιμές σε κάθε λίστα. Τώρα σφράγισε μερικές ενδυμασίες στις συντεταγμένες της σκηνής που είναι αποθηκευμένες στις λίστες.
 
-\--- task \---
+\--- task --
 
-Add the **Pen** extension to your project.
+Πρόσθεσε την επέκταση **Πένα** στο έργο σου.
 
 [[[generic-scratch3-add-pen-extension]]]
 
@@ -12,7 +12,7 @@ Add the **Pen** extension to your project.
 
 \--- task \---
 
-Create a new block and call it `stamp sprites`{:class="block3myblocks"}. This block needs two number inputs named `rows`{:class="block3myblocks"} and `columns`{:class="block3myblocks"} just like the other custom block.
+Δημιούργησε ένα νέο μπλοκ και ονόμασέ το `σφράγισε αντικείμενα`{:class="block3myblocks"}. Αυτό το μπλοκ χρειάζεται δύο αριθμούς εισόδου με όνομα `σειρές`{:class="block3myblocks"} και `στήλες`{:class="block3myblocks"} όπως και η άλλη εντολή που έφτιαξες πριν.
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -22,7 +22,7 @@ define stamp sprites (rows) (columns)
 
 \--- task \---
 
-Create a new variable called `index`{:class="block3variables"} with which to track the position in the lists that your program is reading. To begin with, set `index`{:class="block3variables"} to `1`{:class="block3variables"} to fetch the first item of each list.
+Δημιούργησε μια νέα μεταβλητή που ονομάζεται `ευρετήριο`{:class="block3variables"} για να παρακολουθείς την τρέχουσα θέση που διαβάζει το πρόγραμμα στις λίστες. Αρχικά, όρισε το `ευρετήριο`{:class="block3variables"} σε `1`{:class="block3variables"} για να πάρεις το πρώτο στοιχείο κάθε λίστας.
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -33,7 +33,7 @@ define stamp sprites (rows) (columns)
 
 \--- task \---
 
-The `stamp sprites`{:class="block3myblocks"} block should stamp a sprite for each pair of coordinates in the list. To do this, the block needs a `repeat`{:class="block3variables"} loop that runs once for each column.
+Η εντολή `σφράγισε αντικείμενα`{:class="block3myblocks"} θα πρέπει να σφραγίζει ένα αντικείμενο για κάθε ζευγάρι συντεταγμένων στη λίστα. Για να γίνει αυτό, το μπλοκ χρειάζεται ένα βρόχο `επανάλαβε`{:class="block3variables"} που εκτελείται μία φορά για κάθε στήλη.
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -45,19 +45,19 @@ set [index v] to [1]
 
 \--- task \---
 
-Within the `repeat`{:class="block3variables"} loop:
+Εντός του βρόχου `επανάλαβε`{:class="block3variables"}:
 
-- Move the sprite to the `index`{:class="block3variables"} position in the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists
-- `Stamp`{:class="block3extensions"} the sprite
-- Change the `index`{:class="block3variables"} by `1`{:class="block3variables"}
+- Μετακίνησε το αντικείμενο στη θέση `ευρετήριο`{:class="block3variables"} της λίστας `θέσεις_x`{:class="block3variables"} και της λίστας `θέσεις_y`{:class="block3variables"}
+- Χρησιμοποίησε το μπλοκ `σφραγίδα`{:class="block3extensions"} για το αντικείμενο
+- Άλλαξε το `ευρετήριο`{:class="block3variables"} κατά `1`{:class="block3variables"}
 
 \--- hints \--- \--- hint \---
 
-Within the `repeat`{:class="block3variables"} loop, add a `go to x: y:`{:class="block3motion"} block. The `x`{:class="block3motion"} position in this block should be set to the `index`{:class="block3variables"} of `x_positions`{:class="block3variables"} and the `y`{:class="block3motion"} position should be set to the `index`{:class="block3variables"} of `y_positions`{:class="block3variables"}. Then add code to `stamp`{:class="block3extensions"} the sprite. Finally, add code to increase `index`{:class="block3variables"} by 1.
+Εντός του βρόχου `επανάλαβε`{:class="block3variables"}, πρόσθεσε ένα μπλοκ `πήγαινε σε θέση x: y:`{:class="block3motion"}. Η θέση `x`{:class="block3motion"} του μπλοκ πρέπει να είναι όσο η τιμή που δείχνει το `ευρετήριο`{:class="block3variables"} της λίστας `θέσεις_x`{:class="block3variables"} και η θέση `y`{:class="block3motion"} θα πρέπει να είναι όσο η τιμή στο `ευρετήριο`{:class="block3variables"} της λίστας `θέσεις_y`{:class="block3variables"}. Έπειτα πρόσθεσε κώδικα για να βάλεις τη `σφραγίδα`{:class="block3extensions"} του αντικειμένου. Τέλος, πρόσθεσε κώδικα για να αυξήσεις το `ευρετήριο`{:class="block3variables"} κατά 1.
 
 \--- /hint \--- \--- hint \---
 
-Here are the blocks you need:
+Εδώ είναι τα μπλοκ που χρειάζεσαι:
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -76,7 +76,7 @@ stamp
 
 \--- /hint \--- \--- hint \---
 
-Here is the completed script for the `stamp sprites`{:class="block3myblocks"} block:
+Εδώ είναι το ολοκληρωμένο πρόγραμμα για το μπλοκ `σφράγισε αντικείμενα`{:class="block3myblocks"}:
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -91,7 +91,7 @@ repeat (columns :: custom-arg)
 
 \--- task \---
 
-Add a `erase all`{:class="block3extensions"} block below the `when flag clicked`{:class="block3control"} block to clear the Stage each time the game starts. Then add the `stamp sprites`{:class="block3myblocks"} block at the bottom of the `when flag clicked`{:class="block3control"} script so you can test your new code.
+Προσθέστε το μπλοκ `καθάρισε όλα`{:class="block3extensions"} κάτω από το μπλοκ `όταν γίνει κλικ σε πράσινη σημαία `{:class="block3control"} για να καθαρίζει η σκηνή κάθε φορά που ξεκινά το παιχνίδι. Στη συνέχεια, πρόσθεσε το μπλοκ `σφράγισε αντικείμενα`{:class="block3myblocks"} στο τέλος του σεναρίου του `όταν γίνει κλικ σε πράσινη σημαία`{:class="block3control"}, ώστε να μπορείς να ελέγξεις το νέο σου κώδικα.
 
 ```blocks3
 when flag clicked
@@ -104,8 +104,8 @@ stamp sprite (1) (10) ::custom
 
 \--- task \---
 
-Click the green flag. You should see something like this, depending on the costumes your sprite has:
+Πάτα στην πράσινη σημαία για να ξεκινήσεις. Θα πρέπει να δεις κάτι τέτοιο, ανάλογα με τις ενδυμασίες που έχει το αντικείμενό σου:
 
-![stamped sprites](images/stamped_sprites.png)
+![σφραγισμένα αντικείμενα](images/stamped_sprites.png)
 
 \--- /task \---
