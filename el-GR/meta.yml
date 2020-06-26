@@ -1,32 +1,32 @@
 ---
-title: Line up
+title: Στοιχηθείτε!
 hero_image: images/banner.png
-description: Create a game where you look for a character hidden in a crowd of other characters
+description: Δημιούργησε ένα παιχνίδι όπου αναζητάς ένα χαρακτήρα κρυμμένο ανάμεσα σε πολλούς άλλους χαρακτήρες
 listed: true
 copyedit: true
 version: 4.1.0
 last_tested: 2018-11-05
 steps:
   - 
-    title: Introduction
+    title: Εισαγωγή
   - 
-    title: Add costumes
+    title: Προσθήκη ενδυμασιών
   - 
-    title: Create a grid
+    title: Δημιούργησε μια κάναβο
   - 
-    title: Test the script
+    title: Δοκίμασε το πρόγραμμα
   - 
-    title: Stamp a row
+    title: Σφραγίστε μια σειρά
   - 
-    title: Change the costumes
+    title: Άλλαξε τις ενδυμασίες
   - 
-    title: Add rows
+    title: Προσθέστε σειρές
   - 
-    title: Hide your sprite
+    title: Κρύψε το αντικείμενό σου
   - 
-    title: Finish the game
+    title: Τελείωσε το παιχνίδι
   - 
-    title: "Challenge: improve your game"
+    title: "Πρόκληση: βελτίωσε το παιχνίδι σου"
     challenge: true
   - 
-    title: "What next?"
+    title: "Και τώρα;"
