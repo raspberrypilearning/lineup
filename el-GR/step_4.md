@@ -1,10 +1,10 @@
-## Test the script
+## Δοκίμασε το πρόγραμμα
 
 \--- task \---
 
-To test the script, you need to **call** the custom block and provide it with the number of `columns`{:class="block3myblocks"} you want in your grid.
+Για να ελέγξεις τον κώδικα, πρέπει να **καλέσεις** την εντολή σου και να της βάλεις ως είσοδο τον αριθμό `στήλες`{:class="block3myblocks"} που θέλεις στο πλέγμα σου.
 
-Add this code to your sprite:
+Πρόσθεσε αυτόν τον κώδικα στο αντικείμενό σου:
 
 ```blocks3
 when flag clicked
@@ -15,10 +15,10 @@ generate positions (1) (10) ::custom
 
 \--- task \---
 
-Now click on the green flag to run your code. You should see your two lists fill with values.
+Τώρα κάνε κλικ στην πράσινη σημαία για να εκτελέσεις τον κώδικά σου. Θα πρέπει να δεις τις δύο λίστες να γεμίζουν με τιμές.
 
-![lists](images/filled_lists.png)
+![λίστες](images/filled_lists.png)
 
-If your results don't look like this, then go back to the previous step, have a look at the hints, and try to fix your script.
+Εάν τα αποτελέσματα δεν μοιάζουν κάπως έτσι, γύρνα στο προηγούμενο βήμα, ρίξε μια ματιά στις οδηγίες και προσπάθησε να διορθώσεις τον κώδικα.
 
 \--- /task \---
