@@ -1,10 +1,10 @@
-## Finish the game
+## गेम समाप्त करें
 
 \--- task \---
 
-To finish the game, [find and download an image of a stage curtain](https://www.google.co.uk/search?q=stage+curtain&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjKg9O1k8_VAhXSL1AKHe1HDMIQ_AUICigB&biw=1362&bih=584){:target="_blank"}.
+गेम समाप्त करने के लिए, [मंच के पर्दे की एक छवि खोजें और डाउनलोड करें](https://www.google.co.uk/search?q=stage+curtain&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjKg9O1k8_VAhXSL1AKHe1HDMIQ_AUICigB&biw=1362&bih=584){:target="_blank"} का उपयोग करें।
 
-Import this image as a sprite.
+इस छवि को स्प्राइट के रूप में आयात करें।
 
 [[[generic-scratch3-add-sprite-from-file]]]
 
@@ -12,7 +12,7 @@ Import this image as a sprite.
 
 \--- task \---
 
-Position the new curtain sprite at `x:0 y:0`{:class="block3motion"}, and then change its size so that it fills the screen. Make sure it is visible.
+नया पर्दा स्प्राइट को `x:0 y:0`{:class="block3motion"} स्थिति में लाएँ,और फिर इसका आकार बदल दें ताकि यह स्क्रीन को भर दे। सुनिश्चित करें कि यह दिखाई देता है।
 
 ```blocks3
 when flag clicked
@@ -25,7 +25,7 @@ show
 
 \--- task \---
 
-Then, in the scripts for your character sprite, add a `broadcast`{:class="block3events"} with the message 'curtain up' to the end of the `when flag clicked`{:class="block3events"} script.
+फिर,अपने पात्र स्प्राइट के लिए स्क्रिप्ट में, `when flag clicked`{:class="block3events"} स्क्रिप्ट के अंत में 'पर्दा उठाएँ' संदेश के साथ `broadcast`{:class="block3events"} जोड़ें।
 
 ```blocks3
 when flag clicked
@@ -46,34 +46,34 @@ go to x: (item (1 v) of [x_positions v]) y: (item (1 v) of [y_positions v])
 
 \--- task \---
 
-When the curtain sprite receives the `broadcast`{:class="block3events"}, the sprite needs to move upwards for 10 seconds so that it looks like the curtain is raised to reveal the stamps. Then the curtain should drop again, so the curtain sprite needs to move downwards.
+जब पर्दा स्प्राइट `broadcast`{:class="block3events"} प्राप्त करता है, तो स्प्राइट को 10 सेकंड के लिए ऊपर की ओर उठना होता है जिससे ऐसा लगे कि मोहरें दिखाने के लिए पर्दा उठा हुआ है। फिर पर्दे को दुबारा से नीचे गिरना चाहिए, इसलिए पर्दा स्प्राइट को नीचे की ओर जाने की आवश्यकता है।
 
 \--- no-print \---
 
-It should look like this:
+या फिर ऐसी भी दिख सकती हैं:
 
-![demo 2](images/demo_2.gif)
+![प्रदर्शन 2](images/demo_2.gif)
 
 \--- /no-print \---
 
-Try to do this by yourself, and use the hints if you need help.
+आप स्वयं ऐसा करने की कोशिश करें, और यदि आपको सहायता की आवश्यकता हो तो सुझावों का उपयोग करें।
 
 \--- hints \--- \--- hint \---
 
-For the curtain sprite, you need a script that does the following things:
+पर्दा स्प्राइट के लिए, आपको एक स्क्रिप्ट की ज़रूरत है जो निम्नलिखित चीजें करती हो:
 
-1. When the curtain sprite receives the `broadcast`{:class="block3events"}
-2. Bring the curtain sprite to the `front`{:class="block3looks"}
-3. `Wait`{:class="block3control"} a little bit while the character sprite costumes get stamped
-4. `Glide`{:class="block3motion"} the curtain sprite upwards so it ends up near the top of the Stage
-5. `Hide`{:class="block3looks"} the curtain
-6. Start a loop that counts down for 10 seconds
-7. When the time is over, `show`{:class="block3looks"} the curtain sprite
-8. `Glide`{:class="block3motion"} the curtain sprite back to its original position
+1. जब पर्दा स्प्राइट को `broadcast`{:class="block3events"} प्राप्त हो जाए
+2. पर्दा स्प्राइट को `front`{:class="block3looks"} पर लाएँ
+3. पात्र स्प्राइट के परिधानों पर मोहर लगाए जाते समय थोड़ी प्रतीक्षा करने के लिए `Wait`{:class="block3control"} का उपयोग करें
+4. पर्दा स्प्राइट को ऊपर की ओर `Glide`{:class="block3motion"} करें ताकि यह स्टेज के ऊपर की ओर जाकर समाप्त हो
+5. पर्दे को छिपाने के लिए `Hide`{:class="block3looks"} का उपयोग करें
+6. एक लूप शुरू करें जो 10 सेकंड के लिए उलटी गिनती करे
+7. जब समय समाप्त हो जाए, तो पर्दा स्प्राइट को दिखाने के लिए `show`{:class="block3looks"} का उपयोग करें
+8. `Glide`{:class="block3motion"} पर्दा अपनी मूल स्थिति में वापस आ जाता है
 
 \--- /hint \--- \--- hint \---
 
-Here are the blocks you need:
+इन ब्लॉक्स की आपको आवश्यकता होगी:
 
 ```blocks3
 go to front
@@ -101,7 +101,7 @@ when I receive [curtain up v]
 
 \--- /hint \--- \--- hint \---
 
-This is the completed script:
+यह पूरी स्क्रिप्ट है:
 
 ```blocks3
 when I receive [curtain up v]
@@ -120,11 +120,11 @@ glide (1) secs to x: (0) y: (0)
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-The very last part is to let the player know if they've won.
+एकदम आखिरी हिस्सा खिलाड़ी को यह बताने के लिए है कि क्या वे जीत गए हैं।
 
 \--- task \---
 
-In the scripts for the the character sprite, add code so that, when the sprite is clicked, the sprite says `You've found me`{:class="block3looks"}, and all the scripts in the game stop.
+पात्र स्प्राइट की स्क्रिप्ट में कोड जोड़ें, ताकि स्प्राइट को क्लिक करने पर स्प्राइट यह कहे कि आपने मुझे ढूँढ लिया है, इसके लिए `You've found me`{:class="block3looks"} का उपयोग करें, और गेम की सभी स्क्रिप्ट रुक जाती हैं।
 
 ```blocks3
 when this sprite clicked
