@@ -1,10 +1,10 @@
-## Finish the game
+## Τελείωσε το παιχνίδι
 
 \--- task \---
 
-To finish the game, [find and download an image of a stage curtain](https://www.google.co.uk/search?q=stage+curtain&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjKg9O1k8_VAhXSL1AKHe1HDMIQ_AUICigB&biw=1362&bih=584){:target="_blank"}.
+Για να ολοκληρώσεις το παιχνίδι, [βρες και κατέβασε μια εικόνα από μια κουρτίνα σκηνής](https://www.google.co.uk/search?q=stage+curtain&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjKg9O1k8_VAhXSL1AKHe1HDMIQ_AUICigB&biw=1362&bih=584){:target="_ blank"}.
 
-Import this image as a sprite.
+Βάλε αυτήν την εικόνα ως αντικείμενο.
 
 [[[generic-scratch3-add-sprite-from-file]]]
 
@@ -12,7 +12,7 @@ Import this image as a sprite.
 
 \--- task \---
 
-Position the new curtain sprite at `x:0 y:0`{:class="block3motion"}, and then change its size so that it fills the screen. Make sure it is visible.
+Τοποθέτησε το νέο αντικείμενο της κουρτίνας στη θέση `x: 0 y: 0`{:class="block3motion"} και, στη συνέχεια, άλλαξε το μέγεθός του, ώστε να γεμίζει την οθόνη. Βεβαιώσου ότι είναι ορατό.
 
 ```blocks3
 when flag clicked
@@ -25,7 +25,7 @@ show
 
 \--- task \---
 
-Then, in the scripts for your character sprite, add a `broadcast`{:class="block3events"} with the message 'curtain up' to the end of the `when flag clicked`{:class="block3events"} script.
+Στη συνέχεια, στα σενάρια για το χαρακτήρα σου, πρόσθεσε ένα `μήνυμα`{:class="block3events"} με ονομασία "κουρτίνα πάνω" στο τέλος του κώδικα `όταν γίνει κλικ σε πράσινη σημαία`{:class="block3events"}.
 
 ```blocks3
 when flag clicked
@@ -46,34 +46,34 @@ go to x: (item (1 v) of [x_positions v]) y: (item (1 v) of [y_positions v])
 
 \--- task \---
 
-When the curtain sprite receives the `broadcast`{:class="block3events"}, the sprite needs to move upwards for 10 seconds so that it looks like the curtain is raised to reveal the stamps. Then the curtain should drop again, so the curtain sprite needs to move downwards.
+Όταν το αντικείμενο της κουρτίνας λάβει το `μήνυμα`{:class="block3events"}, το αντικείμενο πρέπει να κινηθεί προς τα πάνω για 10 δευτερόλεπτα, έτσι ώστε να φαίνεται ότι η κουρτίνα έχει ανυψωθεί για να αποκαλύψει τις σφραγίδες. Στη συνέχεια, η κουρτίνα πρέπει να πέσει και πάλι, έτσι το αντικείμενο κουρτίνα πρέπει να κινηθεί προς τα κάτω.
 
 \--- no-print \---
 
-It should look like this:
+Θα μοιάζει έτσι:
 
-![demo 2](images/demo_2.gif)
+![επίδειξη 2](images/demo_2.gif)
 
 \--- /no-print \---
 
-Try to do this by yourself, and use the hints if you need help.
+Προσπάθησε να το κάνεις μόνος σου και χρησιμοποίησε τις υποδείξεις εάν χρειάζεσαι βοήθεια.
 
 \--- hints \--- \--- hint \---
 
-For the curtain sprite, you need a script that does the following things:
+Για το αντικείμενο της κουρτίνας, χρειάζεσαι ένα πρόγραμμα που κάνει τα ακόλουθα πράγματα:
 
-1. When the curtain sprite receives the `broadcast`{:class="block3events"}
-2. Bring the curtain sprite to the `front`{:class="block3looks"}
-3. `Wait`{:class="block3control"} a little bit while the character sprite costumes get stamped
-4. `Glide`{:class="block3motion"} the curtain sprite upwards so it ends up near the top of the Stage
-5. `Hide`{:class="block3looks"} the curtain
-6. Start a loop that counts down for 10 seconds
-7. When the time is over, `show`{:class="block3looks"} the curtain sprite
-8. `Glide`{:class="block3motion"} the curtain sprite back to its original position
+1. Όταν το αντικείμενο κουρτίνα λάβει το `μήνυμα`{:class="block3events"}
+2. Φέρε το αντικείμενο κουρτίνα στο `προσκήνιο`{:class="block3looks"}
+3. `Περίμενε`{:class="block3control"} λίγο ενώ οι ενδυμασίες σφραγίζονται
+4. `Ολίσθησε`{:class="block3motion"} την κουρτίνα προς τα πάνω, έτσι ώστε να καταλήξει κοντά στην κορυφή της σκηνής
+5. `Εξαφάνισε`{:class="block3looks"} την κουρτίνα
+6. Ξεκίνα ένα βρόχο που μετράει για 10 δευτερόλεπτα
+7. Όταν τελειώσει ο χρόνος, `εμφάνισε`{:class="block3looks"} την κουρτίνα
+8. `Ολίσθησε`{:class="block3motion"} το αντικείμενο κουρτίνα πίσω στην αρχική του θέση
 
 \--- /hint \--- \--- hint \---
 
-Here are the blocks you need:
+Εδώ είναι τα μπλοκ που χρειάζεσαι:
 
 ```blocks3
 go to front
@@ -101,7 +101,7 @@ when I receive [curtain up v]
 
 \--- /hint \--- \--- hint \---
 
-This is the completed script:
+Αυτό είναι το ολοκληρωμένο πρόγραμμα:
 
 ```blocks3
 when I receive [curtain up v]
@@ -120,11 +120,11 @@ glide (1) secs to x: (0) y: (0)
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-The very last part is to let the player know if they've won.
+Το τελευταίο μέρος είναι να ενημερώσεις τον παίκτη εάν έχει κερδίσει.
 
 \--- task \---
 
-In the scripts for the the character sprite, add code so that, when the sprite is clicked, the sprite says `You've found me`{:class="block3looks"}, and all the scripts in the game stop.
+Στις εντολές για το αντικείμενο του χαρακτήρα, πρόσθεσε κώδικα έτσι ώστε, όταν κάνεις κλικ στο αντικείμενο, αυτό να λέει `Με βρήκες!`{:class="block3looks"} και όλα τα σενάρια στο παιχνίδι να σταματούν.
 
 ```blocks3
 when this sprite clicked
