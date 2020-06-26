@@ -4,7 +4,7 @@
 
 एक नया Scratch प्रोजैक्ट खोलिये।
 
-**ऑनलाइन**:एक नया ऑनलाइन Scratch प्रोजैक्ट खोलें [rpf.io/scratch-नया](http://rpf.io/scratch-new)(:target="_blank"}|
+**ऑनलाइन**:एक नया ऑनलाइन Scratch प्रोजैक्ट खोलें [rpf.io/scratch-नया](http://rpf.io/scratch-new)(:target="_blank"}।
 
 **ऑफ़लाइन**:एक नया प्रोजेक्ट ऑफ़लाइन एडीटर में खोलें
 

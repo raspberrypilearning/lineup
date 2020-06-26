@@ -8,7 +8,7 @@
 
 --- task ---
 
-सबसे पहले, एक नया ब्लॉक बनाएं जिसे `generate positions` {:class="block3myblocks"} कहा जाए। ब्लॉक में दो 'नंबर इनपुट' पैरामीटर होना आवश्यक है। इन दो पैरामीटरों का नाम `rows`{:class="block3myblocks"} और `columns`{:class="block3myblocks"} रखें।
+सबसे पहले, एक नया ब्लॉक बनाएं जिसे `generate positions`{:class="block3myblocks"} कहा जाए। ब्लॉक में दो 'नंबर इनपुट' पैरामीटर होना आवश्यक है। इन दो पैरामीटरों का नाम `rows`{:class="block3myblocks"} और `columns`{:class="block3myblocks"} रखें।
 
 इन पैरामीटरों के मान यह तय करेंगे कि आपके ग्रिड में कितनी पंक्तियाँ और कॉलम हैं।
 
