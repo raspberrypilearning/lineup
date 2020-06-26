@@ -1,0 +1,135 @@
+## Termina el juego
+
+\--- task \---
+
+Para terminar el juego, [encuentra y descarga una imagen de una cortina de escenario](https://www.google.co.uk/search?q=stage+curtain&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjKg9O1k8_VAhXSL1AKHe1HDMIQ_AUICigB&biw=1362&bih=584){:target="_blank"}.
+
+Importa esta imagen como un objeto.
+
+[[[generic-scratch3-add-sprite-from-file]]]
+
+\--- /task \---
+
+\--- task \---
+
+Coloca el nuevo objeto de cortina en `x:0 y:0`{:class="block3motion"}, y luego cambia su tamaño para que llene la pantalla. Asegúrate de que sea visible.
+
+```blocks3
+when flag clicked
+go to x: (0) y: (0)
+set size to (110) %
+show
+```
+
+\--- /task \---
+
+\--- task \---
+
+Luego, en los scripts para el objeto de tu personaje, añade un `anuncio`{:class="block3events"} con el mensaje 'cortina arriba' hasta el final del script `cuando hagas clic en la bandera`{:class="block3events"}.
+
+```blocks3
+when flag clicked
+erase all
+generate positions (4) (10) ::custom
+stamp sprites (4) (10) ::custom
+go to x: (0) y: (0)
+go to front
+set size to (100) %
+say [Find me] for (2) seconds
+go back (1) layers
+set size to (40) %
+go to x: (item (1 v) of [x_positions v]) y: (item (1 v) of [y_positions v])
++broadcast (curtain up v)
+```
+
+\--- /task \---
+
+\--- task \---
+
+Cuando el objeto de la cortina recibe el `anuncio`{:class="block3events"}, el objeto necesita moverse hacia arriba durante 10 segundos para que parezca que la cortina se levanta para revelar los sellos. Entonces la cortina debe volver a caer, así que el objeto de la cortina necesita moverse hacia abajo.
+
+\--- no-print \---
+
+Debería verse así:
+
+![demo 2](images/demo_2.gif)
+
+\--- /no-print \---
+
+Intenta hacer esto por ti mismo y usa las sugerencias si necesitas ayuda.
+
+\--- hints \--- \--- hint \---
+
+Para el objeto de la cortina, necesitas un script que haga las siguientes cosas:
+
+1. Cuando el objeto de la cortina recibe el `anuncio`{:class="block3events"}
+2. Trae el objeto de la cortina hacia `delante`{:class="block3looks"}
+3. `Esperar`{:class="block3control"} un poco mientras los objetos de disfraces del personaje se sellan
+4. `Deslizar`{:class="block3motion"} el objeto de la cortina hacia arriba para que termine cerca de la parte superior del Escenario
+5. `Esconder`{:class="block3looks"} la cortina
+6. Inicia un bucle que cuenta hacia atrás por 10 segundos
+7. Cuando se acabe el tiempo, `mostrar`{:class="block3looks"} el objeto de cortina
+8. `Deslizar`{:class="block3motion"} el objeto cortina de regreso a su posición original
+
+\--- /hint \--- \--- hint \---
+
+Aquí están los bloques que necesitas:
+
+```blocks3
+go to front
+
+show
+
+hide
+
+glide (1) secs to x: (0) y: (0)
+
+glide (1) secs to x: (0) y: (0)
+
+set [timer v] to []
+
+change [timer v] by ()
+
+wait () secs
+
+wait () secs
+
+repeat ()
+end
+when I receive [curtain up v]
+```
+
+\--- /hint \--- \--- hint \---
+
+Este es el script completado:
+
+```blocks3
+when I receive [curtain up v]
+go to front
+wait (1) seconds
+glide (1) secs to x: (0) y: (300)
+hide
+set [timer v] to [10]
+repeat (10)
+wait (1) seconds
+change [timer v] by (-1)
+end
+show
+glide (1) secs to x: (0) y: (0)
+```
+
+\--- /hint \--- \--- /hints \--- \--- /task \---
+
+La última parte es informar al jugador si ha ganado.
+
+\--- task \---
+
+En los scripts para el objeto de caracteres, añade código para que, cuando se haga clic en el objeto, el objeto diga `Me has encontrado`{:class="block3looks"}, y todos los scripts en el juego se detengan.
+
+```blocks3
+when this sprite clicked
+say [You found me]
+stop [all v]
+```
+
+\--- /task \---
