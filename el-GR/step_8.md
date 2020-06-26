@@ -1,12 +1,12 @@
-## Hide your sprite
+## Κρύψε το αντικείμενό σου
 
-Now it's time to hide your sprite among the crowd of stamps. At the moment the sprite overlaps one of the stamps.
+Τώρα ήρθε η ώρα να κρύψεις το αντικείμενό σου ανάμεσα στο πλήθος των σφραγίδων. Προς το παρόν, το αντικείμενο καλύπτει μια από τις σφραγίδες.
 
-![overlap](images/overplap-annotated.png)
+![επικάλυψη](images/overplap-annotated.png)
 
 \--- task \---
 
-So this doesn't happen, make your stamp loop run one time less: `(rows * columns) - 1`{:class="block3operators"}
+Έτσι, αυτό δεν συμβαίνει, κάνε το βρόχο σφραγίδων να τρέξει μια φορά λιγότερη: `(σειρές * στήλες) - 1`{:class="block3operators"}
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -22,11 +22,11 @@ next costume
 
 \--- /task \---
 
-If you run the script now, you can see that your sprite still overlaps with a stamp and there is a hole in your grid. And in the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists, there is one coordinate position left.
+Εάν εκτελέσεις το πρόγραμμα τώρα, μπορείς να δεις ότι το αντικείμενο σου εξακολουθεί να επικαλύπτει μια σφραγίδα και υπάρχει μια τρύπα στο πλέγμα σου. Και στις λίστες `θέσεις_x`{:class="block3variables"} και `θέσεις_y`{:class="block3variables"}, παραμένει ένα ζευγάρι συντεταγμένων.
 
 \--- task \---
 
-To finish this part your game, go to the `when flag clicked`{:class="block3events"} section of the scripts.
+Για να ολοκληρώσεις αυτό το μέρος του παιχνιδιού, πήγαινε στον κώδικα για το `όταν γίνει κλικ σε πράσινη σημαία`{:class="block3events"}.
 
 ```blocks3
 when flag clicked
@@ -37,30 +37,30 @@ stamp sprites (4) (10) ::custom
 
 \--- no-print \---
 
-Here's an animation showing what should happen:
+Ακολουθεί μια κινούμενη εικόνα που δείχνει τι πρέπει να συμβεί:
 
-![animation](images/demo_1.gif)
+![κινούμενα σχέδια](images/demo_1.gif)
 
 \--- /no-print \---
 
-At the start of the game, the sprite should appear at a large size and say "Find me". Then the sprite should hide itself among the stamps in the empty space you have left for it.
+Στην αρχή του παιχνιδιού, το αντικείμενο θα πρέπει να εμφανίζεται σε μεγάλο μέγεθος και να λέει "Βρες με". Έπειτα το αντικείμενο πρέπει να κρύβεται ανάμεσα στις σφραγίδες στον κενό χώρο που έχεις αφήσει για αυτό.
 
-See if you can figure out how to do this, and use the hints below if you need help.
+Δες αν μπορείς να το κάνεις αυτό και χρησιμοποίησε τις παρακάτω οδηγίες εάν χρειάζεστε βοήθεια.
 
 \--- hints \--- \--- hint \---
 
-This is what it needs to do:
+Αυτό πρέπει να κάνει:
 
-1. Send your sprite to `x:0 y:0`{:class="block3motion"}
-2. Bring the sprite to the `front`{:class="block3looks"} and set its `size to 100%`{:class="block3looks"}
-3. `Say 'Find me' for two seconds`{:class="block3looks"}
-4. `Go back one layer`{:class="block3looks"}
-5. Set the sprite's `size to 40%`{:class="block3looks"}
-6. Move to the last remaining position in the lists
+1. Στείλε το αντικείμενο στη θέση `x: 0 y: 0`{:class="block3motion"}
+2. Φέρε το αντικείμενο στο `προσκήνιο`{:class="block3looks"} και όρισε το `μέγεθος σε 100%`{:class="block3looks"}
+3. `Πες "Βρες με" για δύο δευτερόλεπτα`{ class="block3looks"}
+4. `Πήγαινε πίσω ένα επίπεδο`{:class="block3looks"}
+5. Όρισε το `μέγεθος σε 40%`{:class="block3looks"}
+6. Πήγαινε στην τελευταία εναπομένουσα θέση στις λίστες
 
 \--- /hint \--- \--- hint \---
 
-These are the additional blocks you need:
+Εδώ είναι τα επιπλέον μπλοκ που χρειάζεσαι:
 
 ```blocks3
 when flag clicked
@@ -86,7 +86,7 @@ go to x: () y: ()
 
 \--- /hint \--- \--- hint \---
 
-Here is the completed `when flag clicked`{:class="block3events"} script:
+Εδώ είναι το ολοκληρωμένο πρόγραμμα για το μπλοκ `όταν γίνει κλικ σε πράσινη σημαία`{:class="block3myblocks"}:
 
 ```blocks3
 when flag clicked
