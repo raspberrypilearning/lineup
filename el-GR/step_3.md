@@ -1,16 +1,16 @@
-## Create a grid
+## Δημιούργησε μια κάναβο
 
-You are going to create a grid of stamped costumes:
+Πρόκειται να δημιουργήσεις μια κάναβο, δηλαδή ένα νοητό πλέγμα από ενδυμασίες που έχουν τοποθετηθεί σαν σφραγίδες στη σκηνή:
 
-![stamps in grid](images/stamp_grid.png)
+![σφραγίδες σε πλέγμα](images/stamp_grid.png)
 
-To do this you need to know the `x`{:class="block3motion"} and `y`{:class="block3motion"} coordinates of where each stamp should be placed.
+Για να το κάνεις αυτό, πρέπει να γνωρίζεις τις συντεταγμένες `x`{:class="block3motion"} και `y`{:class= "block3motion"} των σημείων όπου πρέπει να τοποθετεί κάθε σφραγίδα.
 
 \--- task \---
 
-First, create a new block called `generate positions`{:class="block3myblocks"}. The block needs to have two 'number input' parameters. Call the two parameters `rows`{:class="block3myblocks"} and `columns`{:class="block3myblocks"}.
+Αρχικά, δημιούργησε ένα νέο μπλοκ που ονομάζεται `δημιουργία θέσεων`{:class="block3myblocks"}. Το μπλοκ πρέπει να παίρνει δύο αριθμούς ως παραμέτρους εισόδου. Ονόμασε τις δύο παραμέτρους `γραμμές`{:class="block3myblocks"} και `στήλες`{:class="block3myblocks"}.
 
-The values of these parameters will decide how many rows and columns your grid has.
+Οι τιμές αυτών των παραμέτρων θα καθορίζουν πόσες γραμμές και στήλες έχει η κάναβός σου.
 
 [[[generic-scratch3-make-block]]]
 
@@ -22,13 +22,13 @@ define generate positions (rows)(columns)
 
 \--- task \---
 
-Create two lists, and call one of them `x_positions`{:class="block3variables"} and the other `y_positions`{:class="block3variables"}. These lists are for storing the `x`{:class="block3motion"} and `y`{:class="block3motion"} coordinates for the stamps.
+Δημιούργησε δύο λίστες και ονόμασε την πρώτη `θέσεις_x`{:class="block3variables"} και τη δεύτερη `θέσεις_y`{:class="block3variables"}. Αυτές οι λίστες προορίζονται για την αποθήκευση των συντεταγμένων `x`{:class="block3motion"} και `y`{:class="block3motion"} για τις σφραγίδες.
 
 \--- /task \---
 
 \--- task \---
 
-Inside your `generate positions`{:class="block3myblocks"} block, add blocks to delete all the items from both lists, so that each time the game starts, the lists are empty.
+Μέσα στην εντολή `δημιουργία θέσεων`{:class="block3myblocks"}, πρόσθεσε μπλοκ για να διαγράψεις όλα τα στοιχεία και από τις δύο λίστες, έτσι ώστε κάθε φορά που ξεκινά το παιχνίδι, οι λίστες να είναι κενές.
 
 ```blocks3
 define generate positions (rows)(columns)
@@ -40,17 +40,17 @@ define generate positions (rows)(columns)
 
 \--- task \---
 
-Next, create two variables, and call one of them `x_pos`{:class="block3variables"} and the other `y_pos`{:class="block3variables"}.
+Έπειτα δημιούργησε δύο μεταβλητές `θέση_x`{:class="block3variables"} και `θέση_y`{:class="block3variables"}.
 
 \--- /task \---
 
-The `x_positions`{:class="block3variables"} list should contain ten numbers in total, and these should start at `-200`{:class="block3variables"} and go up to `200`{:class="block3variables"}.
+Η λίστα `θέσεις_x`{:class="block3variables"} πρέπει να περιέχει συνολικά δέκα αριθμούς και αυτοί θα πρέπει να ξεκινούν από `-200`{:class="block3variables"} και φτάνουν ως και `200`{:class="block3variables"}.
 
-For now, the `y_positions`{:class="block3variables"} list can just contain the number `-150`{:class="block3variables"} ten times, so that the grid only has one row.
+Προς το παρόν, η λίστα `θέσεις_y`{:class="block3variables"} μπορεί να περιέχει τον αριθμό `-150`{:class="block3variables"} δέκα φορές, έτσι ώστε το πλέγμα να έχει μόνο μία γραμμή.
 
 \--- task \---
 
-Start by adding code to the `generate positions`{:class="block3myblocks"} block to set the `y_pos`{:class="block3variables"} variable to `-150`{:class="block3variables"} and the `x_pos`{:class="block3variables"} variable to `-200`{:class="block3variables"}. This is the location of the first stamped sprite.
+Άρχισε προσθέτοντας κώδικα στο μπλοκ `δημιουργία θέσεων`{:class="block3myblocks"} για να ορίσει τη μεταβλητή `θέση_y`{:class="block3variables"} σε `-150`{:class="block3variables"} και τη μεταβλητή `θέση_x` {:class="block3variables"} σε `-200`{:class="block3variables"}. Αυτή είναι η θέση της σφραγίδας που θα τοποθετήσει το πρώτο αντικείμενο στη σκηνή.
 
 ```blocks3
 define generate positions (rows)(columns)
@@ -64,11 +64,11 @@ delete [all v] of [x_positions v]
 
 \--- task \---
 
-Next, add a `repeat`{:class="block3control"} loop to put coordinates into the lists.
+Στη συνέχεια, πρόσθεσε ένα βρόχο `επανάλαβε`{:class="block3control"} για να τοποθετεί τις συντεταγμένες στις δύο λίστες.
 
-The `repeat`{:class="block3control"} loop should run once for every column you want the grid to have.
+Ο βρόχος `επανάλαβε`{:class="block3control"} πρέπει να εκτελείται μία φορά για κάθε στήλη που θες να έχει το πλέγμα.
 
-The `generate positions`{:class="block3myblocks"} block takes `columns`{:class="block3myblocks"} as an input, so you can use `columns`{:class="block3myblocks"} for the `repeat`{:class="block3control"} loop.
+Η εντολή `δημιουργία θέσεων`{:class="block3myblocks"} παίρνει `στήλες`{:class="block3myblocks"} ως είσοδο, ώστε να μπορείς να χρησιμοποιείς τις `στήλες`{:class="block3myblocks"} για στο βρόχο `επανάλαβε`{:class="block3control"}.
 
 ```blocks3
 define generate positions (rows)(columns)
@@ -81,28 +81,28 @@ set [x_pos v] to [-200]
 
 \--- /task \---
 
-Within the `repeat`{:class="block3control"} loop, add the values of `x_pos`{:class="block3variables"} and `y_pos`{:class="block3variables"} into the lists. Then you need to increase the value of `x_pos`{:class="block3variables"} by a little. How much should the value of `x_pos`{:class="block3variables"} increase by?
+Εντός της `επανάλαβε`{:class="block3control"}, πρόσθεσε τις τιμές `θέση_x`{:class="block3variables"} και `θέση_y`{:class="block3variables"} στις αντίστοιχες λίστες. Στη συνέχεια, πρέπει να αυξήσεις λίγο την τιμή `θέση_x`{:class="block3variables"}. Πόσο θα πρέπει να είναι η αύξηση της τιμής `θέση_x`{:class="block3variables"};
 
-This is how to figure it out:
+Έτσι μπορείς να το βρεις:
 
-- `x_pos`{:class="block3variables"} starts out with the value `-200`{:class="block3variables"}
-- The final time the loop `repeat`{:class="block3control"} runs, `x_pos`{:class="block3variables"} should reach the value `200`{:class="block3variables"}
-- That's a total increase of `400`{:class="block3variables"}
-- The first `x_pos`{:class="block3variables"} value is for the first column on the grid, and how many columns there are is determined by the `columns`{:class="block3myblocks"} input
+- Η `θέση_x`{:class="block3variables"} ξεκινά με την τιμή `-200`{:class="block3variables"}
+- Την τελευταία φορά που τρέχει ο βρόχος `επανάλαβε`{:class="block3control"}, η `θέση_x`{:class="block3variables"} πρέπει να φτάσει την τιμή `200`{:class="block3variables"}
+- Αυτό είναι δηλαδή μια συνολική αύξηση κατά `400`{:class="block3variables"}
+- Η πρώτη τιμή της `θέση_x`{:class="block3variables"} είναι για την πρώτη στήλη στο πλέγμα, ενώ ο αριθμός των στηλών καθορίζεται από την παράμετρο εισόδου `στήλες`{:class="block3myblocks"}
 
-So after the first `x_pos`{:class="block3variables"} value is added, each time around the loop, the value of `x_pos`{:class="block3variables"} should increase by `400 / (columns - 1)`{:class="block3operators"}
+Έτσι, μετά την πρώτη προσθήκη της `θέση_x`{:class="block3variables"}, κάθε φορά στο βρόχο, η τιμή της `θέση_x`{:class="block3variables"} θα πρέπει να αυξηθεί κατά `400 / (στήλες - 1)`{:class="block3operators"}
 
 \--- task \---
 
-Add in the code that will add all the `x_pos`{:class="block3variables"} and `y_pos`{:class="block3variables"} values into the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists.
+Βάλε στον κώδικα που θα προσθέτει όλες τιμές των `θέση_x` {:class = "block3variables"} και `θέση_y`{:class="block3variables"} στις λίστες `θέσεις_x`{:class="block3variables"} και `θέσεις_y`{:class="block3variables"}.
 
 \--- hints \--- \--- hint \---
 
-Within the loop, you need to add `x_pos`{:class="block3variables"} to the `x_positions`{:class="block3variables"} list, and add the `y_pos`{:class="block3variables"} to the `y_positions`{:class="block3variables"} list. Then `x_pos`{:class="block3variables"} variable needs to increase by `400 / (columns -1)`{:class="block3operators"} each time the loop repeats.
+Μέσα στο βρόχο, πρέπει να προσθέσεις τη `θέση_x`{:class="block3variables"} στη λίστα `θέσεις_x`{:class="block3variables"} και τη `θέση_y`{:class="block3variables"} στη λίστα `θέσεις_y`{:class="block3variables"}. Στη συνέχεια η μεταβλητή `θέση_x`{:class="block3variables"} πρέπει να αυξάνεται κατά `400/(στήλες -1)`{:class="block3operators"} κάθε φορά που ο βρόχος επαναλαμβάνεται.
 
 \--- /hint \--- \--- hint \---
 
-This shows the additional blocks you need to add into your script.
+Εδώ βλέπεις τα μπλοκ που πρέπει να προσθέσεις στο πρόγραμμά σου.
 
 ```blocks3
 define generate positions (rows)(columns)
@@ -128,7 +128,7 @@ change [x_pos v] by ()
 
 \--- /hint \--- \--- hint \---
 
-Here is the completed script for the `generate positions`{:class="block3myblocks"} block:
+Εδώ είναι το ολοκληρωμένο πρόγραμμα για το μπλοκ `δημιουργία θέσεων`{:class="block3myblocks"}:
 
 ```blocks3
 define generate positions (rows)(columns)
