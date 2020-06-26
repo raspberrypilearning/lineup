@@ -1,25 +1,25 @@
-## Add costumes
+## वेशभूषा जोड़ें
 
 \---task \---
 
-Open a new Scratch project.
+एक नया Scratch प्रोजैक्ट खोलिये।
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](http://rpf.io/scratch-new){:target="_blank"}.
+**ऑनलाइन**:एक नया ऑनलाइन Scratch प्रोजैक्ट खोलें [rpf.io/scratch-नया](http://rpf.io/scratch-new)(:target="_blank"}|
 
-**Offline**: open a new project in the offline editor.
+**ऑफ़लाइन**:एक नया प्रोजेक्ट ऑफ़लाइन एडीटर में खोलें
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](http://rpf.io/scratchoff){:target="_blank"}.
+यदि आपको स्क्रैच ऑफ़लाइन एडीटर को डाउनलोड और इंस्टॉल करने की आवश्यकता है, तो आप इसे [rpf.io/scratchoff](http://rpf.io/scratchoff) {:target="_blank"} पर पा सकते हैं।
 
 \--- /task \--- \--- task \---
 
-Add some more costumes to the cat sprite. You need to add at least forty different costumes for your sprite.
+बिल्ली स्प्राइट में कुछ और पोशाक जोड़ें। आपको अपने स्प्राइट के लिए कम से कम चालीस अलग-अलग परिधान जोड़ने की ज़रूरत है।
 
-It's best to select costumes from the **People** section, but if you want to, you can choose costumes from other sections as well.
+**People (लोग)** खंड से परिधानों का चयन करना सबसे अच्छा है, लेकिन यदि आप चाहें, तो आप अन्य खंडों से भी परिधान चुन सकते हैं।
 
 [[[generic-scratch3-add-costume]]]
 
-Once you have your costumes, you can delete the default cat costumes if you want to.
+एक बार जब आपको अपने परिधान मिल जाते हैं, तो आप चाहें तो दोष बिल्ली परिधानों को हटा सकते हैं।
 
-![costumes](images/costumes.png)
+![पहनावा](images/costumes.png)
 
 \--- /task \---
