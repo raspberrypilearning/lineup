@@ -58,10 +58,10 @@
 
 \--- no-print \---
 
-यदि आपको इस प्रोजैक्ट को प्रिंट करने की आवश्यकता है,कृपया का उपयोग करें [printer-friendly version](https://projects.raspberrypi.org/en/projects/lineup/print)
+If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/lineup/print).
 
 \--- /no-print \---
 
-आप [ completed प्रोजैक्ट यहां से प्राप्त कर सकते हैं ](http://rpf.io/p/en/lineup-get) {: target = "_ blank"}.
+आप [पूर्ण किया गया प्रोजेक्ट यहां](http://rpf.io/p/en/lineup-get){:target="_blank"} से प्राप्त कर सकते हैं।
 
 \--- /collapse \---
