@@ -1,12 +1,12 @@
-## Hide your sprite
+## अपने स्प्राइट को छिपाएँ
 
-Now it's time to hide your sprite among the crowd of stamps. At the moment the sprite overlaps one of the stamps.
+अब मोहरों की भीड़ के बीच अपने स्प्राइट को छिपाने का समय है। फिलहाल स्प्राइट किसी एक मोहर को ओवरलैप करता है।
 
-![overlap](images/overplap-annotated.png)
+![ओवरलैप](images/overplap-annotated.png)
 
 \--- task \---
 
-So this doesn't happen, make your stamp loop run one time less: `(rows * columns) - 1`{:class="block3operators"}
+इसलिए यह नहीं होता है, अपनी मोहर के लूप को एक बार कम चलाएँ `(rows * columns) - 1`{:class="block3operators"}
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -22,11 +22,11 @@ next costume
 
 \--- /task \---
 
-If you run the script now, you can see that your sprite still overlaps with a stamp and there is a hole in your grid. And in the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists, there is one coordinate position left.
+यदि आप अब स्क्रिप्ट को चलाते हैं, तो आप देख सकते हैं कि आपका स्प्राइट अभी भी एक मोहर के साथ ओवरलैप करता है और आपके ग्रिड में एक छेद है। और `x_positions`{:class="block3variables"} और `y_positions`{:class="block3variables"} सूचियों में, एक निर्देशांक स्थिति बाकी बची है।
 
 \--- task \---
 
-To finish this part your game, go to the `when flag clicked`{:class="block3events"} section of the scripts.
+गेम के इस हिस्से को समाप्त करने के लिए, स्क्रिप्ट के `when flag clicked`{:class="block3events"} खंड में जाएँ।
 
 ```blocks3
 when flag clicked
@@ -37,30 +37,30 @@ stamp sprites (4) (10) ::custom
 
 \--- no-print \---
 
-Here's an animation showing what should happen:
+यहां एक एनीमेशन दिखाया गया है जो होना चाहिए:
 
-![animation](images/demo_1.gif)
+![एनीमेशन](images/demo_1.gif)
 
 \--- /no-print \---
 
-At the start of the game, the sprite should appear at a large size and say "Find me". Then the sprite should hide itself among the stamps in the empty space you have left for it.
+गेम के आरंभ में, स्प्राइट एक बड़े आकार में दिखाई देना चाहिए और कहना चाहिए कि "मुझे खोजें"। फिर स्प्राइट को आपके द्वारा उसके लिए छोड़ी गई खाली जगह में मोहरों के बीच खुद को छिपा लेना चाहिए।
 
-See if you can figure out how to do this, and use the hints below if you need help.
+देखें कि क्या आप यह पता लगा सकते हैं कि यह कैसे करना है, और अगर आपको मदद चाहिए हो तो नीचे दिए गए संकेतों का उपयोग करें।
 
 \--- hints \--- \--- hint \---
 
-This is what it needs to do:
+यह वही करने की आवश्यकता है:
 
-1. Send your sprite to `x:0 y:0`{:class="block3motion"}
-2. Bring the sprite to the `front`{:class="block3looks"} and set its `size to 100%`{:class="block3looks"}
-3. `Say 'Find me' for two seconds`{:class="block3looks"}
+1. अपने स्प्राइट को `x:0 y:0`{:class="block3motion"} पर भेजें
+2. स्प्राइट को `front`{:class="block3looks"} पर लाएँ और इसके आकार को `size to 100%`{:class="block3looks"} पर सेट करें
+3. `Say 'Find me' for two seconds `{:class="block3looks"}
 4. `Go back one layer`{:class="block3looks"}
-5. Set the sprite's `size to 40%`{:class="block3looks"}
-6. Move to the last remaining position in the lists
+5. स्प्राइट के आकार को `40%`{:class="block3looks"} पर सेट करें
+6. सूचियों में अंतिम बचा हुआ स्थिति पर जाएं
 
 \--- /hint \--- \--- hint \---
 
-These are the additional blocks you need:
+आपके लिए आवश्यक अतिरिक्त ब्लॉक यहाँ दिए गए हैं:
 
 ```blocks3
 when flag clicked
@@ -86,7 +86,7 @@ go to x: () y: ()
 
 \--- /hint \--- \--- hint \---
 
-Here is the completed `when flag clicked`{:class="block3events"} script:
+पूरी की गई `when flag clicked`{:class="block3events"} स्क्रिप्ट यहाँ दी गई है:
 
 ```blocks3
 when flag clicked
