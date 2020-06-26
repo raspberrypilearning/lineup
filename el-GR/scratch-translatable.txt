@@ -1,25 +1,25 @@
-generate positions
+δημιουργία θέσεων
 
-rows
+γραμμές
 
-columns
+στήλες
 
-x_positions
+θέσεις_x
 
-y_positions
+θέσεις_y
 
-x_pos
+θέση_x
 
-y_pos
+θέση_y
 
-stamp sprites
+σφράγισε αντικείμενα
 
-index
+ευρετήριο
 
-Find me
+Βρες με
 
-curtain up
+κουρτίνα πάνω
 
-timer
+χρονόμετρο
 
-You found me
+Με βρήκες
