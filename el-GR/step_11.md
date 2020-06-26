@@ -1,10 +1,10 @@
-## What next?
+## Και τώρα;
 
-Try the [Flappy parrot](https://projects.raspberrypi.org/en/projects/flappy-parrot?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects) project, in which you create another game.
+Δοκίμασε το έργο [Flappy parrot](https://projects.raspberrypi.org/en/projects/flappy-parrot?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects), όπου δημιουργείς ακόνη ένα παιχνίδι.
 
 \--- no-print \---
 
-Click the green flag to start the game. Press the <kbd>space</kbd> bar to make the parrot flap its wings, and try to get it to fly through the gaps in the pipes! You score one point for every pipe that you manage to get the parrot past.
+Πάτησε την πράσινη σημαία για να ξεκινήσεις το παιχνίδι. Πατήστε το πλήκτρο <kbd>διάστημα</kbd> για να κάνεις τον παπαγάλο να χτυπήσει τα φτερά του και προσπάθησε να το πετάξεις μέσα από τα κενά στους σωλήνες! Κερδίζεις έναν πόντο για κάθε σωλήνα που καταφέρνει να περάσει.
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/258349724/?autostart=false" frameborder="0" scrolling="no"></iframe>
@@ -15,8 +15,8 @@ Click the green flag to start the game. Press the <kbd>space</kbd> bar to make t
 
 \--- print-only \---
 
-You will press the <kbd>space</kbd> bar to make the parrot flap its wings, and score one point for every pipe that you manage to get the parrot past.
+Θα πατήσεις το πλήκτρο <kbd>διάστημα</kbd> για να κάνεις τον παπαγάλο να χτυπήσει τα φτερά του και να κερδίσει έναν βαθμό για κάθε σωλήνα που περνάει.
 
-![flappy parrot game being played](images/flappy-parrot-showcase.png)
+![παίζοντας το παιχνίδι flappy parrot](images/flappy-parrot-showcase.png)
 
 \--- /print-only \---
