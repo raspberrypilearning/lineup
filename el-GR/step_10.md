@@ -1,7 +1,7 @@
-## Challenge: improve your game
+## Πρόκληση: βελτίωσε το παιχνίδι σου
 
-Here are some ideas for how to make your game more interesting:
+Ακολουθούν μερικές ιδέες για το πώς να κάνεις το παιχνίδι σου πιο ενδιαφέρον:
 
-- Can you alter your scripts so that you can use even more costumes?
-- How about choosing a background and then making the sprites nearer the top of the screen appear smaller, so they seem further away?
-- Can you make the game run for several rounds and provide you with a score based on how long it takes you to complete five rounds?
+- Μπορείς να αλλάξεις τον κώδικά σου ώστε να μπορείς να χρησιμοποιείς ακόμη περισσότερες ενδυμασίες;
+- Τι θα έλεγες για την επιλογή ενός φόντου και, στη συνέχεια, να κάνεις τα αντικείμενα που βρίσκονται πιο κοντά στην κορυφή της οθόνης να φαίνονται μικρότερα, ώστε να φαίνονται πιο μακριά;
+- Μπορείς να κάνεις το παιχνίδι να τρέξει για αρκετούς γύρους και να δίνει μια βαθμολογία με βάση το πόσο χρόνο χρειάζεσαι για να ολοκληρώσεις πέντε γύρους;
