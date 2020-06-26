@@ -1,8 +1,8 @@
-## Add rows
+## पंक्तियाँ जोड़ें
 
-Now that you have the code to create a single row of stamped costumes, you should add code to create more rows.
+अब जब आपके पास मोहर वाले परिधानों की एक पंक्ति बनाने के लिए कोड है, तो आपको अधिक पंक्तियाँ बनाने के लिए कोड जोड़ना चाहिए।
 
-Go to your `generate positions`{:class="block3myblocks"} block.
+अपने `generate positions`{:class="block3myblocks"} ब्लॉक पर जाएँ।
 
 ```blocks3
 define generate positions (rows)(columns)
@@ -18,7 +18,7 @@ change [x_pos v] by (((400) / (columns)) - (1))
 
 \--- task \---
 
-Add another `repeat`{:class="block3control"} loop that runs the number of times you give to the `generate positions`{:class="block3myblocks"} block as the `rows`{:class="block3myblocks"} input. Place the `repeat`{:class="block3control"} loop into your script as shown here:
+एक और `repeat`{:class="block3control"} लूप जोड़ें जो उतनी बार चलता है जो आप `generate positions`{:class="block3myblocks"} ब्लॉक को `rows`{:class="block3myblocks"} इनपुट के रूप में देते हैं। यहाँ दिखाए गए अनुसार `repeat`{:class="block3control"} लूप को अपनी स्क्रिप्ट में रखें:
 
 ```blocks3
 define generate positions (rows)(columns)
@@ -37,13 +37,13 @@ end
 
 \--- /task \---
 
-Next you need to increase the value of `y_pos`{:class="block3variables"} each time the `repeat (rows)`{:class="block3control"} loop runs.
+इसके बाद आपको `y_pos`{:class="block3variables"} का मान हर बार बढ़ाना होता है जब `repeat (rows)`{:class="block3control"} लूप चलता है।
 
-You do this in a similar manner to how you increase the value of `x_pos`{:class="block3variables"} in the `repeat (columns)`{:class="block3control"} loop.
+इसे आप उसी रूप में करते हैं जिस रूप में आप `x_pos`{:class="block3variables"} का मान `repeat (columns)`{:class="block3control"} लूप में बढ़ाते हैं।
 
 \--- task \---
 
-At the end of the code inside the `repeat (rows)`{:class="block3control"} loop, `y_pos`{:class="block3variables"} should increase up to `150`{:class="block3variables"}, which is `300`{:class="block3variables"} away from its starting value of `-150`{:class="block3variables"}. This needs to happen for each row of stamps.
+`repeat (rows)`{:class="block3control"} लूप के अंदर के कोड के अंत में, `y_pos`{:class="block3variables"} को `150`{:class="block3variables"} तक बढ़ जाना चाहिए, जो `-150`{:class="block3variables"} के अपने आरंभिक मान `300`{:class="block3variables"} से दूर है। मोहरों की प्रत्येक पंक्ति के लिए ऐसा होना चाहिए।
 
 ```blocks3
 define generate positions (rows)(columns)
@@ -65,7 +65,7 @@ end
 
 \--- task \---
 
-Make sure you give the number of `rows`{:class="block3myblocks"} as an input to your blocks.
+सुनिश्चित करें कि आप अपने ब्लॉकों को इनपुट के रूप में `rows`{:class="block3myblocks"} की संख्या देते हैं।
 
 ```blocks3
 when flag clicked
@@ -78,27 +78,27 @@ stamp sprite (4) (10) ::custom
 
 \--- task \---
 
-Run your code now.
+अपना कोड चलाएँ।
 
-![mess of stamps](images/mess_stamps.png)
+![मोहरों की गड़बड़ी](images/mess_stamps.png)
 
-You won't get a neat grid of stamps.
+आपको मोहरों का एक साफ-सुथरा ग्रिड नहीं मिलेगा।
 
-This is because, right now, the `stamp sprite`{:class="block3myblocks"} block only runs for the total number of columns.
+ऐसा इसलिए है, क्योंकि अभी, `stamp sprite`{:class="block3myblocks"} ब्लॉक केवल कॉलमों की कुल संख्या के लिए चलता है।
 
 \--- /task \---
 
 \--- task \---
 
-Change your `stamp sprites`{:class="block3myblocks"} script so that it `repeats`{:class="block3control"} enough times to stamp the complete grid of sprites.
+अपनी `stamp sprites`{:class="block3myblocks"} स्क्रिप्ट को बदलें ताकि यह स्प्राइट्स की पूरी ग्रिड पर मोहर लगाने के लिए पर्याप्त बार `repeats`{:class="block3control"} का उपयोग करती है।
 
 \--- hints \--- \--- hint \---
 
-The total number of stamps you need is the number you give as `columns`{:class="block3myblocks"} multiplied by the number you give as `rows`{:class="block3myblocks"}
+आपको मोहरों की जो कुल संख्या चाहिए होती है वह `columns`{:class="block3myblocks"} को दी गई संख्या को `rows`{:class="block3myblocks"} को दी गई संख्या से गुणा करके प्राप्त होती है।इस अतिरिक्त ब्लॉक का उपयोग करें:
 
 \--- /hint \--- \--- hint \---
 
-Use this additional block:
+इस अतिरिक्त ब्लॉक का उपयोग करें:
 
 ```blocks3
 ((rows ::custom) * (columns ::custom))
@@ -106,7 +106,7 @@ Use this additional block:
 
 \--- /hint \--- \--- hint \---
 
-Here's the completed `stamp sprites`{:class="block3myblocks"} script:
+यहाँ `stamp sprites`{:class="block3myblocks"} ब्लॉक के लिए पूरी की गई स्क्रिप्ट है:
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -122,6 +122,7 @@ next costume
 
 \--- /hint \--- \--- /hints \---
 
-![ordered grid](images/nice_grid.png)
+![
+आदेशित किया गया ग्रिड](images/nice_grid.png)
 
 \--- /task \---
