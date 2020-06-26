@@ -1,18 +1,18 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/lineup-scratch2).
+यह इस प्रोजेक्ट का **Scratch 3** संस्करण है। [इस प्रोजेक्ट का Scratch 2 संस्करण](https://projects.raspberrypi.org/en/projects/lineup-scratch2) भी है।
 
 \--- /no-print \---
 
-## Introduction
+## परिचय
 
-In this project you will make a Scratch game in which you need to find a sprite that is hidden among a huge crowd of other characters.
+इस प्रोजेक्ट में आप एक Scratch गेम बनाएँगे जिसमें आपको एक sprite को खोजना होगा जो अन्य पात्रों की भारी भीड़ के बीच छिपा हुआ है।
 
-### What you will make
+### आप क्या बनाएँगे
 
 \--- no-print \---
 
-Click on the green flag and, once the curtain is up, try and find the sprite before your time runs out.
+हरे झंडे पर क्लिक करें और, एक बार पर्दा उठ जाने के बाद, कोशिश करें और अपना समय समाप्त होने से पहले स्प्राइट को खोज लें।
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/259020474/?autostart=false" frameborder="0" scrolling="no"></iframe>
@@ -22,46 +22,46 @@ Click on the green flag and, once the curtain is up, try and find the sprite bef
 
 \--- print-only \---
 
-You have to find the right sprite amongst all these characters before your time runs out.
+आपको अपना समय समाप्त होने से पहले इन सभी पात्रों में से सही स्प्राइट को ढूँढना होगा।
 
-![showcase](images/showcase.png)
+![प्रदर्शन](images/showcase.png)
 
 \--- /print-only \---
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: आप क्या सीखेंगे
 
-+ How to create custom blocks that have inputs
-+ How to use lists to store grid coordinates
-+ How to use loops to cycle over items in a list
-
-\--- /collapse \---
-
-## \--- collapse \---
-
-## title: What you will need
-
-### Hardware
-
-+ A computer capable of running Scratch 3
-
-### Software
-
-+ Scratch 3 (either [online](http://rpf.io/scratchon){:target="_blank"} or [offline](http://rpf.io/scratchoff){:target="_blank"})
++ इनपुट वाले कस्टम ब्लॉक कैसे बनाएँ
++ ग्रिड निर्देशांकों को संगृहीत करने के लिए सूचियों का उपयोग कैसे करें
++ किसी सूची में आइटम पर चक्र करने के लिए छोरों का उपयोग कैसे करें
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Additional notes for educators
+## title: आपको किन चीज़ों की आवश्यकता होगी
+
+### हार्डवेयर
+
++ Scratch 3 चलाने में सक्षम कंप्यूटर
+
+### सॉफ्टवेयर
+
++ Scratch 3 (दोनों में से एक [ऑनलाइन](http://rpf.io/scratchon){:target="_blank"} अथवा [ऑफ़लाइन](http://rpf.io/scratchoff){:target="_blank"})
+
+\--- /collapse \---
+
+## \--- collapse \---
+
+## title: शिक्षकों के लिए अतिरिक्त नोट्स
 
 \--- no-print \---
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/lineup/print).
+यदि आपको इस प्रोजैक्ट को प्रिंट करने की आवश्यकता है,कृपया का उपयोग करें [printer-friendly version](https://projects.raspberrypi.org/en/projects/lineup/print)
 
 \--- /no-print \---
 
-You can find the [completed project here](http://rpf.io/p/en/lineup-get){:target="_blank"}.
+आप [ completed प्रोजैक्ट यहां से प्राप्त कर सकते हैं ](http://rpf.io/p/en/lineup-get) {: target = "_ blank"}.
 
 \--- /collapse \---
