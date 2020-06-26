@@ -1,10 +1,10 @@
-## Stamp a row
+## पंक्ति पर मोहर लगाएँ
 
-So far you have ten values in each of the two lists. Now stamp some costumes at the Stage coordinates stored in the lists.
+अब तक आपके पास दोनों सूचियों में दस-दस मान हैं। अब सूचियों में संगृहीत स्टेज निर्देशांकों में कुछ परिधानों पर मोहर लगाएँ।
 
 \--- task \---
 
-Add the **Pen** extension to your project.
+अपने प्रोजेक्ट में **कलम** विस्तार जोड़ें।
 
 [[[generic-scratch3-add-pen-extension]]]
 
@@ -12,7 +12,7 @@ Add the **Pen** extension to your project.
 
 \--- task \---
 
-Create a new block and call it `stamp sprites`{:class="block3myblocks"}. This block needs two number inputs named `rows`{:class="block3myblocks"} and `columns`{:class="block3myblocks"} just like the other custom block.
+एक नया ब्लॉक बनाएं और इसका नाम `stamp sprites ` {:class="block3myblocks"} रखें। दूसरे कस्टम ब्लॉक की तरह इस ब्लॉक के लिए भी `rows`{:class="block3myblocks"} और `columns`{:class="block3myblocks"} नाम के दो नंबर इनपुट चाहिए।
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -22,7 +22,7 @@ define stamp sprites (rows) (columns)
 
 \--- task \---
 
-Create a new variable called `index`{:class="block3variables"} with which to track the position in the lists that your program is reading. To begin with, set `index`{:class="block3variables"} to `1`{:class="block3variables"} to fetch the first item of each list.
+`index`{:class="block3variables"} नामक एक नया वेरिएबल तैयार करें जिसके साथ उन सूचियों में स्थितियों को ट्रैक किया जा सकता है जिन्हें आपका प्रोग्राम पढ़ रहा हो। आरंभ करने के लिए, प्रत्येक सूची की पहली पद को लाने के लिए `index`{:class="block3variables"} को `1`{:class="block3variables"} पर सेट करें।
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -33,7 +33,7 @@ define stamp sprites (rows) (columns)
 
 \--- task \---
 
-The `stamp sprites`{:class="block3myblocks"} block should stamp a sprite for each pair of coordinates in the list. To do this, the block needs a `repeat`{:class="block3variables"} loop that runs once for each column.
+`stamp sprites`{:class="block3myblocks"} ब्लॉक को सूची में निर्देशांक के प्रत्येक जोड़े के लिए एक स्प्राइट पर मोहर लगानी चाहिए। ऐसा करने के लिए, ब्लॉक को एक `repeat`{:class="block3variables"} लूप की ज़रूरत होती है जो प्रत्येक क़तार के लिए एक बार चलता है।
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -45,19 +45,19 @@ set [index v] to [1]
 
 \--- task \---
 
-Within the `repeat`{:class="block3variables"} loop:
+`repeat`{:class="block3variables"} लूप के भीतर:
 
-- Move the sprite to the `index`{:class="block3variables"} position in the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists
-- `Stamp`{:class="block3extensions"} the sprite
-- Change the `index`{:class="block3variables"} by `1`{:class="block3variables"}
+- स्प्राइट को `x_positions`{:class="block3variables"} और `y_positions`{:class="block3variables"} सूचियों में `index`{:class="block3variables"} स्थिति में ले जाएँ
+- स्प्राइट पर `Stamp`{:class="block3extensions"} का उपयोग करें
+- `index`{:class="block3variables"} को `1`{:class="block3variables"} से बदलें
 
 \--- hints \--- \--- hint \---
 
-Within the `repeat`{:class="block3variables"} loop, add a `go to x: y:`{:class="block3motion"} block. The `x`{:class="block3motion"} position in this block should be set to the `index`{:class="block3variables"} of `x_positions`{:class="block3variables"} and the `y`{:class="block3motion"} position should be set to the `index`{:class="block3variables"} of `y_positions`{:class="block3variables"}. Then add code to `stamp`{:class="block3extensions"} the sprite. Finally, add code to increase `index`{:class="block3variables"} by 1.
+`repeat`{:class="block3variables"} लूप के भीतर, एक `go to x: y:`{:class="block3motion"} ब्लॉक जोड़ें। इस ब्लॉक में `x`{:class="block3motion"} स्थिति को `x_positions`{:class="block3variables"} के `index`{:class="block3variables"} पर सेट किया जाना चाहिए और `y`{:class="block3motion"} स्थिति को `y_positions`{:class="block3variables"} के `index`{:class="block3variables"} पर सेट किया जाना चाहिए। फिर स्प्राइट पर `stamp`{:class="block3extensions"} कोड जोड़ें। अंत में, `index`{:class="block3variables"} को 1 से बढ़ाने के लिए कोड जोड़ें।
 
 \--- /hint \--- \--- hint \---
 
-Here are the blocks you need:
+इन ब्लॉक्स की आपको आवश्यकता होगी:
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -76,7 +76,7 @@ stamp
 
 \--- /hint \--- \--- hint \---
 
-Here is the completed script for the `stamp sprites`{:class="block3myblocks"} block:
+यहाँ `stamp sprites`{:class="block3myblocks"} ब्लॉक के लिए पूरी की गई स्क्रिप्ट है:
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -91,7 +91,7 @@ repeat (columns :: custom-arg)
 
 \--- task \---
 
-Add a `erase all`{:class="block3extensions"} block below the `when flag clicked`{:class="block3control"} block to clear the Stage each time the game starts. Then add the `stamp sprites`{:class="block3myblocks"} block at the bottom of the `when flag clicked`{:class="block3control"} script so you can test your new code.
+हर बार खेल शुरू होने पर स्टेज को खाली करने के लिए `when flag clicked`{:class="block3control"} ब्लॉक के नीचे `erase all`{:class="block3extensions"} को जोड़ें। फिर `when flag clicked`{:class="block3control"} स्क्रिप्ट के नीचे `stamp sprites`{:class="block3myblocks"} को जोड़ें ताकि आप अपने नए कोड का परीक्षण कर सकें।
 
 ```blocks3
 when flag clicked
@@ -104,8 +104,8 @@ stamp sprite (1) (10) ::custom
 
 \--- task \---
 
-Click the green flag. You should see something like this, depending on the costumes your sprite has:
+हरे झंडे पर क्लिक करें । आपको कुछ इस तरह की चीज़ दिखनी चाहिए, जो इस पर निर्भर होगा कि आपके स्प्राइट का परिधान कौन सा है:
 
-![stamped sprites](images/stamped_sprites.png)
+![मोहर वाले स्प्राइट](images/stamped_sprites.png)
 
 \--- /task \---
