@@ -1,25 +1,25 @@
-## Add costumes
+## Προσθήκη ενδυμασιών
 
 \---task \---
 
-Open a new Scratch project.
+Άνοιξε ένα νέο έργο Scratch.
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](http://rpf.io/scratch-new){:target="_blank"}.
+**Online:** άνοιξε ένα νέο έργο Scratch στη διεύθυνση [rpf.io/scratch-new](http://rpf.io/scratch-new){:target="_blank"}.
 
-**Offline**: open a new project in the offline editor.
+**Eκτός σύνδεσης**: ανοίξτε ένα νέο project στο Scratch.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](http://rpf.io/scratchoff){:target="_blank"}.
+Αν χρειαστεί να κατεβάσεις και να εγκαταστήσεις τον offline editor για το Scratch, μπορείς να το βρεις στο [rpf.io/scratchoff](http://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \--- \--- task \---
 
-Add some more costumes to the cat sprite. You need to add at least forty different costumes for your sprite.
+Πρόσθεσε μερικές ενδυμασίες στο αντικείμενο της γάτας. Πρέπει να προσθέσεις τουλάχιστον σαράντα διαφορετικές ενδυμασίες στο αντικείμενό σου.
 
-It's best to select costumes from the **People** section, but if you want to, you can choose costumes from other sections as well.
+Είναι προτιμότερο να επιλέξεις εικόνες από την ενότητα **Άνθρωποι**, αλλά αν θέλεις, μπορείς επίσης να επιλέξεις ενδυμασίες και από άλλες ενότητες.
 
 [[[generic-scratch3-add-costume]]]
 
-Once you have your costumes, you can delete the default cat costumes if you want to.
+Μόλις έχεις τις ενδυμασίες σου, μπορείς να διαγράψεις τις αρχικές ενδυμασίες της γάτας, εάν θέλεις.
 
-![costumes](images/costumes.png)
+![ενδυμασίες](images/costumes.png)
 
 \--- /task \---
