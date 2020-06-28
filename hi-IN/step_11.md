@@ -1,6 +1,6 @@
 ## आगे क्या?
 
-[मिट्ठू तोता](https://projects.raspberrypi.org/en/projects/flappy-parrot?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects) प्रोजेक्ट आज़माएँ, जिसमें आप एक और गेम बनाएँगे।
+[Flappy parrot](https://projects.raspberrypi.org/en/projects/flappy-parrot?utm_source=pathway&utm_medium=whatnext&utm_campaign=projects) प्रोजेक्ट आज़माएँ, जिसमें आप एक और गेम बनाएँगे।
 
 \--- no-print \---
 
