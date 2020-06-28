@@ -1,12 +1,10 @@
-स्थिति उत्पन्न करें
+generate positions
 
-पंक्तियाँ 
+rows
 
-क़तार
-
+columns
 
 x_positions
-
 
 y_positions
 
@@ -14,14 +12,14 @@ x_pos
 
 y_pos
 
-मोहर वाले स्प्राइट
+stamp sprites
 
-सूची
+index
 
-मुझे ढूढ़ें
+Find me
 
-पर्दा
+curtain up
 
-टाइमर
+timer
 
-तुमने मुझे ढूंढ़ लिया
+You found me
