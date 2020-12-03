@@ -1,25 +1,25 @@
-## Add costumes
+## Añade disfraces
 
 \---task \---
 
-Open a new Scratch project.
+Abre un nuevo proyecto en Scratch.
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](http://rpf.io/scratch-new){:target="_blank"}.
+**En línea**: abre un nuevo proyecto Scratch en línea en [rpf.io/scratch-new ](http://rpf.io/scratch-new){:target="_blank"}.
 
-**Offline**: open a new project in the offline editor.
+**Sin conexión**: abre un nuevo proyecto en el editor sin conexión.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](http://rpf.io/scratchoff){:target="_blank"}.
+Si necesitas descargar e instalar el editor sin conexión de Scratch, puedes encontrarlo en [rpf.io/scratchoff](http://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \--- \--- task \---
 
-Add some more costumes to the cat sprite. You need to add at least forty different costumes for your sprite.
+Añade más disfraces más al objeto del gato. Necesitas añadir al menos cuarenta disfraces diferentes para tu objeto.
 
-It's best to select costumes from the **People** section, but if you want to, you can choose costumes from other sections as well.
+Es mejor seleccionar disfraces de la sección **Personas**, pero si lo deseas, también puedes elegir disfraces de otras secciones.
 
 [[[generic-scratch3-add-costume]]]
 
-Once you have your costumes, you can delete the default cat costumes if you want to.
+Una vez que tengas tus disfraces, puedes eliminar los disfraces predeterminados del gato si así lo quieres.
 
-![costumes](images/costumes.png)
+![disfraces](images/costumes.png)
 
 \--- /task \---
