@@ -1,10 +1,10 @@
-## Test the script
+## Prueba el script
 
 \--- task \---
 
-To test the script, you need to **call** the custom block and provide it with the number of `columns`{:class="block3myblocks"} you want in your grid.
+Para probar el script, necesitas **llamar** al bloque personalizado y proporcionarle el número de `columnas`{:class="block3myblocks"} que quieres en tu cuadrícula.
 
-Add this code to your sprite:
+Añade este código a tu objeto:
 
 ```blocks3
 when flag clicked
@@ -15,10 +15,10 @@ generate positions (1) (10) ::custom
 
 \--- task \---
 
-Now click on the green flag to run your code. You should see your two lists fill with values.
+Ahora haz clic en la bandera verde para ejecutar tu código. Deberías ver tus dos listas llenas de valores.
 
-![lists](images/filled_lists.png)
+![listas](images/filled_lists.png)
 
-If your results don't look like this, then go back to the previous step, have a look at the hints, and try to fix your script.
+Si tus resultados no se ven así, vuelve al paso anterior, echa un vistazo a las pistas, e intenta arreglar tu script.
 
 \--- /task \---
