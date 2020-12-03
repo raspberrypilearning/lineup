@@ -1,18 +1,18 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/lineup-scratch2).
+Esta es la versión **Scratch 3** del proyecto. También hay una [versión del proyecto en Scratch 2](https://projects.raspberrypi.org/en/projects/lineup-scratch2).
 
 \--- /no-print \---
 
-## Introduction
+## Introducción
 
-In this project you will make a Scratch game in which you need to find a sprite that is hidden among a huge crowd of other characters.
+En este proyecto harás un juego de Scratch en el que tendrás que encontrar un objeto que esta oculto entre una multitud de otros personajes.
 
-### What you will make
+### Lo que harás
 
 \--- no-print \---
 
-Click on the green flag and, once the curtain is up, try and find the sprite before your time runs out.
+Haz clic en la bandera verde y, una vez que el telón haya subido, intenta encontrar el objeto antes de que se acabe el tiempo.
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/259020474/?autostart=false" frameborder="0" scrolling="no"></iframe>
@@ -22,46 +22,46 @@ Click on the green flag and, once the curtain is up, try and find the sprite bef
 
 \--- print-only \---
 
-You have to find the right sprite amongst all these characters before your time runs out.
+Tienes que encontrar el objeto correcto entre todos estos personajes antes de que se acabe el tiempo.
 
-![showcase](images/showcase.png)
+![exposición](images/showcase.png)
 
 \--- /print-only \---
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: Lo que vas a aprender
 
-+ How to create custom blocks that have inputs
-+ How to use lists to store grid coordinates
-+ How to use loops to cycle over items in a list
++ Cómo crear bloques personalizados que tienen entradas
++ Cómo utilizar las listas para almacenar las coordenadas de cuadrícula
++ Cómo usar bucles para repetir los elementos en una lista
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: Lo que vas a necesitar
 
 ### Hardware
 
-+ A computer capable of running Scratch 3
++ Una computadora capaz de ejecutar Scratch 3
 
-### Software
+### Programa
 
-+ Scratch 3 (either [online](http://rpf.io/scratchon){:target="_blank"} or [offline](http://rpf.io/scratchoff){:target="_blank"})
++ Scratch 3 (ya sea [con Internet](http://rpf.io/scratchon){:target="_blank"} o [sin Internet](http://rpf.io/scratchoff){:target="_blank"})
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Additional notes for educators
+## title: Notas adicionales para educadores
 
 \--- no-print \---
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/lineup/print).
+Si necesitas imprimir este proyecto, usa la [versión para imprimir](https://projects.raspberrypi.org/en/projects/lineup/print).
 
 \--- /no-print \---
 
-You can find the [completed project here](http://rpf.io/p/en/lineup-get){:target="_blank"}.
+Puedes encontrar el [ proyecto completo aquí ](http://rpf.io/p/en/lineup-get){:target="_blank"}.
 
 \--- /collapse \---
