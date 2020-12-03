@@ -1,8 +1,8 @@
-## Add rows
+## Añade filas
 
-Now that you have the code to create a single row of stamped costumes, you should add code to create more rows.
+Ahora que tienes el código para crear una sola fila de disfraces sellados, debes añadir código para crear más filas.
 
-Go to your `generate positions`{:class="block3myblocks"} block.
+Ve a tu bloque `generar posiciones`{:class="block3myblocks"}.
 
 ```blocks3
 define generate positions (rows)(columns)
@@ -18,32 +18,32 @@ change [x_pos v] by (((400) / (columns)) - (1))
 
 \--- task \---
 
-Add another `repeat`{:class="block3control"} loop that runs the number of times you give to the `generate positions`{:class="block3myblocks"} block as the `rows`{:class="block3myblocks"} input. Place the `repeat`{:class="block3control"} loop into your script as shown here:
+Añade otro bucle `repetir`{:class="block3control"} que se ejecute el numero de veces que le proporcionas al bloque `generar posiciones`{:class="block3myblocks"} como la entrada de `filas`{:class="block3myblocks"}. Coloca el bucle `repetir`{:class="block3control"} en tu script como se muestra aquí:
 
 ```blocks3
-define generate positions (rows)(columns)
-delete [all v] of [y_positions v]
-delete [all v] of [x_positions v]
-set [y_pos v] to [-150]
-+repeat (rows :: custom-arg)
-set [x_pos v] to [-200]
-repeat (columns :: custom-arg)
-add (x_pos) to [x_positions v]
-add (y_pos) to [y_positions v]
-change [x_pos v] by (((400) / (columns :: custom-arg)) - (1))
-end
-end
+definir generar posiciones (filas) (columnas)
+eliminar [todos v] de [y_posiciones v]
+eliminar [todos v] de [x_posiciones v]
+establecer [y_pos v] a [-150]
++ repetir (filas :: custom-arg)
+establecer [x_pos v] a [-200]
+repetir (columnas :: custom-arg)
+añadir (x_pos) a [x_posiciones v]
+añadir (y_pos) a [y_posiciones v]
+cambiar [x_pos v] en (((400) / (columnas :: custom-arg)) - (1))
+fin
+fin
 ```
 
 \--- /task \---
 
-Next you need to increase the value of `y_pos`{:class="block3variables"} each time the `repeat (rows)`{:class="block3control"} loop runs.
+A continuación debes aumentar el valor de `y_pos`{:class="block3variables"} cada vez que se ejecuta el bucle `repetir (filas)`{:class="block3control"}.
 
-You do this in a similar manner to how you increase the value of `x_pos`{:class="block3variables"} in the `repeat (columns)`{:class="block3control"} loop.
+Haz esto en una forma similar a como incrementas el valor de `x_pos`{:class="block3variables"} en el bucle `repetir (columnas)`{:class="block3control"}.
 
 \--- task \---
 
-At the end of the code inside the `repeat (rows)`{:class="block3control"} loop, `y_pos`{:class="block3variables"} should increase up to `150`{:class="block3variables"}, which is `300`{:class="block3variables"} away from its starting value of `-150`{:class="block3variables"}. This needs to happen for each row of stamps.
+Al final del código dentro del bucle `repetir (filas)`{:class="block3control"}, `y_pos`{:class="block3variables"} debería aumentar hasta `150`{:class="block3variables"}, lo cual está `300`{:class="block3variables"} lejos de su valor inicial de `-150`{:class="block3variables"}. Esto debe suceder por cada fila de sellos.
 
 ```blocks3
 define generate positions (rows)(columns)
@@ -65,7 +65,7 @@ end
 
 \--- task \---
 
-Make sure you give the number of `rows`{:class="block3myblocks"} as an input to your blocks.
+Asegúrate de dar el número de `filas`{:class="block3myblocks"} como entrada a tus bloques.
 
 ```blocks3
 when flag clicked
@@ -78,27 +78,27 @@ stamp sprite (4) (10) ::custom
 
 \--- task \---
 
-Run your code now.
+Ejecuta tu código ahora.
 
-![mess of stamps](images/mess_stamps.png)
+![desorden de sellos](images/mess_stamps.png)
 
-You won't get a neat grid of stamps.
+No obtendrás una cuadrícula de sellos ordenada.
 
-This is because, right now, the `stamp sprite`{:class="block3myblocks"} block only runs for the total number of columns.
+Esto se debe a que, ahora mismo, el bloque `sellar objetos`{:class="block3myblocks"} sólo se ejecuta para el número total de columnas.
 
 \--- /task \---
 
 \--- task \---
 
-Change your `stamp sprites`{:class="block3myblocks"} script so that it `repeats`{:class="block3control"} enough times to stamp the complete grid of sprites.
+Cambia tu script de `sellar objetos`{:class="block3myblocks"} para que `se repita`{:class="block3control"} suficientes veces para estampar la cuadrícula completa de objetos.
 
 \--- hints \--- \--- hint \---
 
-The total number of stamps you need is the number you give as `columns`{:class="block3myblocks"} multiplied by the number you give as `rows`{:class="block3myblocks"}
+El número total de sellos que necesitas es el número que das como `columnas`{:class="block3myblocks"} multiplicado por el número que das como `filas`{:class="block3myblocks"}
 
 \--- /hint \--- \--- hint \---
 
-Use this additional block:
+Utiliza este bloque adicional:
 
 ```blocks3
 ((rows ::custom) * (columns ::custom))
@@ -106,7 +106,7 @@ Use this additional block:
 
 \--- /hint \--- \--- hint \---
 
-Here's the completed `stamp sprites`{:class="block3myblocks"} script:
+Aquí está el script terminado de `sellar objetos`{:class="block3myblocks"}:
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -122,6 +122,6 @@ next costume
 
 \--- /hint \--- \--- /hints \---
 
-![ordered grid](images/nice_grid.png)
+![cuadrícula ordenada](images/nice_grid.png)
 
 \--- /task \---
