@@ -1,12 +1,12 @@
-## Hide your sprite
+## Oculta tu objeto
 
-Now it's time to hide your sprite among the crowd of stamps. At the moment the sprite overlaps one of the stamps.
+Ahora es el momento de ocultar tu objeto entre la multitud de sellos. En este momento el objeto se superpone a uno de los sellos.
 
-![overlap](images/overplap-annotated.png)
+![superposición](images/overplap-annotated.png)
 
 \--- task \---
 
-So this doesn't happen, make your stamp loop run one time less: `(rows * columns) - 1`{:class="block3operators"}
+Para que esto no suceda, haz que tu bucle de sellos se ejecute una vez menos: `(filas * columnas) - 1`{:class="block3operators"}
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -22,11 +22,11 @@ next costume
 
 \--- /task \---
 
-If you run the script now, you can see that your sprite still overlaps with a stamp and there is a hole in your grid. And in the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists, there is one coordinate position left.
+Si ejecutas tu script ahora, puedes ver que tu objeto aún se superpone con un sello y que hay un agujero en tu cuadrícula. Y en las listas `x_posiciones`{:class="block3variables"} y `y_posiciones`{:class="block3variables"}, queda una posición de coordenada.
 
 \--- task \---
 
-To finish this part your game, go to the `when flag clicked`{:class="block3events"} section of the scripts.
+Para finalizar esta parte de tu juego, ve a la sección `al presionar la bandera` {:class="block3events"} de los scripts.
 
 ```blocks3
 when flag clicked
@@ -37,30 +37,30 @@ stamp sprites (4) (10) ::custom
 
 \--- no-print \---
 
-Here's an animation showing what should happen:
+Aquí hay una animación que muestra lo que debería suceder:
 
-![animation](images/demo_1.gif)
+![animación](images/demo_1.gif)
 
 \--- /no-print \---
 
-At the start of the game, the sprite should appear at a large size and say "Find me". Then the sprite should hide itself among the stamps in the empty space you have left for it.
+Al comienzo del juego, el objeto debe aparecer en un tamaño grande y decir “Encuéntrame”. Entonces el objeto debería esconderse entre los sellos en el espacio vacío que le has dejado.
 
-See if you can figure out how to do this, and use the hints below if you need help.
+Comprueba si puedes averiguar cómo hacer esto, y usa las pistas a continuación si necesitas ayuda.
 
 \--- hints \--- \--- hint \---
 
-This is what it needs to do:
+Esto es lo que tienes que hacer:
 
-1. Send your sprite to `x:0 y:0`{:class="block3motion"}
-2. Bring the sprite to the `front`{:class="block3looks"} and set its `size to 100%`{:class="block3looks"}
-3. `Say 'Find me' for two seconds`{:class="block3looks"}
-4. `Go back one layer`{:class="block3looks"}
-5. Set the sprite's `size to 40%`{:class="block3looks"}
-6. Move to the last remaining position in the lists
+1. Enviar tu objeto a `x:0 y:0`{:class="block3motion"}
+2. Traer el objeto al `frente`{:class="block3looks"} y fijar su `tamaño a 100%`{:class="block3looks"}
+3. `Decir “Encuéntrame” por dos segundos`{:class="block3motion"}
+4. `Ir una capa hacia atrás`{:class="block3motion"}
+5. Fijar el `tamaño al 40%`{:class="block3motion"} del objeto
+6. Mover a la última posición restante en las listas
 
 \--- /hint \--- \--- hint \---
 
-These are the additional blocks you need:
+Estos son los bloques adicionales que necesitas:
 
 ```blocks3
 when flag clicked
@@ -86,7 +86,7 @@ go to x: () y: ()
 
 \--- /hint \--- \--- hint \---
 
-Here is the completed `when flag clicked`{:class="block3events"} script:
+Aquí está el script `al presionar la bandera`{:class="block3events"} completado:
 
 ```blocks3
 when flag clicked
