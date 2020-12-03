@@ -2,7 +2,7 @@
 
 \--- task \---
 
-Para terminar el juego, [encuentra y descarga una imagen de una cortina de escenario](https://www.google.co.uk/search?q=stage+curtain&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjKg9O1k8_VAhXSL1AKHe1HDMIQ_AUICigB&biw=1362&bih=584){:target="_blank"}.
+Para terminar el juego, [encuentra y descarga una imagen de un telón de escenario](https://www.google.co.uk/search?q=stage+curtain&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjKg9O1k8_VAhXSL1AKHe1HDMIQ_AUICigB&biw=1362&bih=584){:target="_blank"}.
 
 Importa esta imagen como un objeto.
 
@@ -12,7 +12,7 @@ Importa esta imagen como un objeto.
 
 \--- task \---
 
-Coloca el nuevo objeto de cortina en `x:0 y:0`{:class="block3motion"}, y luego cambia su tamaño para que llene la pantalla. Asegúrate de que sea visible.
+Coloca el nuevo objeto de telón en `x:0 y:0`{:class="block3motion"}, y luego cambia su tamaño para que llene la pantalla. Asegúrate de que sea visible.
 
 ```blocks3
 when flag clicked
@@ -25,7 +25,7 @@ show
 
 \--- task \---
 
-Luego, en los scripts para el objeto de tu personaje, añade un `anuncio`{:class="block3events"} con el mensaje 'cortina arriba' hasta el final del script `cuando hagas clic en la bandera`{:class="block3events"}.
+Luego, en los scripts para el objeto de tu personaje, añade un `anuncio`{:class="block3events"} con el mensaje 'telón arriba' al final del script `al presionar la bandera`{:class="block3events"}.
 
 ```blocks3
 when flag clicked
@@ -46,7 +46,7 @@ go to x: (item (1 v) of [x_positions v]) y: (item (1 v) of [y_positions v])
 
 \--- task \---
 
-Cuando el objeto de la cortina recibe el `anuncio`{:class="block3events"}, el objeto necesita moverse hacia arriba durante 10 segundos para que parezca que la cortina se levanta para revelar los sellos. Entonces la cortina debe volver a caer, así que el objeto de la cortina necesita moverse hacia abajo.
+Cuando el objeto del telón recibe el `anuncio`{:class="block3events"}, el objeto necesita moverse hacia arriba durante 10 segundos para que parezca que la cortina se levanta para revelar los sellos. Entonces el telón debe volver a caer, así que el objeto del telón necesita moverse hacia abajo.
 
 \--- no-print \---
 
@@ -60,16 +60,16 @@ Intenta hacer esto por ti mismo y usa las sugerencias si necesitas ayuda.
 
 \--- hints \--- \--- hint \---
 
-Para el objeto de la cortina, necesitas un script que haga las siguientes cosas:
+Para el objeto del telón, necesitas un script que haga las siguientes cosas:
 
-1. Cuando el objeto de la cortina recibe el `anuncio`{:class="block3events"}
-2. Trae el objeto de la cortina hacia `delante`{:class="block3looks"}
+1. Cuando el objeto del telón recibe el `anuncio`{:class="block3events"}
+2. Traer el objeto del telón hacia el `frente`{:class="block3looks"}
 3. `Esperar`{:class="block3control"} un poco mientras los objetos de disfraces del personaje se sellan
-4. `Deslizar`{:class="block3motion"} el objeto de la cortina hacia arriba para que termine cerca de la parte superior del Escenario
-5. `Esconder`{:class="block3looks"} la cortina
-6. Inicia un bucle que cuenta hacia atrás por 10 segundos
-7. Cuando se acabe el tiempo, `mostrar`{:class="block3looks"} el objeto de cortina
-8. `Deslizar`{:class="block3motion"} el objeto cortina de regreso a su posición original
+4. `Deslizar`{:class="block3motion"} el objeto del telón hacia arriba para que termine cerca de la parte superior del escenario
+5. `Ocultar`{:class="block3looks"} la cortina
+6. Iniciar un bucle que cuente hacia atrás por 10 segundos
+7. Cuando se acabe el tiempo, `mostrar`{:class="block3looks"} el objeto de telón
+8. `Deslizar`{:class="block3motion"} el objeto telón de regreso a su posición original
 
 \--- /hint \--- \--- hint \---
 
