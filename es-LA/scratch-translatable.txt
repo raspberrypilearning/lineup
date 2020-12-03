@@ -1,25 +1,25 @@
-generate positions
+generar posiciones
 
-rows
+filas
 
-columns
+columnas
 
-x_positions
+x_posiciones
 
-y_positions
+y_posiciones
 
 x_pos
 
 y_pos
 
-stamp sprites
+sellar objetos
 
-index
+índice
 
-Find me
+Encuéntrame
 
-curtain up
+telón arriba
 
-timer
+cronómetro
 
-You found me
+Me has encontrado
