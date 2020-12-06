@@ -1,10 +1,10 @@
-## Change the costumes
+## Измени костюмы
 
-At the moment, your program stamps the same sprite costume over and over, and the size of the costume is too large.
+В настоящий момент твоя программа снова и снова печатает один и тот же костюм спрайта, а размер костюма слишком велик.
 
 \--- task \---
 
-Add code to the `stamp sprites`{:class="block3myblocks"} block to make the sprite a suitable size before the `repeat`{:class="block3control"} loop starts. Add a block inside the loop to switch the `next costume`{:class="block3looks"} after the `stamp`{:class="block3extensions"} block.
+Добавь код блоку `печатать спрайты`{:class="block3myblocks"}, который сделает спрайт подходящего размера, до того, как начнется цикл` повторить`{:class="block3control"}. Добавь блок в цикл, чтобы переключить `следующий костюм`{:class="block3looks"} после блока `печать`{:class="block3extensions"}.
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -19,35 +19,35 @@ change [index v] by (1)
 
 \--- /task \---
 
-When you run the script now, you should see something like this:
+Когда ты запустишь скрипт сейчас, то увидишь что-то вроде этого:
 
-![changed_sprites](images/changed_sprites.png)
+![измененные_спрайты](images/changed_sprites.png)
 
-Your program cycles through all the costumes in order. So that each costume does not show up in the same place every time the program runs, you should stamp the sprite in random places on the grid.
+Твоя программа переключает все костюмы по порядку. Чтобы каждый костюм не появлялся в одном и том же месте при каждом запуске программы, ты должен отпечатать спрайт в случайных местах на сетке.
 
-To do this, you need to follow this **algorithm**:
+Для этого тебе нужно следовать этому **алгоритму**:
 
-1. `Repeat`{:class="block3control"} until the list is empty
-2. Set `index`{:class="block3variables"} to a `random`{:class="block3operators"} number between `1` and the length of a list
-3. Move the sprite as you did before
-4. Delete the item at the `index`{:class="block3variables"} position from the `y_positions`{:class="block3variables"} list
-5. Delete the item at the `index`{:class="block3variables"} position from the `x_positions`{:class="block3variables"} list
+1. `Повторить`{:class="block3control"}, пока список не станет пустым
+2. Установить `индексу`{:class="block3variables"} `случайное`{:class="block3operators"} число между `1 ` и длиной списка
+3. Перемести спрайт, как ты делал раньше
+4. Удали элемент в позиции `индекс`{:class="block3variables"} из списка `y_позиции`{:class="block3variables"}
+5. Удали элемент в позиции `индекс`{:class="block3variables"} из списка `x_позиции`{:class="block3variables"}
 
 \--- task \---
 
-Add code to stamp the sprite in random places on the grid.
+Добавь код, чтобы отпечатать спрайт в случайных местах на сетке.
 
 \--- hints \--- \--- hint \---
 
-Remove the `set index to 1`{:class="block3variables"} from before the `repeat`{:class="block3control"} loop.
+Удали `установить индекс в 1`{:class="block3variables"} до цикла `повторить`{:class="block3control"}.
 
-Then within the loop, `set index to`{:class="block3variables"} a `random`{:class="block3operators"} number between `1` and the `length of x_positions`{:class="block3variables"}.
+Затем в цикле `установить индекс в`{:class="block3variables"} `случайное`{:class="block3operators"} число от `1` до `длина x_позиции`{:class="block3variables"}.
 
-Then `delete`{:class="block3variables"} the item at the `index`{:class="block3variables"} from both the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists.
+Затем `удали`{:class="block3variables"} элемент в позиции `индекс`{:class="block3variables"} из обоих списков `x_позиции`{:class="block3variables"} и `y_позиции`{:class="block3variables"}.
 
 \--- /hint \--- \--- hint \---
 
-Here are the additional blocks you need:
+Вот дополнительные блоки кода, которые тебе нужны:
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -72,7 +72,7 @@ delete () of [y_positions v]
 
 \--- /hint \--- \--- hint \---
 
-This is what your code should look like:
+Так должен выглядеть твой код:
 
 ```blocks3
 define stamp sprites (rows) (columns)
