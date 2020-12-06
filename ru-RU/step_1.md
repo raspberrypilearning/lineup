@@ -4,7 +4,7 @@ This is the **Scratch 3** version of the project. There is also a [Scratch 2 ver
 
 \--- /no-print \---
 
-## Introduction
+## Введение
 
 In this project you will make a Scratch game in which you need to find a sprite that is hidden among a huge crowd of other characters.
 
