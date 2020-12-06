@@ -1,16 +1,16 @@
-## Create a grid
+## Создай сетку
 
-You are going to create a grid of stamped costumes:
+Мы создадим сетку отпечатанных костюмов:
 
-![stamps in grid](images/stamp_grid.png)
+![штампы в сетке](images/stamp_grid.png)
 
-To do this you need to know the `x`{:class="block3motion"} and `y`{:class="block3motion"} coordinates of where each stamp should be placed.
+Для этого тебе нужно знать `х`{:class="block3motion"} и `y`{:class="block3motion"} координаты места, где должна быть размещена каждая печать.
 
 \--- task \---
 
-First, create a new block called `generate positions`{:class="block3myblocks"}. The block needs to have two 'number input' parameters. Call the two parameters `rows`{:class="block3myblocks"} and `columns`{:class="block3myblocks"}.
+Сначала создай новый блок с именем `генерировать позиции`{:class="block3myblocks"}. Блок должен иметь два параметра «числовых входных» параметров. Назови эти два параметра `строки`{:class="block3myblocks"} и `столбцы`{:class="block3myblocks"}.
 
-The values of these parameters will decide how many rows and columns your grid has.
+Значения этих параметров будут определять количество строк и столбцов в твоей сетке.
 
 [[[generic-scratch3-make-block]]]
 
@@ -22,13 +22,13 @@ define generate positions (rows)(columns)
 
 \--- task \---
 
-Create two lists, and call one of them `x_positions`{:class="block3variables"} and the other `y_positions`{:class="block3variables"}. These lists are for storing the `x`{:class="block3motion"} and `y`{:class="block3motion"} coordinates for the stamps.
+Создай два новых списка с именами `x_позиции`{:class="block3variables"} и `y_позиции`{:class="block3variables"}. Эти списки нужны для хранения `x`{:class="block3motion"} и `y`{:class="block3motion"} координат штампов.
 
 \--- /task \---
 
 \--- task \---
 
-Inside your `generate positions`{:class="block3myblocks"} block, add blocks to delete all the items from both lists, so that each time the game starts, the lists are empty.
+Добавь блоку `генерировать позиции`{:class="block3myblocks"} блоки, удаляющие все элементы из обоих списков, чтобы при каждом запуске игры списки были пустыми.
 
 ```blocks3
 define generate positions (rows)(columns)
@@ -40,17 +40,17 @@ define generate positions (rows)(columns)
 
 \--- task \---
 
-Next, create two variables, and call one of them `x_pos`{:class="block3variables"} and the other `y_pos`{:class="block3variables"}.
+Далее создай две переменные с именами `x_поз`{:class="block3variables"} и `y_поз`{:class="block3variables"}.
 
 \--- /task \---
 
-The `x_positions`{:class="block3variables"} list should contain ten numbers in total, and these should start at `-200`{:class="block3variables"} and go up to `200`{:class="block3variables"}.
+Список `x_позиции`{:class="block3variables"} должен содержать десять чисел, и они должны начинаться с `-200`{:class="block3variables"} и заканчиваться `200`{:class="block3variables"}.
 
-For now, the `y_positions`{:class="block3variables"} list can just contain the number `-150`{:class="block3variables"} ten times, so that the grid only has one row.
+На данный момент, список `y_positions`{:class="block3variables"} может содержать число `-150`{:class="block3variables"} десять раз, чтобы сетка имела только одну строку.
 
 \--- task \---
 
-Start by adding code to the `generate positions`{:class="block3myblocks"} block to set the `y_pos`{:class="block3variables"} variable to `-150`{:class="block3variables"} and the `x_pos`{:class="block3variables"} variable to `-200`{:class="block3variables"}. This is the location of the first stamped sprite.
+Начни с того, что добавь код в блок `генерировать позиции`{:class="block3myblocks"}, чтобы установить переменной `y_поз`{:class="block3variables"} значение `-150`{:class="block3variables"} и переменной`x_поз`{:class="block3variables"} значение `-200`{:class="block3variables"}. Это место расположения первого штампа спрайта.
 
 ```blocks3
 define generate positions (rows)(columns)
@@ -64,11 +64,11 @@ delete [all v] of [x_positions v]
 
 \--- task \---
 
-Next, add a `repeat`{:class="block3control"} loop to put coordinates into the lists.
+Затем добавь цикл `повторить`{:class="block3control"}, чтобы определить координаты в списки.
 
-The `repeat`{:class="block3control"} loop should run once for every column you want the grid to have.
+Цикл `повторить`{:class="block3control"} должен выполняться один раз для каждого столбца в сетке.
 
-The `generate positions`{:class="block3myblocks"} block takes `columns`{:class="block3myblocks"} as an input, so you can use `columns`{:class="block3myblocks"} for the `repeat`{:class="block3control"} loop.
+Блок `генерировать позиции`{:class="block3myblocks"} принимает `столбцы`{:class="block3myblocks"} в качестве входных данных, поэтому ты можеш использовать `столбцы`{:class="block3myblocks"} для цикла `повторить`{:class="block3control"}.
 
 ```blocks3
 define generate positions (rows)(columns)
@@ -81,28 +81,28 @@ set [x_pos v] to [-200]
 
 \--- /task \---
 
-Within the `repeat`{:class="block3control"} loop, add the values of `x_pos`{:class="block3variables"} and `y_pos`{:class="block3variables"} into the lists. Then you need to increase the value of `x_pos`{:class="block3variables"} by a little. How much should the value of `x_pos`{:class="block3variables"} increase by?
+В пределах цикла `повторить`{:class="block3control"}, добавь значения `x_поз`{:class="block3variables"} и `y_поз`{:class="block3variables"} в списки. Затем тебе нужно немного увеличить значение ` x_поз`{:class="block3variables"}. На сколько стоит увеличить значение `x_поз`{:class="block3variables"}?
 
-This is how to figure it out:
+Вот как мы это рассчитаем:
 
-- `x_pos`{:class="block3variables"} starts out with the value `-200`{:class="block3variables"}
-- The final time the loop `repeat`{:class="block3control"} runs, `x_pos`{:class="block3variables"} should reach the value `200`{:class="block3variables"}
-- That's a total increase of `400`{:class="block3variables"}
-- The first `x_pos`{:class="block3variables"} value is for the first column on the grid, and how many columns there are is determined by the `columns`{:class="block3myblocks"} input
+- `x_поз`{:class="block3variables"} начинается со значения `-200`{:class= "block3variables"}
+- Когда цикл `повторить`{:class="block3control"} выполняется в последний раз, `x_поз`{:class="block3variables"} должно достичь значения `200`{:class="block3variables"}
+- То есть всего увеличивается на `400`{:class="block3variables"}
+- Первое значение ` x_поз`{:class="block3variables"} предназначено для первого столбца в сетке, а количество столбцов определяется значением `столбцы`{:class="block3myblocks"}
 
-So after the first `x_pos`{:class="block3variables"} value is added, each time around the loop, the value of `x_pos`{:class="block3variables"} should increase by `400 / (columns - 1)`{:class="block3operators"}
+Итак, после добавления первого значения `x_поз`{:class = "block3variables"}, при каждом цикле значение `x_поз`{:class="block3variables"} должно увеличиться на `400 / (столбцы - 1)`{:class="block3operators"}
 
 \--- task \---
 
-Add in the code that will add all the `x_pos`{:class="block3variables"} and `y_pos`{:class="block3variables"} values into the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists.
+Добавь код, который добавит все значения `x_поз`{:class="block3variables"} и `y_поз`{:class="block3variables"} в списки `x_позиции`{:class="block3variables"} и `y_позиции`{:class="block3variables"}.
 
 \--- hints \--- \--- hint \---
 
-Within the loop, you need to add `x_pos`{:class="block3variables"} to the `x_positions`{:class="block3variables"} list, and add the `y_pos`{:class="block3variables"} to the `y_positions`{:class="block3variables"} list. Then `x_pos`{:class="block3variables"} variable needs to increase by `400 / (columns -1)`{:class="block3operators"} each time the loop repeats.
+В цикле тебе нужно добавить `x_поз`{:class="block3variables"} в список `x_позиции`{:class="block3variables"} и добавить `y_поз`{:class="block3variables"} в список `y_позиции`{:class="block3variables"}. Тогда переменная `x_поз`{:class="block3variables"} должна быть увеличена на `400 / (столбцы -1)`{:class="block3operators"} каждый раз, когда цикл повторяется.
 
 \--- /hint \--- \--- hint \---
 
-This shows the additional blocks you need to add into your script.
+Здесь показаны дополнительные блоки, которые тебе нужно добавить в скрипт.
 
 ```blocks3
 define generate positions (rows)(columns)
@@ -128,7 +128,7 @@ change [x_pos v] by ()
 
 \--- /hint \--- \--- hint \---
 
-Here is the completed script for the `generate positions`{:class="block3myblocks"} block:
+Вот завершенный скрипт для блока`генерировать позиции`{:class="block3myblocks"}:
 
 ```blocks3
 define generate positions (rows)(columns)
