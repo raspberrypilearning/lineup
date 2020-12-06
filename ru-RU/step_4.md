@@ -1,10 +1,10 @@
-## Test the script
+## Проверь скрипт
 
 \--- task \---
 
-To test the script, you need to **call** the custom block and provide it with the number of `columns`{:class="block3myblocks"} you want in your grid.
+Чтобы протестировать скрипт, тебе нужно **вызвать** пользовательский блок и передать ему количество ` столбцов`{:class="block3myblocks"}, которое ты желаешь иметь в твоей сетке.
 
-Add this code to your sprite:
+Добавь этот код своему спрайту:
 
 ```blocks3
 when flag clicked
@@ -15,10 +15,10 @@ generate positions (1) (10) ::custom
 
 \--- task \---
 
-Now click on the green flag to run your code. You should see your two lists fill with values.
+Теперь нажми на зеленый флаг, чтобы запустить свой код. Ты должен увидеть два списка со значениями.
 
-![lists](images/filled_lists.png)
+![списки](images/filled_lists.png)
 
-If your results don't look like this, then go back to the previous step, have a look at the hints, and try to fix your script.
+Если твои результаты не выглядят так, вернись к предыдущему шагу, взгляни на подсказки и попробуй исправить свой скрипт.
 
 \--- /task \---
