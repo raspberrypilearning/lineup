@@ -1,25 +1,25 @@
-generate positions
+генерировать позиции
 
-rows
+строки
 
-columns
+столбцы
 
-x_positions
+x_позиции
 
-y_positions
+y_позиции
 
-x_pos
+x_поз
 
-y_pos
+y_поз
 
-stamp sprites
+печатать спрайты
 
-index
+индекс
 
-Find me
+Найди меня
 
-curtain up
+занавес вверх
 
-timer
+таймер
 
-You found me
+Ты нашел меня
