@@ -1,10 +1,10 @@
-## Finish the game
+## Заверши игру
 
 \--- task \---
 
-To finish the game, [find and download an image of a stage curtain](https://www.google.co.uk/search?q=stage+curtain&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjKg9O1k8_VAhXSL1AKHe1HDMIQ_AUICigB&biw=1362&bih=584){:target="_blank"}.
+Чтобы закончить игру, [найди и загрузи изображение занавеса сцены](https://www.google.co.uk/search?q=stage+curtain&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjKg9O1k8_VAhXSL1AKHe1HDMIQ_AUICigB&biw=1362&bih=584){:target="_blank"}.
 
-Import this image as a sprite.
+Импортируй это изображение как спрайт.
 
 [[[generic-scratch3-add-sprite-from-file]]]
 
@@ -12,7 +12,7 @@ Import this image as a sprite.
 
 \--- task \---
 
-Position the new curtain sprite at `x:0 y:0`{:class="block3motion"}, and then change its size so that it fills the screen. Make sure it is visible.
+Помести новый спрайт занавеса в `x: 0 y: 0`{:class="block3motion"}, а затем измени его размер так, чтобы он занимал весь экран. Убедись, что его видно.
 
 ```blocks3
 when flag clicked
@@ -25,7 +25,7 @@ show
 
 \--- task \---
 
-Then, in the scripts for your character sprite, add a `broadcast`{:class="block3events"} with the message 'curtain up' to the end of the `when flag clicked`{:class="block3events"} script.
+Затем в скрипте для вашего персонажа спрайта добавь `передать`{:class="block3events"} сообщение «занавес вверх» в конец скрипта `когда флаг нажат`{:class="block3events"}.
 
 ```blocks3
 when flag clicked
@@ -46,34 +46,34 @@ go to x: (item (1 v) of [x_positions v]) y: (item (1 v) of [y_positions v])
 
 \--- task \---
 
-When the curtain sprite receives the `broadcast`{:class="block3events"}, the sprite needs to move upwards for 10 seconds so that it looks like the curtain is raised to reveal the stamps. Then the curtain should drop again, so the curtain sprite needs to move downwards.
+Когда спрайт занавеса получает `передачу`{:class="block3events"}, ему нужно переместиться вверх на 10 секунд, чтобы было похоже, что занавес поднят, чтобы показать штампы. Затем занавес должен снова опуститься, поэтому спрайту занавеса нужно двигаться вниз.
 
 \--- no-print \---
 
-It should look like this:
+Должно получиться примерно так:
 
-![demo 2](images/demo_2.gif)
+![демо 2](images/demo_2.gif)
 
 \--- /no-print \---
 
-Try to do this by yourself, and use the hints if you need help.
+Попробуй сделать это самостоятельно и используй подсказки, если будет нужна помощь.
 
 \--- hints \--- \--- hint \---
 
-For the curtain sprite, you need a script that does the following things:
+Для спрайта занавеса нужен скрипт, который выполняет следующие действия:
 
-1. When the curtain sprite receives the `broadcast`{:class="block3events"}
-2. Bring the curtain sprite to the `front`{:class="block3looks"}
-3. `Wait`{:class="block3control"} a little bit while the character sprite costumes get stamped
-4. `Glide`{:class="block3motion"} the curtain sprite upwards so it ends up near the top of the Stage
-5. `Hide`{:class="block3looks"} the curtain
-6. Start a loop that counts down for 10 seconds
-7. When the time is over, `show`{:class="block3looks"} the curtain sprite
-8. `Glide`{:class="block3motion"} the curtain sprite back to its original position
+1. Когда спрайт занавеса получает `передачу`{:class="block3events"}
+2. Перенеси спрайт занавеса `вперед`{:class="block3looks"}
+3. `Ждать`{:class="block3control"} немного, пока костюмы спрайтов персонажей будут отпечатаны
+4. `Скользить`{:class="block3motion"} спрайт занавеса вверх так, чтобы он дошел до верхней части Сцены
+5. `Скрыть`{:class="block3looks"} занавес
+6. Начать цикл, который ведет обратный отсчет в течение 10 секунд
+7. Когда время закончится, `показать`{:class="block3looks"} спрайт занавеса
+8. `Скользить`{:class="block3motion"} спрайт занавеса и вернуть его в исходное положение
 
 \--- /hint \--- \--- hint \---
 
-Here are the blocks you need:
+Вот блоки, которые тебе понадобятся:
 
 ```blocks3
 go to front
@@ -101,7 +101,7 @@ when I receive [curtain up v]
 
 \--- /hint \--- \--- hint \---
 
-This is the completed script:
+Это законченный скрипт:
 
 ```blocks3
 when I receive [curtain up v]
@@ -120,11 +120,11 @@ glide (1) secs to x: (0) y: (0)
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-The very last part is to let the player know if they've won.
+Последняя часть — сообщить игроку, выиграли ли он.
 
 \--- task \---
 
-In the scripts for the the character sprite, add code so that, when the sprite is clicked, the sprite says `You've found me`{:class="block3looks"}, and all the scripts in the game stop.
+В сценарии для персонажа спрайта добавь код, который при нажатии на спрайт спрайт говорит `Ты нашел меня`{:class="block3looks"}, и все скрипты в игре останавливаются.
 
 ```blocks3
 when this sprite clicked
