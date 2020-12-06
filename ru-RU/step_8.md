@@ -26,7 +26,7 @@ next costume
 
 \--- task \---
 
-To finish this part your game, go to the `when flag clicked`{:class="block3events"} section of the scripts.
+Чтобы закончить эту часть игры, перейди к разделу скриптов `когда флаг нажат`{:class="block3events"}.
 
 ```blocks3
 when flag clicked
@@ -37,30 +37,30 @@ stamp sprites (4) (10) ::custom
 
 \--- no-print \---
 
-Here's an animation showing what should happen:
+Вот анимация, показывающая, что должно произойти:
 
-![animation](images/demo_1.gif)
+![анимация](images/demo_1.gif)
 
 \--- /no-print \---
 
-At the start of the game, the sprite should appear at a large size and say "Find me". Then the sprite should hide itself among the stamps in the empty space you have left for it.
+В начале игры спрайт должен появиться в большом размере и сказать «Найди меня». Затем спрайт должен спрятаться среди штампов в оставленном тобой пустом месте.
 
-See if you can figure out how to do this, and use the hints below if you need help.
+Попробуй сам выяснить, как это сделать, и воспользуйтесь советами ниже, если понадобится помощь.
 
 \--- hints \--- \--- hint \---
 
-This is what it needs to do:
+Вот, что тебе нужно сделать:
 
-1. Send your sprite to `x:0 y:0`{:class="block3motion"}
-2. Bring the sprite to the `front`{:class="block3looks"} and set its `size to 100%`{:class="block3looks"}
-3. `Say 'Find me' for two seconds`{:class="block3looks"}
-4. `Go back one layer`{:class="block3looks"}
-5. Set the sprite's `size to 40%`{:class="block3looks"}
-6. Move to the last remaining position in the lists
+1. Отправь свой спрайт в `x:0 y:0`{:class="block3motion"}
+2. Выведи спрайт `вперед`{:class="block3looks"} и установи его `размер в 100%`{:class="block3looks"}
+3. `Говорить «Найди меня» в течение двух секунд`{:class= "block3looks"}
+4. `Вернуться назад на один слой`{:class="block3looks"}
+5. Установи `размер в 40%`{:class="block3looks"}
+6. Перейди к последней оставшейся позиции в списках
 
 \--- /hint \--- \--- hint \---
 
-These are the additional blocks you need:
+Вот дополнительные блоки кода, которые тебе нужны:
 
 ```blocks3
 when flag clicked
@@ -86,7 +86,7 @@ go to x: () y: ()
 
 \--- /hint \--- \--- hint \---
 
-Here is the completed `when flag clicked`{:class="block3events"} script:
+Вот завершенный скрипт `когда флаг нажат`{:class="block3myblocks"}:
 
 ```blocks3
 when flag clicked
