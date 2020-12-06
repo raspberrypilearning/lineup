@@ -1,10 +1,10 @@
-## Stamp a row
+## Штамп строки
 
-So far you have ten values in each of the two lists. Now stamp some costumes at the Stage coordinates stored in the lists.
+На данный момент у тебя есть десять значений в каждом из двух списков. Теперь пропечатай некоторые костюмы на координатах Сцены, сохраненных в списках.
 
 \--- task \---
 
-Add the **Pen** extension to your project.
+Добавь расширение **Перо** в твой проект.
 
 [[[generic-scratch3-add-pen-extension]]]
 
@@ -12,7 +12,7 @@ Add the **Pen** extension to your project.
 
 \--- task \---
 
-Create a new block and call it `stamp sprites`{:class="block3myblocks"}. This block needs two number inputs named `rows`{:class="block3myblocks"} and `columns`{:class="block3myblocks"} just like the other custom block.
+Создай новый пользовательский блок и назови его `печатать спрайты`{:class="block3myblocks"}. Этому блоку нужно добавить два числовых ввода с именами `строки`{:class="block3myblocks"} и `столбцы`{:class="block3myblocks"}, как и предыдущему пользовательскому блоку.
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -22,7 +22,7 @@ define stamp sprites (rows) (columns)
 
 \--- task \---
 
-Create a new variable called `index`{:class="block3variables"} with which to track the position in the lists that your program is reading. To begin with, set `index`{:class="block3variables"} to `1`{:class="block3variables"} to fetch the first item of each list.
+Создай новую переменную с именем `индекс`{:class="block3variables"}, с помощью которой можно отслеживать позицию в списках, которые читает ваша программа. Для начала установи `индексу`{:class="block3variables"} значение `1`{:class="block3variables"}, чтобы получить первый элемент каждого списка.
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -33,7 +33,7 @@ define stamp sprites (rows) (columns)
 
 \--- task \---
 
-The `stamp sprites`{:class="block3myblocks"} block should stamp a sprite for each pair of coordinates in the list. To do this, the block needs a `repeat`{:class="block3variables"} loop that runs once for each column.
+Блок `печатать спрайты`{:class="blockmyblocks"} должен печатать спрайт для каждой пары координат в списке. Для этого блоку нужен цикл `повторить`{:class="block3variables"}, который запускается один раз для каждого столбца.
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -45,19 +45,19 @@ set [index v] to [1]
 
 \--- task \---
 
-Within the `repeat`{:class="block3variables"} loop:
+В пределах цикла `печатать`{:class="block3variables"}:
 
-- Move the sprite to the `index`{:class="block3variables"} position in the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists
-- `Stamp`{:class="block3extensions"} the sprite
-- Change the `index`{:class="block3variables"} by `1`{:class="block3variables"}
+- Перемести спрайт в позицию `индекс`{:class="block3variables"} в списки `x_позиции`{:class="block3variables"} и `y_позиции`{:class="block3variables"}
+- `Печатай`{:class="block3extensions"} спрайт
+- Измени `индекс`{:class="block3variables"} на `1`{:class="block3variables"}
 
 \--- hints \--- \--- hint \---
 
-Within the `repeat`{:class="block3variables"} loop, add a `go to x: y:`{:class="block3motion"} block. The `x`{:class="block3motion"} position in this block should be set to the `index`{:class="block3variables"} of `x_positions`{:class="block3variables"} and the `y`{:class="block3motion"} position should be set to the `index`{:class="block3variables"} of `y_positions`{:class="block3variables"}. Then add code to `stamp`{:class="block3extensions"} the sprite. Finally, add code to increase `index`{:class="block3variables"} by 1.
+В пределах цикла `повторить`{:class="block3variables"} добавь блок `перейти к x: y: `{:class="block3motion"}. Позиция `х`{:class="block3motion"} в этом блоке должна быть определена в `индекс`{:class="block3variables"} из `x_позиций`{:class="block3variables"} и `y`{:class="block3motion"} позиция должна быть установлена в `индекс`{:class="block3variables"} из `y_позиции`{:class="block3variables"}. Затем добавь код в спрайт `печатать`{:class="block3extensions"}. Наконец, добавь код для увеличения `индекса`{:class="block3variables"} на 1.
 
 \--- /hint \--- \--- hint \---
 
-Here are the blocks you need:
+Вот блоки, которые тебе понадобятся:
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -76,7 +76,7 @@ stamp
 
 \--- /hint \--- \--- hint \---
 
-Here is the completed script for the `stamp sprites`{:class="block3myblocks"} block:
+Вот завершенный скрипт для блока `печатать спрайты`{:class="block3myblocks"}:
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -91,7 +91,7 @@ repeat (columns :: custom-arg)
 
 \--- task \---
 
-Add a `erase all`{:class="block3extensions"} block below the `when flag clicked`{:class="block3control"} block to clear the Stage each time the game starts. Then add the `stamp sprites`{:class="block3myblocks"} block at the bottom of the `when flag clicked`{:class="block3control"} script so you can test your new code.
+Добавь блок `стереть все`{:class="block3extensions"} чуть ниже блока `когда флаг нажат`{:class="block3control"}, чтобы чистить сцену при каждом запуске игры. Затем добавь блок `печатать спрайты`{:class="block3myblocks"} в нижней часть скрипта `когда флаг нажат`{:class="block3control"}, чтобы можно было проверить свой новый код.
 
 ```blocks3
 when flag clicked
@@ -104,8 +104,8 @@ stamp sprite (1) (10) ::custom
 
 \--- task \---
 
-Click the green flag. You should see something like this, depending on the costumes your sprite has:
+Нажми на зеленый флаг. Ты должен увидеть что-то вроде этого, в зависимости от костюмов твоего спрайта:
 
-![stamped sprites](images/stamped_sprites.png)
+![отпечатанные спрайты](images/stamped_sprites.png)
 
 \--- /task \---
