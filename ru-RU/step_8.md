@@ -1,12 +1,12 @@
-## Hide your sprite
+## Скрой свой спрайт
 
-Now it's time to hide your sprite among the crowd of stamps. At the moment the sprite overlaps one of the stamps.
+Теперь пришло время спрятать свой спрайт среди множества штампов. На данный момент спрайт перекрывает один из штампов.
 
-![overlap](images/overplap-annotated.png)
+![перекрытие](images/overplap-annotated.png)
 
 \--- task \---
 
-So this doesn't happen, make your stamp loop run one time less: `(rows * columns) - 1`{:class="block3operators"}
+Чтобы это не происходило, сделай так, чтобы твой цикл печати выполнялся на один раз меньше: `(строки * столбцы) - 1`{:class="block3operators"}
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -22,7 +22,7 @@ next costume
 
 \--- /task \---
 
-If you run the script now, you can see that your sprite still overlaps with a stamp and there is a hole in your grid. And in the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists, there is one coordinate position left.
+Если ты запустишь скрипт сейчас, то увидишь, что спрайт все еще перекрывается штампом, и в сетке есть дыра. И в списках `x_позиции`{:class="block3variables"} и `y_позиции`{:class="block3variables"} осталась одна координата.
 
 \--- task \---
 
