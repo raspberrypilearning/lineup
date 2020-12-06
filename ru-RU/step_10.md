@@ -1,7 +1,7 @@
-## Challenge: improve your game
+## Задание: улучши свою игру
 
-Here are some ideas for how to make your game more interesting:
+Вот несколько идей, как сделать игру более интересной:
 
-- Can you alter your scripts so that you can use even more costumes?
-- How about choosing a background and then making the sprites nearer the top of the screen appear smaller, so they seem further away?
-- Can you make the game run for several rounds and provide you with a score based on how long it takes you to complete five rounds?
+- Можешь ли ты изменить скрипт так, чтобы использовалось еще больше костюмов?
+- Как насчет того, чтобы выбрать фон, а затем уменьшить спрайты у верхней части экрана, чтобы они казались дальше?
+- Можешь ли ты сделать игру на несколько раундов и добавить счет, который определяет, сколько времени потребуется, чтобы пройти пять раундов?
