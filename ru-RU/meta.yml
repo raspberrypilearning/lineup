@@ -1,32 +1,32 @@
 ---
-title: Line up
+title: Ставь в ряд
 hero_image: images/banner.png
-description: Create a game where you look for a character hidden in a crowd of other characters
+description: Создай игру, где ты ищешь персонажа, скрытого среди других персонажей
 listed: true
 copyedit: true
 version: 4.1.0
 last_tested: 2018-11-05
 steps:
   - 
-    title: Introduction
+    title: Введение
   - 
-    title: Add costumes
+    title: Добавь костюмы
   - 
-    title: Create a grid
+    title: Создай сетку
   - 
-    title: Test the script
+    title: Проверь скрипт
   - 
-    title: Stamp a row
+    title: Штамп строки
   - 
-    title: Change the costumes
+    title: Измени костюмы
   - 
-    title: Add rows
+    title: Добавь строки
   - 
-    title: Hide your sprite
+    title: Скрой свой спрайт
   - 
-    title: Finish the game
+    title: Заверши игру
   - 
-    title: "Challenge: improve your game"
+    title: "Задание: улучши свою игру"
     challenge: true
   - 
-    title: "What next?"
+    title: "Что дальше?"
