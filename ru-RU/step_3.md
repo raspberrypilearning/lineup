@@ -85,12 +85,12 @@ set [x_поз v] to [-200]
 
 Вот как мы это рассчитаем:
 
-- `x_поз`{:class="block3variables"} начинается со значения `-200`{:class= "block3variables"}
+- `x_поз`{:class="block3variables"} начинается со значения `-200`{:class="block3variables"}
 - Когда цикл `повторить`{:class="block3control"} выполняется в последний раз, `x_поз`{:class="block3variables"} должно достичь значения `200`{:class="block3variables"}
 - То есть всего увеличивается на `400`{:class="block3variables"}
 - Первое значение `x_поз`{:class="block3variables"} предназначено для первого столбца в сетке, а количество столбцов определяется значением `столбцы`{:class="block3myblocks"}
 
-Итак, после добавления первого значения `x_поз`{:class = "block3variables"}, при каждом цикле значение `x_поз`{:class="block3variables"} должно увеличиться на `400 / (столбцы - 1)`{:class="block3operators"}
+Итак, после добавления первого значения `x_поз`{:class="block3variables"}, при каждом цикле значение `x_поз`{:class="block3variables"} должно увеличиться на `400 / (столбцы - 1)`{:class="block3operators"}
 
 --- task ---
 

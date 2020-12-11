@@ -43,7 +43,7 @@ end
 
 --- task ---
 
-В конце кода внутри цикла `повторить (строки)`{:class ="block3control"} `y_поз`{:class="block3variables"} должно увеличиться до `150`{:class="block3variables"}, что отличается на `300`{:class="block3variables"} от начального значения `-150`{:class="block3variables"}. Это нужно повторить для каждого ряда.
+В конце кода внутри цикла `повторить (строки)`{:class="block3control"} `y_поз`{:class="block3variables"} должно увеличиться до `150`{:class="block3variables"}, что отличается на `300`{:class="block3variables"} от начального значения `-150`{:class="block3variables"}. Это нужно повторить для каждого ряда.
 
 ```blocks3
 define генерировать позиции (строки)(столбцы)
