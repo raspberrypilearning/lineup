@@ -1,0 +1,25 @@
+generar posiciones
+
+filas
+
+columnas
+
+x_posiciones
+
+y_posiciones
+
+x_pos
+
+y_pos
+
+sellar objetos
+
+índice
+
+Encuéntrame
+
+telón arriba
+
+cronómetro
+
+Me has encontrado
