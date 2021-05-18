@@ -1,0 +1,25 @@
+générer les positions
+
+lignes
+
+colonnes
+
+positions_x
+
+positions_y
+
+pos_x
+
+pos_y
+
+estampiller les sprites
+
+index
+
+Trouve-moi
+
+rideau levé
+
+chronomètre
+
+Tu m'as trouvé
