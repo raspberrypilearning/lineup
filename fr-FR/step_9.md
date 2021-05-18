@@ -1,10 +1,10 @@
-## Finish the game
+## Terminer la partie
 
 \--- task \---
 
-To finish the game, [find and download an image of a stage curtain](https://www.google.co.uk/search?q=stage+curtain&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjKg9O1k8_VAhXSL1AKHe1HDMIQ_AUICigB&biw=1362&bih=584){:target="_blank"}.
+Pour terminer la partie, [trouve et télécharge une image d'un rideau de scène](https://www.google.co.uk/search?q=stage+curtain&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjKg9O1k8_VAhXSL1AKHe1HDMIQ_AUICigB&biw=1362&bih=584){:target="_blank"}.
 
-Import this image as a sprite.
+Importe cette image en tant que sprite.
 
 [[[generic-scratch3-add-sprite-from-file]]]
 
@@ -12,7 +12,7 @@ Import this image as a sprite.
 
 \--- task \---
 
-Position the new curtain sprite at `x:0 y:0`{:class="block3motion"}, and then change its size so that it fills the screen. Make sure it is visible.
+Positionne le nouveau sprite rideau sur `x:0 y:0`{:class="block3motion"}, puis change sa taille pour qu'il remplisse l'écran. Assure-toi qu'il est visible.
 
 ```blocks3
 when flag clicked
@@ -25,7 +25,7 @@ show
 
 \--- task \---
 
-Then, in the scripts for your character sprite, add a `broadcast`{:class="block3events"} with the message 'curtain up' to the end of the `when flag clicked`{:class="block3events"} script.
+Puis, dans les scripts de ton sprite de personnage, ajoute un script `envoyer à tous`{:class="block3events"} avec le message « rideau levé » à la fin du script `quand le drapeau est cliqué`{:class="block3events"}.
 
 ```blocks3
 when flag clicked
@@ -46,34 +46,34 @@ go to x: (item (1 v) of [x_positions v]) y: (item (1 v) of [y_positions v])
 
 \--- task \---
 
-When the curtain sprite receives the `broadcast`{:class="block3events"}, the sprite needs to move upwards for 10 seconds so that it looks like the curtain is raised to reveal the stamps. Then the curtain should drop again, so the curtain sprite needs to move downwards.
+Quand le sprite de rideau reçoit l'`envoyer à tous`{:class="block3events"}, le sprite a besoin de se déplacer vers le haut pendant 10 secondes pour donner l'effet du lever de rideau pour révéler les tampons. Puis le rideau devrait tomber à nouveau, de sorte que le sprite de rideau doit se déplacer vers le bas.
 
 \--- no-print \---
 
-It should look like this:
+Ça devrait ressembler à ceci :
 
 ![demo 2](images/demo_2.gif)
 
 \--- /no-print \---
 
-Try to do this by yourself, and use the hints if you need help.
+Essaie de le faire par toi-même, et utilise les indices si tu as besoin d'aide.
 
 \--- hints \--- \--- hint \---
 
-For the curtain sprite, you need a script that does the following things:
+Pour le sprite rideau, tu as besoin d'un script qui fait les choses suivantes :
 
-1. When the curtain sprite receives the `broadcast`{:class="block3events"}
-2. Bring the curtain sprite to the `front`{:class="block3looks"}
-3. `Wait`{:class="block3control"} a little bit while the character sprite costumes get stamped
-4. `Glide`{:class="block3motion"} the curtain sprite upwards so it ends up near the top of the Stage
-5. `Hide`{:class="block3looks"} the curtain
-6. Start a loop that counts down for 10 seconds
-7. When the time is over, `show`{:class="block3looks"} the curtain sprite
-8. `Glide`{:class="block3motion"} the curtain sprite back to its original position
+1. Quand le sprite de rideau reçoit l'`envoyer à tous`{:class="block3events"}
+2. Faire passer le sprite du rideau à l'`avant`{:class="block3looks"}
+3. `Attendre`{:class="block3control"} un peu pendant que les costumes de sprite de personnage sont estampillés
+4. `Glisser`{:class="block3motion"} le sprite de rideau vers le haut pour qu'il se retrouve près du haut de la scène
+5. `Cacher`{:class="block3looks"} le rideau
+6. Démarrer une boucle qui compte à rebours pendant 10 secondes
+7. Lorsque le temps est écoulé, `montrer`{:class="block3looks"} le sprite du rideau
+8. `Glisser`{:class="block3motion"} le sprite du rideau à sa position d'origine
 
 \--- /hint \--- \--- hint \---
 
-Here are the blocks you need:
+Voici les blocs dont tu auras besoin :
 
 ```blocks3
 go to front
@@ -101,7 +101,7 @@ when I receive [curtain up v]
 
 \--- /hint \--- \--- hint \---
 
-This is the completed script:
+Voici le script terminé :
 
 ```blocks3
 when I receive [curtain up v]
@@ -120,11 +120,11 @@ glide (1) secs to x: (0) y: (0)
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
 
-The very last part is to let the player know if they've won.
+La dernière partie est de faire savoir au joueur s'il a gagné.
 
 \--- task \---
 
-In the scripts for the the character sprite, add code so that, when the sprite is clicked, the sprite says `You've found me`{:class="block3looks"}, and all the scripts in the game stop.
+Dans les scripts pour le sprite du personnage, ajoute du code de sorte que, lorsque le sprite est cliqué, le sprite dit `Tu m'as trouvé`{:class="block3looks"}, et tous les scripts du jeu s'arrêtent.
 
 ```blocks3
 when this sprite clicked
