@@ -63,25 +63,25 @@ Dit is wat het moet doen:
 Dit zijn de extra blokken die je nodig hebt:
 
 ```blocks3
-wanneer op de groene vlag wordt geklikt
-wis alles
-genereer posities (4) (10) ::custom
-stempel sprites (4) (10) ::custom
+when flag clicked
+erase all
+generate positions (4) (10) ::custom
+stamp sprites (4) (10) ::custom
 
-ga naar x: (0) y: (0)
+go to x: (0) y: (0)
 
-ga naar achteren (1) lagen
+go [backward v] (1) layers
 
-ga naar laag voorgrond
+go to [front v] layer
 
-maak grootte (100)%
+set size to (100) %
 
-maak grootte (40)%
+set size to (40) %
 
-zeg [] (2) sec.
-item (1 v) van [x_posities v]
-item (1 v) van [y_posities v ]
-ga naar x: () y: ()
+say [] for (2) seconds
+item (1 v) of [x_positions v]
+item (1 v) of [y_positions v]
+go to x: () y: ()
 ```
 
 \--- /hint \--- \--- hint \---
@@ -89,17 +89,17 @@ ga naar x: () y: ()
 Hier is het voltooide `wanneer op de groene vlag wordt geklikt`{:class="block3events"} script:
 
 ```blocks3
-wanneer op de groene vlag wordt geklikt
-wis alles
-genereer posities (4) (10) ::custom
-stempel sprites (4) (10) ::custom
-+ ga naar x: (0) y: (0)
-+ ga naar laag voorgrond
-+ maak grootte (100) %
-+ zeg [Zoek me] (2) sec.
-+ ga naar achteren (1) lagen
-+ maak grootte (40) %
-+ ga naar x: (item (1 v) van [x_posities v]) y: (item (1 v) van [y_posities v])
+when flag clicked
+erase all
+generate positions (4) (10) ::custom
+stamp sprites (4) (10) ::custom
++go to x: (0) y: (0)
++go to [front v] layer
++set size to (100) %
++say [Find me] for (2) seconds
++go [backward v] (1) layers
++set size to (40) %
++ go to x: (item (1 v) of [x_positions v]) y: (item (1 v) of [y_positions v])
 ```
 
 \--- /hint \--- \--- /hints \--- \--- /task \---
