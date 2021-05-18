@@ -1,10 +1,10 @@
-## Stamp a row
+## Estampiller une ligne
 
-So far you have ten values in each of the two lists. Now stamp some costumes at the Stage coordinates stored in the lists.
+Jusqu'à présent, tu as dix valeurs dans chacune des deux listes. Maintenant estampille certains costumes aux coordonnées de la scène stockées dans les listes.
 
 \--- task \---
 
-Add the **Pen** extension to your project.
+Ajoute l'extension **Stylo** à ton projet.
 
 [[[generic-scratch3-add-pen-extension]]]
 
@@ -12,7 +12,7 @@ Add the **Pen** extension to your project.
 
 \--- task \---
 
-Create a new block and call it `stamp sprites`{:class="block3myblocks"}. This block needs two number inputs named `rows`{:class="block3myblocks"} and `columns`{:class="block3myblocks"} just like the other custom block.
+Crée un nouveau bloc et appelle-le `estampiller les sprites`{:class="block3myblocks"}. Ce bloc a besoin de deux nombres d'entrées nommés `lignes`{:class="block3myblocks"} et `colonnes`{:class="block3myblocks"} comme l'autre bloc personnalisé.
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -22,7 +22,7 @@ define stamp sprites (rows) (columns)
 
 \--- task \---
 
-Create a new variable called `index`{:class="block3variables"} with which to track the position in the lists that your program is reading. To begin with, set `index`{:class="block3variables"} to `1`{:class="block3variables"} to fetch the first item of each list.
+Crée une nouvelle variable appelée `index`{:class="block3variables"} avec laquelle tu pourras suivre la position dans les listes que ton programme est en train de lire. Pour commencer, définis `index`{:class="block3variables"} à `1`{:class="block3variables"} pour récupérer le premier élément de chaque liste.
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -33,7 +33,7 @@ define stamp sprites (rows) (columns)
 
 \--- task \---
 
-The `stamp sprites`{:class="block3myblocks"} block should stamp a sprite for each pair of coordinates in the list. To do this, the block needs a `repeat`{:class="block3variables"} loop that runs once for each column.
+Le bloc `estampiller les sprites`{:class="block3myblocks"} doit estampiller un sprite pour chaque paire de coordonnées dans la liste. Pour cela, le bloc a besoin d'une boucle `répéter`{:class="block3variables"} qui s'exécute une fois pour chaque colonne.
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -45,19 +45,19 @@ set [index v] to [1]
 
 \--- task \---
 
-Within the `repeat`{:class="block3variables"} loop:
+Dans la boucle `répéter`{:class="block3variables"} :
 
-- Move the sprite to the `index`{:class="block3variables"} position in the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists
-- `Stamp`{:class="block3extensions"} the sprite
-- Change the `index`{:class="block3variables"} by `1`{:class="block3variables"}
+- Déplace le sprite à la position `index`{:class="block3variables"} dans les listes `positions_x`{:class="block3variables"} et `positions_y`{:class="block3variables"}
+- `Estampille`{:class="block3extensions"} le sprite
+- Change l'`index`{:class="block3variables"} par `1`{:class="block3variables"}
 
 \--- hints \--- \--- hint \---
 
-Within the `repeat`{:class="block3variables"} loop, add a `go to x: y:`{:class="block3motion"} block. The `x`{:class="block3motion"} position in this block should be set to the `index`{:class="block3variables"} of `x_positions`{:class="block3variables"} and the `y`{:class="block3motion"} position should be set to the `index`{:class="block3variables"} of `y_positions`{:class="block3variables"}. Then add code to `stamp`{:class="block3extensions"} the sprite. Finally, add code to increase `index`{:class="block3variables"} by 1.
+Dans la boucle `répéter`{:class="block3variables"}, ajoute un bloc `aller à x: y:`{:class="block3motion"}. La position `x`{:class="block3motion"} dans ce bloc doit être réglée sur l'`index`{:class="block3variables"} de `positions_x`{:class="block3variables"} et la position `y`{:class="block3motion"} doit être définie sur l'`index`{:class="block3variables"} de `positions_y`{:class="block3variables"}. Ajoute ensuite du code pour `estampiller`{:class="block3extensions"} le sprite. Enfin, ajoute du code pour augmenter l'`index`{:class="block3variables"} de 1.
 
 \--- /hint \--- \--- hint \---
 
-Here are the blocks you need:
+Voici les blocs dont tu as besoin :
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -76,7 +76,7 @@ stamp
 
 \--- /hint \--- \--- hint \---
 
-Here is the completed script for the `stamp sprites`{:class="block3myblocks"} block:
+Voici le script terminé pour le bloc `estampiller les sprites`{:class="block3myblocks"} :
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -91,7 +91,7 @@ repeat (columns :: custom-arg)
 
 \--- task \---
 
-Add a `erase all`{:class="block3extensions"} block below the `when flag clicked`{:class="block3control"} block to clear the Stage each time the game starts. Then add the `stamp sprites`{:class="block3myblocks"} block at the bottom of the `when flag clicked`{:class="block3control"} script so you can test your new code.
+Ajoute un bloc `effacer tout`{:class="block3extensions"} en dessous du bloc `quand le drapeau vert est cliqué`{:class="block3control"} pour effacer la scène chaque fois que le jeu commence. Ajoute ensuite le bloc `estampiller les sprites`{:class="block3myblocks"} en bas du script `quand le drapeau vert est cliqué`{:class="block3control"} pour tester ton nouveau code.
 
 ```blocks3
 when flag clicked
@@ -104,8 +104,8 @@ stamp sprite (1) (10) ::custom
 
 \--- task \---
 
-Click the green flag. You should see something like this, depending on the costumes your sprite has:
+Clique sur le drapeau vert. Tu devrais voir quelque chose comme ça, selon les costumes que ton sprite a :
 
-![stamped sprites](images/stamped_sprites.png)
+![sprites estampillés](images/stamped_sprites.png)
 
 \--- /task \---
