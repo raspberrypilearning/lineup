@@ -1,10 +1,10 @@
-## Test the script
+## Tester le script
 
 \--- task \---
 
-To test the script, you need to **call** the custom block and provide it with the number of `columns`{:class="block3myblocks"} you want in your grid.
+Pour tester le script, tu dois **appeler** le bloc personnalisé et lui fournir le nombre de `colonnes`{:class="block3myblocks"} que tu veux dans ta grille.
 
-Add this code to your sprite:
+Ajoute ce code à ton sprite :
 
 ```blocks3
 when flag clicked
@@ -15,10 +15,10 @@ generate positions (1) (10) ::custom
 
 \--- task \---
 
-Now click on the green flag to run your code. You should see your two lists fill with values.
+Clique maintenant sur le drapeau vert pour exécuter ton code. Tu devrais voir tes deux listes remplies de valeurs.
 
-![lists](images/filled_lists.png)
+![listes](images/filled_lists.png)
 
-If your results don't look like this, then go back to the previous step, have a look at the hints, and try to fix your script.
+Si tes résultats ne ressemblent pas à cela, reviens à l'étape précédente, jette un coup d'œil aux indices et essaie de corriger ton script.
 
 \--- /task \---
