@@ -1,24 +1,24 @@
-## Add costumes
+## Ajouter des costumes
 
 \---task \---
 
-Open a new Scratch project.
+Ouvre un nouveau projet Scratch.
 
-**Online**: open a new online Scratch project at [rpf.io/scratch-new](http://rpf.io/scratch-new){:target="_blank"}.
+**En ligne :** ouvre un nouveau projet Scratch en ligne sur [rpf.io/scratch-new](http://rpf.io/scratch-new) {:target="_blank"}.
 
-**Offline**: open a new project in the offline editor.
+**Hors ligne** : ouvre un nouveau projet dans l'éditeur hors ligne.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](http://rpf.io/scratchoff){:target="_blank"}.
+Si tu dois télécharger et installer l'éditeur hors ligne Scratch, tu peux le trouver sur [rpf.io/scratchoff](http://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \--- \--- task \---
 
-Add some more costumes to the cat sprite. You need to add at least forty different costumes for your sprite.
+Ajoute plus de costumes au sprite chat. Tu dois ajouter au moins quarante costumes différents pour ton sprite.
 
-It's best to select costumes from the **People** section, but if you want to, you can choose costumes from other sections as well.
+Il est préférable de sélectionner des costumes dans la section **Gens** , mais si tu le souhaites, tu peux également choisir des costumes dans d'autres sections.
 
 [[[generic-scratch3-add-costume]]]
 
-Once you have your costumes, you can delete the default cat costumes if you want to.
+Une fois que tu as tes costumes, tu peux supprimer les costumes de chat par défaut si tu le souhaites.
 
 ![costumes](images/costumes.png)
 
