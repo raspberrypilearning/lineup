@@ -70,9 +70,9 @@ stamp sprites (4) (10) ::custom
 
 go to x: (0) y: (0)
 
-go back (1) layers
+go [backward v] (1) layers
 
-go to front
+go to [front v] layer
 
 set size to (100) %
 
@@ -94,10 +94,10 @@ erase all
 generate positions (4) (10) ::custom
 stamp sprites (4) (10) ::custom
 +go to x: (0) y: (0)
-+go to front
++go to [front v] layer
 +set size to (100) %
 +say [Find me] for (2) seconds
-+go back (1) layers
++go [backward v] (1) layers
 +set size to (40) %
 + go to x: (item (1 v) of [x_positions v]) y: (item (1 v) of [y_positions v])
 ```
