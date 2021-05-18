@@ -1,12 +1,12 @@
-## Hide your sprite
+## Cacher ton sprite
 
-Now it's time to hide your sprite among the crowd of stamps. At the moment the sprite overlaps one of the stamps.
+Maintenant, il est temps de cacher ton sprite parmi la foule de tampons. Pour le moment, le sprite chevauche l'un des tampons.
 
-![overlap](images/overplap-annotated.png)
+![superposition](images/overplap-annotated.png)
 
 \--- task \---
 
-So this doesn't happen, make your stamp loop run one time less: `(rows * columns) - 1`{:class="block3operators"}
+Pour que cela ne se produit pas, fais en sorte que ta boucle de tampon s'exécute une fois de moins : `(lignes * colonnes) - 1`{:class="block3operators"}
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -22,11 +22,11 @@ next costume
 
 \--- /task \---
 
-If you run the script now, you can see that your sprite still overlaps with a stamp and there is a hole in your grid. And in the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists, there is one coordinate position left.
+Si tu exécutes le script maintenant, tu peux voir que ton sprite se chevauche toujours avec un tampon et qu'il y a un trou dans ta grille. Et dans les listes `positions_x`{:class="block3variables"} et `positions_y`{:class="block3variables"}, il reste une position de coordonnées.
 
 \--- task \---
 
-To finish this part your game, go to the `when flag clicked`{:class="block3events"} section of the scripts.
+Pour terminer cette partie de ton jeu, va à la section `quand le drapeau est cliqué`{:class="block3events"} des scripts.
 
 ```blocks3
 when flag clicked
@@ -37,30 +37,30 @@ stamp sprites (4) (10) ::custom
 
 \--- no-print \---
 
-Here's an animation showing what should happen:
+Voici une animation montrant ce qui devrait se passer :
 
 ![animation](images/demo_1.gif)
 
 \--- /no-print \---
 
-At the start of the game, the sprite should appear at a large size and say "Find me". Then the sprite should hide itself among the stamps in the empty space you have left for it.
+Au début du jeu, le sprite devrait apparaître plus grand et dire « Trouve-moi ». Puis le sprite devrait se cacher parmi les tampons dans l'espace vide que tu as laissé pour lui.
 
-See if you can figure out how to do this, and use the hints below if you need help.
+Vois si tu peux trouver comment faire cela, et utilise les indices ci-dessous si tu as besoin d'aide.
 
 \--- hints \--- \--- hint \---
 
-This is what it needs to do:
+C'est ce qu'il doit faire :
 
-1. Send your sprite to `x:0 y:0`{:class="block3motion"}
-2. Bring the sprite to the `front`{:class="block3looks"} and set its `size to 100%`{:class="block3looks"}
-3. `Say 'Find me' for two seconds`{:class="block3looks"}
-4. `Go back one layer`{:class="block3looks"}
-5. Set the sprite's `size to 40%`{:class="block3looks"}
-6. Move to the last remaining position in the lists
+1. Envoie ton sprite à la position `x:0 y:0`{:class="block3motion"}
+2. Amène le sprite en `avant`{:class="block3looks"} et définis sa `taille à 100%`{:class="block3looks"}
+3. `Dis « Trouve-moi » pendant deux secondes`{:class="block3looks"}
+4. `Reviens en arrière d'une couche`{:class="block3looks"}
+5. Définis la taille du sprite `à 40%`{:class="block3looks"}
+6. Déplace vers la dernière position restante dans les listes
 
 \--- /hint \--- \--- hint \---
 
-These are the additional blocks you need:
+Voici les blocs supplémentaires dont tu as besoin :
 
 ```blocks3
 when flag clicked
@@ -70,9 +70,9 @@ stamp sprites (4) (10) ::custom
 
 go to x: (0) y: (0)
 
-go back (1) layers
+go [backward v] (1) layers
 
-go to front
+go to [front v] layer
 
 set size to (100) %
 
@@ -86,7 +86,7 @@ go to x: () y: ()
 
 \--- /hint \--- \--- hint \---
 
-Here is the completed `when flag clicked`{:class="block3events"} script:
+Voici le script terminé `quand le drapeau vert est cliqué`{:class="block3events"} :
 
 ```blocks3
 when flag clicked
@@ -94,10 +94,10 @@ erase all
 generate positions (4) (10) ::custom
 stamp sprites (4) (10) ::custom
 +go to x: (0) y: (0)
-+go to front
++go to [front v] layer
 +set size to (100) %
 +say [Find me] for (2) seconds
-+go back (1) layers
++go [backward v] (1) layers
 +set size to (40) %
 + go to x: (item (1 v) of [x_positions v]) y: (item (1 v) of [y_positions v])
 ```
