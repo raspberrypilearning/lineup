@@ -1,7 +1,7 @@
-## Challenge: improve your game
+## Défi : Améliorer ton jeu
 
-Here are some ideas for how to make your game more interesting:
+Voici quelques idées pour rendre ton jeu plus intéressant :
 
-- Can you alter your scripts so that you can use even more costumes?
-- How about choosing a background and then making the sprites nearer the top of the screen appear smaller, so they seem further away?
-- Can you make the game run for several rounds and provide you with a score based on how long it takes you to complete five rounds?
+- Peux-tu modifier tes scripts pour que tu puisses utiliser encore plus de costumes ?
+- Pourquoi ne pas choisir un arrière-plan et faire en sorte que les sprites les plus proches du haut de l'écran apparaissent plus petits, afin qu'ils semblent plus éloignés ?
+- Peux-tu faire fonctionner le jeu pendant plusieurs tours et te fournir un score basé sur le temps qu'il te faut pour terminer cinq tours ?
