@@ -1,10 +1,10 @@
-## Change the costumes
+## Changer les costumes
 
-At the moment, your program stamps the same sprite costume over and over, and the size of the costume is too large.
+Pour le moment, ton programme estampille le même costume de sprite encore et encore, et la taille du costume est trop grande.
 
 \--- task \---
 
-Add code to the `stamp sprites`{:class="block3myblocks"} block to make the sprite a suitable size before the `repeat`{:class="block3control"} loop starts. Add a block inside the loop to switch the `next costume`{:class="block3looks"} after the `stamp`{:class="block3extensions"} block.
+Ajoute du code au bloc `estampiller les sprites`{:class="block3myblocks"} pour donner au sprite une une taille appropriée avant que la boucle `répéter`{:class="block3control"} ne commence. Ajoute un bloc à l'intérieur de la boucle pour basculer le bloc `costume suivant`{:class="block3looks"} après le bloc `estampiller`{:class="block3extensions"}.
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -19,35 +19,35 @@ change [index v] by (1)
 
 \--- /task \---
 
-When you run the script now, you should see something like this:
+Lorsque tu exécutes le script maintenant, tu devrais voir quelque chose comme ceci :
 
-![changed_sprites](images/changed_sprites.png)
+![sprites-modifiés](images/changed_sprites.png)
 
-Your program cycles through all the costumes in order. So that each costume does not show up in the same place every time the program runs, you should stamp the sprite in random places on the grid.
+Ton programme passe en revue tous les costumes dans l'ordre. Pour que chaque costume ne s'affiche pas au même endroit chaque fois que le programme s'exécute, tu devrais estampiller le sprite à des endroits aléatoires sur la grille.
 
-To do this, you need to follow this **algorithm**:
+Pour cela, tu dois suivre cet algorithme ****:
 
-1. `Repeat`{:class="block3control"} until the list is empty
-2. Set `index`{:class="block3variables"} to a `random`{:class="block3operators"} number between `1` and the length of a list
-3. Move the sprite as you did before
-4. Delete the item at the `index`{:class="block3variables"} position from the `y_positions`{:class="block3variables"} list
-5. Delete the item at the `index`{:class="block3variables"} position from the `x_positions`{:class="block3variables"} list
+1. `Répéter`{:class="block3control"} jusqu'à ce que la liste soit vide
+2. Définir l'index ``{:class="block3variables"} à un nombre `aléatoire`{:class="block3operators"} entre `1` et la longueur d'une liste
+3. Déplacer le sprite comme tu l'as fait avant
+4. Supprimer l'élément à l'`index`{:class="block3variables"} de la liste `positions_y`{:class="block3variables"}
+5. Supprimer l'élément à l'`index`{:class="block3variables"} de la liste `positions_x`{:class="block3variables"}
 
 \--- task \---
 
-Add code to stamp the sprite in random places on the grid.
+Ajoute du code pour estampiller le sprite à des endroits aléatoires sur la grille.
 
 \--- hints \--- \--- hint \---
 
-Remove the `set index to 1`{:class="block3variables"} from before the `repeat`{:class="block3control"} loop.
+Supprime le `mettre index à 1`{:class="block3variables"} avant la boucle `répéter`{:class="block3control"}.
 
-Then within the loop, `set index to`{:class="block3variables"} a `random`{:class="block3operators"} number between `1` and the `length of x_positions`{:class="block3variables"}.
+Puis dans la boucle, `mettre index à`{:class="block3variables"} un nombre `aléatoire`{:class="block3operators"} entre `1` et la `longueur de positions_x`{:class="block3variables"}.
 
-Then `delete`{:class="block3variables"} the item at the `index`{:class="block3variables"} from both the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists.
+Puis `supprime`{:class="block3variables"} l'élément à l'`index`{:class="block3variables"} des listes `positions_x`{:class="block3variables"} et `positions_y`{:class="block3variables"}.
 
 \--- /hint \--- \--- hint \---
 
-Here are the additional blocks you need:
+Voici les blocs supplémentaires dont tu as besoin :
 
 ```blocks3
 define stamp sprites (rows) (columns)
@@ -72,7 +72,7 @@ delete () of [y_positions v]
 
 \--- /hint \--- \--- hint \---
 
-This is what your code should look like:
+Voici à quoi ton code devrait ressembler :
 
 ```blocks3
 define stamp sprites (rows) (columns)
