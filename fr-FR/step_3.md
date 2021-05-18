@@ -1,16 +1,16 @@
-## Create a grid
+## Créer une grille
 
-You are going to create a grid of stamped costumes:
+Tu vas créer une grille de costumes estampillés :
 
-![stamps in grid](images/stamp_grid.png)
+![tampons dans la grille](images/stamp_grid.png)
 
-To do this you need to know the `x`{:class="block3motion"} and `y`{:class="block3motion"} coordinates of where each stamp should be placed.
+Pour faire cela, tu dois connaître les coordonnées `x`{:class="block3motion"} et `y`{:class="block3motion"} où chaque tampon doit être placé.
 
 \--- task \---
 
-First, create a new block called `generate positions`{:class="block3myblocks"}. The block needs to have two 'number input' parameters. Call the two parameters `rows`{:class="block3myblocks"} and `columns`{:class="block3myblocks"}.
+Tout d'abord, crée un nouveau bloc appelé `générer les positions`{:class="block3myblocks"}. Le bloc doit avoir deux paramètres d'entrée « nombre ». Appelle les deux paramètres `lignes`{:class="block3myblocks"} et `colonnes`{:class="block3myblocks"}.
 
-The values of these parameters will decide how many rows and columns your grid has.
+Les valeurs de ces paramètres décideront du nombre de lignes et de colonnes que ta grille possède.
 
 [[[generic-scratch3-make-block]]]
 
@@ -22,13 +22,13 @@ define generate positions (rows)(columns)
 
 \--- task \---
 
-Create two lists, and call one of them `x_positions`{:class="block3variables"} and the other `y_positions`{:class="block3variables"}. These lists are for storing the `x`{:class="block3motion"} and `y`{:class="block3motion"} coordinates for the stamps.
+Crée deux listes, et appelle l'une d'entre elles `positions_x`{:class="block3variables"} et l'autre `positions_y`{:class="block3variables"}. Ces listes servent à stocker les coordonnées `x`{:class="block3motion"} et `y`{:class="block3motion"} pour les tampons.
 
 \--- /task \---
 
 \--- task \---
 
-Inside your `generate positions`{:class="block3myblocks"} block, add blocks to delete all the items from both lists, so that each time the game starts, the lists are empty.
+Dans ton bloc `générer les positions`{:class="block3myblocks"}, ajoute des blocs pour supprimer tous les éléments des deux listes, de sorte que chaque fois que le jeu démarre, les listes sont vides.
 
 ```blocks3
 define generate positions (rows)(columns)
@@ -40,17 +40,17 @@ define generate positions (rows)(columns)
 
 \--- task \---
 
-Next, create two variables, and call one of them `x_pos`{:class="block3variables"} and the other `y_pos`{:class="block3variables"}.
+Ensuite, crée deux variables, et appelle l'une d'entre elles `pos_x`{:class="block3variables"} et l'autre `pos_y`{:class="block3variables"}.
 
 \--- /task \---
 
-The `x_positions`{:class="block3variables"} list should contain ten numbers in total, and these should start at `-200`{:class="block3variables"} and go up to `200`{:class="block3variables"}.
+La liste `positions_x`{:class="block3variables"} doit contenir dix nombres au total, et ceux-ci doivent commencer à `-200`{:class="block3variables"} et aller jusqu'à `200`{:class="block3variables"}.
 
-For now, the `y_positions`{:class="block3variables"} list can just contain the number `-150`{:class="block3variables"} ten times, so that the grid only has one row.
+Pour l'instant, la liste `positions_y`{:class="block3variables"} peut juste contenir le nombre `-150`{:class="block3variables"} dix fois, de sorte que la grille n'ait qu'une seule ligne.
 
 \--- task \---
 
-Start by adding code to the `generate positions`{:class="block3myblocks"} block to set the `y_pos`{:class="block3variables"} variable to `-150`{:class="block3variables"} and the `x_pos`{:class="block3variables"} variable to `-200`{:class="block3variables"}. This is the location of the first stamped sprite.
+Commence par ajouter du code à la variable `générer les positions`{:class="block3myblocks"} pour définir la variable `pos_y`{:class="block3variables"} à `-150`{:class="block3variables"} et la variable `pos_x`{:class="block3variables"} à `-200`{:class="block3variables"}. C'est l'emplacement du premier sprite estampillé.
 
 ```blocks3
 define generate positions (rows)(columns)
@@ -64,11 +64,11 @@ delete [all v] of [x_positions v]
 
 \--- task \---
 
-Next, add a `repeat`{:class="block3control"} loop to put coordinates into the lists.
+Ensuite, ajoute une boucle `répéter`{:class="block3control"} pour mettre les coordonnées dans les listes.
 
-The `repeat`{:class="block3control"} loop should run once for every column you want the grid to have.
+La boucle `répéter`{:class="block3control"} doit s'exécuter une fois pour chaque colonne que tu veux que la grille ait.
 
-The `generate positions`{:class="block3myblocks"} block takes `columns`{:class="block3myblocks"} as an input, so you can use `columns`{:class="block3myblocks"} for the `repeat`{:class="block3control"} loop.
+Le bloc `générer les positions`{:class="block3myblocks"} prend `colonnes`{:class="block3myblocks"} comme entrée, donc tu peux utiliser `colonnes`{:class="block3myblocks"} pour la boucle `répéter`{:class="block3control"}.
 
 ```blocks3
 define generate positions (rows)(columns)
@@ -81,28 +81,28 @@ set [x_pos v] to [-200]
 
 \--- /task \---
 
-Within the `repeat`{:class="block3control"} loop, add the values of `x_pos`{:class="block3variables"} and `y_pos`{:class="block3variables"} into the lists. Then you need to increase the value of `x_pos`{:class="block3variables"} by a little. How much should the value of `x_pos`{:class="block3variables"} increase by?
+Dans la boucle `répéter`{:class="block3control"}, ajoute les valeurs de `pos_x`{:class="block3variables"} et `pos_y`{:class="block3variables"} dans les listes. Ensuite, tu dois augmenter un peu la valeur de `pos_x`{:class="block3variables"}. Combien devrait augmenter la valeur de `pos_x`{:class="block3variables"} ?
 
-This is how to figure it out:
+Voici comment faire :
 
-- `x_pos`{:class="block3variables"} starts out with the value `-200`{:class="block3variables"}
-- The final time the loop `repeat`{:class="block3control"} runs, `x_pos`{:class="block3variables"} should reach the value `200`{:class="block3variables"}
-- That's a total increase of `400`{:class="block3variables"}
-- The first `x_pos`{:class="block3variables"} value is for the first column on the grid, and how many columns there are is determined by the `columns`{:class="block3myblocks"} input
+- `pos_x`{:class="block3variables"} commence avec la valeur `-200`{:class="block3variables"}
+- La dernière fois que la boucle `répéter`{:class="block3control"} s'exécute, `pos_x`{:class="block3variables"} devrait atteindre la valeur `200`{:class="block3variables"}
+- C'est une augmentation totale de `400`{:class="block3variables"}
+- La première valeur `pos_x`{: class = "block3variables"} correspond à la première colonne de la grille, et le nombre de colonnes est déterminé par l'entrée `colonnes`{:class="block3myblocks"}
 
-So after the first `x_pos`{:class="block3variables"} value is added, each time around the loop, the value of `x_pos`{:class="block3variables"} should increase by `400 / (columns - 1)`{:class="block3operators"}
+Donc, après que la première valeur `pos_x`{:class="block3variables"} est ajoutée, à chaque tour de boucle, la valeur de `pos_x`{:class="block3variables"} devrait augmenter de `400 / (colonnes - 1)`{:class="block3operators"}
 
 \--- task \---
 
-Add in the code that will add all the `x_pos`{:class="block3variables"} and `y_pos`{:class="block3variables"} values into the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists.
+Ajoute dans le code qui ajoutera toutes les valeurs `pos_x`{:class="block3variables"} et `pos_y`{:class="block3variables"} dans les listes `positions_x`{:class="block3variables"} et `positions_y`{:class="block3variables"}.
 
 \--- hints \--- \--- hint \---
 
-Within the loop, you need to add `x_pos`{:class="block3variables"} to the `x_positions`{:class="block3variables"} list, and add the `y_pos`{:class="block3variables"} to the `y_positions`{:class="block3variables"} list. Then `x_pos`{:class="block3variables"} variable needs to increase by `400 / (columns -1)`{:class="block3operators"} each time the loop repeats.
+Dans la boucle, tu dois ajouter `pos_x`{:class="block3variables"} à la liste `positions_x`{:class="block3variables"} et ajoute la liste `pos_y`{:class="block3variables"} à la liste `positions_y`{:class="block3variables"}. Ensuite, la variable `pos_x`{:class="block3variables"} doit augmenter de `400 / (colonnes -1)`{:class="block3operators"} chaque fois que la boucle se répète.
 
 \--- /hint \--- \--- hint \---
 
-This shows the additional blocks you need to add into your script.
+Cela montre les blocs supplémentaires que tu dois ajouter à ton script.
 
 ```blocks3
 define generate positions (rows)(columns)
@@ -128,7 +128,7 @@ change [x_pos v] by ()
 
 \--- /hint \--- \--- hint \---
 
-Here is the completed script for the `generate positions`{:class="block3myblocks"} block:
+Voici le script terminé pour le bloc `générer les positions`{:class="block3myblocks"} :
 
 ```blocks3
 define generate positions (rows)(columns)
