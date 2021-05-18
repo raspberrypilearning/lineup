@@ -1,25 +1,25 @@
-generate positions
+générer les positions
 
-rows
+lignes
 
-columns
+colonnes
 
-x_positions
+positions_x
 
-y_positions
+positions_y
 
-x_pos
+pos_x
 
-y_pos
+pos_y
 
-stamp sprites
+estampiller les sprites
 
 index
 
-Find me
+Trouve-moi
 
-curtain up
+rideau levé
 
-timer
+chronomètre
 
-You found me
+Tu m'as trouvé
