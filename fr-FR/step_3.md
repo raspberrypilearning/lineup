@@ -88,7 +88,7 @@ Voici comment faire :
 - `pos_x`{:class="block3variables"} commence avec la valeur `-200`{:class="block3variables"}
 - La dernière fois que la boucle `répéter`{:class="block3control"} s'exécute, `pos_x`{:class="block3variables"} devrait atteindre la valeur `200`{:class="block3variables"}
 - C'est une augmentation totale de `400`{:class="block3variables"}
-- La première valeur `pos_x`{: class = "block3variables"} correspond à la première colonne de la grille, et le nombre de colonnes est déterminé par l'entrée `colonnes`{:class="block3myblocks"}
+- La première valeur `pos_x`{:class="block3variables"} correspond à la première colonne de la grille, et le nombre de colonnes est déterminé par l'entrée `colonnes`{:class="block3myblocks"}
 
 Donc, après que la première valeur `pos_x`{:class="block3variables"} est ajoutée, à chaque tour de boucle, la valeur de `pos_x`{:class="block3variables"} devrait augmenter de `400 / (colonnes - 1)`{:class="block3operators"}
 

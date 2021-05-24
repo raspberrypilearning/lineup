@@ -21,18 +21,18 @@ change [pos_x v] by (((400) / (colonnes)) - (1))
 Ajoute une autre boucle `répéter`{:class="block3control"} qui exécute le nombre de fois que tu donnes au bloc `générer les positions`{:class="block3myblocks"} en tant que `lignes`{:class="block3myblocks"}. Place la boucle `répéter`{:class="block3control"} dans ton script comme montré ici :
 
 ```blocks3
-définir générer les positions (lignes)(colonnes)
-supprimer tout de [positions_y v]
-supprimer tout de [positions_x v]
-mettre [pos_y v] à [-150]
-+répéter (lignes :: custom-arg)
-mettre [pos_x v] à [-200]
-répéter (colonnes :: custom-arg)
-ajouter (pos_x) à [positions_x v]
-ajouter (pos_y) à [positions_y v]
-ajouter (((400) / (colonnes :: custom-arg)) - (1)) à [pos_x v]
-fin
-fin
+define générer les positions (lignes)(colonnes)
+delete all of [positions_y v]
+delete all of [positions_x v]
+set [pos_y v] to [-150]
++repeat (lignes :: custom-arg)
+set [pos_x v] to [-200]
+repeat (colonnes :: custom-arg)
+add (pos_x) to [positions_x v]
+add (pos_y) to [positions_y v]
+change [pos_x v] by (((400) / (colonnes :: custom-arg)) - (1))
+end
+end
 ```
 
 --- /task ---
