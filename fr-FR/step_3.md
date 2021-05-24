@@ -32,8 +32,8 @@ Dans ton bloc `générer les positions`{:class="block3myblocks"}, ajoute des blo
 
 ```blocks3
 define générer les positions (lignes)(colonnes)
-+ delete [all v] of [positions_y v]
-+ delete [all v] of [positions_x v]
++ delete all of [positions_y v]
++ delete all of [positions_x v]
 ```
 
 --- /task ---
@@ -54,8 +54,8 @@ Commence par ajouter du code à la variable `générer les positions`{:class="bl
 
 ```blocks3
 define générer les positions (lignes)(colonnes)
-delete [all v] of [positions_y v]
-delete [all v] of [positions_x v]
+delete all of [positions_y v]
+delete all of [positions_x v]
 + set [pos_y v] to [-150]
 + set [pos_x v] to [-200]
 ```
@@ -72,8 +72,8 @@ Le bloc `générer les positions`{:class="block3myblocks"} prend `colonnes`{:cla
 
 ```blocks3
 define générer les positions (lignes)(colonnes)
-delete [all v] of [positions_y v]
-delete [all v] of [positions_x v]
+delete all of [positions_y v]
+delete all of [positions_x v]
 set [pos_y v] to [-150]
 set [pos_x v] to [-200]
 + repeat (colonnes :: custom-arg)
@@ -107,8 +107,8 @@ Cela montre les blocs supplémentaires que tu dois ajouter à ton script.
 
 ```blocks3
 define générer les positions (lignes)(colonnes)
-delete [all v] of [positions_y v]
-delete [all v] of [positions_x v]
+delete all of [positions_y v]
+delete all of [positions_x v]
 set [pos_y v] to [-150]
 set [pos_x v] to [-200]
 repeat (colonnes :: custom-arg)
@@ -133,8 +133,8 @@ Voici le script terminé pour le bloc `générer les positions`{:class="block3my
 
 ```blocks3
 define générer les positions (lignes)(colonnes)
-delete [all v] of [positions_y v]
-delete [all v] of [positions_x v]
+delete all of [positions_y v]
+delete all of [positions_x v]
 set [pos_y v] to [-150]
 set [pos_x v] to [-200]
 repeat (colonnes :: custom-arg)

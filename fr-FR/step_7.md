@@ -6,8 +6,8 @@ Va à ton bloc `générer les positions`{:class="block3myblocks"}.
 
 ```blocks3
 define générer les positions (lignes)(colonnes)
-delete [all v] of [positions_y v]
-delete [all v] of [positions_x v]
+delete all of [positions_y v]
+delete all of [positions_x v]
 set [pos_y v] to [-150]
 set [pos_x v] to [-200]
 repeat (colonnes :: custom-arg)
@@ -22,8 +22,8 @@ Ajoute une autre boucle `répéter`{:class="block3control"} qui exécute le nomb
 
 ```blocks3
 définir générer les positions (lignes)(colonnes)
-supprimer [tout v] de [positions_y v]
-supprimer [tout v] de [positions_x v]
+supprimer tout de [positions_y v]
+supprimer tout de [positions_x v]
 mettre [pos_y v] à [-150]
 +répéter (lignes :: custom-arg)
 mettre [pos_x v] à [-200]
@@ -47,8 +47,8 @@ Fais pareil pour augmenter la valeur de `pos_x`{:class="block3variables"} dans l
 
 ```blocks3
 define générer les positions (lignes)(colonnes)
-delete [all v] of [positions_y v]
-delete [all v] of [positions_x v]
+delete all of [positions_y v]
+delete all of [positions_x v]
 set [pos_y v] to [-150]
 repeat (lignes :: custom-arg)
 set [pos_x v] to [-200]

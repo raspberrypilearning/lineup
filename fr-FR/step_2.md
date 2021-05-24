@@ -4,7 +4,7 @@
 
 Ouvre un nouveau projet Scratch.
 
-**En ligne :** ouvre un nouveau projet Scratch en ligne sur [rpf.io/scratch-new](http://rpf.io/scratch-new) {:target="_blank"}.
+**En ligne :** ouvre un nouveau projet Scratch en ligne sur [rpf.io/scratch-new](http://rpf.io/scratch-new){:target="_blank"}.
 
 **Hors ligne :**  ouvre un nouveau projet dans l'éditeur hors ligne.
 
