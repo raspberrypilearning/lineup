@@ -1,0 +1,21 @@
+---
+title: Caché dans la foule
+hero_image: images/banner.png
+description: Créer un jeu où tu cherches un personnage caché dans une foule d'autres personnages
+listed: true
+copyedit: true
+version: 4.1.0
+last_tested: 2018-11-05
+steps:
+  - title: Introduction
+  - title: Ajouter des costumes
+  - title: Créer une grille
+  - title: Tester le script
+  - title: Estampiller une ligne
+  - title: Changer les costumes
+  - title: Ajouter des lignes
+  - title: Cacher ton sprite
+  - title: Terminer la partie
+  - title: "Défi : Améliorer ton jeu"
+    challenge: true
+  - title: "Et ensuite ?"
