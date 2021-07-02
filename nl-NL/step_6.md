@@ -55,7 +55,7 @@ definieer stempel sprites (rijen) (kolommen)
 maak grootte (40) %
 - maak [index v] [1]
 herhaal (kolommen :: custom-arg)
-ga naar x: (item (index) van [x_posities v ]) y: (item (index) van [y_posities v]
+ga naar x: (item (index) van [x_posities v]) y: (item (index) van [y_posities v]
 stempel
 volgend uiterlijk
 - verander [index v] met (1)
