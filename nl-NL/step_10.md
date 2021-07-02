@@ -1,4 +1,4 @@
-## Challenge: verbeter je spel
+## Uitdaging: verbeter je spel
 
 Hier zijn enkele ideeën om je spel interessanter te maken:
 
