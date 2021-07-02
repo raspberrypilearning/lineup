@@ -1,4 +1,4 @@
-## Voltooi het spel
+## Maak het spel af
 
 --- task ---
 

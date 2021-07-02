@@ -65,27 +65,24 @@ Dit zijn de extra blokken die je nodig hebt:
 
 ```blocks3
 when flag clicked
-wis alles
+erase all
 genereer posities (4) (10) ::custom
 stempel sprites (4) (10) ::custom
 
-ga naar x: (0) y: (0)
+go to x: (0) y: (0)
 
-go back (1) layers
+go [backward v] (1) layers
 
-go to front
+go to [front v] layer
 
-maak grootte (100)%
+set size to (100) %
 
-maak grootte (40)%
+set size to (40) %
 
-zeg [] (2) sec.
-
-item (1 v) van [x_posities v]
-
-item (1 v) van [y_posities v]
-
-ga naar x: () y: ()
+say [] for (2) seconds
+item (1 v) of [x_posities v]
+item (1 v) of [y_posities v]
+go to x: () y: ()
 ```
 
 --- /hint --- --- hint ---
@@ -94,16 +91,16 @@ Hier is het voltooide `wanneer op de groene vlag wordt geklikt`{:class="block3ev
 
 ```blocks3
 when flag clicked
-wis alles
+erase all
 genereer posities (4) (10) ::custom
 stempel sprites (4) (10) ::custom
-+ ga naar x: (0) y: (0)
-+ go to front
-+ maak grootte (100) %
-+ zeg [Zoek me] (2) sec.
-+ go back (1) layers
-+ maak grootte (40) %
-+ ga naar x: (item (1 v) van [x_posities v]) y: (item (1 v) van [y_posities v])
++go to x: (0) y: (0)
++go to [front v] layer
++set size to (100) %
++say [Zoek me] for (2) seconds
++go [backward v] (1) layers
++set size to (40) %
++ go to x: (item (1 v) of [x_posities v]) y: (item (1 v) of [y_posities v])
 ```
 
 --- /hint ------ /hints --- --- /task ---
