@@ -1,21 +1,24 @@
 ---
 title: Op een rij
 hero_image: images/banner.png
-description: Maak een spel waarbij je op zoek bent naar een personage dat verborgen is in een menigte andere personages
+description: Maak een spel waarbij je op zoek bent naar een personage dat verborgen
+  is in een menigte andere personages
 listed: true
 copyedit: true
 version: 4.1.0
 last_tested: 2018-11-05
 steps:
-  - title: Inleiding
-  - title: Uiterlijken toevoegen
-  - title: Maak een raster
-  - title: Test het script
-  - title: Stempel een rij
-  - title: Verander de uiterlijken
-  - title: Rijen toevoegen
-  - title: Verberg je sprite
-  - title: Maak het spel af
-  - title: "Uitdaging: verbeter je spel"
-    challenge: true
-  - title: "Wat kun je verder nog doen?"
+- title: Inleiding
+  completion: engaged
+- title: Uiterlijken toevoegen
+- title: Maak een raster
+- title: Test het script
+- title: Stempel een rij
+- title: Verander de uiterlijken
+- title: Rijen toevoegen
+- title: Verberg je sprite
+  completion: internal
+- title: Maak het spel af
+- title: 'Uitdaging: verbeter je spel'
+  challenge: true
+- title: Wat kun je verder nog doen?

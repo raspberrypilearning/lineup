@@ -7,15 +7,17 @@ copyedit: true
 version: 4.1.0
 last_tested: 2018-11-05
 steps:
-  - title: Введение
-  - title: Добавь костюмы
-  - title: Создай сетку
-  - title: Проверь скрипт
-  - title: Штамп строки
-  - title: Измени костюмы
-  - title: Добавь строки
-  - title: Скрой свой спрайт
-  - title: Заверши игру
-  - title: "Задание: улучши свою игру"
-    challenge: true
-  - title: "Что дальше?"
+- title: Введение
+  completion: engaged
+- title: Добавь костюмы
+- title: Создай сетку
+- title: Проверь скрипт
+- title: Штамп строки
+- title: Измени костюмы
+- title: Добавь строки
+- title: Скрой свой спрайт
+  completion: internal
+- title: Заверши игру
+- title: 'Задание: улучши свою игру'
+  challenge: true
+- title: Что дальше?
