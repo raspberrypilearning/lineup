@@ -4,11 +4,11 @@
 
 Abre un nuevo proyecto en Scratch.
 
-**En línea**: abre un nuevo proyecto Scratch en línea en [rpf.io/scratch-new](http://rpf.io/scratch-new){:target="_blank"}.
+**En línea**: abre un nuevo proyecto Scratch en línea en [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
 **Sin conexión**: abre un nuevo proyecto en el editor sin conexión.
 
-Si necesitas descargar e instalar el editor sin conexión de Scratch, puedes encontrarlo en [rpf.io/scratchoff](http://rpf.io/scratchoff){:target="_blank"}.
+Si necesitas descargar e instalar el editor sin conexión de Scratch, puedes encontrarlo en [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 --- /task --- --- task ---
 

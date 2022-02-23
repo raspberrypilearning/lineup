@@ -4,11 +4,11 @@
 
 Open een nieuw Scratch project.
 
-**Online:** open een nieuw online Scratch project op [rpf.io/scratch-new](http://rpf.io/scratch-new){:target="_blank"}.
+**Online:** open een nieuw online Scratch project op [rpf.io/scratch-new](https://rpf.io/scratch-new){:target="_blank"}.
 
 **Offline:** open een nieuw project in de offline editor.
 
-Als je de Scratch offline editor wilt downloaden en installeren dan kan je die vinden op [rpf.io/scratchoff](http://rpf.io/scratchoff){:target="_blank"}.
+Als je de Scratch offline editor wilt downloaden en installeren dan kan je die vinden op [rpf.io/scratchoff](https://rpf.io/scratchoff){:target="_blank"}.
 
 --- /task --- --- task ---
 
