@@ -9,16 +9,18 @@ version: 4.1.0
 last_tested: 2018-11-05
 steps:
 - title: भूमिका
-  completion: engaged
 - title: परिधान जोड़ें
 - title: एक ग्रिड बनाएँ
+  completion:
+  - engaged
 - title: स्क्रिप्ट का परीक्षण करें
 - title: पंक्ति पर मोहर लगाएँ
 - title: परिधान बदलें
 - title: पंक्तियाँ जोड़ें
 - title: अपने स्प्राइट को छिपाएँ
-  completion: internal
 - title: गेम समाप्त करें
+  completion:
+  - internal
 - title: 'चुनौती: अपने गेम में सुधार करें'
   challenge: true
 - title: आगे क्या?

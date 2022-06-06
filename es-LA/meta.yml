@@ -9,16 +9,18 @@ version: 4.1.0
 last_tested: 2018-11-05
 steps:
 - title: Introducción
-  completion: engaged
 - title: Añade disfraces
 - title: Crea una cuadrícula
+  completion:
+  - engaged
 - title: Prueba el script
 - title: Sella una fila
 - title: Cambia los disfraces
 - title: Añade filas
 - title: Oculta tu objeto
-  completion: internal
 - title: Termina el juego
+  completion:
+  - internal
 - title: 'Desafío: mejora tu juego'
   challenge: true
 - title: "¿Qué sigue?"

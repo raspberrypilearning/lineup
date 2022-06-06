@@ -9,16 +9,18 @@ version: 4.1.0
 last_tested: 2018-11-05
 steps:
 - title: Introduction
-  completion: engaged
 - title: Add costumes
 - title: Create a grid
+  completion:
+  - engaged
 - title: Test the script
 - title: Stamp a row
 - title: Change the costumes
 - title: Add rows
 - title: Hide your sprite
-  completion: internal
 - title: Finish the game
+  completion:
+  - internal
 - title: 'Challenge: improve your game'
   challenge: true
 - title: What next?

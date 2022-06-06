@@ -9,16 +9,18 @@ version: 4.1.0
 last_tested: 2018-11-05
 steps:
 - title: Εισαγωγή
-  completion: engaged
 - title: Προσθήκη ενδυμασιών
 - title: Δημιούργησε μια κάναβο
+  completion:
+  - engaged
 - title: Δοκίμασε το πρόγραμμα
 - title: Σφραγίστε μια σειρά
 - title: Άλλαξε τις ενδυμασίες
 - title: Προσθέστε σειρές
 - title: Κρύψε το αντικείμενό σου
-  completion: internal
 - title: Τελείωσε το παιχνίδι
+  completion:
+  - internal
 - title: 'Πρόκληση: βελτίωσε το παιχνίδι σου'
   challenge: true
 - title: Και τώρα;

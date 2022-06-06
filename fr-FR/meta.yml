@@ -9,16 +9,18 @@ version: 4.1.0
 last_tested: 2018-11-05
 steps:
 - title: Introduction
-  completion: engaged
 - title: Ajouter des costumes
 - title: Créer une grille
+  completion:
+  - engaged
 - title: Tester le script
 - title: Estampiller une ligne
 - title: Changer les costumes
 - title: Ajouter des lignes
 - title: Cacher ton sprite
-  completion: internal
 - title: Terminer la partie
+  completion:
+  - internal
 - title: 'Défi : Améliorer ton jeu'
   challenge: true
 - title: Et ensuite ?
