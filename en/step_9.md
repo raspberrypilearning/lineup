@@ -52,7 +52,7 @@ When the curtain sprite receives the `broadcast`{:class="block3events"}, the spr
 
 It should look like this:
 
-![demo 2](images/demo_2.gif)
+![Demo showing the curtain raising to reveal the sprites behind it, after a pause the curtain comes back down again.](images/demo_2.gif)
 
 --- /no-print ---
 
