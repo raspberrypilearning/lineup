@@ -92,21 +92,7 @@ This is because, right now, the `stamp sprite`{:class="block3myblocks"} block on
 
 Change your `stamp sprites`{:class="block3myblocks"} script so that it `repeats`{:class="block3control"} enough times to stamp the complete grid of sprites.
 
---- hints --- 
---- hint ---
-
-The total number of stamps you need is the number you give as `columns`{:class="block3myblocks"} multiplied by the number you give as `rows`{:class="block3myblocks"}
-
---- /hint --- 
---- hint ---
-
-Use this additional block:
-
-```blocks3
-((rows ::custom) * (columns ::custom))
-```
-
---- /hint --- 
+--- hints ---
 --- hint ---
 
 Here's the completed `stamp sprites`{:class="block3myblocks"} script:
@@ -123,8 +109,9 @@ stamp
 next costume
 ```
 
---- /hint --- 
+--- /hint ---
 --- /hints ---
+
 
 ![ordered grid](images/nice_grid.png)
 

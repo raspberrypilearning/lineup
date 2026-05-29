@@ -95,40 +95,7 @@ So after the first `x_pos`{:class="block3variables"} value is added, each time a
 
 Add in the code that will add all the `x_pos`{:class="block3variables"} and `y_pos`{:class="block3variables"} values into the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists.
 	
---- hints --- 
---- hint ---
-
-Within the loop, you need to add `x_pos`{:class="block3variables"} to the `x_positions`{:class="block3variables"} list, and add the `y_pos`{:class="block3variables"} to the `y_positions`{:class="block3variables"} list.
-Then `x_pos`{:class="block3variables"} variable needs to increase by `400 / (columns -1)`{:class="block3operators"} each time the loop repeats.
-
---- /hint --- 
---- hint ---
-
-This shows the additional blocks you need to add into your script.
-
-```blocks3
-define generate positions (rows)(columns)
-delete [all v] of [y_positions v]
-delete [all v] of [x_positions v]
-set [y_pos v] to [-150]
-set [x_pos v] to [-200]
-repeat (columns :: custom-arg)
-end
-
-(x_pos)
-(y_pos)
-
-add () to [x_positions v]
-
-add () to [y_positions v]
-
-change [x_pos v] by ()
-(columns ::custom
-() / () 
-() - ()
-```
-
---- /hint --- 
+--- hints ---
 --- hint ---
 
 Here is the completed script for the `generate positions`{:class="block3myblocks"} block:
@@ -145,6 +112,7 @@ repeat (columns :: custom-arg)
 + change [x_pos v] by ((400) / ((columns :: custom-arg) - (1)
 ```
 
---- /hint --- 
+--- /hint ---
 --- /hints ---
+
 --- /task ---

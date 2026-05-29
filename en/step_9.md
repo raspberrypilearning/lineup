@@ -58,49 +58,7 @@ It should look like this:
 
 Try to do this by yourself, and use the hints if you need help.
 
---- hints --- 
---- hint ---
-
-For the curtain sprite, you need a script that does the following things:
-  1. When the curtain sprite receives the `broadcast`{:class="block3events"}
-  1. Bring the curtain sprite to the `front`{:class="block3looks"}
-  1. `Wait`{:class="block3control"} a little bit while the character sprite costumes get stamped
-  1. `Glide`{:class="block3motion"} the curtain sprite upwards so it ends up near the top of the Stage
-  1. `Hide`{:class="block3looks"} the curtain
-  1. Start a loop that counts down for 10 seconds
-  1. When the time is over, `show`{:class="block3looks"} the curtain sprite
-  1. `Glide`{:class="block3motion"} the curtain sprite back to its original position
-  
---- /hint --- 
---- hint ---
-
-Here are the blocks you need:
-
-```blocks3
-go to front
-
-show
-
-hide
-
-glide (1) secs to x: (0) y: (0)
-
-glide (1) secs to x: (0) y: (0)
-
-set [timer v] to []
-
-change [timer v] by ()
-
-wait () secs
-
-wait () secs
-
-repeat ()
-end
-when I receive [curtain up v]
-```
-
---- /hint --- 
+--- hints ---
 --- hint ---
 
  This is the completed script:
@@ -120,8 +78,9 @@ show
 glide (1) secs to x: (0) y: (0)
 ```
 
---- /hint --- 
+--- /hint ---
 --- /hints ---
+
 --- /task ---
 
 The very last part is to let the player know if they've won.

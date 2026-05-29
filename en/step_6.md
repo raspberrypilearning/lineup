@@ -36,42 +36,7 @@ To do this, you need to follow this **algorithm**:
 
 Add code to stamp the sprite in random places on the grid.
 
---- hints --- 
---- hint ---
-
-Remove the `set index to 1`{:class="block3variables"} from before the `repeat`{:class="block3control"} loop.
-
-Then within the loop, `set index to `{:class="block3variables"} a `random`{:class="block3operators"} number between `1` and the `length of x_positions`{:class="block3variables"}.
-
-Then `delete`{:class="block3variables"} the item at the `index`{:class="block3variables"} from both the `x_positions`{:class="block3variables"} and `y_positions`{:class="block3variables"} lists.
-
---- /hint --- 
---- hint ---
-
-Here are the additional blocks you need:
-
-```blocks3
-define stamp sprites (rows) (columns)
-set size to (40) %
-- set [index v] to [1]
-repeat (columns :: custom-arg)
-go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
-stamp
-next costume
-- change [index v] by (1)
-end
-
-set [index v] to ()
-(pick random () to ()
-length of [x_positions v]
-delete () of [x_positions v]
-
-delete () of [y_positions v]
-(index)
-(index)
-```
-
---- /hint --- 
+--- hints ---
 --- hint ---
 
 This is what your code should look like:
@@ -90,6 +55,7 @@ next costume
 - change [index v] by (1)
 ```
 
---- /hint --- 
+--- /hint ---
 --- /hints ---
+
 --- /task ---
