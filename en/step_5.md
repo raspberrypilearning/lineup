@@ -50,32 +50,7 @@ Within the `repeat`{:class="block3variables"} loop:
  - `Stamp`{:class="block3extensions"} the sprite
  - Change the `index`{:class="block3variables"} by `1`{:class="block3variables"}
 
---- hints --- 
---- hint ---
-
-Within the `repeat`{:class="block3variables"} loop, add a `go to x: y:`{:class="block3motion"} block. The `x`{:class="block3motion"} position in this block should be set to the `index`{:class="block3variables"} of `x_positions`{:class="block3variables"} and the `y`{:class="block3motion"} position should be set to the `index`{:class="block3variables"} of `y_positions`{:class="block3variables"}. Then add code to `stamp`{:class="block3extensions"} the sprite. Finally, add code to increase `index`{:class="block3variables"} by 1.
-
---- /hint --- 
---- hint ---
-
-Here are the blocks you need:
-
-```blocks3
-define stamp sprites (rows) (columns)
-set [index v] to [1]
-repeat (columns :: custom-arg)
-end
-
-change [index v] by (1)
-(index) 
-(index) 
-go to x: () y: ()
-(item ()of [y_positions v])
-(item ()of [x_positions v])
-stamp
-```
-
---- /hint --- 
+--- hints ---
 --- hint ---
 
 Here is the completed script for the `stamp sprites`{:class="block3myblocks"} block:
@@ -89,8 +64,9 @@ repeat (columns :: custom-arg)
 + change [index v] by (1)
 ```
 
---- /hint --- 
+--- /hint ---
 --- /hints ---
+
 --- /task ---
 
 --- task ---

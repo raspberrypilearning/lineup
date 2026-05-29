@@ -47,45 +47,7 @@ At the start of the game, the sprite should appear at a large size and say "Find
 
 See if you can figure out how to do this, and use the hints below if you need help.
 
---- hints --- 
---- hint ---
-
-This is what it needs to do:
-  1. Send your sprite to `x:0 y:0`{:class="block3motion"}
-  2. Bring the sprite to the `front`{:class="block3looks"} and set its `size to 100%`{:class="block3looks"}
-  3. `Say 'Find me' for two seconds`{:class="block3looks"}
-  4. `Go back one layer`{:class="block3looks"}
-  5. Set the sprite's `size to 40%`{:class="block3looks"}
-  6. Move to the last remaining position in the lists
-  
---- /hint --- 
---- hint ---
-
-These are the additional blocks you need:
-
-```blocks3
-when flag clicked
-erase all
-generate positions (4) (10) ::custom
-stamp sprites (4) (10) ::custom
-
-go to x: (0) y: (0)
-
-go [backward v] (1) layers
-
-go to [front v] layer
-
-set size to (100) %
-
-set size to (40) %
-
-say [] for (2) seconds
-item (1 v) of [x_positions v]
-item (1 v) of [y_positions v]
-go to x: () y: ()
-```
-
---- /hint --- 
+--- hints ---
 --- hint ---
 
 Here is the completed `when flag clicked`{:class="block3events"} script:
@@ -104,6 +66,7 @@ stamp sprites (4) (10) ::custom
 + go to x: (item (1 v) of [x_positions v]) y: (item (1 v) of [y_positions v])
 ```
 
---- /hint --- 
+--- /hint ---
 --- /hints ---
+
 --- /task ---
