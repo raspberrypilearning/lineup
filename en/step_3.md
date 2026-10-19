@@ -109,7 +109,8 @@ set [x_pos v] to [-200]
 repeat (columns :: custom-arg)
 + add (x_pos) to [x_positions v]
 + add (y_pos) to [y_positions v]
-+ change [x_pos v] by ((400) / ((columns :: custom-arg) - (1)
++ change [x_pos v] by ((400) / ((columns :: custom-arg) - (1)))
+end
 ```
 
 --- /hint ---
