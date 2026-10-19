@@ -13,7 +13,8 @@ set [x_pos v] to [-200]
 repeat (columns :: custom-arg)
 add (x_pos) to [x_positions v]
 add (y_pos) to [y_positions v]
-change [x_pos v] by (((400) / (columns)) - (1))
+change [x_pos v] by ((400) / ((columns :: custom-arg) - (1)))
+end
 ```
 
 --- task ---
@@ -30,7 +31,7 @@ set [x_pos v] to [-200]
 repeat (columns :: custom-arg)
 add (x_pos) to [x_positions v]
 add (y_pos) to [y_positions v]
-change [x_pos v] by (((400) / (columns :: custom-arg)) - (1))
+change [x_pos v] by ((400) / ((columns :: custom-arg) - (1)))
 end
 end
 ```
@@ -55,9 +56,9 @@ set [x_pos v] to [-200]
 repeat (columns :: custom-arg)
 add (x_pos) to [x_positions v]
 add (y_pos) to [y_positions v]
-change [x_pos v] by (((400) / (columns :: custom-arg)) - (1))
+change [x_pos v] by ((400) / ((columns :: custom-arg) - (1)))
 end
-+change [y_pos v] by (((300) / (rows :: custom-arg)) - (1))
++change [y_pos v] by ((300) / ((rows :: custom-arg) - (1)))
 end
 ```
 
@@ -71,7 +72,7 @@ Make sure you give the number of `rows`{:class="block3myblocks"} as an input to 
 when flag clicked
 erase all
 generate positions (4) (10) ::custom
-stamp sprite (4) (10) ::custom
+stamp sprites (4) (10) ::custom
 ```
 
 --- /task ---
@@ -84,7 +85,7 @@ Run your code now.
 	
 You won't get a neat grid of stamps.
 
-This is because, right now, the `stamp sprite`{:class="block3myblocks"} block only runs for the total number of columns.
+This is because, right now, the `stamp sprites`{:class="block3myblocks"} block only runs for the total number of columns.
 
 --- /task ---
 
@@ -100,13 +101,14 @@ Here's the completed `stamp sprites`{:class="block3myblocks"} script:
 ```blocks3
 define stamp sprites (rows) (columns)
 set size to (40) %
-+ repeat ((rows :: custom-arg) * (columns :: custom-arg))
++repeat ((rows :: custom-arg) * (columns :: custom-arg))
 set [index v] to (pick random (1) to (length of [x_positions v]))
-go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
+go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v])
 delete (index) of [x_positions v]
 delete (index) of [y_positions v]
 stamp
 next costume
+end
 ```
 
 --- /hint ---

@@ -59,9 +59,10 @@ Here is the completed script for the `stamp sprites`{:class="block3myblocks"} bl
 define stamp sprites (rows) (columns)
 set [index v] to [1]
 repeat (columns :: custom-arg)
-+ go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
++ go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v])
 + stamp
 + change [index v] by (1)
+end
 ```
 
 --- /hint ---
@@ -77,7 +78,7 @@ Add a `erase all`{:class="block3extensions"} block below the `when flag clicked`
 when flag clicked
 erase all
 generate positions (1) (10) ::custom
-stamp sprite (1) (10) ::custom
+stamp sprites (1) (10) ::custom
 ```
 
 --- /task ---	
