@@ -11,10 +11,11 @@ define stamp sprites (rows) (columns)
 set size to (40) %
 set [index v] to [1]
 repeat (columns :: custom-arg)
-go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
+go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v])
 stamp
 next costume
 change [index v] by (1)
+end
 ```
 
 --- /task ---
@@ -47,12 +48,13 @@ set size to (40) %
 - set [index v] to [1]
 repeat (columns :: custom-arg)
 + set [index v] to (pick random (1) to (length of [x_positions v]))
-go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v]
+go to x: (item (index) of [x_positions v]) y: (item (index) of [y_positions v])
 + delete (index) of [x_positions v]
 + delete (index) of [y_positions v]
 stamp
 next costume
 - change [index v] by (1)
+end
 ```
 
 --- /hint ---
